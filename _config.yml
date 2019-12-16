@@ -19,7 +19,7 @@ exclude:
   - gulpfile.js
 
 keep_files:
-  - site/css
-  - site/js
+  - docs/css
+  - docs/js
 
 include: ['_pages']
