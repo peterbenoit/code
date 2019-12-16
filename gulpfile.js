@@ -15,12 +15,12 @@ var browserSync = require( 'browser-sync' ).create();
 var paths = {
 	styles: {
 		src: '_scss/**/*.scss',
-		dest: '_site/css',
+		dest: 'site/css',
 		destsecond: 'css'
 	},
 	scripts: {
 		src: '_js/src/*.js',
-		dest: '_site/js/dist/',
+		dest: 'site/js/dist/',
 		destsecond: 'js/dist/'
 	}
 };
@@ -54,7 +54,7 @@ function js() {
 function browserSyncServe( done ) {
 	browserSync.init( {
 		server: {
-			baseDir: "_site"
+			baseDir: "site"
 		}
 	} )
 	done();
