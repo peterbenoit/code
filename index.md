@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Code goes here[]!?!?!!!
+title: Code goes here[]
 ---
 
-I think ?fffffffff
