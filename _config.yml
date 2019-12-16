@@ -7,3 +7,8 @@ gem "jekyll-gist"
 gem "jekyll-feed"
 gem "jemoji"
 gem "jekyll-include-cache"
+
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: benbalter/retlab
