@@ -8,6 +8,7 @@ var uglify = require( 'gulp-uglify' );
 var rename = require( 'gulp-rename' );
 var cp = require( 'child_process' );
 var flatten = require( 'gulp-flatten' );
+var log = require( 'fancy-log' );
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var source = require( 'vinyl-source-stream' );
 var concatjs = require( 'gulp-concat' );
@@ -26,7 +27,7 @@ var paths = {
 };
 
 function jekyllBuild() {
-	return cp.spawn( jekyll, [ 'build' ], {
+	return cp.spawn( jekyll, [ 'build', '--destination', 'docs' ], {
 		stdio: 'inherit'
 	} )
 }

@@ -1,9 +1,9 @@
 {
-  "name": "jekyll-bootstrap-4",
-  "version": "0.0.0",
-  "description": "Jekyll + Gulp + Browser-sync + Bootstrap 4 + Font-Awesome + Magnific popup",
+  "name": "code",
+  "version": "0.0.1",
+  "description": "description",
   "main": "gulpfile.js",
-  "author": "David Malone - david@souldesign.net.nz",
+  "author": "Pete",
   "keywords": [
     "Jekyll",
     "Gulp",
@@ -20,6 +20,7 @@
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
+    "fancy-log": "^1.3.3",
     "font-awesome": "^4.7.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
