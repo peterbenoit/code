@@ -8,41 +8,44 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "Jekyll"
+email: your-email@domain.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Description goes here
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: peterbenoit
+github_username:  peterbenoit
+
 # Build settings
 markdown: kramdown
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-postcss
-  - jekyll-purgecss
-  - jekyll-remote-theme
-
-# jekyll-seo-tag configuration
-author: ""
-url: ""
-title: ""
-description: ""
-twitter:
-  username: ""
-  card: ""
-logo: "path/to/image"
-
-remote_theme: benbalter/retlab
-
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - config.js
   - Gemfile
   - Gemfile.lock
+  - gulp_tasks
+  - gulpfile.js
+  - LICENSE
   - node_modules
-  - yarn.lock
+  - npm-debug.log
+  - package.json
   - package-lock.json
   - README.md
-  - postcss.config.js
-  - purgecss.config.js
-  - netlify.toml
-  - bin
-  - .gitignore
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - yarn.lock

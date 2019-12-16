@@ -1,7 +1,6 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-#hmm...
-
-{% gist 589f89184d52cadc4dabb28b752ad284 %}
-
-
-<script src="https://gist.github.com/peterbenoit/589f89184d52cadc4dabb28b752ad284.js"></script>
+layout: home
+---
