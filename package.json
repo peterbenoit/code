@@ -1,6 +1,6 @@
 {
   "name": "code",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "description",
   "main": "gulpfile.js",
   "scripts": {
@@ -40,7 +40,7 @@
     "autoprefixer": "^9.0.1",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.26.7",
     "cryptiles": ">=4.1.2",
     "eslint-config-google": "^0.9.1",
     "eslint-loader": "^2.1.0",
@@ -51,13 +51,13 @@
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-watch": "^5.0.0",
     "imagemin-pngquant": "^6.0.0",
     "natives": "^1.1.6",
     "require-dir": "^1.0.0",
     "vinyl-named": "^1.1.0",
-    "webpack": "^4.16.1",
+    "webpack": "^4.41.3",
     "webpack-stream": "^5.0.0",
     "yargs": "^12.0.1"
   }
