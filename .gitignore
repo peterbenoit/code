@@ -1,30 +1,5 @@
-# Sass
-.sass-cache
-*.scssc
+# ignore node modules
+/node_modules/
 
-# Sublime Text
-sftp-config.json
-
-# Jekyll
-_site
-.jekyll-metadata
-/.bundle
-/vendor
-
-# Node.js
-node_modules/
-
-# Logfiles and tempfiles
-*.log
-/log/*
-!/log/.keep
-/tmp
-
-# Other unneeded files
-doc/
-*.swp
-*~
-.project
-.DS_Store
-.idea
-.secret
+# ignore compiled site
+/_site/

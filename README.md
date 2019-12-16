@@ -1,11 +1,16 @@
-# Frasco [![GitHub release](https://img.shields.io/github/release/ixkaito/frasco.svg)](https://github.com/ixkaito/frasco/releases) [![Build Status](https://travis-ci.org/ixkaito/frasco.svg?branch=master)](https://travis-ci.org/ixkaito/frasco) [![license](https://img.shields.io/github/license/ixkaito/frasco.svg?maxAge=2592000)](https://github.com/ixkaito/frasco/blob/master/LICENSE)
+# Jekyll Bootstrap 4
+Jekyll + Gulp 4 + Browser-sync + Bootstrap 4 + Font-Awesome + Magnific popup
 
-__Jekyll starter kit including full setup for gulp, Sass, Autoprefixer, PostCSS, Webpack, imagemin, Browsersync etc.__
+## Requirements
+### https://jekyllrb.com/docs/installation/
+- Ruby (refer to jekyll documentation)
+- RubyGems (refer to jekyll documentation)
+- NodeJS (sudo apt-get install nodejs)
+- NPM (sudo apt-get install npm)
+- Gulp (sudo npm install gulp -g)
 
-## Documentation
-
-https://ixkaito.github.io/frasco/
-
-## Copyright / License
-
-Copyright © 2015 the contributors of the Frasco project under the [MIT License](https://github.com/ixkaito/frasco/blob/master/LICENSE).
+## Installation
+1. Clone or download this respository.
+2. Run 'npm install' via cmd line to get all of the node dependancies, this will also install Gulp for compiling scss and js.
+3. Run "gulp" via the cmd line to compile uncompressed sass and js as well as build the website in _site. It will also start Browsersync to watch for changes.
+4. Copy _site contents to your live server.
