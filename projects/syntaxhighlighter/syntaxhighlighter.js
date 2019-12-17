@@ -388,7 +388,8 @@ dp.sh.HighlightAll = function( name, showGutter, showControls, collapseAll, firs
 			headNode.appendChild( styleNode );
 		}
 		highlighter.firstLine = ( firstLine == null ) ? parseInt( GetOptionValue( 'firstline', options, 1 ) ) : firstLine;
-		highlighter.Highlight( element[ propertyName ] );
+		//highlighter.Highlight( element[ propertyName ] );
+		highlighter.Highlight( $( element ).val() );
 		highlighter.source = element;
 		element.parentNode.insertBefore( highlighter.div, element );
 	}

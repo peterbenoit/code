@@ -4,30 +4,50 @@
 	<meta charset="utf-8">
 	<title>SyntaxHighlighter</title>
 	<link href="theme.css" rel="stylesheet" type="text/css">
+	<style>
+	h5 {
+		margin-bottom: 0;
+	}
+	</style>
 </head>
 <body>
-	<h1>SyntaxHighlighter</h1>
-	<!-- <textarea class="javascript" id="code" name="code"> 
-		gulp.task('setup-project:link-repos-into-node_modules', 'Links every cloned repository into `./node_modules`', ['setup-project:clone-repos'], () =&gt;
-		loadRepos()
-			.then(R.filter(repo =&gt; repo.name !== 'syntaxhighlighter'))
-			.then(R.map(R.curry(linkReposIntoNodeModules)))
-			.then(Promise.all)
-		);
-	</textarea> -->
-	<div class="javascript" id="code" name="code"> 
-		gulp.task('setup-project:link-repos-into-node_modules', 'Links every cloned repository into `./node_modules`', ['setup-project:clone-repos'], () =&gt;
-		loadRepos()
-			.then(R.filter(repo =&gt; repo.name !== 'syntaxhighlighter'))
-			.then(R.map(R.curry(linkReposIntoNodeModules)))
-			.then(Promise.all)
-		);
-	</div>	
+	<h1>Syntax Highlighter</h1>
+	<p>Using the <a href="https://github.com/syntaxhighlighter/syntaxhighlighter">SyntaxHighlighter</a> library to format HTML, JavaScript and CSS for use in documentation like Microsoft Word or Google Docs.</p>
+	<p>Paste your code into the text area below, choose your format type and click the button.</p>
+	
+	<select class="custom-select">
+		<option value="html" selected>HTML</option>
+		<option value="javascript">JavaScript</option>
+		<option value="css">CSS</option>
+	  </select>
+	<button id="btn">Format</button><br>
+	<textarea name="input" cols="100" rows="10"></textarea>
+
+	<h2>Examples</h2>
+	<h5>Screenshot of CSS formatting</h5>
+	<img src="examples/screenshot.png" alt="screenshot" />
+	<h5>Paste into Microsoft Word</h5>
+	<img src="examples/ms-word.png" alt="Microsoft Word" />
+	<h5>Paste into Google Docs</h5>
+	<img src="examples/google-docs.png" alt="Google Docs" />
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="syntaxhighlighter.js" type="text/javascript"></script> 
 	<script src="brushes.js" type="text/javascript"></script> 
 	<script src="brushes.xml.js" type="text/javascript"></script> 
 	<script>
-	 dp.SyntaxHighlighter.HighlightAll( 'code', true, false );
+		$( '#btn' ).on( 'click', function() {
+			$( 'textarea[name="input"]' )[0].className = $( '.custom-select' ).val();
+			var hl = $( '.dp-highlighter' );
+			if( hl.length ) {
+				hl.remove();
+				$( 'textarea[name="input"]' ).show();
+				$( this ).text( 'Format' );
+			} else {
+				dp.SyntaxHighlighter.HighlightAll( 'input', true, false );
+				$( this ).text( 'Code' );
+			}	
+		} );		
 	</script>
 </body>
 </html>
