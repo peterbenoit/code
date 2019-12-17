@@ -1,9 +1,4 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-
-@import "themes/default/variables";
+@import "themes/superhero/variables";
 @import "bootstrap/bootstrap";
 @import "syntax-highlighting";
-@import "bootstrap-4-jekyll/bootstrap-4-jekyll";
-@import "themes/default/bootstrap_customization";
+@import "themes/superhero/bootstrap_customization";
