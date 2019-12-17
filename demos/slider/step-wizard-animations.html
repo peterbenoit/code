@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="theme-blue" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slick slider - step wizard with animations</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css" rel="stylesheet">
+	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css" rel="stylesheet">
+	<link href="https://codepen.io/peterbenoit/pen/xxxXwMQ.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<style>
+	 .cdc-arrow-slider .slick-dots {
+	 padding: 0;
+	 list-style-type: none;
+	 text-align: center;
+	 position: relative;
+	 bottom: initial !important;
+	 display: flex;
+	}
+	.cdc-arrow-slider .slick-dots li {
+	 flex-basis: 0;
+	 flex-grow: 1;
+	 max-width: 100%;
+	 padding: 20px 50px;
+	 background: #88c3ea;
+	 position: relative;
+	 border-top: 1px solid #88c3ea;
+	 border-bottom: 1px solid #88c3ea;
+	 margin: 0 1px;
+	 width: auto !important;
+	 height: auto !important;
+	}
+	.cdc-arrow-slider .slick-dots li:before {
+	 content: '';
+	 border-left: 33px solid #fff;
+	 border-top: 33px solid transparent;
+	 border-bottom: 33px solid transparent;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	}
+	.cdc-arrow-slider .slick-dots li:after {
+	 content: '';
+	 border-left: 33px solid #88c3ea;
+	 border-top: 33px solid transparent;
+	 border-bottom: 33px solid transparent;
+	 position: absolute;
+	 top: 0;
+	 left: 100%;
+	 z-index: 20;
+	}
+	.cdc-arrow-slider .slick-dots li.slick-active, .cdc-arrow-slider .slick-dots li:hover, .cdc-arrow-slider .slick-dots li:active {
+	 color: #fff;
+	 background: #005eaa;
+	 border-top: 1px solid #005eaa;
+	 border-bottom: 1px solid #005eaa;
+	}
+	.cdc-arrow-slider .slick-dots li.slick-active:after, .cdc-arrow-slider .slick-dots li:hover:after, .cdc-arrow-slider .slick-dots li:active:after {
+	 border-left-color: #005eaa;
+	}
+
+	.cdc-arrow-slider .slick-dots li:first-of-type:before {
+	 border-left: none;
+	}
+	.cdc-arrow-slider .slick-dots li:last-of-type:after {
+	 border-left: none;
+	}
+
+	.cdc-card-slider .card {
+	 margin: 0;
+	}
+
+	#example3 .card-body {
+	 position: relative;
+	}
+	#example3 .card-title {
+	 position: relative;
+	 display: inline-block;
+	}
+	#example3 p {
+	 position: relative;
+	}
+	</style>
+</head>
+<body translate="no">
+	<div class="container d-flex flex-wrap body-wrapper">
+		<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<span class="h3" id="sliderLabel1">Slick Slider - Step Wizard</span>
+						<div class="cdc-card-slider" id="example1">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 1
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 2
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 3
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 4
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<span class="h3" id="sliderLabel2">Slick Slider - Step Wizard (Fade)</span>
+						<div class="cdc-card-slider" id="example2">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 1
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 2
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 3
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 4
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<span class="h3" id="sliderLabel3">Slick Slider - Step Wizard (Slide In Text)</span>
+						<div class="cdc-card-slider" id="example3">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 1
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 2
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 3
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Step 4
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js"></script>
+	<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js"></script>
+	<script src="https://codepen.io/peterbenoit/pen/yLLbKzE.js"></script>
+	<script src="https://codepen.io/peterbenoit/pen/xxxXwMQ.js"></script>
+	<script">
+	     $( function() {
+	   slickInit( '#example1', {
+	       'sliderType': '',
+	       'bodyClass': '',        
+	       'ariaLabel': '',
+	       'centerMode': false,
+	       'arrows': false,
+	       'ariaLabelTarget': 'sliderLabel1',
+	       'customPaging': function( slick, index ) {
+	           var t = slick.$slides.eq( index ),
+	               img = t.find( 'img' ),
+	               src = img.attr( 'src' ),
+	               title = t.find( '.card-title' ),
+	               text = title.text();
+	           
+	           console.log( slick.defaults )
+	           
+	           return text;
+	       },
+	       'callback': function( t, d ) {
+	           t.addClass( 'cdc-arrow-slider' );
+	       },      
+	       'responsive': [ 
+	           { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+	           { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+	           { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+	           { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+	           { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+	       ]
+	   } );
+	   slickInit( '#example2', {
+	       'sliderType': '',
+	       'bodyClass': '',        
+	       'ariaLabel': '',
+	       'centerMode': false,
+	       'arrows': false,
+	       'fade': true,
+	       'cssEase': 'linear',
+	       'ariaLabelTarget': 'sliderLabel2',
+	       'customPaging': function( slick, index ) {
+	           var t = slick.$slides.eq( index ),
+	               img = t.find( 'img' ),
+	               src = img.attr( 'src' ),
+	               title = t.find( '.card-title' ),
+	               text = title.text();
+	           
+	           console.log( slick.defaults )
+	           
+	           return text;
+	       },
+	       'callback': function( t, d ) {
+	           t.addClass( 'cdc-arrow-slider' );
+	       },      
+	       'responsive': [ 
+	           { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+	           { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+	           { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+	           { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+	           { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+	       ]
+	   } );
+	   slickInit( '#example3', {
+	       'sliderType': '',
+	       'bodyClass': '',        
+	       'ariaLabel': '',
+	       'centerMode': false,
+	       'arrows': false,
+	       'speed': 0,     
+	       'ariaLabelTarget': 'sliderLabel3',
+	       'customPaging': function( slick, index ) {
+	           var t = slick.$slides.eq( index ),
+	               img = t.find( 'img' ),
+	               src = img.attr( 'src' ),
+	               title = t.find( '.card-title' ),
+	               text = title.text();
+	           
+	           console.log( slick.defaults )
+	           
+	           return text;
+	       },
+	       'callback': function( t, d ) {
+	           t.addClass( 'cdc-arrow-slider' );
+	       },      
+	       'responsive': [ 
+	           { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+	           { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+	           { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+	           { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+	           { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+	       ]
+	   } );    
+	} );
+
+	if ( $( '#example3 .slick-slide' ).hasClass( 'slick-active' ) ) {
+	   $(this).find( '.card-title' ).addClass( 'animated fadeInLeft' );
+	} else {
+	   $(this).find( '.card-title' ).removeClass( 'animated fadeInLeft' );
+	}
+	$( '#example3' ).on( 'beforeChange', function() {
+	   $(this).find( '.card-title' ).removeClass( 'animated fadeInLeft' );
+	   setTimeout( () => {
+	       $(this).find( '.card-title' ).addClass( 'animated fadeInLeft' );
+	   }, 100 );
+	} );
+	</script>
+</body>
+</html>

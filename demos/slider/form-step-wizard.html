@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="theme-blue" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slick slider - Form step wizard</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css' rel='stylesheet'>
+	<link href='https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css' rel='stylesheet'>
+	<link href='https://codepen.io/peterbenoit/pen/xxxXwMQ.css' rel='stylesheet'>
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' rel='stylesheet'>
+	<style>
+	 .cdc-arrow-slider .slick-dots {
+	 padding: 0;
+	 list-style-type: none;
+	 text-align: center;
+	 position: relative;
+	 bottom: initial !important;
+	 display: flex;
+	}
+	.cdc-arrow-slider .slick-dots li {
+	 flex-basis: 0;
+	 flex-grow: 1;
+	 max-width: 100%;
+	 padding: 20px 50px;
+	 background: #88c3ea;
+	 position: relative;
+	 border-top: 1px solid #88c3ea;
+	 border-bottom: 1px solid #88c3ea;
+	 margin: 0 1px;
+	 width: auto !important;
+	 height: auto !important;
+	}
+	.cdc-arrow-slider .slick-dots li:before {
+	 content: '';
+	 border-left: 33px solid #fff;
+	 border-top: 33px solid transparent;
+	 border-bottom: 33px solid transparent;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	}
+	.cdc-arrow-slider .slick-dots li:after {
+	 content: '';
+	 border-left: 33px solid #88c3ea;
+	 border-top: 33px solid transparent;
+	 border-bottom: 33px solid transparent;
+	 position: absolute;
+	 top: 0;
+	 left: 100%;
+	 z-index: 20;
+	}
+	.cdc-arrow-slider .slick-dots li.slick-active, .cdc-arrow-slider .slick-dots li:hover, .cdc-arrow-slider .slick-dots li:active {
+	 color: #fff;
+	 background: #005eaa;
+	 border-top: 1px solid #005eaa;
+	 border-bottom: 1px solid #005eaa;
+	}
+	.cdc-arrow-slider .slick-dots li.slick-active:after, .cdc-arrow-slider .slick-dots li:hover:after, .cdc-arrow-slider .slick-dots li:active:after {
+	 border-left-color: #005eaa;
+	}
+
+	.card-footer {
+	 background: #fff;
+	 border-top: 0;
+	}
+
+	.display-1 {
+	 -webkit-animation: fadein 2s;
+	         animation: fadein 2s;
+	 -webkit-animation-delay: 2s;
+	         animation-delay: 2s;
+	}
+
+	@-webkit-keyframes fadein {
+	 from {
+	   opacity: 0;
+	 }
+	 to {
+	   opacity: 1;
+	 }
+	}
+
+	@keyframes fadein {
+	 from {
+	   opacity: 0;
+	 }
+	 to {
+	   opacity: 1;
+	 }
+	}
+	.cdc-arrow-slider .slick-dots li:first-of-type:before {
+	 border-left: none;
+	}
+	.cdc-arrow-slider .slick-dots li:last-of-type:after {
+	 border-left: none;
+	}
+
+	.cdc-card-slider .card {
+	 margin: 0;
+	}
+
+	#example3 .card-body {
+	 position: relative;
+	}
+	#example3 .card-title {
+	 position: relative;
+	 display: inline-block;
+	}
+	#example3 p {
+	 position: relative;
+	}
+	</style>
+</head>
+<body translate="no">
+	<div class="container d-flex flex-wrap body-wrapper">
+		<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<span class="h3" id="sliderLabel1">Slick Slider - Form Step Wizard</span>
+						<div class="cdc-card-slider" id="example1">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title d-none">
+										Step 1
+									</div>
+									<h4 class="text-center">Please fill out the following <small>(not really)</small></h4>
+									<div class="form-group">
+										<label for="NameDemo">Your Name:</label> <input aria-describedby="nameHelp" class="form-control" id="NameDemo" placeholder="Enter Full Name" type="text"> <small class="form-text text-muted" id="nameHelp">Please enter your full name</small>
+									</div>
+									<div class="form-group">
+										<label for="EmailDemo">Your Email:</label> <input aria-describedby="emailHelp" class="form-control" id="EmailDemo" placeholder="Enter email" type="email"> <small class="form-text text-muted" id="emailHelp">Please enter your primary email, we will send confirmation email!</small>
+									</div>
+									<div class="form-group">
+										<label for="passDemo">Enter Password:</label> <input aria-describedby="passHelp" class="form-control" id="passDemo" placeholder="Password" type="password"> <small class="form-text text-muted" id="passHelp">Must be 8 characters long</small>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" id="CheckDemo" required="" type="checkbox"> <label class="form-check-label" for="CheckDemo">Agree with Terms &amp; Conditions?</label>
+									</div>
+								</div>
+								<div class="card-footer">
+									<button class="float-right btn btn-success btn-next" disabled="disabled">Continue</button>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title d-none">
+										Step 2
+									</div>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae ea tempora laboriosam quae non possimus quo minus, placeat, ex amet, nulla blanditiis deserunt necessitatibus exercitationem accusantium nesciunt voluptatum? Aliquid.</p>
+									<fieldset class="form-group">
+										<div class="row">
+											<legend class="col-form-label col-sm-2 pt-0">Your option</legend>
+											<div class="col-sm-10">
+												<div class="form-check">
+													<input checked class="form-check-input" id="gridRadios1" name="gridRadios" type="radio" value="option1"> <label class="form-check-label" for="gridRadios1">It is a possibility</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" id="gridRadios2" name="gridRadios" type="radio" value="option2"> <label class="form-check-label" for="gridRadios2">I'm not quite sure</label>
+												</div>
+												<div class="form-check disabled">
+													<input class="form-check-input" disabled id="gridRadios3" name="gridRadios" type="radio" value="option3"> <label class="form-check-label" for="gridRadios3">I am confused</label>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+								<div class="card-footer">
+									<div class="row">
+										<div class="col">
+											<button class="btn btn-secondary btn-prev">Previous</button>
+										</div>
+										<div class="col">
+											<button class="float-right btn btn-success btn-next">Next</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title d-none">
+										Step 3
+									</div>
+									<p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse unde iusto minus illum amet aliquam dolorum rem, ea aspernatur earum adipisci culpa. Dolore non eligendi velit iure distinctio illum.</span><span>Eligendi beatae repellendus, animi tempore quibusdam impedit illo doloremque asperiores, veniam esse, perferendis quod recusandae adipisci! Facilis dolorem, voluptatibus, ea voluptate sapiente molestias, enim architecto ipsam ut dolores vel recusandae!</span></p>
+									<p><span>Labore dolor enim impedit modi culpa corrupti, aliquam, quisquam cumque reiciendis quam eum iusto nam aliquid tenetur amet eius, voluptatibus illum recusandae distinctio deserunt vero quos adipisci id velit! Magnam.</span><span>Sed provident saepe ut libero omnis assumenda quasi obcaecati quod optio, repellat ipsum quisquam dolore accusamus fugiat veritatis, fugit aut itaque. Reiciendis, animi. Nulla laudantium unde ad libero est veritatis?</span></p>
+									<div class="form-check">
+										<input class="form-check-input" id="defaultCheck1" required="" type="checkbox" value=""> <label class="form-check-label" for="defaultCheck1">Yes, this seems reasonable.</label>
+									</div>
+								</div>
+								<div class="card-footer">
+									<div class="row">
+										<div class="col">
+											<button class="btn btn-secondary btn-prev">Previous</button>
+										</div>
+										<div class="col">
+											<button class="float-right btn btn-success btn-next" disabled="disabled">Next</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title d-none">
+										Step 4
+									</div>
+									<p class="display-1 p-abs-cen">Congratulations</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js'></script> 
+	<script src='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js'></script> 
+	<script src='https://codepen.io/peterbenoit/pen/yLLbKzE.js'></script> 
+	<script src='https://codepen.io/peterbenoit/pen/xxxXwMQ.js'></script> 
+	<script>
+	     $( function() {
+	   slickInit( '#example1', {
+	       'sliderType': '',
+	       'bodyClass': '',        
+	       'ariaLabel': '',
+	       'centerMode': false,
+	       'arrows': false,
+	       'ariaLabelTarget': 'sliderLabel1',
+	       'customPaging': function( slick, index ) {
+	           var t = slick.$slides.eq( index ),
+	               img = t.find( 'img' ),
+	               src = img.attr( 'src' ),
+	               title = t.find( '.card-title' ),
+	               text = title.text();
+	           
+	           console.log( slick.defaults )
+	           
+	           return text;
+	       },
+	       'callback': function( t, d ) {
+	           t.addClass( 'cdc-arrow-slider' );
+	       },      
+	       'responsive': [ 
+	           { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+	           { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+	           { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+	           { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+	           { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+	       ]
+	   } );    
+	} );
+
+	$( '.btn-next' ).on( 'click', function() {
+	   $( '.cdc-card-slider' ).slick( 'slickNext' );
+	} );
+
+	$( '.btn-prev' ).on( 'click', function() {
+	   $( '.cdc-card-slider' ).slick( 'slickPrev' );
+	} );
+
+	$( 'input:checkbox[required]' ).on( 'click', function() { 
+	   
+	   $( this ).parents( '.card' ).find( '.btn-next' ).attr( 'disabled', !$(this).is(':checked') )
+
+	} );
+	</script>
+</body>
+</html>
