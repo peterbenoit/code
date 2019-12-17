@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>SyntaxHighlighter</title>
-  <link type="text/css" rel="stylesheet" href="theme.css">
-  <style type="text/css">
-    body {
-      background: white;
-      font-family: helvetica;
-    }
-  </style>
+	<meta charset="utf-8">
+	<title>SyntaxHighlighter</title>
+	<link href="theme.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-<h1>SyntaxHighlighter v4.0.1</h1>
-
-<textarea name="code" id="code" class="javascript">  
-  gulp.task('setup-project:link-repos-into-node_modules', 'Links every cloned repository into `./node_modules`', ['setup-project:clone-repos'], () =>
-  loadRepos()
-    .then(R.filter(repo => repo.name !== 'syntaxhighlighter'))
-    .then(R.map(R.curry(linkReposIntoNodeModules)))
-    .then(Promise.all)
-);
-</textarea>
-
-<script type="text/javascript" src="syntaxhighlighter.js"></script>
-<script type="text/javascript" src="brushes.js"></script>
-<script type="text/javascript" src="brushes.xml.js"></script>
-<script>
-  dp.SyntaxHighlighter.HighlightAll( 'code', true, false );
-</script>
-
+	<h1>SyntaxHighlighter</h1>
+	<!-- <textarea class="javascript" id="code" name="code"> 
+		gulp.task('setup-project:link-repos-into-node_modules', 'Links every cloned repository into `./node_modules`', ['setup-project:clone-repos'], () =&gt;
+		loadRepos()
+			.then(R.filter(repo =&gt; repo.name !== 'syntaxhighlighter'))
+			.then(R.map(R.curry(linkReposIntoNodeModules)))
+			.then(Promise.all)
+		);
+	</textarea> -->
+	<div class="javascript" id="code" name="code"> 
+		gulp.task('setup-project:link-repos-into-node_modules', 'Links every cloned repository into `./node_modules`', ['setup-project:clone-repos'], () =&gt;
+		loadRepos()
+			.then(R.filter(repo =&gt; repo.name !== 'syntaxhighlighter'))
+			.then(R.map(R.curry(linkReposIntoNodeModules)))
+			.then(Promise.all)
+		);
+	</div>	
+	<script src="syntaxhighlighter.js" type="text/javascript"></script> 
+	<script src="brushes.js" type="text/javascript"></script> 
+	<script src="brushes.xml.js" type="text/javascript"></script> 
+	<script>
+	 dp.SyntaxHighlighter.HighlightAll( 'code', true, false );
+	</script>
 </body>
 </html>
