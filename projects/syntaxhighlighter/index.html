@@ -57,15 +57,17 @@
 		} );
 		
 		var clipboard = new ClipboardJS( '#copy' );
-		clipboard.on( 'success', function(e) {
+		clipboard.on( 'success', function( e ) {
 			$( '#copy' ).text( 'Copied!' );
 
 			setTimeout( function() {
 				$( '#copy' ).text( 'Copy' );
 			}, 2000 );
 		} );
-		clipboard.on( 'error', function(e) {
+		clipboard.on( 'error', function( e ) {
 			$( '#copy' ).text( 'Error!' );
+
+			console.error( 'Error Details:', e );
 
 			setTimeout( function() {
 				$( '#copy' ).text( 'Copy' );
