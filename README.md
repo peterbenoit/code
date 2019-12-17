@@ -1,4 +1,6 @@
+# Theme
 
-# Code
+## A Bootstrap 4 portfolio and blog theme for Jekyll
 
-[![Build Status](https://travis-ci.org/peterbenoit/code.svg?branch=master)](https://travis-ci.org/peterbenoit/code)
+* Example 1: This repo builds directly to GitHub pages: https://peterbenoit.github.io/code/
+

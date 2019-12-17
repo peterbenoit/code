@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
 
-  {%- include head.html -%}
+{% include structure/head.html %}
 
-  <body>
+<body>
 
-    {%- include header.html -%}
+{% include bars/nav.html %}
 
-    <div class="py-5">
-      <div class="container page-content">
-          {{ content }}
-      </div>
+{% capture col1 %}{% if page.narrow %}3{% else %}4{% endif %}{% endcapture %}
+
+{% capture col2 %}{% if page.narrow %}9{% else %}8{% endif %}{% endcapture %}
+
+<div class="container site-container" id="top">
+    <div class="row">
+        <div class="d-none d-lg-block col-lg-4 col-xl-{{ col1 }} side">
+            {% include bars/side.html %}
+        </div>
+        <div class="col-md-12 col-lg-8 col-xl-{{ col2 }} pb-4 content">
+            {{ content }}
+        </div>
+        <div class="col-md-12 d-lg-none bottom">
+            {% include bars/bottom.html %}
+        </div>
     </div>
+</div>
 
-    {%- include footer.html -%}
+{% include structure/scripts.html %}
 
-  </body>
+</body>
 
 </html>
