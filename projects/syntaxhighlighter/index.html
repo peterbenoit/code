@@ -8,6 +8,9 @@
 	h5 {
 		margin-bottom: 0;
 	}
+	#copy {
+		display: none;
+	}
 	</style>
 </head>
 <body>
@@ -20,10 +23,11 @@
 		<option value="javascript">JavaScript</option>
 		<option value="css">CSS</option>
 	  </select>
-	<button id="btn">Format</button><br>
+	<button id="btn">Format</button><button id="copy" data-clipboard-action="copy" data-clipboard-target="div.dp-highlighter">Copy</button><br>
 	<textarea name="input" cols="100" rows="10"></textarea>
-
+	<hr>
 	<h2>Examples</h2>
+	<hr>
 	<h5>Screenshot of CSS formatting</h5>
 	<img src="examples/screenshot.png" alt="screenshot" />
 	<h5>Paste into Microsoft Word</h5>
@@ -32,21 +36,38 @@
 	<img src="examples/google-docs.png" alt="Google Docs" />
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="syntaxhighlighter.js" type="text/javascript"></script> 
-	<script src="brushes.js" type="text/javascript"></script> 
-	<script src="brushes.xml.js" type="text/javascript"></script> 
+	<script src="lib/syntaxhighlighter.js" type="text/javascript"></script> 
+	<script src="lib/brushes.js" type="text/javascript"></script> 
+	<script src="lib/brushes.xml.js" type="text/javascript"></script>
+	<script src="../clipboard/lib/clipboard.min.js" type="text/javascript"></script> 
 	<script>
 		$( '#btn' ).on( 'click', function() {
 			$( 'textarea[name="input"]' )[0].className = $( '.custom-select' ).val();
 			var hl = $( '.dp-highlighter' );
 			if( hl.length ) {
 				hl.remove();
+				$( '#copy' ).hide();
 				$( 'textarea[name="input"]' ).show();
 				$( this ).text( 'Format' );
 			} else {
 				dp.SyntaxHighlighter.HighlightAll( 'input', true, false );
+				$( '#copy' ).show();
 				$( this ).text( 'Code' );
 			}	
+		} );
+		
+		var clipboard = new ClipboardJS( '#copy' );
+		clipboard.on( 'success', function(e) {
+			console.log(e);
+
+			$( '#copy' ).text( 'Copied!' );
+
+			setTimeout( function() {
+				$( '#copy' ).text( 'Copy' );
+			}, 2000)
+		} );
+		clipboard.on( 'error', function(e) {
+			console.log(e);
 		} );		
 	</script>
 </body>
