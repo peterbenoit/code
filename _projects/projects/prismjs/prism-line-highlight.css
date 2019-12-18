@@ -1,0 +1,10 @@
+
+.line-highlight {
+    background: rgba(255, 243, 10, 1);
+    background: linear-gradient(to right, rgba(255, 243, 10, .2) 70%, rgba(255, 243, 10, 0));	
+}
+
+.line-highlight:before,
+.line-highlight[data-end]:after {
+    background: rgba(255, 243, 10, .3);
+}
