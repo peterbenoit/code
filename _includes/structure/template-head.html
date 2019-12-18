@@ -10,7 +10,7 @@
 	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css" rel="stylesheet">
 
 	{% if page.localcss And page.localcss != "" And page.localcss != nil %}
-	<link href="{{ page.localcss }}" rel="stylesheet">
+	<link href="css/{{ page.localcss }}" rel="stylesheet">
 	{% endif %}
 
 	{% if page.includePrismJs And page.includePrismJs != "" And page.includePrismJs != nil %}
