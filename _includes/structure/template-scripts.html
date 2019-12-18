@@ -3,7 +3,7 @@
 <script src="https://www.cdc.gov/TemplatePackage/4.0/assets/js/app.min.js"></script>
 
 {% if page.localjs And page.localjs != "" And page.localjs != nil %}
-<script src="js/{{ page.localjs }}"></script> 
+<script src="{{ site.baseurl }}/js/{{ page.localjs }}"></script> 
 {% endif %}
 
 {% if page.includePrismJs And page.includePrismJs != "" And page.includePrismJs != nil %}
