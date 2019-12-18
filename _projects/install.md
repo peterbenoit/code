@@ -36,6 +36,10 @@ The installation instructions below are Linux-flavoured instructions. There's so
 
 If it does, you can begin customizing it.
 
+Unable to load the EventMachine C extension; To use the pure-ruby reactor, require 'em/pure_ruby'
+gem uninstall eventmachine
+gem install eventmachine --platform ruby
+
 ## Configuration
 
 Open `_config.yml` and change the `title` and `name` fields to your settings. Copy your own avatar image to `/theme/img/avatar.jpg` - it helps if this image is square.
