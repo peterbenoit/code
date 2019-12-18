@@ -12,7 +12,7 @@ type: post
 	<li>Comparisons are as bad as cliches.</li>
 	<li>Be more or less specific.</li>
 	<li>Writes should never generalize.</li>
-	<p>Seven: Be consistent!</p>
+	<span>Seven: Be consistent!</span>
 	<li>Don't be redundant; don't use more words than necessary; it's highly superfluous.</li>
 	<li>Who needs rhetorical questions?</li>
 	<li>Exaggeration is a billion times worse than understatement.</li>
