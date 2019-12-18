@@ -1,0 +1,19 @@
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>{% if page.title %}{{ site.title }} &middot; {{ page.title }}{% else %}{{ site.title }}{% endif %}</title> 
+    <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="{{ site.name }}">    
+    <link rel="shortcut icon" href="{{ site.baseurl }}/theme/img/favicon.ico">
+    
+	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css" rel="stylesheet">
+	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css" rel="stylesheet">
+
+	{% if page.localcss And page.localcss != "" And page.localcss != nil %}
+	<link href="{{ page.localcss }}" rel="stylesheet">
+	{% endif %}
+
+	{% if page.includePrismJs And page.includePrismJs != "" And page.includePrismJs != nil %}
+	{% include structure/prismjs-css.html %}
+	{% endif %}	
+</head>
