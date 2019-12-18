@@ -19,8 +19,13 @@
 		<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-9">
+					<div class="col">
 						<span class="h3" id="sliderLabel">Slick Slider - Image Slider</span>
+						<p>The standard card slider used for displaying images with associated content, such as a title and a short description.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-9">
 						<div class="cdc-card-slider">
 							<div class="card">
 								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
@@ -132,7 +137,18 @@
 				</div>
                 <div class="row">
                     <div class="col">
-<pre><code class="language-javascript line-numbers">$( function() {
+						<pre id="script-output"></pre>
+                    </div>
+                </div>
+			</div>
+		</main>
+	</div>
+<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js"></script> 
+<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js"></script> 
+<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/js/app.min.js"></script>
+<script src="slider.js"></script> 
+<script id="prism-source">
+$( function() {
 	slickInit( '.cdc-card-slider', {
 		'sliderType': '',
 		'bodyClass': '',        
@@ -147,39 +163,28 @@
 		]
 	} );
 } );
-</code></pre>
-                    </div>
-                </div>
-			</div>
-		</main>
-	</div>
-	<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js"></script> 
-	<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js"></script> 
-	<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/js/app.min.js"></script>
-	<script src="slider.js"></script> 
-	<script>
-        $( function() {
-            slickInit( '.cdc-card-slider', {
-                'sliderType': '',
-                'bodyClass': '',        
-                'ariaLabel': '',
-                'ariaLabelTarget': 'sliderLabel',
-                'responsive': [ 
-                    { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
-                    { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-                    { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
-                    { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-                    { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
-                ]
-            } );
-	    } );
-	</script>
+</script>
 
-	<!-- prism syntax highlighter -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/toolbar/prism-toolbar.min.js"></script>
+<!-- prism syntax highlighter -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/toolbar/prism-toolbar.min.js"></script>
+
+<script>
+	var target = document.getElementById( 'script-output' ),
+		source = document.getElementById( 'prism-source' );
+
+	if( null !== target && null !== source ) {
+		var	code = document.createElement( 'code' );
+
+		code.className = 'language-javascript line-numbers';
+		code.innerHTML = source.innerHTML.trim();
+
+		Prism.highlightElement( code );
+		target.appendChild( code );
+	}
+</script>	
 </body>
 </html>
