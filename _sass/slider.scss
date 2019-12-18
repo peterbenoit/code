@@ -72,10 +72,16 @@
 					font-size: 1rem;
 					color: #fff;
 					height: 30px;
+					&:hover {
+						color: #000;
+					}
 				}
 				&.slick-active {
 					button {
 						color: #000;
+						&:hover {
+							color: #000;
+						}
 					}
 				}				
 			}

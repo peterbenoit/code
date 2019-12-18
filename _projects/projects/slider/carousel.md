@@ -1,8 +1,8 @@
 ---
 layout: template
 permalink: projects/carousel.html
-description: Carousel description
-title: Carousel title
+description: Carousel built using Slick Slider
+title: Slick Slider - Carousel 
 type: demo
 localcss: sliders.css
 localjs: sliders.js
