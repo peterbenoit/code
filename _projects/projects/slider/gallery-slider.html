@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="theme-blue" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slick Slider - Video Slider</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css" rel="stylesheet">
+	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css" rel="stylesheet">
+	<link href="slider.html.css" rel="stylesheet">
+
+	<!-- prism syntax highlighter -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-coy.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-highlight/prism-line-highlight.min.css" rel="stylesheet">
+	<link href="prism-line-highlight.css" rel="stylesheet">
+
+	<style>
+		.modal.modal-fullscreen {
+			-webkit-animation-duration: .2s;
+					animation-duration: .2s;
+			-webkit-animation-delay: 0s;
+					animation-delay: 0s;
+		}
+		.modal.modal-fullscreen .modal-dialog {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			max-width: none;
+		}
+		.modal.modal-fullscreen .modal-header {
+			border: none;
+		}
+		.modal.modal-fullscreen .modal-content {
+			height: auto;
+			min-height: 100%;
+			border-radius: 0;
+			border: none;
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+	</style>
+</head>
+<body translate="no">
+
+	<div class="container d-flex flex-wrap body-wrapper">
+		<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 mb-3">
+						<div class="card">
+							<div class="card-header h4">
+								Single Card
+							</div><a data-target="#galleryModal" data-toggle="modal" href="#"><img alt="" class="card-img-top" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/top-700x300.png"></a>
+							<div class="card-body">
+								<div class="card-title h4 text-left">
+									Single Gallery Card
+								</div>
+								<p>Click this card image to see the slider gallery</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-3">
+						<div class="card">
+							<div class="card-header h4">
+								Single Card
+							</div><img alt="" class="card-img-top" src="https://picsum.photos/id/513/700/300">
+							<div class="card-body">
+								<div class="card-title h4 text-left">
+									Single Card
+								</div>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-3">
+						<div class="card">
+							<div class="card-header h4">
+								Single Card
+							</div><img alt="" class="card-img-top" src="https://picsum.photos/id/313/700/300">
+							<div class="card-body">
+								<div class="card-title h4 text-left">
+									Single Card
+								</div>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div aria-hidden="true" aria-labelledby="galleryModalLabel" class="modal fade modal-fullscreen animated zoomIn" id="galleryModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header" style="height: 66px">
+					<button aria-label="Close" class="close rounded-circle" data-dismiss="modal" type="button"><span class="sr-only">Close</span><svg style="width:24px;height:24px" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path class="fill-w" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="cdc-card-slider">
+							<div class="card">
+								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Card Title 1
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Card Title 2
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/821/700/300">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Card Title 3
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/822/700/300">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Card Title 4
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/813/700/300">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Card Title 5
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Card Title 6
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Card Title 7
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/821/700/300">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Card Title 8
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/822/700/300">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Card Title 9
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/813/700/300">
+								<div class="card-body">
+									<div class="card-title h4 text-left">
+										Card Title 10
+									</div>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js"></script> 
+<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js"></script> 
+<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/js/app.min.js"></script>
+<script src="slider.js"></script> 
+<script id="prism-source">
+$( '#galleryModal' ).on( 'shown.bs.modal', function ( e ) {
+	slickInit( '.cdc-card-slider', {
+		'sliderType': '',
+		'bodyClass': '',		
+		'ariaLabel': '',
+		'ariaLabelTarget': 'sliderLabel',
+		'arrows': true,
+		'responsive': [ 
+			{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },			
+			{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+			{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },			
+			{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+			{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+		]
+	} );
+} );
+</script>
+
+<!-- prism syntax highlighter -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-highlight/prism-line-highlight.min.js"></script>
+
+<script>
+	var target = document.getElementById( 'script-output' ),
+		source = document.getElementById( 'prism-source' );
+
+	if( null !== target && null !== source ) {
+		var	code = document.createElement( 'code' );
+
+		target.setAttribute( 'data-line', 3 );
+
+		code.className = 'language-javascript line-numbers';
+		code.innerHTML = source.innerHTML.trim();
+
+		Prism.highlightElement( code );
+		target.appendChild( code );
+	}
+</script>	
+</body>
+</html>
