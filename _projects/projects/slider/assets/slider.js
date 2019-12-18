@@ -134,6 +134,10 @@ function slickInit( target, settings ) {
 		}
 	} else if( 'carousel' === defaults.sliderType ) {
         $( t ).addClass( 'cdc-carousel-slider' );
+        // this could also be done with a callback in slickInit
+        // 'callback': function( t, d ) {
+        //     t.addClass( 'cdc-carousel-slider' );
+        // }       
     }
 		
 	// NOTE: the next two methods do basically the same thing, 
