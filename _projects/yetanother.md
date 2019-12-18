@@ -1,5 +1,6 @@
 ---
 title: Yet Another Project
+type: project
 ---
 
 ## About

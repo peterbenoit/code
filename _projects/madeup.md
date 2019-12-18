@@ -1,5 +1,6 @@
 ---
 title: Made Up Project
+type: project
 ---
 
 ## About

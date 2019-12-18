@@ -2,6 +2,9 @@
 layout: defaults/page
 permalink: index.html
 narrow: true
+description: PAGE_DESCRIPTION
+title: PAGE_TITLE
+type: home
 ---
 
 {% include components/intro.md %}

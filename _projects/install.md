@@ -1,5 +1,6 @@
 ---
 title: Install and Use
+type: project
 ---
 
 ## About

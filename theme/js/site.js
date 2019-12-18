@@ -1,9 +1,3 @@
-$( function() {
-    if( $( "#currently-showing" ).length ) {
-        parseHash();
-        $( window ).on( 'hashchange', parseHash );
-    }
-} );
 
 function parseHash () {
     if ( document.location.hash.length > 0 ) {
@@ -33,3 +27,24 @@ function clearTags() {
     $( ".tag" ).removeClass( "bg-warning" ).addClass( "bg-white" ).removeClass( "text-dark" )
     document.location.hash = ""
 }
+
+$( function() {
+    if( $( "#currently-showing" ).length ) {
+        parseHash();
+        $( window ).on( "hashchange", parseHash );
+    }
+
+
+    if( 'project' === document.body.getAttribute( 'data-type' ) ) {
+        // create the OTP nav
+        var tpl = '<li class="nav-item"><a class="nav-link bg-white mb-1" href="#header[idx]">[name]</a></li>';
+        $( 'h2' ).each( function( idx, h2 ) {
+            $( h2 ).attr( 'id', 'header' + idx )
+            var name = $( h2 ).text().trim(),
+                dom_string = tpl.replace( '[name]', name ).replace( '[idx]', idx ),
+                header = $( dom_string );
+
+            $( '.header-list' ).append( header )
+        } );
+    }
+} );

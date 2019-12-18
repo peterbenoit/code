@@ -2,6 +2,7 @@
 title:  How to write good
 tags:
   - English
+type: post
 ---
 
 <ol>
