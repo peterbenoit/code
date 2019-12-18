@@ -4,23 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Slick Slider - carousel</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css' rel='stylesheet'>
-	<link href='https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css' rel='stylesheet'>
-	<link href='https://codepen.io/peterbenoit/pen/xxxXwMQ.css' rel='stylesheet'>
+	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css" rel="stylesheet">
+	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css" rel="stylesheet">
+	<link href="slider.html.css" rel="stylesheet">
 	<style>
-	 .cdc-card-slider.cdc-carousel-slider .card {
-	 margin: 5px;
+	/* .cdc-card-slider.cdc-carousel-slider .card {
+	 	margin: 5px;
 	}
 	.cdc-card-slider.cdc-carousel-slider .slider-prev,
 	.cdc-card-slider.cdc-carousel-slider .slider-next {
-	 top: calc(50% - 20px);
+		top: calc(50% - 20px);
 	}
 	.cdc-card-slider.cdc-carousel-slider .slick-slide.slick-active {
-	 box-shadow: none;
+	 	box-shadow: none;
 	}
 	.cdc-card-slider.cdc-carousel-slider.d-none + .cdc-slider-status {
-	 display: none;
-	}
+	 	display: none;
+	} */
 	</style>
 </head>
 <body translate="no">
@@ -228,10 +228,10 @@
 			</div>
 		</main>
 	</div>
-	<script src='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js'></script> 
-	<script src='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js'></script> 
-	<script src='https://codepen.io/peterbenoit/pen/yLLbKzE.js'></script> 
-	<script src='https://codepen.io/peterbenoit/pen/xxxXwMQ.js'></script> 
+	<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js"></script> 
+	<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js"></script> 
+	<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/js/app.min.js"></script>
+	<script src="slider.js"></script> 
 	<script>
         $( function() {
             slickInit( '#slider_1', {
@@ -288,21 +288,21 @@
             } );
 
             slickInit( '#slider_4', {
-	       'sliderType': 'carousel',
-	       'bodyClass': '',        
-	       'ariaLabel': '',
-	       'ariaLabelTarget': 'sliderLabel_4',
-	       'asNavFor': '#slider_3',
-	       'focusOnSelect': true,
-	       'centerMode': false,
-	       'responsive': [             
-	           { 'breakpoint': 1200, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },         
-	           { 'breakpoint': 992, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },
-	           { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-	           { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-	           { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }            
-	       ]   
-	   } );        
+				'sliderType': 'carousel',
+				'bodyClass': '',        
+				'ariaLabel': '',
+				'ariaLabelTarget': 'sliderLabel_4',
+				'asNavFor': '#slider_3',
+				'focusOnSelect': true,
+				'centerMode': false,
+				'responsive': [             
+					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },         
+					{ 'breakpoint': 992, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },
+					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+					{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }            
+	       		]   
+	   		} );        
 	    } );
 	</script>
 </body>
