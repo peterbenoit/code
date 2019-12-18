@@ -1,12 +1,12 @@
 ---
 layout: template
 permalink: testnoprism.html
-description: Test demo page description
-title: Test demo page title
+description: Page without PrismJs description
+title: Page without PrismJs
 type: demo
 localcss: projects.css
 localjs:
 includePrismJs: false
 ---
 
-content goes here?
+should not contain prism

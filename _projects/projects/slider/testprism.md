@@ -1,12 +1,12 @@
 ---
 layout: template
 permalink: testprism.html
-description: Test demo page description
-title: Test demo page title
+description: Page with PrismJs description
+title: Page with PrismJs
 type: demo
 localcss: 
 localjs:
 includePrismJs: true
 ---
 
-content goes here?
+should contain prism

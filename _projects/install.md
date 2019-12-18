@@ -5,7 +5,7 @@ type: project
 
 ## About
 
-I'm assuming you have Jekyll installed already. If not, [look here.](https://jekyllrb.com/docs/installation/)
+I'm assuming you have Jekyll installed already. If not, [look here.](https://jekyllrb.com/docs/ginstallation/)
 
 The installation instructions below are Linux-flavoured instructions. There's some notes on the Jekyll site [about running it on Windows](https://jekyllrb.com/docs/windows/).
 
@@ -39,6 +39,7 @@ If it does, you can begin customizing it.
 Unable to load the EventMachine C extension; To use the pure-ruby reactor, require 'em/pure_ruby'
 gem uninstall eventmachine
 gem install eventmachine --platform ruby
+gem install jekyll-assets
 
 ## Configuration
 

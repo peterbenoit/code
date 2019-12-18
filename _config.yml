@@ -21,9 +21,20 @@ include: ["_pages", "_portfolio"]
 
 # compress our sass output
 # NOTE: sass files need to begin with two lines of triple dashes, see https://jekyllrb.com/docs/assets/
+# sass:
+#    sass_dir: _sass
+#    style: :compressed
+
+# plugins: [bourbon, neat, jekyll-sitemap, jekyll-assets]
 sass:
-   sass_dir: _sass
-   style: :compressed
+  style: compressed
+assets:
+  sources:
+    - assets/css
+    - assets/js
+  compress:
+    css:  true
+    js:   uglifier
 
 # Turn the projects into a collection.
 collections:
