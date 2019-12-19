@@ -12,7 +12,10 @@
 	if( null !== target && null !== source ) {
 		var	code = document.createElement( 'code' );
 
-		target.setAttribute( 'data-line', 3 );
+		console.log( target, source )
+
+
+		target.setAttribute( 'data-line', 4 );
 
 		code.className = 'language-javascript line-numbers';
 		code.innerHTML = source.innerHTML.trim();
