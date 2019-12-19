@@ -7,7 +7,7 @@ highlighter:      rouge
 excerpt_separator: <!--more-->
 
 # Config for your profile.
-title:            peterbenoit.github.io/code  # Site title
+title:            Pete Benoit Blog            # Site title
 name:             Pete Benoit                 # Your name
 avatar:           /theme/img/avatar.jpg       # Path to an avatar image
 description:      
