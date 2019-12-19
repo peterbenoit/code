@@ -11,10 +11,13 @@ externalcss:
 externaljs:
 ---
 
+{% include breadcrumbs.html %}
+
 <div class="container">
+
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel">Slick Slider - Step Wizard</span>
+			<span class="h3" id="sliderLabel">Slick Slider - Step Wizard Slider</span>
 			<p>A form wizard, or a collection of sequential steps.</p>
 		</div>
 	</div>

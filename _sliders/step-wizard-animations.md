@@ -11,6 +11,8 @@ externalcss: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.mi
 externaljs: 
 ---
 
+{% include breadcrumbs.html %}
+
 <div class="container">
 	<div class="row">
 		<div class="col">

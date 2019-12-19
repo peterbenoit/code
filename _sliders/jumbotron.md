@@ -11,6 +11,8 @@ externalcss:
 externaljs:
 ---
 
+{% include breadcrumbs.html %}
+
 <div class="container">
 	<div class="row">
 		<div class="col-12">
