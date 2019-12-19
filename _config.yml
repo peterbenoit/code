@@ -46,7 +46,10 @@ collections:
     output: true
     title: portfolio
     permalink: /:collection/:name.html
-
+  sliders:
+    output: true
+    title: Sliders
+    permalink: /:collection/:name.html
 defaults:
 # Turn the profile sidebar on for all pages by default, except for the
 # collections, where it is off and replaced by useful things on the sidebar.
@@ -82,5 +85,10 @@ defaults:
     values:
       show_profile: false
       layout: defaults/list
-
+  # -
+  #   scope:
+  #     path: "_sliders"
+  #   values:
+  #     show_profile: false
+  #     layout: defaults/project
 

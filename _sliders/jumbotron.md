@@ -1,6 +1,6 @@
 ---
 layout: template
-permalink: projects/jumbotron.html
+permalink: sliders/jumbotron.html
 description: Jumbotron Slider built using Slick Slider
 title: Slick Slider - Jumbotron Slider 
 type: demo

@@ -1,6 +1,6 @@
 ---
 layout: template
-permalink: projects/carousel.html
+permalink: sliders/carousel.html
 description: Carousel built using Slick Slider
 title: Slick Slider - Carousel 
 type: demo
