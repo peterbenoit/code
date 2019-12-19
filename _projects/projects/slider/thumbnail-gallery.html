@@ -257,6 +257,9 @@
 		.cdc-gallery-slider {
 			margin-bottom: 1rem;
 		}
+		#list a {
+			text-decoration: none!important;
+		}
 	</style>
 </head>
 <body translate="no">
@@ -729,15 +732,22 @@ function showModal( data ) {
 		 		'dots': false,
 		 		'callback': function( slider, defaults, slick ) {
 					 var grid = $( '<div class="slick-grid row" />' ),
-					 list = '';
+					 	list = '';
 					
 					slider.addClass( 'cdc-gallery-slider' );
 					 
 		 			slick.$slides.each( function( i, t ) {
 		 				var $t = $( t );
-		 				img = $t.find( 'img' );
-						 grid.append( '<div class="col-4 mb-3"><a href="#" data-slide="' + i + '" class="card">' + t.innerHTML + '</a></div>' );
-						 list += '<li><a href="#" data-slide="'+i+'">' + $( t ).find('.card-title').text() + '</a></li>';
+						 img = $t.find( 'img' );
+						 
+						 if( 0 ===  i ) {
+							grid.append( '<div class="col-4 mb-3"><a href="#" data-slide="' + i + '" class="card bb-5 bb-primary">' + t.innerHTML + '</a></div>' );
+						 	list += '<li><a href="#" data-slide="'+i+'" class=" bb-5 bb-primary">' + $( t ).find('.card-title').text() + '</a></li>';
+						 } else {
+							grid.append( '<div class="col-4 mb-3"><a href="#" data-slide="' + i + '" class="card">' + t.innerHTML + '</a></div>' );
+						 	list += '<li><a href="#" data-slide="'+i+'">' + $( t ).find('.card-title').text() + '</a></li>';
+						 }
+
 		 			} );
 		 			if ( 'gallery' === defaults.sliderType ) {
 		 				if ( 'undefined' === typeof defaults.galleryTarget ) {
@@ -749,7 +759,9 @@ function showModal( data ) {
 		 			}
 		 			$( 'a[data-slide]' ).click( function( e ) {
 		 				e.preventDefault();
-		 				var idx = $( this ).data( 'slide' );
+						 var idx = $( this ).data( 'slide' );
+						 $( 'a[data-slide]' ).removeClass('bb-5 bb-primary' )
+						$( 'a[data-slide="'+$( this ).data( 'slide' )+'"]' ).addClass('bb-5 bb-primary')
 		 				slider.slick( 'slickGoTo', idx );
 		 			} );
 		 		},
