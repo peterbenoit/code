@@ -7,6 +7,8 @@ type: demo
 localcss: sliders.css
 localjs: sliders.js
 includePrismJs: false
+externalcss:
+externaljs:
 ---
 
 <div class="container">

@@ -2,10 +2,20 @@
 <script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js"></script> 
 <script src="https://www.cdc.gov/TemplatePackage/4.0/assets/js/app.min.js"></script>
 
+{% if page.externaljs And page.externaljs != "" And page.externaljs != nil %}
+    {% assign pgs = page.externaljs | split: "," %}
+    {% for pg in pgs %}
+        <script src="{{ pg | strip }}"></script> 
+    {% endfor %}
+{% endif %}
+
 {% if page.localjs And page.localjs != "" And page.localjs != nil %}
-<script src="{{ site.baseurl }}/js/{{ page.localjs }}"></script> 
+    {% assign pgs = page.localjs | split: "," %}
+    {% for pg in pgs %}
+        <script src="{{ site.baseurl }}/js/{{ pg | strip }}"></script> 
+    {% endfor %}
 {% endif %}
 
 {% if page.includePrismJs And page.includePrismJs != "" And page.includePrismJs != nil %}
-{% include structure/prismjs-scripts.html %}
+    {% include structure/prismjs-scripts.html %}
 {% endif %}
