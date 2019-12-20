@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+---
+---
+
 <html class="theme-blue" lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Slick Slider - Image Slider Five Wide</title>
+	<title>Slick Slider - Image Slider Three Wide</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css" rel="stylesheet">
 	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css" rel="stylesheet">
@@ -20,12 +22,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<span class="h3" id="sliderLabel">Slick Slider -  Image Slider Five Wide</span>
-						<p>The standard card slider with the settings updated to display five cards at a time.  This is used for displaying images with associated content, such as a title and a short description.</p>
+						<span class="h3" id="sliderLabel">Slick Slider -  Image Slider Three Wide</span>
+						<p>The standard card slider with the settings updated to display three cards at a time.  This is used for displaying images with associated content, such as a title and a short description.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col">
+					<div class="col-lg-9">
 						<div class="cdc-card-slider">
 							<div class="card">
 								<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
@@ -157,8 +159,8 @@ $( function() {
 		'ariaLabel': '',
 		'ariaLabelTarget': 'sliderLabel',
 		'responsive': [ 
-			{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 5, 'slidesToScroll': 1 } },         
-			{ 'breakpoint': 992, 'settings': { 'slidesToShow': 5, 'slidesToScroll': 1 } },
+			{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 1 } },         
+			{ 'breakpoint': 992, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 1 } },
 			{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
 			{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 			{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
