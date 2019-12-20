@@ -1,10 +1,7 @@
 <p class="card-text">
-    {% for link in site.data.profile %}
-    <a href="{{link.href}}" class="d-flex align-items-center mb-1">
-        <span class="icon grey mr-3">
-            {% include {{link.icon}} %}
-        </span>
-        {{link.caption}}
-    </a>
-    {% endfor %}
+    <!-- <ul> -->
+        {% for link in site.data.profile %}
+        <div class="text-left"><i class="{{ link.icon ]}} text-black mr-3"></i><a href="{{link.href}}" class="mb-1">{{link.caption}}</a></div>
+        {% endfor %}
+    <!-- </ul> -->
 </p>
