@@ -190,6 +190,15 @@
 			}
 		}
 	}
+
+	&.cdc-thumbnail-slider {
+		.slick-slide {
+			margin: 10px 1px;
+			&.slick-active {
+				box-shadow: none;
+			}		
+		}
+	}
 }
 
 body.modal-open {

@@ -1,6 +1,7 @@
 function slickInit( target, settings ) {
 	var t = target,
 		s = settings || {},
+		slik = null,
 		bps = {
 			xs: 0,
   			sm: 576,
@@ -132,19 +133,15 @@ function slickInit( target, settings ) {
 		if( 3 < $( t ).find( '.jumbotron').length ) {
 			console.error( 'Jumbotron slider should have 3 or fewer images' );
 		}
-	} else if( 'carousel' === defaults.sliderType ) {
-        $( t ).addClass( 'cdc-carousel-slider' );
-        // this could also be done with a callback in slickInit
-        // 'callback': function( t, d ) {
-        //     t.addClass( 'cdc-carousel-slider' );
-        // }       
-    }
+	}
 		
 	// NOTE: the next two methods do basically the same thing, 
 	// EXCEPT we need to call init specifically in order to append the slider-status div	
 	// handling the appropriate events for tracking paging info
 	$( t ).on( 'init', function( event, slick, currentSlide, nextSlide ) {
 		var $t = $( this );
+		
+		slik = slick;
 				
 		$t.after( '<div class="cdc-slider-status" />' );
 		
@@ -298,7 +295,7 @@ function slickInit( target, settings ) {
 	
 	// Optional: callback function
 	if( null !== defaults.callback ) {
-		defaults.callback( $( t ), defaults );
+		defaults.callback( $( t ), defaults, slik );
 	}
 
 	// Optional: always display status
