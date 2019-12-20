@@ -1,8 +1,11 @@
-<!DOCTYPE html>
+---
+#front stuff
+---
+
 <html class="theme-blue" lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>DataTables Sort &amp; Filter - Stop HIV data</title>
+	<title>DataTables Sort &amp; Filter - NIOSH data</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<link href='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css' rel='stylesheet'>
 	<link href='https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css' rel='stylesheet'>
@@ -37,6 +40,11 @@
 	.dataTables_info {
 	 font-size: .75rem;
 	}
+
+	#results td, #results th {
+	 max-width: 100px;
+	 overflow: hidden;
+	}
 	</style>
 </head>
 <body translate="no">
@@ -46,7 +54,7 @@
 				<div class="col-md-3 border"></div>
 				<div class="col-md-9">
 					<h3>DataTables Sort &amp; Filter</h3>
-					<p>Data from https://www.cdc.gov/stophivtogether/library</p><a class="btn btn-outline-primary" href="#" id="datatable"><i class="material-icons">view_headline</i> Datatable</a> <a class="btn btn-outline-secondary" href="#" id="card"><i class="material-icons">view_module</i> Card</a> <a class="btn btn-outline-secondary" href="#" id="details"><i class="material-icons">view_stream</i> Details</a>
+					<p>Data from https://www.cdc.gov/niosh/programs/hwd/resources.html</p><a class="btn btn-outline-primary" href="#" id="datatable"><i class="material-icons">view_headline</i> Datatable</a> <a class="btn btn-outline-secondary" href="#" id="card"><i class="material-icons">view_module</i> Card</a> <a class="btn btn-outline-secondary" href="#" id="details"><i class="material-icons">view_stream</i> Details</a>
 					<table class="table table-striped table-bordered fs0875" id="results" width="100%"></table>
 				</div>
 			</div>
@@ -68,7 +76,9 @@
 	     var filters = {},
 	   sort = {},
 	   items = {},
-	   tableId = '#results';
+	   keys = {},
+	   tableId = '#results',
+	   dataUrl = 'https://www.cdc.gov/niosh/programs/hwd/files/sortable-5.json';
 
 	function init() {
 	   if ( $.fn.DataTable.isDataTable( tableId ) ) {
@@ -95,13 +105,15 @@
 	   
 	   // TODO: should only do this once, on the first load
 	   // using getJSON to fetch the search json 
-	   $.getJSON( 'https://www.cdc.gov/stophivtogether/library/search.json', function( result ) {
+	   $.getJSON( dataUrl, function( result ) {
 	       filters = result.filters;
 	       sort = result.sort;
 	       items = result.items;
+	       keys = Object.keys( result.items[0] );
+	       
 
 	       setupFilters( filters );
-	       setupTable( items );
+	       setupTable( items, keys );
 	       setupSort( sort );
 	   } );
 	}
@@ -178,7 +190,12 @@
 	}
 
 	// create the datatable
-	function setupTable( items ) {
+	function setupTable( items, keys ) {
+	   var cols = [];
+	   for( var i = 0; i < keys.length; i++ ) {
+	       cols.push( { 'data': keys[i], 'title': keys[i] } );
+	   }
+
 	   var tableOptions = {
 	       'tablecols': 1,                     // number of BS4 columns
 	       'target': tableId,                  // target table (datatables.net requires a table to start with?)
@@ -195,27 +212,26 @@
 	       //  ]
 	       // },
 	       // 'responsive': true,
-	       'columns': [ 
-	           {   
-	               'data': 'Iconic Image',
-	               'render': function( d ) {
-	                   var url = d.indexOf( '/' ) === 0 ? 'https://www.cdc.gov' + d : d;
-	                   return '<a href="' + url + '" target="_blank">Image</a>';
-	               }
-	           },
-	           { 'data': 'Title', 'title': 'Title' },
-	           { 'data': 'Link Descriptor Text', 'title': 'Description' },
-	           { 'data': 'Campaign Resources Name', 'title': 'Name' },
-	           { 'data': 'Audience', 'title': 'Audience' },
-	           { 'data': 'Format', 'title': 'Format' },
-	           { 'data': 'Topic', 'title': 'Topic' },
-	           { 'data': 'Language', 'title': 'Language' },
-	       ],
+	       'columns': cols,
+	       
+	       // [ 
+	       //  // {    
+	       //  //  'data': 'Iconic Image',
+	       //  //  'render': function( d ) {
+	       //  //      var url = d.indexOf( '/' ) === 0 ? 'https://www.cdc.gov' + d : d;
+	       //  //      return '<a href="' + url + '" target="_blank">Image</a>';
+	       //  //  }
+	       //  // },
+	       //  { 'data': 'Title', 'title': 'Title' },
+	       //  { 'data': 'Link Descriptor Text', 'title': 'Description' },
+	       //  { 'data': 'Public URL', 'title': 'URL' },
+	       //  { 'data': 'Meta Keywords', 'title': 'Keywords' },
+	       // ],
 	       'columnDefs': [ 
-	           {
-	               'targets': [ 0 ],
-	               'visible': false
-	           },
+	           // {
+	           //  'targets': [ 0 ],
+	           //  'visible': false
+	           // },
 	       ],
 	       'pageLength': 9,
 	       'stateSave': true,
@@ -272,10 +288,10 @@
 	       colnames = [];
 	   
 	   // store the column names for use in filtering
-	   table.columns().every( function( index ) {
-	       colnames.push( columns[ index ].data.split( ' ' ).join( '' ) );
-	   } );
-
+	   // table.columns().every( function( index ) {
+	   //  // colnames.push( columns[ index ].data.split( ' ' ).join( '' ) );
+	   // } );
+	   
 	   // update the table when making a select filter change
 	   $( '.custom-select-filter' ).on( 'change', function() { 
 	       var t = $( this );
@@ -286,7 +302,8 @@
 	       updateUrlParameter( location.href, t[0].name, t.val() );
 	       
 	       // search the table/column for value
-	       table.column( colnames.indexOf( t[0].name ) ).search( t.val() ).draw();
+	       // table.column( colnames.indexOf( t[0].name ) ).search( t.val() ).draw();
+	       table.column( columns.indexOf( t[0].name ) ).search( t.val() ).draw();
 	   } );
 	   
 	   var search = $( '<input type="search" class="form-control" placeholder="Search" />' );
@@ -304,11 +321,11 @@
 	   
 	   url = fixBeginningSlash( url );
 	   img = fixBeginningSlash( img );
-	   
+
 	   var openrow = '<div class="row">',
 	       opencard = '<div class="col-lg-4 mb-2"><a href="'+url+'" class="card h-100" style="border: 1px solid rgba(0,0,0,.125)">',
 	       cardbody = '<div class="card-body">',
-	       cardimg = '<img class="card-img-top" src="'+img+'" alt="">',
+	       cardimg = 'undefined' !== typeof img ? '<img class="card-img-top" src="'+img+'" alt="">' : '',
 	       close = '</div>',
 	       closecard = '</a></div></div>',
 	       description = '',
@@ -341,7 +358,7 @@
 	   var openrow = '<div class="row">',
 	       opencard = '<div class="col mb-2"><a href="'+url+'" class="card h-100" style="border: 1px solid rgba(0,0,0,.125)">',
 	       cardbody = '<div class="card-body"><div class="row">',
-	       cardimg = '<div class="col-4"><img class="card-img-left w-100" src="'+img+'" alt=""></div>',
+	       cardimg = 'undefined' !== typeof img ? '<div class="col-4"><img class="card-img-left w-100" src="'+img+'" alt=""></div>' : '',
 	       closebody = '</div></div>',
 	       closecard = '</a></div>',
 	       description = '',

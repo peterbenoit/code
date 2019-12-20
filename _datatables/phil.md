@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+---
+#front stuff
+---
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">

@@ -1,8 +1,11 @@
-<!DOCTYPE html>
+---
+#front stuff
+---
+
 <html class="theme-blue" lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>DataTables Sort &amp; Filter - NIOSH data</title>
+	<title>DataTables Sort &amp; Filter - DHDSP data</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<link href='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css' rel='stylesheet'>
 	<link href='https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css' rel='stylesheet'>
@@ -33,6 +36,9 @@
 	 max-width: 100%;
 	 overflow-x: hidden;
 	}
+	.dataTables_wrapper .col-sm-12 {
+	 overflow-x: scroll;
+	}
 
 	.dataTables_info {
 	 font-size: .75rem;
@@ -51,7 +57,7 @@
 				<div class="col-md-3 border"></div>
 				<div class="col-md-9">
 					<h3>DataTables Sort &amp; Filter</h3>
-					<p>Data from https://www.cdc.gov/niosh/programs/hwd/resources.html</p><a class="btn btn-outline-primary" href="#" id="datatable"><i class="material-icons">view_headline</i> Datatable</a> <a class="btn btn-outline-secondary" href="#" id="card"><i class="material-icons">view_module</i> Card</a> <a class="btn btn-outline-secondary" href="#" id="details"><i class="material-icons">view_stream</i> Details</a>
+					<p>Data from https://www.cdc.gov/dhdsp/maps/gisx/</p><a class="btn btn-outline-primary" href="#" id="datatable"><i class="material-icons">view_headline</i> Datatable</a> <a class="btn btn-outline-secondary" href="#" id="card"><i class="material-icons">view_module</i> Card</a> <a class="btn btn-outline-secondary" href="#" id="details"><i class="material-icons">view_stream</i> Details</a>
 					<table class="table table-striped table-bordered fs0875" id="results" width="100%"></table>
 				</div>
 			</div>
@@ -75,7 +81,7 @@
 	   items = {},
 	   keys = {},
 	   tableId = '#results',
-	   dataUrl = 'https://www.cdc.gov/niosh/programs/hwd/files/sortable-5.json';
+	   dataUrl = 'https://www.cdc.gov/dhdsp/maps/gisx/mapgallery/gisx-mapgallery-filter.json';
 
 	function init() {
 	   if ( $.fn.DataTable.isDataTable( tableId ) ) {
@@ -107,7 +113,6 @@
 	       sort = result.sort;
 	       items = result.items;
 	       keys = Object.keys( result.items[0] );
-	       
 
 	       setupFilters( filters );
 	       setupTable( items, keys );
@@ -192,7 +197,8 @@
 	   for( var i = 0; i < keys.length; i++ ) {
 	       cols.push( { 'data': keys[i], 'title': keys[i] } );
 	   }
-
+	       
+	   console.log( cols )
 	   var tableOptions = {
 	       'tablecols': 1,                     // number of BS4 columns
 	       'target': tableId,                  // target table (datatables.net requires a table to start with?)
@@ -314,7 +320,7 @@
 
 	function drawCard( data ) {
 	   var url = data['Public URL'],
-	       img = data['Iconic Image'];
+	       img = data['Image'];
 	   
 	   url = fixBeginningSlash( url );
 	   img = fixBeginningSlash( img );
@@ -328,10 +334,10 @@
 	       description = '',
 	       output = '';
 
-	   if( 'undefined' === typeof data['Link Descriptor Text'] ) {
+	   if( 'undefined' === typeof data['Description'] ) {
 	       description = '<span class="mark mark-yellow">NO DESCRIPTION PROVIDED</span>';
 	   } else {
-	       description = data['Link Descriptor Text'].toString().replace( /<[^>]*>?/gm, '' ).trim();
+	       description = data['Description'].toString().replace( /<[^>]*>?/gm, '' ).trim();
 	   }
 
 	   output += '<div class="card-title h4">' + data['Title'].toString().trim() + '</div>';
@@ -347,7 +353,7 @@
 
 	function drawDetails( data ) {
 	   var url = data['Public URL'],
-	       img = data['Iconic Image'];
+	       img = data['Image'];
 	   
 	   url = fixBeginningSlash( url );
 	   img = fixBeginningSlash( img );
@@ -361,10 +367,10 @@
 	       description = '',
 	       output = '<div class="col"><div class="card-title h4">' + data['Title'].toString().trim() + '</div>';
 
-	   if( 'undefined' === typeof data['Link Descriptor Text'] ) {
+	   if( 'undefined' === typeof data['Description'] ) {
 	       description = '<span class="mark mark-yellow">NO DESCRIPTION PROVIDED</span>';
 	   } else {
-	       description = data['Link Descriptor Text'].toString().replace( /<[^>]*>?/gm, '' ).trim();
+	       description = data['Description'].toString().replace( /<[^>]*>?/gm, '' ).trim();
 	   }
 
 	   if( description.length > 500 ) {

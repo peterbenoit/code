@@ -50,6 +50,10 @@ collections:
     output: true
     title: Sliders
     permalink: /:collection/:name.html
+  datatables:
+    output: true
+    title: Datatables
+    permalink: /:collection/:name.html    
 defaults:
 # Turn the profile sidebar on for all pages by default, except for the
 # collections, where it is off and replaced by useful things on the sidebar.
