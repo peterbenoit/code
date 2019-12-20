@@ -20,7 +20,9 @@
 </head>
 <body translate="no">
 	<h3>File Upload</h3>
-	<p>Using a CSV or JSON file to populate Datatables on the fly. See source for data examples.</p>
+	<p>Using a CSV or JSON file to populate Datatables on the fly. Try these samples.</p>
+	<p><a href="https://raw.githubusercontent.com/peterbenoit/cdn/master/data/datatables/data.csv" download>data.csv</a></p>
+	<p><a href="https://raw.githubusercontent.com/peterbenoit/cdn/master/data/datatables/data.json" download>data.json</a></p>
 	<form>
 		<input type="file"> <span id="fileSize">total size: 0</span>
 	</form>
