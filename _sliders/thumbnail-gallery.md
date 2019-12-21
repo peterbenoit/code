@@ -159,11 +159,11 @@ window.addEventListener( 'DOMContentLoaded', function() {
 						img = $t.find( 'img' );
 						
 						if( 0 ===  i ) {
-						grid.append( '<div class="col-4 mb-3"><a href="#" data-slide="' + i + '" class="card bb-5 bb-primary">' + t.innerHTML + '</a></div>' );
-						list += '<li><a href="#" data-slide="'+i+'" class=" bb-5 bb-primary">' + $( t ).find('.card-title').text() + '</a></li>';
+							grid.append( '<div class="col-4 mb-3"><a href="#" data-slide="' + i + '" class="card bb-5 bb-primary">' + t.innerHTML + '</a></div>' );
+							list += '<li><a href="#" data-slide="'+i+'" class=" bb-5 bb-primary">' + $( t ).find('.card-title').text() + '</a></li>';
 						} else {
-						grid.append( '<div class="col-4 mb-3"><a href="#" data-slide="' + i + '" class="card">' + t.innerHTML + '</a></div>' );
-						list += '<li><a href="#" data-slide="'+i+'">' + $( t ).find('.card-title').text() + '</a></li>';
+							grid.append( '<div class="col-4 mb-3"><a href="#" data-slide="' + i + '" class="card">' + t.innerHTML + '</a></div>' );
+							list += '<li><a href="#" data-slide="'+i+'">' + $( t ).find('.card-title').text() + '</a></li>';
 						}
 
 				} );

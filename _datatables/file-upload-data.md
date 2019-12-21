@@ -5,11 +5,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" rel="apple-touch-icon" type="image/png">
-	<meta content="CodePen" name="apple-mobile-web-app-title">
-	<link href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" rel="shortcut icon" type="image/x-icon">
-	<link href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" rel="mask-icon" type="">
-	<title>CodePen - File upload CSV or JSON into Datatables.net using Javascript</title>
+	<title>File upload CSV or JSON into Datatables.net using Javascript</title>
     <!-- <link href='https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css' rel='stylesheet'> -->
     <link href="https://cdn.datatables.net/v/bs4-4.1.1/dt-1.10.20/datatables.min.css" rel="stylesheet">
 	<style>
