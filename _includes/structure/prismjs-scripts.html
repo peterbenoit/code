@@ -12,10 +12,11 @@
 	if( null !== target && null !== source ) {
 		var	code = document.createElement( 'code' );
 
-		console.log( target, source )
-
-
-		target.setAttribute( 'data-line', 4 );
+		// data-line is used to highlight certain lines in the prism output 
+		// use like: data-line="5-10,20"
+		if( source.hasAttribute( 'data-line' ) ) {
+			target.setAttribute( 'data-line', source.getAttribute( 'data-line' ) );
+		}
 
 		code.className = 'language-javascript line-numbers';
 		code.innerHTML = source.innerHTML.trim();

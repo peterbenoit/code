@@ -6,7 +6,7 @@ title: Slick Slider - Single card slider
 type: demo
 localcss: sliders.css
 localjs: sliders.js
-includePrismJs: false
+includePrismJs: true
 externalcss:
 externaljs:
 ---
@@ -143,11 +143,17 @@ externaljs:
 			</div>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col">
+			<pre id="script-output"></pre>
+		</div>
+	</div>	
 </div>
 
-<script id="prism-source">
+<script id="prism-source" data-line="10-13">
 	window.addEventListener( 'DOMContentLoaded', function() {
 		( function( $ ) {
+			
 			slickInit( '.cdc-card-slider', {
 				'ariaLabel': '',
 				'ariaLabelTarget': 'sliderLabel',
@@ -167,8 +173,7 @@ externaljs:
 					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } }
-				],
-				'callback': function() { },
+				]
 			} );
 
 		} )( jQuery );
