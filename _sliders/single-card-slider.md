@@ -151,31 +151,31 @@ externaljs:
 </div>
 
 <script id="prism-source" data-line="10-13">
-	window.addEventListener( 'DOMContentLoaded', function() {
-		( function( $ ) {
-			
-			slickInit( '.cdc-card-slider', {
-				'ariaLabel': '',
-				'ariaLabelTarget': 'sliderLabel',
-				'centerMode': false,
-				'dots': false,
-				'showStatus': true,
-				'slideCss': {
-					'box-shadow': 'none',
-					'margin': '0'
-				},
-				'sliderCss': { },
-				'prevArrow': '<img role="button" class="slider-prev" src="https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/previous-128.png" style="background:rgba(255,255,255,.25);left: -30px!important" />',
-				'nextArrow': '<img role="button" class="slider-next" src="https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/next-128.png" style="background:rgba(255,255,255,.25);right: -30px!important" />',
-				'responsive': [ 
-					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-					{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-					{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } }
-				]
-			} );
+window.addEventListener( 'DOMContentLoaded', function() {
+	( function( $ ) {
+		
+		slickInit( '.cdc-card-slider', {
+			'ariaLabel': '',
+			'ariaLabelTarget': 'sliderLabel',
+			'centerMode': false,
+			'dots': false,
+			'showStatus': true,
+			'slideCss': {
+				'box-shadow': 'none',
+				'margin': '0'
+			},
+			'sliderCss': { },
+			'prevArrow': '<img role="button" class="slider-prev" src="https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/previous-128.png" style="background:rgba(255,255,255,.25);left: -30px!important" />',
+			'nextArrow': '<img role="button" class="slider-next" src="https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/next-128.png" style="background:rgba(255,255,255,.25);right: -30px!important" />',
+			'responsive': [ 
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } }
+			]
+		} );
 
-		} )( jQuery );
-	} );
+	} )( jQuery );
+} );
 </script>
