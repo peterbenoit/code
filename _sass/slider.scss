@@ -192,12 +192,9 @@
 	}
 
 	&.cdc-thumbnail-slider {
-		.slick-slide {
-			margin: 10px 1px;
-			&.slick-active {
-				box-shadow: none;
-			}		
-		}
+		.slider-prev, .slider-next	{
+			top: calc(50% - 20px);
+		}	
 	}
 }
 

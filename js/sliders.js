@@ -179,20 +179,25 @@ function slickInit( target, settings ) {
 	} );
 	
 	$( t ).on( 'breakpoint', function( event, slick, breakpoint ) {
-		// Optional: CSS we want to apply to each slide at runtime
+		// Optional: CSS we want to apply to each slide at breakpoint
 		if( '' !== defaults.slideCss ) {
 			$( t ).find( '.slick-slide' ).css( defaults.slideCss );
 		}
 
-		// Optional: CSS we want to apply to each slide at runtime
-		if( '' !== defaults.slideCss ) {
-			$( t ).find( '.slick-slide' ).css( defaults.slideCss );
+		// Optional: className we want to add at breakpoint
+		if( '' !== defaults.slideClass ) {
+			$( t ).find( '.slick-slide' ).addClass( defaults.slideClass );
 		}
 
-		// Optional: CSS we want to apply to the slider at runtime
+		// Optional: CSS we want to apply to the slider at breakpoint
 		if( '' !== defaults.sliderCss ) {
 			$( t ).css( defaults.sliderCss );
 		}
+
+		// Optional: CSS we want to apply to each slide at breakpoint
+		if( '' !== defaults.sliderClass ) {
+			$( t ).addClass( defaults.sliderClass );
+		}		
 	} );
 	
 	// handle metrics capture on events in the slider
@@ -270,27 +275,37 @@ function slickInit( target, settings ) {
 	
 	// Optional: CSS we want to apply to each slide at runtime
 	if( '' !== defaults.slideCss ) {
-		$( t ).find( '.slick-slide' ).css( defaults.slideCss );
+		if( 'object' === typeof defaults.slideCss ) {
+			$( t ).find( '.slick-slide' ).css( defaults.slideCss );
+		} else {
+			console.error( 'slideCss needs to be a JSON representation of a CSS string. E.g. {"border": "1px solid red"} ');
+		}
 	}
 	
 	// Optional: CSS class we want to apply to each slide at runtime
 	if( '' !== defaults.slideClass ) {
-		$( t ).find( '.slick-slide' ).addClass( defaults.slideClass );
+		// remove the first character if it's a dot
+		var cn = ( '.' === defaults.slideClass[0]) ? defaults.slideClass.substr(1) : defaults.slideClass;
+
+		$( t ).find( '.slick-slide' ).addClass( cn );		
 	}
-	
-	// Optional: CSS we want to apply to each slide at runtime
-	if( '' !== defaults.slideCss ) {
-		$( t ).find( '.slick-slide' ).css( defaults.slideCss );
-	}
-	
-	// Optional: CSS we want to apply to each slide at runtime
+
+	// Optional: Classname we want to add to the slider at runtime
 	if( '' !== defaults.sliderClass ) {
-		$( t ).addClass( defaults.sliderClass );
+
+		// remove the first character if it's a dot
+		var cn = ( '.' === defaults.sliderClass[0]) ? defaults.sliderClass.substr(1) : defaults.sliderClass;
+
+		$( t ).addClass( cn );
 	}	
 	
 	// Optional: CSS we want to apply to the slider at runtime
 	if( '' !== defaults.sliderCss ) {
-		$( t ).css( defaults.sliderCss );
+		if( 'object' === typeof defaults.sliderCss ) {
+			$( t ).css( defaults.sliderCss );
+		} else {
+			console.error( 'sliderCss needs to be a JSON representation of a CSS string. E.g. {"border": "1px solid red"} ');
+		}		
 	}	
 	
 	// Optional: callback function
