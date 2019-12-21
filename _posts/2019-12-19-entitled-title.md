@@ -5,4 +5,4 @@ tags:
 type: post
 ---
 
-<p>A book is entitled to be titled but not entitled with a title.</p>
+<p>A book is entitled to have a title but not entitled with a title.</p>
