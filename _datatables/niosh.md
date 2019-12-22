@@ -46,6 +46,11 @@
 	 overflow: hidden;
 	}
 	</style>
+	<script>
+window.addEventListener("hashchange", function(e) {
+console.log('hash')
+})	
+	</script>
 </head>
 <body translate="no">
 	<div class="container d-flex flex-wrap body-wrapper">
@@ -448,6 +453,17 @@
 	   
 	   init();
 	} );
+
+	$( window ).scroll( function() {
+            sessionStorage.scrollPos = $( window ).scrollTop();
+    } );
+	
+	// we update the querystring on events which keeps our event state in history, but doesn't allow refresh on back/forward button nav
+	// this captures that navigation and redirects 
+	window.onpopstate = function(event) {
+		//console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+		top.location.href = document.location;
+	};
 	</script>
 </body>
 </html>
