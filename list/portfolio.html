@@ -25,46 +25,60 @@ type: list
 
 <script type="text/javascript">
 
-    var parseHash = function() {
-        if (document.location.hash.length > 0) {
-            var skill = document.location.hash.slice(1)
-            var name = $(".skill-" + skill).first().text()
-            showPortfolioBySkill(skill, name)
-        }
-        else {
-            clearSkills()
-        }
-    }
 
-    $(document).ready(parseHash)
 
-    $(window).on('hashchange', parseHash)
+    window.addEventListener( 'DOMContentLoaded', function() {
+	    ( function( $ ) {
 
-    var showPortfolioBySkill = function(skill, name) {
-        $("#currently-showing").show()
-        $(".card-portfolio").hide()
-        $(".skill").removeClass("bg-warning")
-            .addClass("bg-white")
-            .removeClass("text-dark")
-        $(".card-portfolio").each(function(idx, card) {
-            var matches = $(card).find(".skill-" + skill)
-            if (matches.length > 0) $(card).show()
-        })
-        $(".skill-" + skill).removeClass("bg-white")
-            .addClass("bg-warning")
-            .addClass("text-dark")
-            .blur()
-        $("#active-skill").html(name)
-    }
 
-    var clearSkills = function() {
-        $("#currently-showing").hide()
-        $(".card-portfolio").show()
-        $(".skill").removeClass("bg-warning")
-            .addClass("bg-white")
-            .removeClass("text-dark")
-        document.location.hash = ""
-    }
+            var parseHash = function() {
+                if (document.location.hash.length > 0) {
+                    var skill = document.location.hash.slice(1)
+                    var name = $(".skill-" + skill).first().text()
+                    showPortfolioBySkill(skill, name)
+                }
+                else {
+                    clearSkills()
+                }
+            }    
+
+
+
+            var showPortfolioBySkill = function(skill, name) {
+                $("#currently-showing").show()
+                $(".card-portfolio").hide()
+                $(".skill").removeClass("bg-warning")
+                    .addClass("bg-white")
+                    .removeClass("text-dark")
+                $(".card-portfolio").each(function(idx, card) {
+                    var matches = $(card).find(".skill-" + skill)
+                    if (matches.length > 0) $(card).show()
+                })
+                $(".skill-" + skill).removeClass("bg-white")
+                    .addClass("bg-warning")
+                    .addClass("text-dark")
+                    .blur()
+                $("#active-skill").html(name)
+            }
+
+            var clearSkills = function() {
+                $("#currently-showing").hide()
+                $(".card-portfolio").show()
+                $(".skill").removeClass("bg-warning")
+                    .addClass("bg-white")
+                    .removeClass("text-dark")
+                document.location.hash = ""
+            }          
+            
+            parseHash();
+
+$(window).on('hashchange', parseHash)
+
+
+        } )( jQuery );
+} );
+
+
 
 </script>
 
