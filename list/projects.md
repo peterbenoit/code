@@ -13,6 +13,7 @@ type: list
 
 <ul>
     <li><a href="/code/datatables/">Datatables</a></li>
-    <li><a href="/code/sliders/">Sliders</a></li>
     <li><a href="/code/playground/">Playground</a></li>
+    <li><a href="/code/sliders/">Sliders</a></li>
+    <li><a href="/code/syntaxhighlighter/">Syntax Highlighter</a></li>
 </ul>
