@@ -58,6 +58,10 @@ collections:
     output: true
     title: Playground
     permalink: /:collection/:name.html
+  syntaxhighlighter:
+    output: true
+    title: Syntax Highlighter
+    permalink: /:collection/:name.html    
     
 defaults:
 # Turn the profile sidebar on for all pages by default, except for the
