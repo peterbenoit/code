@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+---
+---
+
 <html class="theme-blue" lang="en">
 <head>
 	<meta charset="UTF-8">
