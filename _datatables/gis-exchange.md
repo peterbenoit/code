@@ -451,6 +451,17 @@
 	   
 	   init();
 	} );
+
+		$( window ).scroll( function() {
+			sessionStorage.scrollPos = $( window ).scrollTop();
+        } );
+
+        // we update the querystring on events which keeps our event state in history, but doesn't allow refresh on back/forward button nav
+        // this captures that navigation and redirects 
+        window.onpopstate = function(event) {
+            //console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+            top.location.href = document.location;
+        };	
 	</script>
 </body>
 </html>
