@@ -139,7 +139,6 @@ externaljs:
 	</div>
 </div>
 
-
 <script id="prism-source">
 	window.addEventListener( 'DOMContentLoaded', function() {
 		( function( $ ) {
@@ -157,6 +156,7 @@ externaljs:
 					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 				]
 			} );
+			
 		} )( jQuery );
 	} );
 </script>
