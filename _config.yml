@@ -62,7 +62,10 @@ collections:
     output: true
     title: Syntax Highlighter
     permalink: /:collection/:name.html    
-    
+  bookmarklets:
+    output: true
+    title: Bookmarklets
+    permalink: /:collection/:name.html      
 defaults:
 # Turn the profile sidebar on for all pages by default, except for the
 # collections, where it is off and replaced by useful things on the sidebar.
