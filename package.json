@@ -1,0 +1,25 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "* This repo builds directly to GitHub pages: https://peterbenoit.github.io/code/",
+  "main": "index.js",
+  "dependencies": {
+    "fancy-log": "^1.3.3",
+    "i": "^0.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterbenoit/code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterbenoit/code/issues"
+  },
+  "homepage": "https://github.com/peterbenoit/code#readme"
+}
