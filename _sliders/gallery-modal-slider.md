@@ -11,6 +11,17 @@ externalcss: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.mi
 externaljs:
 ---
 
+<style>
+body.modal-open .cdc-card-slider .slider-next,body.modal-open .cdc-card-slider .slider-prev {
+    display: block!important;
+}
+
+.modal-body {
+	padding: 0;
+}
+
+</style>
+
 {% include breadcrumbs.html %}
 
 <div class="container">
@@ -76,7 +87,7 @@ externaljs:
 				<path class="fill-w" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg></button>
 			</div>
 			<div class="modal-body">
-				<div class="container">
+				<div class="a">
 					<div class="cdc-card-slider">
 						<div class="card">
 							<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
@@ -186,7 +197,8 @@ window.addEventListener( 'DOMContentLoaded', function() {
 					'bodyClass': '',		
 					'ariaLabel': '',
 					'ariaLabelTarget': 'sliderLabel',
-					'arrows': true,
+					'centerMode': false,
+					'dots': false,
 					'responsive': [
 						{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 						{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
