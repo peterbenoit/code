@@ -15,7 +15,7 @@
 <div class="container d-flex flex-wrap body-wrapper">
 <main class="col-12 order-lg-2" role="main" aria-label="Main Content Area">
 <p>Using <a href="https://datatables.net/">datatables</a> to display the <a href="https://www.cdc.gov/wcms/4.0/cdc-wp/image-types/standard-icons.html">icons gallery</a>. There are <i>956</i> icons currently defined in the <a href="https://www.cdc.gov/TemplatePackage/4.0/assets/json/cdc_iconfont_manifest.json">icon font manifest JSON</a>.</p>
-<div class="alert alert-info col-5" role="alert">
+<div class="alert alert-info col-md-5" role="alert">
 <span class="x32 fill-p cdc-icon-info-circle"></span> Clicking on an icon will copy it to your clipboard.
 </div>
 <table id="icons"></table>
