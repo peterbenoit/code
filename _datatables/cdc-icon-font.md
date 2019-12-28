@@ -25,6 +25,22 @@
 		display:none;
 		font-size: smaller;
 	}
+
+	@media (max-width: 767.98px) { 
+		.paginate_button {
+			display: none;
+		}
+		.pagination li {
+			display: none;
+		}
+		.pagination li.previous, li.next {
+			display: inline;
+		}
+
+		div.dataTables_wrapper div.dataTables_info {
+			padding-top: 0;
+		}
+	}
 </style>
 </head>
 <body translate="no">
@@ -43,17 +59,6 @@
 	</label>
   </div>
 <table id="datatable" class="table table-striped"></table>
-<pre style="font-size:.5rem"><code>
-  "x-ray-solid": {
-    "index": 955,
-    "title": "x-ray-solid",
-    "class": "cdc-icon-x-ray-solid",
-    "path": "../icons/font-awesome/solid/x-ray-solid.svg",
-    "folder": "font-awesome-solid",
-    "friendlyName": "x ray solid"
-  }
-</code>
-</pre>
 </main>
 </div>
 <script src='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js'></script>
