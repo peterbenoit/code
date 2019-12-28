@@ -10,6 +10,11 @@
 <link rel='stylesheet' href='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css'>
 <link rel='stylesheet' href='https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css'>
 <link rel='stylesheet' href='https://cdn.datatables.net/v/bs4/dt-1.10.20/cr-1.5.2/kt-2.5.1/sc-2.0.1/datatables.min.css'>
+<style>
+	.card {
+		cursor: pointer;
+	}
+</style>
 </head>
 <body translate="no">
 <div class="container d-flex flex-wrap body-wrapper">
@@ -19,7 +24,7 @@
 <span class="x32 fill-p cdc-icon-info-circle"></span> Clicking on an icon will copy it to your clipboard.
 </div>
 <table id="icons"></table>
-<pre class="fs0875"><code>
+<pre style="font-size:.5rem"><code>
   "x-ray-solid": {
     "index": 955,
     "title": "x-ray-solid",
