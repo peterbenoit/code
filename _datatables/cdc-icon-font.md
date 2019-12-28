@@ -7,9 +7,11 @@
 <meta charset="UTF-8">
 <title>Datatables Icons</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='stylesheet' href='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css'>
-<link rel='stylesheet' href='https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css'>
-<link rel='stylesheet' href='https://cdn.datatables.net/v/bs4/dt-1.10.20/cr-1.5.2/kt-2.5.1/sc-2.0.1/datatables.min.css'>
+<link rel="stylesheet" href="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css">
+<link rel="stylesheet" href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"/>
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.bootstrap4.min.css"/>
+ 
 <style>
 	.card {
 		cursor: pointer;
@@ -41,6 +43,12 @@
 			padding-top: 0;
 		}
 	}
+
+	.btn.btn-secondary.buttons-excel.buttons-html5 {
+		background-color: #008000;
+		border-color: #008000;
+		color: #fff;
+	}
 </style>
 </head>
 <body translate="no">
@@ -61,11 +69,20 @@
 <table id="datatable" class="table table-striped"></table>
 </main>
 </div>
-<script src='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js'></script>
-<script src='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js'></script>
-<script src='https://www.cdc.gov/TemplatePackage/4.0/assets/js/app.bundle.min.js'></script>
-<script src='https://cdn.datatables.net/v/bs4/dt-1.10.20/cr-1.5.2/kt-2.5.1/sc-2.0.1/datatables.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js'></script>
+<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js"></script>
+<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js"></script>
+<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/js/app.bundle.min.js"></script>
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 <script>
 var icons = 'https://www.cdc.gov/TemplatePackage/4.0/assets/json/cdc_iconfont_manifest.json',
     categories = 'https://www.cdc.gov/TemplatePackage/4.0/assets/json/cdc_iconfont_categories.json';
@@ -150,6 +167,18 @@ function loadData( data ) {
 		pageLength: 24,
 		stateSave: true,
 		lengthChange: false,
+		dom: 'Bfrtip',
+		buttons: [
+        {
+            extend: 'excel',
+            text: 'Export to Excel',
+            exportOptions: {
+                modifier: {
+                    page: 'current'
+                }
+            }
+        }
+    ],		
 		columns: [ {
 			data: 'index',
 			title: 'ID'
@@ -231,6 +260,6 @@ function hideTooltip( btn ) {
 		$( btn ).tooltip( 'hide' );
 	}, 1000 );
 }
-    </script>
+</script>
 </body>
 </html>
