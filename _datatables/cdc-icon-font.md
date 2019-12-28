@@ -5,7 +5,7 @@
 <html lang="en" class="theme-blue">
 <head>
 <meta charset="UTF-8">
-<title>Datatables Icons - merging categories data into icons data - clipboard</title>
+<title>Datatables Icons</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='stylesheet' href='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css'>
 <link rel='stylesheet' href='https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css'>
@@ -14,16 +14,35 @@
 	.card {
 		cursor: pointer;
 	}
+
+	.btn-secondary:not(:disabled):not(.disabled).active {
+		background-color: #005eaa!important;
+		border-color: #005eaa!important;
+		color: #fff!important;
+	}
+
+	#datatable {
+		display:none;
+		font-size: smaller;
+	}
 </style>
 </head>
 <body translate="no">
 <div class="container d-flex flex-wrap body-wrapper">
 <main class="col-12 order-lg-2" role="main" aria-label="Main Content Area">
 <p>Using <a href="https://datatables.net/">datatables</a> to display the <a href="https://www.cdc.gov/wcms/4.0/cdc-wp/image-types/standard-icons.html">icons gallery</a>. There are <i>956</i> icons currently defined in the <a href="https://www.cdc.gov/TemplatePackage/4.0/assets/json/cdc_iconfont_manifest.json">icon font manifest JSON</a>.</p>
-<div class="alert alert-info col-md-5" role="alert">
-<span class="x32 fill-p cdc-icon-info-circle"></span> Clicking on an icon will copy it to your clipboard.
+<div class="alert alert-info col-md-7" role="alert">
+<span class="x32 fill-p cdc-icon-info-circle"></span> Clicking on an icon will copy the HTML for it to your clipboard.
 </div>
-<table id="icons"></table>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+	<label class="btn btn-secondary">
+	  <input type="radio" name="options" data-id="datatable" autocomplete="off"> Datatable
+	</label>
+	<label class="btn btn-secondary active">
+	  <input type="radio" name="options" data-id="buttons" autocomplete="off" checked> Buttons
+	</label>
+  </div>
+<table id="datatable" class="table table-striped"></table>
 <pre style="font-size:.5rem"><code>
   "x-ray-solid": {
     "index": 955,
@@ -48,6 +67,13 @@ var icons = 'https://www.cdc.gov/TemplatePackage/4.0/assets/json/cdc_iconfont_ma
     
 $( function() {
 	loadIcons();
+
+	$( 'input[name="options"]' ).on( 'change', function() {
+		var t = $(this).data('id').toLowerCase();
+		$( '#datatable' ).hide();
+		$( '#buttons' ).hide();
+		$( '#' + t ).show();
+	} )
 } );
 
 function loadIcons() {
@@ -73,6 +99,7 @@ function loadCategories( icons ) {
 		success: function( resp ) {
 			var arr = [],
 				keyword = '',
+				category = '',
 				t = '';
 			// console.log( 'categories loaded', resp );
 			$.each( icons, function( idx, obj ) {
@@ -81,6 +108,10 @@ function loadCategories( icons ) {
 					return t.keywords;
 				}, [] );
 				obj.keywords = keyword;
+				category = getSafe( function() {
+					return t.categories;
+				}, [] );
+				obj.categories = category;				
 			} );
 			// console.log( 'icons with categories', icons );
 			loadData( icons );
@@ -105,38 +136,47 @@ function loadData( data ) {
 	$.each( data, function( idx, obj ) {
 		arr.push( obj )
 	} );
-	$( '#icons' ).on( 'preInit.dt', function() {
+	$( '#datatable' ).on( 'preInit.dt', function() {
 		console.log( 'preInit' );
 		// append the output div
-		$( this ).after( '<div id="out"></div>' );
+		$( this ).after( '<div id="buttons"></div>' );
 	} ).DataTable( {
 		data: arr,
 		pageLength: 24,
 		stateSave: true,
 		lengthChange: false,
 		columns: [ {
-			data: 'index'
+			data: 'index',
+			title: ''
 		}, {
-			data: 'title'
+			data: 'title',
+			title: 'Title'
 		}, {
-			data: 'class'
+			data: 'class',
+			title: 'Class'
 		}, {
-			data: 'path'
+			data: 'path',
+			title: 'Path'
 		}, {
-			data: 'friendlyName'
+			data: 'friendlyName',
+			title: 'Friendly Name'
 		}, {
-			data: 'keywords'
+			data: 'keywords',
+			title: 'Keywords'
+		}, {
+			data: 'categories',
+			title: 'Categories'
 		} ],
 		initComplete: function( settings, json ) {
 			console.log( 'initComplete' );
 			// hide the table
-			$( this ).hide();
+			// $( this ).hide();
 			setupClipboard();
 		},
 		preDrawCallback: function( settings ) {
 			console.log( 'preDrawCallback' );
 			// empty the output (if it exists) prior to redrawing
-			$( '#out' ).empty();
+			$( '#buttons' ).empty();
 		},
 		rowCallback: function( row, data, index ) {
 			var opencard = '<div class="col-lg-2 col-12 col-sm-6 col-md-4 mb-2"><div class="card h-100 ds-8" style="border: 1px solid rgba(0,0,0,.125)">',
@@ -146,11 +186,11 @@ function loadData( data ) {
 				output = '';
 			output += '<span class="x32 fill-p ' + data[ 'class' ] + '"></span>';
 			output += '<b class="d-block">' + data[ 'friendlyName' ] + '</b>';
-			$( '#out' ).append( opencard + openbody + output + closebody + closecard );
+			$( '#buttons' ).append( opencard + openbody + output + closebody + closecard );
 		},
 		drawCallback: function( settings ) {
 			// after the rows (columns) have been generated, wrap them into rows as needed
-			var divs = $( '#out > .col-lg-2' );
+			var divs = $( '#buttons > .col-lg-2' );
 			for ( var i = 0; i < divs.length; i += 6 ) {
 				divs.slice( i, i + 6 ).wrapAll( '<div class="row mb-3"></div>' );
 			}
