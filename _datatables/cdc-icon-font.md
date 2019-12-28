@@ -147,7 +147,7 @@ function loadData( data ) {
 		lengthChange: false,
 		columns: [ {
 			data: 'index',
-			title: ''
+			title: 'ID'
 		}, {
 			data: 'title',
 			title: 'Title'
