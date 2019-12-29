@@ -43,12 +43,6 @@
 			padding-top: 0;
 		}
 	}
-
-	.btn.btn-secondary.buttons-excel.buttons-html5 {
-		background-color: #008000;
-		border-color: #008000;
-		color: #fff;
-	}
 </style>
 </head>
 <body translate="no">
@@ -59,13 +53,14 @@
 <span class="x32 fill-p cdc-icon-info-circle"></span> Clicking on an icon will copy the HTML for it to your clipboard.
 </div>
 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-	<label class="btn btn-secondary">
-	  <input type="radio" name="options" data-id="datatable" autocomplete="off"> Datatable
-	</label>
-	<label class="btn btn-secondary active">
-	  <input type="radio" name="options" data-id="buttons" autocomplete="off" checked> Buttons
-	</label>
-  </div>
+<label class="btn btn-secondary">
+	<input type="radio" name="options" data-id="datatable" autocomplete="off"> Datatable
+</label>
+<label class="btn btn-secondary active">
+	<input type="radio" name="options" data-id="buttons" autocomplete="off" checked> Buttons
+</label>
+</div>
+
 <table id="datatable" class="table table-striped"></table>
 </main>
 </div>
@@ -167,18 +162,6 @@ function loadData( data ) {
 		pageLength: 24,
 		stateSave: true,
 		lengthChange: false,
-		dom: 'Bfrtip',
-		buttons: [
-        {
-            extend: 'excel',
-            text: 'Export to Excel',
-            exportOptions: {
-                modifier: {
-                    page: 'current'
-                }
-            }
-        }
-    ],		
 		columns: [ {
 			data: 'index',
 			title: 'ID'
@@ -205,6 +188,7 @@ function loadData( data ) {
 			console.log( 'initComplete' );
 			// hide the table
 			// $( this ).hide();
+			addButtons( this );
 			setupClipboard();
 		},
 		preDrawCallback: function( settings ) {
@@ -231,6 +215,17 @@ function loadData( data ) {
 			console.log( 'drawCallback' );
 		},
 	} );
+}
+
+function addButtons( table ) {
+	var buttons = new $.fn.dataTable.Buttons(table, {
+     buttons: [
+       'copyHtml5',
+       'excelHtml5',
+       'csvHtml5',
+       'pdfHtml5'
+    ]
+	}).container().appendTo($('.btn-group'));
 }
 
 function setupClipboard() {
