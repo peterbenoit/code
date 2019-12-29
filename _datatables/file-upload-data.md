@@ -1,8 +1,8 @@
 ---
 layout: template
 permalink: datatables/datatables-file-upload.html
-description: Datatables File Upload
-title: File upload CSV or JSON into Datatables.net using Javascript
+description: HTML5 file upload with a CSV or JSON into Datatables.net using Javascript
+title: File Upload
 type: demo
 localcss: datatables.css
 localjs: 

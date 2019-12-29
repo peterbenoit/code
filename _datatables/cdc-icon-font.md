@@ -1,8 +1,8 @@
 ---
 layout: template
 permalink: datatables/datatables-icons.html
-description: Datatables Icons
-title: Datatables Icons
+description: Using Datatables to provide default functionality, with a custom render method for displaying the icon data in a Bootstrap 4 grid.
+title: Font Icons
 type: demo
 localcss: datatables.css
 localjs: 
