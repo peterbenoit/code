@@ -14,6 +14,7 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js, htt
 {% include breadcrumbs.html %}
  
 <style>
+	/* styles for this demo */
 	.card {
 		cursor: pointer;
 	}
@@ -30,20 +31,6 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js, htt
 	}
 
 	@media (max-width: 767.98px) { 
-		.paginate_button {
-			display: none;
-		}
-		.pagination li {
-			display: none;
-		}
-		.pagination li.previous, li.next {
-			display: inline;
-		}
-
-		div.dataTables_wrapper div.dataTables_info {
-			padding-top: 0;
-		}
-
 		.btn-group {
 			margin-bottom: 1rem;
 		}

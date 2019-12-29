@@ -3,4 +3,8 @@
 ---
 
 // Imports
-@import "datatable";
+
+.dataTables_wrapper {
+    @import "datatables/info";
+}
+@import "datatables/media-queries";
