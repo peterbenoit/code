@@ -1,6 +1,6 @@
 ---
 layout: template
-permalink: datatables/icon-font.html
+permalink: datatables/datatables-icons.html
 description: Datatables Icons
 title: Datatables Icons
 type: demo
