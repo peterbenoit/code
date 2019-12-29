@@ -219,14 +219,9 @@ function loadData( data ) {
 }
 
 function addButtons( table ) {
-	var buttons = new $.fn.dataTable.Buttons(table, {
-     buttons: [
-       'copyHtml5',
-       'excelHtml5',
-       'csvHtml5',
-       'pdfHtml5'
-    ]
-	}).container().appendTo($('.btn-group-2'));
+	var buttons = new $.fn.dataTable.Buttons( table, {
+		buttons: [ 'copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5' ]
+	} ).container().appendTo( $( '.btn-group-2' ) );
 }
 
 function setupClipboard() {
