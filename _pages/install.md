@@ -5,9 +5,13 @@ type: project
 
 ## About
 
-I'm assuming you have Jekyll installed already. If not, [look here.](https://jekyllrb.com/docs/ginstallation/)
+I'm assuming you have Jekyll installed already. If not, [look here.](https://jekyllrb.com/docs/installation/)
+ 
+There's some notes on the Jekyll site 
+[about running it on Windows](https://jekyllrb.com/docs/windows/).
+[running it on MacOS](https://jekyllrb.com/docs/installation/macos/)
 
-The installation instructions below are Linux-flavoured instructions. There's some notes on the Jekyll site [about running it on Windows](https://jekyllrb.com/docs/windows/).
+Adding Ruby to PATH: export PATH="/home/YOUR_INFO/.gem/ruby/2.6.0/bin:$PATH".
 
 ## Features
 
@@ -35,6 +39,8 @@ The installation instructions below are Linux-flavoured instructions. There's so
 4. Open the resulting site (probably `http://localhost:4000`) in your browser to check it works
 
 If it does, you can begin customizing it.
+
+Make sure NPM is up-to-date: npm install -g npm
 
 Unable to load the EventMachine C extension; To use the pure-ruby reactor, require 'em/pure_ruby'
 gem uninstall eventmachine
