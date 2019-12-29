@@ -4,7 +4,7 @@ permalink: datatables/icon-font.html
 description: Datatables Icons
 title: Datatables Icons
 type: demo
-localcss: 
+localcss: datatables.css
 localjs: 
 includePrismJs: true
 externalcss: https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css, https://cdn.datatables.net/buttons/1.6.1/css/buttons.bootstrap4.min.css, https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css
