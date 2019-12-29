@@ -197,12 +197,8 @@ function loadData( data ) {
 		} ],
 		initComplete: function( settings, json ) {
 			addButtons( this );
+			addClearButton( this );
 			setupClipboard();
-
-			$( 'a[href="#"]' ).on( 'click', function( e ) {
-				e.preventDefault();
-				// e.stopImmediatePropagation();
-			} );
 		},
 		preDrawCallback: function( settings ) {
 			// empty the output (if it exists) prior to redrawing
@@ -238,6 +234,30 @@ function addButtons( table ) {
 	var buttons = new $.fn.dataTable.Buttons( table, {
 		buttons: [ 'copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5' ]
 	} ).container().appendTo( $( '.btn-group-2' ) );
+}
+
+function addClearButton( table ) {
+	var btnClear = $( '<div class="input-group-append"><button class="btn btn-outline-secondary" id="btn-clear" type="button"><span class="cdc-icon-close"></span></button><button class="btn btn-outline-secondary" id="btn-search" type="button"><span class="cdc-icon-search-light"></span></button></div>' ),
+		filter = $( '#' + table[ 0 ].id ).parents( '.dataTables_wrapper' ).find( '.dataTables_filter' );
+
+	filter.find( 'label' ).addClass( 'input-group input-group-sm' );
+	filter.find( 'input' ).after( btnClear );
+
+	$( '#' + table[ 0 ].id + '_wrapper #btn-clear' ).click( function() {
+		$( '#' + table[ 0 ].id ).dataTable().fnFilter( '' );
+	} );
+
+	$( '#' + table[ 0 ].id + '_wrapper #btn-search' ).click( function() {
+		$( '#' + table[ 0 ].id ).dataTable().fnFilter( filter.find( 'input' ).val() );
+	} );
+
+	filter.find('input').off('input')
+	// 	.on('input', function(e){
+	// 		console.log(e)
+	// if (e.which == 13){
+	// oTable.fnFilter($(this).val(), null, false, true);
+	// }
+	// });
 }
 
 // add clipboard functionality to each button
