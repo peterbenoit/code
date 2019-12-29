@@ -53,13 +53,14 @@
 <span class="x32 fill-p cdc-icon-info-circle"></span> Clicking on an icon will copy the HTML for it to your clipboard.
 </div>
 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-<label class="btn btn-secondary">
-	<input type="radio" name="options" data-id="datatable" autocomplete="off"> Datatable
-</label>
-<label class="btn btn-secondary active">
-	<input type="radio" name="options" data-id="buttons" autocomplete="off" checked> Buttons
-</label>
+	<label class="btn btn-secondary">
+		<input type="radio" name="options" data-id="datatable" autocomplete="off"> Datatable
+	</label>
+	<label class="btn btn-secondary active">
+		<input type="radio" name="options" data-id="buttons" autocomplete="off" checked> Buttons
+	</label>
 </div>
+<div class="btn-group btn-group-toggle btn-group-2" data-toggle="buttons"></div>
 
 <table id="datatable" class="table table-striped"></table>
 </main>
@@ -225,7 +226,7 @@ function addButtons( table ) {
        'csvHtml5',
        'pdfHtml5'
     ]
-	}).container().appendTo($('.btn-group'));
+	}).container().appendTo($('.btn-group-2'));
 }
 
 function setupClipboard() {
