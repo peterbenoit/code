@@ -1,0 +1,116 @@
+.rotate-90-right {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: relative;
+    left: 45%;
+}
+
+.rotate-90-left {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    right: 45%;
+}
+
+.card-text-middle .card-img-overlay {
+    margin-top: 30%;
+}
+
+.card-text-top .card-img-overlay {
+    /* padding-top: 0; */
+}
+
+.card-text-right .card-img-overlay {
+    /* padding-right: 0; */
+}
+
+.card-text-bottom .card-img-overlay {
+    padding: 0;
+    top: 80%;
+    margin-left: 1rem;
+}
+
+.card-text-left .card-img-overlay {
+    /* padding-left: 0; */
+}
+
+.card-gradient-center {
+    background: radial-gradient(ellipse at center,
+     rgba(0, 0, 0, 1) 0%,
+     rgba(0, 0, 0, 0) 100%);
+}
+
+.card-gradient-center img {
+    z-index: -1;
+}
+
+.card-gradient-top {
+    background: linear-gradient(to top,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0.35),
+     rgba(0, 0, 0, 0.65),
+     rgba(0, 0, 0, 0.95) 100%);
+    /* W3C */
+}
+
+.card-gradient-top img {
+    z-index: -1;
+}
+
+.card-gradient-right {
+    background: linear-gradient(to right,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0.35),
+     rgba(0, 0, 0, 0.65),
+     rgba(0, 0, 0, 0.95) 100%);
+    /* W3C */
+}
+
+.card-gradient-right img {
+    z-index: -1;
+}
+
+.card-gradient-bottom {
+    background: linear-gradient(to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0.35),
+     rgba(0, 0, 0, 0.65),
+     rgba(0, 0, 0, 0.95) 100%);
+    /* W3C */
+}
+
+.card-gradient-bottom img {
+    z-index: -1;
+}
+
+.card-gradient-left {
+    background: linear-gradient(to left,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0) 0%,
+     rgba(0, 0, 0, 0.35),
+     rgba(0, 0, 0, 0.65),
+     rgba(0, 0, 0, 0.95) 100%);
+    /* W3C */
+}
+
+.card-gradient-left img {
+    z-index: -1;
+}
+
+.card-inverse .card-blockquote,
+.card-inverse .card-footer,
+.card-inverse .card-header,
+.card-inverse .card-title {
+    color: #fff;
+}
