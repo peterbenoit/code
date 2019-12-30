@@ -7,7 +7,7 @@ title: PAGE_TITLE
 type: about
 ---
 
-{% include components/intro.md %}
+{%- include components/intro.md -%}
 
 <hr />
 

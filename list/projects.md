@@ -6,12 +6,13 @@ show_profile: true
 type: list
 ---
 
-<!-- {% for project in site.projects %}
+<!-- {%- for project in site.projects -%}
 - [{{ project.title }}]({{ site.baseurl }}{{ project.url }})
-{% endfor %} -->
+{%- endfor -%} -->
 
 
 <ul>
+    <li><a href="/code/cards/">Bootstrap 4 Cards</a></li>
     <li><a href="/code/datatables/">Datatables</a></li>
     <li><a href="/code/playground/">Playground</a></li>
     <li><a href="/code/sliders/">Sliders</a></li>

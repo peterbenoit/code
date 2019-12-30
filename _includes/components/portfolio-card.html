@@ -10,11 +10,11 @@
         <div class="card-text d-flex">
             <b class="text-nowrap mb-1 mr-2 py-1">Skills:</b>
             <div>
-                {% for skill in portfolio.skills %}
+                {%- for skill in portfolio.skills -%}
                     <span class="d-inline-block border rounded p-1 mr-1 mb-1 skill skill-{{ skill | slugify}}">
                         {{skill}}
                     </span>
-                {% endfor %}
+                {%- endfor -%}
             </div>
         </div>
         <a href="{{ site.baseurl }}{{ portfolio.url }}">More...</a>

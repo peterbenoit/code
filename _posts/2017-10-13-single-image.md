@@ -24,7 +24,7 @@ The card allows a caption to be aligned with the photo, and the card classes con
 
 The HTML source for this card is below, or of course you could look at the raw source for this file in the GitHub repo or on your disk after you have downloaded the repo. WHen looking at the source, you can see the Markdown mingled with the HTML.
 
-{% highlight html %}
+{%- highlight html -%}
 
 <div class="card mb-3">
     <img class="card-img-top" src="https://drscdn.500px.org/photo/127767019/q%3D80_m%3D1500/v2?webp=true&sig=dd1fa4580c459472969cd4992068922f311f12cf263cf08b39615cfc1812286b"/>
@@ -35,4 +35,4 @@ The HTML source for this card is below, or of course you could look at the raw s
     </div>
 </div>
 
-{% endhighlight %}
+{%- endhighlight -%}

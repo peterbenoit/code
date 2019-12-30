@@ -57,7 +57,7 @@ Set a `baseurl` if needed. This lets you run your site under a folder like `/sit
 
 There's two data files that help create elements of the web site.
 
-1. `_data/nav.yml` - use this to build a list of links that will be in the top nav bar. The defaults expose all elements of the theme. If you delete eg the about page, don't forget to edit this file. The Jekyll build will not warn you, because this file cannot use the `{% raw %}{% link %}{% endraw %}` tag.
+1. `_data/nav.yml` - use this to build a list of links that will be in the top nav bar. The defaults expose all elements of the theme. If you delete eg the about page, don't forget to edit this file. The Jekyll build will not warn you, because this file cannot use the `{% raw %}{%- link -%}{% endraw %}` tag.
 
 2. `_data/profile.yml` - this contains a list of links that will be in the left-hand profile bar. Typical usage would be to add your social media and other portfolio links.
 
@@ -82,7 +82,7 @@ This is Jekyll so you are able into the HTML and make this theme do what you nee
 
 ## HTML Content
 
-Jekyll lets you mix HTML into Markdown in the content, so it is possible to utilise Bootstrap 4's components. The [blog posts]({{ site.baseurl }}{% link list/posts.html %}) have some examples.
+Jekyll lets you mix HTML into Markdown in the content, so it is possible to utilise Bootstrap 4's components. The [blog posts]({{ site.baseurl }}{%- link list/posts.html -%}) have some examples.
 
 
 

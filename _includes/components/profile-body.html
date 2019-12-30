@@ -1,7 +1,7 @@
 <p class="card-text">
     <!-- <ul> -->
-        {% for link in site.data.profile %}
+        {%- for link in site.data.profile -%}
         <div class="text-left"><i class="{{ link.icon ]}} text-black mr-3"></i><a href="{{link.href}}" class="mb-1">{{link.caption}}</a></div>
-        {% endfor %}
+        {%- endfor -%}
     <!-- </ul> -->
 </p>

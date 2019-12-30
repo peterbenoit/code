@@ -1,14 +1,13 @@
-{% assign crumbs = page.url | prepend: '/code' | remove:'/index.html' | split: '/' %}
+{%- assign crumbs = page.url | prepend: '/code' | remove:'/index.html' | split: '/' -%}
 
 <nav aria-label="breadcrumb">
 <ol class="breadcrumb pl-3 mb-3">
-    <!-- <li class="breadcrumb-item"><a href="/code/">Home</a></li> -->
-    {% for crumb in crumbs offset: 1 %}
-    {% if forloop.last %}
+    {%- for crumb in crumbs offset: 1 -%}
+    {%- if forloop.last -%}
     <li class="breadcrumb-item active" aria-current="page">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</li>
-    {% else %}
-    <li class="breadcrumb-item"><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
-    {% endif %}
-    {% endfor %}
+    {%- else -%}
+    <li class="breadcrumb-item"><a href="{%- assign crumb_limit = forloop.index | plus: 1 -%}{%- for crumb in crumbs limit: crumb_limit -%}{{ crumb | append: '/' }}{%- endfor -%}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+    {%- endif -%}
+    {%- endfor -%}
 </ol>
 </nav>

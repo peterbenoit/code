@@ -11,7 +11,7 @@ externalcss:
 externaljs:
 ---
 
-{% include breadcrumbs.html %}
+{%- include breadcrumbs.html -%}
 
 <div class="container">
 

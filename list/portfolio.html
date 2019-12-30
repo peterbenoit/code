@@ -6,7 +6,7 @@ type: list
 ---
 
 <div class="d-md-block d-lg-none mb-3">
-    {% include components/all-skills.html %}
+    {%- include components/all-skills.html -%}
 </div>
 
 <div id="currently-showing">
@@ -17,11 +17,11 @@ type: list
     </h4>
 </div>
 
-{% assign sorted = site.portfolio | reverse %}
+{%- assign sorted = site.portfolio | reverse -%}
 
-{% for portfolio in sorted %}
-    {% include components/portfolio-card.html %}
-{% endfor %}
+{%- for portfolio in sorted -%}
+    {%- include components/portfolio-card.html -%}
+{%- endfor -%}
 
 <script type="text/javascript">
 

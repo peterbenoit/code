@@ -25,11 +25,11 @@ To automate the layout, a list of images is stored in a frontmatter variable. Th
 Here's the card columns in action.
 
 <div class="card-columns">
-    {% for img in page.images %}
+    {%- for img in page.images -%}
     <div class="card">
         <img class="card-img-top" src="{{ img }}" />
     </div>
-    {% endfor %}
+    {%- endfor -%}
 </div>
 
 (The photos are from [Unsplash](http://www.unsplash.com)!)

@@ -22,7 +22,7 @@ body.modal-open .cdc-card-slider .slider-next,body.modal-open .cdc-card-slider .
 
 </style>
 
-{% include breadcrumbs.html %}
+{%- include breadcrumbs.html -%}
 
 <div class="container">
 	<div class="row">

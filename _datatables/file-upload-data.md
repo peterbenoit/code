@@ -11,7 +11,7 @@ externalcss: https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.cs
 externaljs: https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js
 ---
 
-{% include breadcrumbs.html %}
+{%- include breadcrumbs.html -%}
 
 <style>
 	#fileSize {

@@ -12,8 +12,8 @@ type: list
 <p>The Datatables library displays huge datasets very quickly and has built-in sort/filter functionalty as well as pagination, just to name a few of the things it does out of the box. The demos below take advantage of the Datatables engine to show some ways it can be used to build custom layouts quickly and reliably . </p>
 
 <dl class="row">
-{% for project in site.datatables %}
+{%- for project in site.datatables -%}
 <dt class="col-sm-3">{{ project.title }}</dt>
 <dd class="col-sm-9">{{ project.description }} <a href="{{ site.baseurl }}{{ project.url }}">more &hellip;</a></dd>
-{% endfor %}
+{%- endfor -%}
 </dl>

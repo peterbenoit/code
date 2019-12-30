@@ -6,6 +6,6 @@ show_profile: true
 type: list
 ---
 
-{% for project in site.playground %}
+{%- for project in site.playground -%}
 - [{{ project.title }}]({{ site.baseurl }}{{ project.url }})
-{% endfor %}
+{%- endfor -%}
