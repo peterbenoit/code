@@ -50,7 +50,7 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js, htt
 	}
 </style>
 
-<p>Using <a href="https://datatables.net/">datatables</a> to display the <a href="https://www.cdc.gov/wcms/4.0/cdc-wp/image-types/standard-icons.html">icons gallery</a>. There are <i>956</i> icons currently defined in the <a href="https://www.cdc.gov/TemplatePackage/4.0/assets/json/cdc_iconfont_manifest.json">icon font manifest JSON</a>.</p>
+<p>Using <a href="https://datatables.net/">datatables</a> to display the <a href="https://www.cdc.gov/wcms/4.0/cdc-wp/image-types/standard-icons.html">icons gallery</a>. There are currently <i id="keycount"></i> icons available.</p>
 <div class="alert alert-info col-md-7" role="alert">
 <span class="x32 fill-p cdc-icon-info-circle"></span> Clicking on an icon will copy the HTML for it to your clipboard.
 </div>
@@ -63,12 +63,60 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js, htt
 	</label>
 </div>
 <div class="btn-group btn-group-toggle btn-group-2" data-toggle="buttons"></div>
+<div class="custom-control custom-checkbox d-none">
+	<input type="checkbox" class="custom-control-input" id="autofilter" checked>
+	<label class="custom-control-label" for="autofilter">Filter Automatically</label>
+</div>
 
 <table id="datatable" class="table table-striped w-100"></table>
 
-<div class="row">
-	<div class="col">
-		<pre id="script-output"></pre>
+<div aria-multiselectable="true" class="accordion indicator-plus accordion-white mb-3" id="accordion-4" role="tabpanel">
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-3" data-toggle="collapse" id="accordion-4-card-3" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-3">Notes</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-3" class="collapse" id="accordion-4-collapse-3" role="tabpanel">
+			<div class="card-body">
+				<p>Some info on this demo.</p>
+				<ol>
+					<li>The data for this demo appears in two related JSON datasets, one for the <a href="https://www.cdc.gov/TemplatePackage/4.0/assets/json/cdc_iconfont_manifest.json">icons</a> and the other for the <a href="https://www.cdc.gov/TemplatePackage/4.0/assets/json/cdc_iconfont_categories.json">keywords &amp; categories</a>. The second dataset was merged into the icons based on named keyword and category matching. There are potential issues doing this, and while it would be safer to work with a single dataset, this seemed like the only reasonable option.</li>
+					<li>The buttons used in the demo are a mix of custom buttons for the display toggle between the datatable view and the icon grid view. The export buttons are included using the <a href="http://stuartk.com/jszip">jszip</a> and datatables <a href="https://datatables.net/extensions/buttons/">buttons extension</a>. </li>
+					<li>Search/Filter has been modified to append a clear and search button</li>
+					<li>Both views have been setup to be responsive, and the datatable controls have been adjusted to work in mobile. This was purely a CSS adjustment.</li>
+					<li>Copy to Clipboard functionality is done using a custom call to the <a href="https://clipboardjs.com/">clipboard.js</a> library.</li>
+					<li>Postback position is retained and adjusted when the table reloads. This really isn't a problem on pages with only the datatable control, however longer pages seem to redirect to the bottom on pagination clicks. Ideally, this would be caught with a <code>.preventDefault()</code> on the anchors, however it wasn't working. More to do.</li>
+					<li>The Datatables library auto-filtering works great, however I don't believe it's 508 compliant. I added code on lines 167-172 to account for this.</li>
+				</ol>	
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-1" data-toggle="collapse" id="accordion-4-card-1" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-1">HTML</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-1" class="collapse" id="accordion-4-collapse-1" role="tabpanel">
+			<div class="card-body">
+				<div class="row">
+					<div class="col">
+						<pre><code class="language-markup line-numbers"><script type="prism-html-markup"><table id="datatable" class="table table-striped w-100"></table></script></code></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-2" data-toggle="collapse" id="accordion-4-card-2" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-2">Javascript</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-2" class="collapse" id="accordion-4-collapse-2" role="tabpanel">
+			<div class="card-body">
+				<div class="row">
+					<div class="col">
+						<pre id="script-output"></pre>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -84,7 +132,8 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			$( '#datatable' ).hide();
 			$( '#buttons' ).hide();
 			$( '#' + t ).show();
-		} )
+		} );
+
 	} )( jQuery );
 } );
 
@@ -96,6 +145,7 @@ function loadIcons() {
 		crossDomain: true,
 		success: function( resp ) {
 			loadCategories( resp );
+			document.getElementById( 'keycount' ).textContent =  Object.keys( resp ).length;
 		},
 		error: function() {
 			console.log( 'icon error' );
@@ -238,13 +288,12 @@ function addClearButton( table ) {
 		$( '#' + table[ 0 ].id ).dataTable().fnFilter( filter.find( 'input' ).val() );
 	} );
 
-	filter.find('input').off('input')
-	// 	.on('input', function(e){
-	// 		console.log(e)
-	// if (e.which == 13){
-	// oTable.fnFilter($(this).val(), null, false, true);
-	// }
-	// });
+	// NOTE: removing the comments here will turn off the auto-filtering done and require the need to click the search button
+	// filter.find('input.form-control.form-control-sm').off('keyup.DT search.DT input.DT paste.DT cut.DT').off( 'keypress.DT' ).on( 'keypress.DT', function(e) { 
+	// 	if ( e.keyCode == 13 ) {
+	// 		$( '#btn-search' ).click();
+	// 	}
+	// } );
 }
 
 // add clipboard functionality to each button

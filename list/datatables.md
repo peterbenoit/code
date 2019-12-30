@@ -9,7 +9,7 @@ type: list
 <h1>Datatables</h1>
 <p>These projects were created using the datatables library from <a href="https://datatables.net">datatables.net</a>.</p>
 <p>While it isn't vogue to build apps in something other than React, Angular or even Vue these days, I'm a firm believer of using tools which are available and not necessarily reinventing the wheel with each new project.</p>
-<p>The Datatables library displays huge datasets very quickly and has built-in sort/filter functionalty as well as pagination, just to name a few of the things it does out of the box. The demos below take advantage of the Datatables engine to show some ways it can be used to build custom layouts quickly and reliably. </p>
+<p>The Datatables library displays huge datasets very quickly and has built-in sort/filter functionalty as well as pagination, just to name a few of the things it does out of the box. The demos below take advantage of the Datatables engine to show some ways it can be used to build custom layouts quickly and reliably . </p>
 
 <dl class="row">
 {% for project in site.datatables %}
