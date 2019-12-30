@@ -2,7 +2,7 @@
 layout: bootstrap
 permalink: cards/image-cards.html
 description: Different layouts or flavors for Bootstrap 4 cards as images 
-title: Bootstrap 4 Image Cards
+title: Image Cards
 type: demo
 localcss: cards.css
 localjs: 
