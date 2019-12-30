@@ -1,0 +1,28 @@
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>{%- if page.title -%}{{ site.title }} &middot; {{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}</title> 
+    <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="{{ site.name }}">    
+    <link rel="shortcut icon" href="{{ site.baseurl }}/theme/img/favicon.ico">
+    
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+{%- if page.externalcss And page.externalcss != "" And page.externalcss != nil -%}
+{%- assign pgs = page.externalcss | split: "," -%}
+{%- for pg in pgs -%}
+	<link href="{{ pg | strip }}" rel="stylesheet">
+{%- endfor -%}
+{%- endif -%}	
+
+{%- if page.localcss And page.localcss != "" And page.localcss != nil -%}
+{%- assign pgs = page.localcss | split: "," -%}
+{%- for pg in pgs -%}
+	<link href="{{ site.baseurl }}/css/{{ pg | strip }}" rel="stylesheet">
+{%- endfor -%}
+{%- endif -%}
+
+{%- if page.includePrismJs And page.includePrismJs != "" And page.includePrismJs != nil -%}
+{%- include structure/prismjs-css.html -%}
+{%- endif -%}	
+</head>
