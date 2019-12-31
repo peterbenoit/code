@@ -6,12 +6,19 @@
     <meta name="author" content="{{ site.name }}">    
     <link rel="shortcut icon" href="{{ site.baseurl }}/theme/img/favicon.ico">
     
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
 
 {%- if page.externalcss And page.externalcss != "" And page.externalcss != nil -%}
 {%- assign pgs = page.externalcss | split: "," -%}
 {%- for pg in pgs -%}
-	<link href="{{ pg | strip }}" rel="stylesheet">
+	<link href="{{ pg | strip }}" rel="stylesheet" crossorigin="anonymous">
 {%- endfor -%}
 {%- endif -%}	
 
@@ -26,3 +33,6 @@
 {%- include structure/prismjs-css.html -%}
 {%- endif -%}	
 </head>
+
+
+{%- include breadcrumbs.html -%}
