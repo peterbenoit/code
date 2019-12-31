@@ -5,7 +5,7 @@ description: Thumbnail gallery slider built using Slick Slider
 title: Slick Slider - Thumbnail Gallery slider 
 type: demo
 localcss: sliders.css
-localjs: sliders.js
+localjs: slickinit.js
 includePrismJs: true
 externalcss:
 externaljs:

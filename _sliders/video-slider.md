@@ -5,7 +5,7 @@ description: Video Slider using Slick Slider
 title: Slick Slider - Video Slider 
 type: demo
 localcss: sliders.css
-localjs: sliders.js
+localjs: slickinit.js
 includePrismJs: true
 externalcss:
 externaljs:

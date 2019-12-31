@@ -5,7 +5,7 @@ description: Jumbotron Slider built using Slick Slider
 title: Slick Slider - Jumbotron Slider 
 type: demo
 localcss: sliders.css
-localjs: sliders.js
+localjs: slickinit.js
 includePrismJs: false
 externalcss:
 externaljs:

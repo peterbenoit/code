@@ -5,7 +5,7 @@ description: Carousel built using Slick Slider
 title: Slick Slider - Carousel 
 type: demo
 localcss: sliders.css
-localjs: sliders.js
+localjs: slickinit.js
 includePrismJs: true
 externalcss:
 externaljs:

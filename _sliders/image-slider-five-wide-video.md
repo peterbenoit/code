@@ -5,7 +5,7 @@ description: Five wide video slider built using Slick Slider
 title: Slick Slider - Five wide video slider 
 type: demo
 localcss: sliders.css
-localjs: sliders.js
+localjs: slickinit.js
 includePrismJs: false
 externalcss:
 externaljs:

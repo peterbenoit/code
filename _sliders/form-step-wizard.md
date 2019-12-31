@@ -5,7 +5,7 @@ description: Step Wizard Slider using Slick Slider
 title: Slick Slider - Step Wizard Slider 
 type: demo
 localcss: sliders.css, arrow-sliders.css
-localjs: sliders.js
+localjs: slickinit.js
 includePrismJs: false
 externalcss:
 externaljs:

@@ -5,7 +5,7 @@ description: Step Wizard with Animations using Slick Slider and Animate.css
 title: Slick Slider - Step Wizard with Animation
 type: demo
 localcss: sliders.css
-localjs: sliders.js
+localjs: slickinit.js
 includePrismJs: false
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 externaljs: 

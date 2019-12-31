@@ -5,7 +5,7 @@ description: Gallery Modal Slider using Slick Slider
 title: Slick Slider - Gallery Modal Slider
 type: demo
 localcss: sliders.css, modals.css
-localjs: sliders.js
+localjs: slickinit.js
 includePrismJs: true
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 externaljs:
