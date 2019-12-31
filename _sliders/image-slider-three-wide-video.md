@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/video-slider-three-wide.html
 description: Three wide video slider built using Slick Slider
-title: Slick Slider - Three wide video slider 
+title: Three wide video slider 
 type: demo
 localcss: sliders.css
 localjs: slickinit.js

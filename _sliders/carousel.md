@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/carousel.html
 description: Carousel built using Slick Slider
-title: Slick Slider - Carousel 
+title: Carousel 
 type: demo
 localcss: sliders.css
 localjs: slickinit.js

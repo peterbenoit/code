@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/gallery-modal-slider.html
 description: Gallery Modal Slider using Slick Slider
-title: Slick Slider - Gallery Modal Slider
+title: Gallery Modal Slider
 type: demo
 localcss: sliders.css, modals.css
 localjs: slickinit.js

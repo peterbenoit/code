@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/image-slider.html
 description: Image Slider using Slick Slider
-title: Slick Slider - Image Slider 
+title: Image Slider 
 type: demo
 localcss: sliders.css
 localjs: slickinit.js

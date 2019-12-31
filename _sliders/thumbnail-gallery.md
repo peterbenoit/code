@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/thumbnail-gallery.html
 description: Thumbnail gallery slider built using Slick Slider
-title: Slick Slider - Thumbnail Gallery slider 
+title: Thumbnail Gallery slider 
 type: demo
 localcss: sliders.css
 localjs: slickinit.js

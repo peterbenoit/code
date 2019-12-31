@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/single-card-slider.html
 description: Single card slider built using Slick Slider
-title: Slick Slider - Single card slider 
+title: Single card slider 
 type: demo
 localcss: sliders.css
 localjs: slickinit.js

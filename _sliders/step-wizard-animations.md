@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/step-wizard-animations.html
 description: Step Wizard with Animations using Slick Slider and Animate.css
-title: Slick Slider - Step Wizard with Animation
+title: Step Wizard with Animation
 type: demo
 localcss: sliders.css
 localjs: slickinit.js

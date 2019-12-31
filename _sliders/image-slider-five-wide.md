@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/image-slider-five-wide.html
 description: Five wide image slider built using Slick Slider
-title: Slick Slider - Five wide image slider 
+title: Five wide image slider 
 type: demo
 localcss: sliders.css
 localjs: slickinit.js

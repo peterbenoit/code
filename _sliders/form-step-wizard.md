@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/form-step-wizard.html
 description: Step Wizard Slider using Slick Slider
-title: Slick Slider - Step Wizard Slider 
+title: Step Wizard Slider 
 type: demo
 localcss: sliders.css, arrow-sliders.css
 localjs: slickinit.js

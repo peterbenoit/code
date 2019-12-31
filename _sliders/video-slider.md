@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/video-slider.html
 description: Video Slider using Slick Slider
-title: Slick Slider - Video Slider 
+title: Video Slider 
 type: demo
 localcss: sliders.css
 localjs: slickinit.js

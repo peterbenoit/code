@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/image-slider-three-wide.html
 description: Three wide image slider built using Slick Slider
-title: Slick Slider - Three wide image slider 
+title: Three wide image slider 
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
