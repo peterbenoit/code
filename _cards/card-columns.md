@@ -2,7 +2,7 @@
 layout: bootstrap
 permalink: cards/card-columns.html
 description: Using Bootstrap 4 Cards in a column layout
-title: Card Columns
+title: Card Column Layout
 type: demo
 localcss:
 localjs:
