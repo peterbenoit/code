@@ -30,7 +30,6 @@ externaljs:
 		text-decoration: none!important;
 	}
 </style>
-</head>
 
 <div class="container">
 	<div class="row">
