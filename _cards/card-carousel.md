@@ -1,4 +1,6 @@
 ---
+description: Using cards in the Bootstrap 4 Carousel
+title: Card Carousel
 ---
 
 <html lang="en">
