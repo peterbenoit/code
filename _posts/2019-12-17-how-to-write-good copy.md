@@ -5,6 +5,8 @@ tags:
 type: post
 ---
 
+<p>I found this eons ago, and kept it around long enough to post it here. Mucho gracias to the original poster!</p>
+
 <ol>
 	<li>Avoid Alliteration. Always.</li>
 	<li>Prepositions are not words to end sentences with.</li>
