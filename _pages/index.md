@@ -3,7 +3,7 @@ layout: defaults/page
 permalink: index.html
 narrow: true
 description: PAGE_DESCRIPTION
-title: PAGE_TITLE
+title: Pete Benoit Blog
 type: home
 ---
 
