@@ -2,8 +2,8 @@
 layout: defaults/page
 permalink: about.html
 narrow: true
-description: PAGE_DESCRIPTION
-title: PAGE_TITLE
+description: 
+title: What about Pete?
 type: about
 ---
 
