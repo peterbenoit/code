@@ -15,10 +15,7 @@ type: home
 
 Pete keeps himself busy on work and hobby projects, [The full list is here]({{ site.baseurl}}{% link list/projects.md %}). 
 
-Here's [all posts by year.]{{ site.baseurl}}{% link list/posts.html %})
-
-
-### Recent Posts
+### Recent Posts ( [all]({{ site.baseurl}}{% link list/posts.html %}) )
 
 {% for post in site.posts limit:3 %}
 {% include components/post-card.html %}
