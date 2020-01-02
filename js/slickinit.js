@@ -35,6 +35,11 @@ function slickInit( target, settings ) {
 			showStatus: false,			// always show the slide status indicator?
 			rows: 0						// force rows to be 0 unless specifically passed in
 		};
+
+	if( 0 === $( target ).length ) {
+		console.error( 'Slider ID not defined or found. Please make sure slickInit is called with a slider ID that exists on the page.' );
+		return;
+	}
 	
 	// if we're always showing the status indicator, hide the dots
 	if( s.showStatus ) { 
@@ -133,7 +138,41 @@ function slickInit( target, settings ) {
 		if( 3 < $( t ).find( '.jumbotron').length ) {
 			console.error( 'Jumbotron slider should have 3 or fewer images' );
 		}
-	}
+	} else if ( 'carousel-clone' === defaults.sliderType ) {
+		var $t = $( t ),
+			id = 'slidernav_' + Math.random().toString(36).replace(/[^a-z0-9]+/g, '').substr(2, 10),
+			idstr = "#" + id;
+		$t.addClass( 'cdc-card-carousel cdc-card-carousel-clone' );
+		var $sliderNav = $t.clone().addClass( 'slider-nav' ).attr( 'id', id );
+
+		$t.after( $sliderNav );
+
+		slickInit( idstr, {
+			'sliderType': 'carousel',
+			'bodyClass': '',        
+			'ariaLabel': '',
+			'ariaLabelTarget': 'sliderLabel_2',
+			'asNavFor': idstr,
+			'focusOnSelect': false,
+			'centerMode': false,
+			'sliderClass': 'cdc-carousel-slider',
+			'callback': function( slider, defaults, slick ) {
+				$( slick.$slides ).on( 'click', function( t ) {
+					
+					var idx = $( t.currentTarget ).data( 'slick-index' );
+					slider.slick( 'slickGoTo', idx );
+					
+				} );
+			},
+			'responsive': [             
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },         
+				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }            
+			]   
+		} );
+	} 
 		
 	// NOTE: the next two methods do basically the same thing, 
 	// EXCEPT we need to call init specifically in order to append the slider-status div	
