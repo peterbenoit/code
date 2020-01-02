@@ -12,21 +12,38 @@ externaljs:
 ---
 
 <style>
-  
+    .card.card-profile-1 {
+        position: relative;
+    }
+
+    .card-img-wrap {
+        position: relative;
+        text-align: center;
+    }
+
+    .card.card-profile-1 .card-img-top.rounded-circle {
+        width: 200px;
+        height: 200px;
+        margin: 1rem auto;
+        object-fit: cover;
+        border: 2px solid #000;
+    } 
 </style>
 
 <div class="container">
     <div class="row mb-4">
         <div class="col-md-4">
-            <a href="https://cdc.gov" class="card card-hover-1">
-                <img alt="Card image cap" class="card-img-top img-fluid"
+            <div class="card card-profile-1">
+                <div class="card-img-wrap">
+                    <img alt="Card image cap" class="card-img-top img-fluid rounded-circle"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(34).jpg">
+                </div>
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
                         make up the bulk of the card's content.</p>
                 </div>
-            </a>
+            </div>
         </div>
         <div class="col-md-4 clearfix d-none d-md-block">
             <div class="card">
