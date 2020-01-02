@@ -9,8 +9,6 @@ type: home
 
 {% include components/intro.md %}
 
-[More about Pete.]({{ site.baseurl}}{% link _pages/about.md %})
-
 ### What else?
 
 Pete keeps himself busy on work and hobby projects, [The full list is here]({{ site.baseurl}}{% link list/projects.md %}). 
