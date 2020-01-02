@@ -25,7 +25,7 @@ showinnav: true
 		</div>
 		<div class="col-lg-9">
 			<div class="row mb-3">
-				<div class="col">
+				<div class="col px-0 px-lg-3">
 					<div class="card card-step bt-3 bt-primary">
 						<div class="row no-gutters">
 							<div class="col-lg-3">
@@ -47,7 +47,7 @@ showinnav: true
 				</div>
 			</div>
 			<div class="row mb-3">
-				<div class="col">
+				<div class="col px-0 px-lg-3">
 					<div class="card card-step bt-3 bt-primary">
 						<div class="row no-gutters">
 							<div class="col-lg-3">
@@ -69,7 +69,7 @@ showinnav: true
 				</div>
 			</div>
 			<div class="row mb-3">
-				<div class="col">
+				<div class="col px-0 px-lg-3">
 					<div class="card card-step bt-3 bt-primary">
 						<div class="row no-gutters">
 							<div class="col-lg-3">
