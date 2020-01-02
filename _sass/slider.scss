@@ -191,6 +191,12 @@
 		}
 	}
 
+	&.cdc-carousel-slider-nav {
+		.slick-slide {
+			cursor: pointer;
+		}
+	}
+
 	&.cdc-thumbnail-slider {
 		.slider-prev, .slider-next	{
 			top: calc(50% - 20px);
