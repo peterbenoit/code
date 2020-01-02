@@ -121,16 +121,13 @@ showinnav: true
 	</div>
 </div>
 
-<script id="prism-source" data-line="5,9-13,23,27-31">
+<script id="prism-source" data-line="5,7-10,21,23-31">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
 		slickInit( '#slider_1', {
 			'sliderType': 'carousel',
-			'bodyClass': '',        
-			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel_1', 
-			'asNavFor': '#slider_2',
 			'centerMode': false,
 			'arrows': false,
 			'dots': false,
@@ -145,9 +142,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		} );
 
 		slickInit( '#slider_2', {
-			'sliderType': 'carousel',
-			'bodyClass': '',        
-			'ariaLabel': '',
+			'sliderType': 'carousel-nav',
 			'ariaLabelTarget': 'sliderLabel_2',
 			'asNavFor': '#slider_1',
 			'focusOnSelect': false,
@@ -155,10 +150,8 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'sliderClass': 'cdc-carousel-slider',
 			'callback': function( slider, defaults, slick ) {
 				$( slick.$slides ).on( 'click', function( t ) {
-					
 					var idx = $( t.currentTarget ).data( 'slick-index' );
-					slider.slick( 'slickGoTo', idx );
-					
+					$( defaults.asNavFor ).slick( 'slickGoTo', idx );
 				} );
 			},
 			'responsive': [             
