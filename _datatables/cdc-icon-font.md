@@ -75,7 +75,7 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js, htt
 		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-3" data-toggle="collapse" id="accordion-4-card-3" role="tab">
 			<a class="card-title" data-controls="accordion-4-collapse-3">Notes</a>
 		</div>
-		<div aria-labelledby="accordion-4-card-3" class="collapse" id="accordion-4-collapse-3" role="tabpanel">
+		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
 				<ol>
