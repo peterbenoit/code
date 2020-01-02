@@ -31,6 +31,8 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jque
 	}
 </style>
 
+<p>This is a demo I made some time ago, when working with the default Bootstrap sliders.</p>
+
 <div class="container mt-3 mb-5">
 	<div class="row">
 		<div class="col">
