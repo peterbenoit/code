@@ -9,6 +9,7 @@ localjs: previews.js
 includePrismJs: false
 externalcss:
 externaljs:
+showinnav: true
 ---
     
 <style>

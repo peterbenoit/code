@@ -9,6 +9,7 @@ localjs:
 includePrismJs: true
 externalcss: 
 externaljs:
+showinnav: true
 ---
 
 <style>
