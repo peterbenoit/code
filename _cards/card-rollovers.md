@@ -27,8 +27,8 @@ externaljs:
 
     .card-img-wrap div span {
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 45%;
+        transform: translateY(-45%);
         background-color: #005eaa;
         color: white;
         padding: .5rem 2rem;
