@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+---
+---
+
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>SyntaxHighlighter</title>
-	<link href="theme.css" rel="stylesheet" type="text/css">
+	<link href="{{ site.baseurl }}/css/theme.css" rel="stylesheet">
 	<style>
 	h5 {
 		margin-bottom: 0;
@@ -29,16 +31,16 @@
 	<h2>Examples</h2>
 	<hr>
 	<h5>Screenshot of CSS formatting</h5>
-	<img src="examples/screenshot.png" alt="screenshot" />
+	<img src="../assets/images/examples/screenshot.png" alt="screenshot" />
 	<h5>Paste into Microsoft Word</h5>
-	<img src="examples/ms-word.png" alt="Microsoft Word" />
+	<img src="../assets/images/examples/ms-word.png" alt="Microsoft Word" />
 	<h5>Paste into Google Docs</h5>
-	<img src="examples/google-docs.png" alt="Google Docs" />
+	<img src="../assets/images/examples/google-docs.png" alt="Google Docs" />
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="lib/syntaxhighlighter.js" type="text/javascript"></script> 
-	<script src="lib/brushes.js" type="text/javascript"></script> 
-	<script src="lib/brushes.xml.js" type="text/javascript"></script>
+	<script src="https://peterbenoit.github.io/cdn/libs/syntaxhighlighter/syntaxhighlighter.js" type="text/javascript"></script> 
+	<script src="https://peterbenoit.github.io/cdn/libs/syntaxhighlighter/brushes.js" type="text/javascript"></script> 
+	<script src="https://peterbenoit.github.io/cdn/libs/syntaxhighlighter/brushes.xml.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 
 	<script>
