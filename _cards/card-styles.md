@@ -69,6 +69,10 @@ externaljs:
         color: #005eaa;
     }
 
+    .card.card-profile-4a .card-body {
+        padding-top: 0;
+    }
+
     .card.card-profile-5 .card-img-profile {
         width: 100px;
         margin: 0 auto;
