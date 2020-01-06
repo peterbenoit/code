@@ -146,5 +146,20 @@ externaljs:
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card card-profile-4 text-center">
+                <img alt="Card image cap" class="img-fluid"
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
+                <img alt="Card image profile" class="card-img-profile"
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">                         
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and
+                        make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
     </div>    
 </div>
