@@ -80,7 +80,23 @@ externaljs:
         border-radius: 50%;
         height: 100px; /* same as width */
         box-shadow: 0px 2px 4px #000000;
-    }   
+    }
+    
+    .fa-facebook-square {
+        color: #3b5998
+    }
+
+    .fa-twitter-square {
+        color: #55acee
+    }
+
+    .fab {
+        font-size: 2rem;
+    }
+
+    .fab:not(last-child) {
+        margin-right: .7rem;
+    }
 </style>
 
 <div class="container">
@@ -192,6 +208,24 @@ externaljs:
                         make up the bulk of the card's content.</p>
                 </div>
             </div>
-        </div>        
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card card-profile-4a text-center">
+                <img alt="Card image cap" class="img-fluid"
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
+                <img alt="Card image profile" class="card-img-profile"
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">                         
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and
+                        make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+            </div>
+        </div>             
     </div>    
 </div>
