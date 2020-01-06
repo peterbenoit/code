@@ -93,12 +93,37 @@ showinnav: true
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col">
-			<pre id="script-output"></pre>
+	</div>	
+</div>
+
+<div aria-multiselectable="true" class="accordion indicator-plus accordion-white mb-3" id="accordion-4" role="tabpanel">
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-3" data-toggle="collapse" id="accordion-4-card-3" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-3">Notes</a>
 		</div>
-	</div>		
+		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
+			<div class="card-body">
+				<p>Some info on this demo.</p>
+				<ol>
+					<li>Thumbnail version of the slick slider.</li>
+				</ol>	
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-2" data-toggle="collapse" id="accordion-4-card-2" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-2">Javascript</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-2" class="collapse" id="accordion-4-collapse-2" role="tabpanel">
+			<div class="card-body">
+				<div class="row">
+					<div class="col">
+						<pre id="script-output"></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script id="prism-source" data-line="9,10-12">
