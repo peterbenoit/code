@@ -135,7 +135,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'ariaLabel': '',
 			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
-			'slideCss': {'box-shadow': 'none', 'margin': '10px 1px'},
+			'slideCss': {'box-shadow': 'none', 'margin': '10px 3px'},
 			'callback': function( slider ) {
 				slider.addClass( 'cdc-thumbnail-slider' );
 			},
