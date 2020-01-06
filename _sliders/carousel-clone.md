@@ -9,7 +9,7 @@ localjs: slickinit.js
 includePrismJs: true
 externalcss:
 externaljs:
-showinnav: false
+showinnav: true
 ---
 
 {%- include breadcrumbs.html -%}
