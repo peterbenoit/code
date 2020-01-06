@@ -26,13 +26,47 @@ externaljs:
         height: 200px;
         margin: 1rem auto;
         object-fit: cover;
-        border: 2px solid #000;
     } 
+
+    .card.card-profile-2 .card-img-profile {
+        width: 150px;
+        margin: 0 auto;
+        margin-top: -75px; /* 1/2 of the width */
+    }
+
+    .card.card-profile-3 .card-img-profile {
+        width: 80px;
+        margin-top: -40px; /* 1/2 of the width */
+    }
+
+    .card.card.card-profile-3 .card-img-profile.right {
+        width: 80px;
+        margin-top: -40px; /* 1/2 of the width */
+        margin-left: auto;
+    } 
+    
+    .card.card-profile-4 .card-img-profile {
+        width: 150px;
+        margin: 0 auto;
+        margin-top: -75px; /* 1/2 of the width */
+        border: 10px solid rgba(255,255,255,.5);
+        border-radius: 50%;
+        height: 150px; /* same as width */
+    }  
+
+    .card.card-profile-5 .card-img-profile {
+        width: 80px;
+        margin: 0 auto;
+        margin-top: -40px; /* 1/2 of the width */
+        border-radius: 50%;
+        height: 80px; /* same as width */
+        box-shadow: 0px 2px 4px #000000;
+    }   
 </style>
 
 <div class="container">
-    <div class="row mb-4">
-        <div class="col-md-4">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-3">
             <div class="card card-profile-1">
                 <div class="card-img-wrap">
                     <img alt="Card image cap" class="card-img-top img-fluid rounded-circle"
@@ -45,10 +79,12 @@ externaljs:
                 </div>
             </div>
         </div>
-        <div class="col-md-4 clearfix d-none d-md-block">
-            <div class="card">
-                <img alt="Card image cap" class="img-fluid"
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card card-profile-2">
+                <img alt="Card image cap" class="card-img-top img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(18).jpg">
+                <img alt="Card image profile" class="card-img-profile"
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/avatars/avatar%20(1).png">
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -56,10 +92,12 @@ externaljs:
                 </div>
             </div>
         </div>
-        <div class="col-md-4 clearfix d-none d-md-block">
-            <div class="card">
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card card-profile-3">
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg">
+                    <img alt="Card image profile" class="card-img-profile"
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/avatars/avatar%20(2).png">                    
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -69,10 +107,12 @@ externaljs:
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4">
-            <div class="card">
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card card-profile-3">
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(39).jpg">
+                    <img alt="Card image profile" class="card-img-profile right"
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/avatars/avatar%20(3).png">                     
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -80,10 +120,12 @@ externaljs:
                 </div>
             </div>
         </div>
-        <div class="col-md-4 clearfix d-none d-md-block">
-            <div class="card">
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card card-profile-4">
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
+                <img alt="Card image profile" class="card-img-profile"
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">                         
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -91,10 +133,12 @@ externaljs:
                 </div>
             </div>
         </div>
-        <div class="col-md-4 clearfix d-none d-md-block">
-            <div class="card">
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card card-profile-5">
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(38).jpg">
+                <img alt="Card image profile" class="card-img-profile"
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(2).png">                      
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
