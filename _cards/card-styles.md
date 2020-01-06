@@ -55,11 +55,11 @@ externaljs:
     }  
 
     .card.card-profile-5 .card-img-profile {
-        width: 80px;
+        width: 100px;
         margin: 0 auto;
-        margin-top: -40px; /* 1/2 of the width */
+        margin-top: -50px; /* 1/2 of the width */
         border-radius: 50%;
-        height: 80px; /* same as width */
+        height: 100px; /* same as width */
         box-shadow: 0px 2px 4px #000000;
     }   
 </style>
