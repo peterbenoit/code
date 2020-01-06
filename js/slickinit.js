@@ -1,4 +1,4 @@
-function slickInit( target, settings ) {
+function slickInit2( target, settings ) {
 	var t = target,
 		s = settings || {},
 		slik = null,
@@ -48,7 +48,7 @@ function slickInit( target, settings ) {
 	
 	// replace our default settings with whatever is passed in
 	$.extend( true, defaults, s );
-	
+
 	if( 'video' === defaults.sliderType ) {
 		// video slider
 		$( t )
@@ -138,6 +138,41 @@ function slickInit( target, settings ) {
 		if( 3 < $( t ).find( '.jumbotron').length ) {
 			console.error( 'Jumbotron slider should have 3 or fewer images' );
 		}
+	} else if( 'carousel' === defaults.sliderType ) {
+		var t = $( t ),
+			clone = t.clone(),
+			id = t.attr( 'id' ) + '-clone';
+
+			clone.attr( 'id', id );
+			clone.find( '.card-body' ).remove();
+			t.after( clone );
+
+			slickInit( '#' + id , {
+				'sliderType': 'thumbnail',
+				'bodyClass': '',        
+				'ariaLabel': '',
+				'centerMode': false,
+				'ariaLabelTarget': 'sliderLabel',
+				'slideCss': {'box-shadow': 'none', 'margin': '0 3px'},
+				'callback': function( slider ) {
+					slider.addClass( 'cdc-carousel-thumbnail-slider d-none d-lg-block' );
+
+					slider.find( '.card' ).on( 'click', function() {
+						var index = $( this ).data( 'slick-index' );
+						t[0].slick.slickGoTo( index );
+					} );
+				},
+				'responsive': [ 
+					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 4, 'slidesToScroll': 2 } },         
+					{ 'breakpoint': 992, 'settings': { 'slidesToShow': 4, 'slidesToScroll': 2 } },
+					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+					{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+				]
+			} );			
+
+	} else {
+		console.info( 'No sliderType defined' );
 	}
 		
 	// NOTE: the next two methods do basically the same thing, 

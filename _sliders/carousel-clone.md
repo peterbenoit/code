@@ -16,7 +16,7 @@ showinnav: false
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-9">
+		<div class="col-md-9">
 			<span class="h3" id="sliderLabel_1">Slick Carousel</span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
@@ -103,24 +103,23 @@ showinnav: false
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col">
 			<pre id="script-output"></pre>
 		</div>
-	</div>
+	</div> -->
 </div>
 
 <script id="prism-source" data-line="5,9-13,23,27-31">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
-		slickInit( '#slider_1', {
-			'sliderType': 'carousel-clone',
+		slickInit2( '#slider_1', {
+			'sliderType': 'carousel',
 			'bodyClass': '',        
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel_1',
 			'centerMode': false,
-			'arrows': false,
 			'dots': false,
 			'sliderClass': 'cdc-carousel-slider',
 			'responsive': [             
