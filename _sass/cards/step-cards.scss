@@ -1,7 +1,18 @@
 .card-step {
     .card-body {
-        i.fas {
-            font-size:10vw;
-        }        
+        i, span {
+            &.fas, &.far, &.fa-stack {
+                font-size:10vw;
+                +.fa-stack-1x {
+                    font-size: 7vw;
+                }
+            } 
+        }
+        
+        .fa-stack {
+            height: 1em;
+            width: 1em;
+            line-height: 1em;
+        }
     }
 }

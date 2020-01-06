@@ -2,7 +2,7 @@
 layout: template
 permalink: cards/card-step-style.html
 description: Using Bootstrap 4 Cards in Step card style
-title: Card Step  Style
+title: Card Step Style
 type: demo
 localcss: cards.css
 localjs:
@@ -29,8 +29,7 @@ showinnav: true
 					<div class="card card-step bt-3 bt-primary">
 						<div class="row no-gutters">
 							<div class="col-lg-3">
-								<div class="card">
-									<div class="card-header bg-tertiary h3 r-none"><i class="fas fa-air-freshener c-primary d-lg-none mr-1"></i>Step <span class="d-lg-block">01</span></div>
+								<div class="card">>
 									<div class="card-body text-center d-none d-lg-block">
 										<i class="fas fa-air-freshener c-primary"></i>
 									</div>
@@ -38,8 +37,8 @@ showinnav: true
 							</div>
 							<div class="col">
 								<div class="card">
-									<div class="card-header">Header 1</div>
-									<div class="card-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus adipisci culpa perferendis doloribus quam esse eos iste commodi, asperiores odio alias sunt laborum. Ducimus facilis adipisci consectetur ipsam numquam praesentium?</div>
+									<div class="card-header">Step 1</div>
+									<div class="card-body">Lorem isum dolor, sit amet consectetur adipisicing elit. Temporibus adipisci culpa perferendis doloribus quam esse eos iste commodi, asperiores odio alias sunt laborum. Ducimus facilis adipisci consectetur ipsam numquam praesentium?</div>
 								</div>
 							</div>
 						</div>
@@ -51,8 +50,7 @@ showinnav: true
 					<div class="card card-step bt-3 bt-primary">
 						<div class="row no-gutters">
 							<div class="col-lg-3">
-								<div class="card">
-									<div class="card-header bg-tertiary h3 r-none"><i class="fas fa-drumstick-bite c-primary d-lg-none mr-1"></i>Step <span class="d-lg-block">02</span></div>
+								<div class="card">>
 									<div class="card-body text-center d-none d-lg-block">
 										<i class="fas fa-drumstick-bite c-primary"></i>
 									</div>
@@ -60,8 +58,8 @@ showinnav: true
 							</div>					
 							<div class="col">
 								<div class="card">
-									<div class="card-header">Header 2</div>
-									<div class="card-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus adipisci culpa perferendis doloribus quam esse eos iste commodi, asperiores odio alias sunt laborum. Ducimus facilis adipisci consectetur ipsam numquam praesentium?</div>
+									<div class="card-header">Step 2</div>
+									<div class="card-body">Lorem isum dolor, sit amet consectetur adipisicing elit. Temporibus adipisci culpa perferendis doloribus quam esse eos iste commodi, asperiores odio alias sunt laborum. Ducimus facilis adipisci consectetur ipsam numquam praesentium?</div>
 								</div>
 							</div>
 						</div>
@@ -74,7 +72,6 @@ showinnav: true
 						<div class="row no-gutters">
 							<div class="col-lg-3">
 								<div class="card">
-									<div class="card-header bg-tertiary h3 r-none"><i class="fas fa-cat c-primary d-lg-none mr-1"></i>Step <span class="d-lg-block">03</span></div>
 									<div class="card-body text-center d-none d-lg-block">
 										<i class="fas fa-cat c-primary"></i>
 									</div>
@@ -82,8 +79,8 @@ showinnav: true
 							</div>					
 							<div class="col">
 								<div class="card">
-									<div class="card-header">Header 3</div>
-									<div class="card-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus adipisci culpa perferendis doloribus quam esse eos iste commodi, asperiores odio alias sunt laborum. Ducimus facilis adipisci consectetur ipsam numquam praesentium?</div>
+									<div class="card-header">Step 3</div>
+									<div class="card-body">Lorem isum dolor, sit amet consectetur adipisicing elit. Temporibus adipisci culpa perferendis doloribus quam esse eos iste commodi, asperiores odio alias sunt laborum. Ducimus facilis adipisci consectetur ipsam numquam praesentium?</div>
 								</div>
 							</div>
 						</div>
@@ -98,8 +95,7 @@ showinnav: true
 <pre><code class="language-markup line-numbers"><script type="prism-html-markup"><div class="card card-step bt-3 bt-primary">
 	<div class="row no-gutters">
 		<div class="col-lg-3">
-			<div class="card">
-				<div class="card-header bg-tertiary h3 r-none"><i class="fas fa-air-freshener c-primary d-lg-none mr-1"></i>Step <span class="d-lg-block">01</span></div>
+			<div class="card">>
 				<div class="card-body text-center d-none d-lg-block">
 					<i class="fas fa-air-freshener c-primary"></i>
 				</div>
@@ -107,18 +103,12 @@ showinnav: true
 		</div>
 		<div class="col">
 			<div class="card">
-				<div class="card-header">Header 1</div>
-				<div class="card-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+				<div class="card-header">Step 1</div>
+				<div class="card-body">Lorem isum dolor, sit amet consectetur adipisicing elit. Temporibus adipisci culpa perferendis doloribus quam esse eos iste commodi, asperiores odio alias sunt laborum. Ducimus facilis adipisci consectetur ipsam numquam praesentium?</div>
 			</div>
 		</div>
 	</div>
 </div></script></code></pre>
 		</div>
 	</div>
-
-	
 </div>
-
-
-
-
