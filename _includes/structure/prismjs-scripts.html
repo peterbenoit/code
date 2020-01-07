@@ -37,8 +37,12 @@
 		} );
 	}
 
+	$( '.accordion' ).on( 'shown.bs.collapse', function() {
+		duplicate();
+	} );
+
 	function duplicate() {
-		console.log('dupe')
-		$( target ).appendTo( '#script-source' ).removeAttr( 'style' );
+		$( '#script-source' ).empty();
+		$( target ).clone().appendTo( '#script-source' ).removeAttr( 'style' );
 	}
 </script>

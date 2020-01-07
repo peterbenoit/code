@@ -171,4 +171,4 @@ window.addEventListener( 'DOMContentLoaded', function() {
 } );
 </script>
 
-<pre id="script-output" style="position: absolute; left: -9999px"></pre>
+<pre id="script-output" style="position:absolute;left:-9999px"></pre>
