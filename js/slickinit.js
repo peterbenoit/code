@@ -1,4 +1,4 @@
-function slickInit2( target, settings ) {
+function slickInit( target, settings ) {
 	var t = target,
 		s = settings || {},
 		slik = null,
@@ -138,6 +138,8 @@ function slickInit2( target, settings ) {
 		if( 3 < $( t ).find( '.jumbotron').length ) {
 			console.error( 'Jumbotron slider should have 3 or fewer images' );
 		}
+
+		$( t ).addClass( 'cdc-jumbotron-slider' );
 	} else if( 'carousel' === defaults.sliderType ) {
 		var t = $( t ),
 			clone = t.clone(),

@@ -148,7 +148,7 @@ showinnav: true
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
-		slickInit2( '#slider_1', {
+		slickInit( '#slider_1', {
 			'sliderType': 'carousel',
 			'bodyClass': '',        
 			'ariaLabel': '',

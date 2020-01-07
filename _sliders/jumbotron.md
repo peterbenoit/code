@@ -192,10 +192,11 @@ showinnav: true
                 'ariaLabel': '',
                 'centerMode': false,
                 'arrows': false,
-                'dotsClass': 'slick-dots slick-dots-outline',
+				'dotsClass': 'slick-dots slick-dots-outline',
+				'lazyLoad': 'ondemand',
                 'ariaLabelTarget': 'sliderLabel2',
                 'callback': function( t, defaults  ) {
-                    console.log( t, defaults )
+                    // console.log( t, defaults )
                 },
                 'responsive': [ 
                     { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
@@ -212,7 +213,8 @@ showinnav: true
                 'ariaLabel': '',
                 'centerMode': false,
                 'arrows': false,
-                'dotsClass': 'slick-dots slick-dots-outline slick-dots-numbers',
+				'dotsClass': 'slick-dots slick-dots-outline slick-dots-numbers',
+				'lazyLoad': 'ondemand',
                 'ariaLabelTarget': 'sliderLabel3',
                 'callback': function( t, defaults  ) {
                     $( '.slick-dots li' ).css( { 'height': 'auto'} ).find( 'button' ).css( 'line-height', '1' );
@@ -232,7 +234,8 @@ showinnav: true
                 'ariaLabel': '',
                 'centerMode': false,
                 'arrows': false,
-                'dotsClass': 'slick-dots slick-dots-outline slick-dots-numbers slick-dots-right',
+				'dotsClass': 'slick-dots slick-dots-outline slick-dots-numbers slick-dots-right',
+				'lazyLoad': 'ondemand',
                 'ariaLabelTarget': 'sliderLabel4',
                 'callback': function( t, defaults  ) {
                     $( '.slick-dots li' ).css( { 'height': 'auto'} ).find( 'button' ).css( 'line-height', '1' );
@@ -246,7 +249,6 @@ showinnav: true
                 ]
             } );
 
-  
         } )( jQuery );
     } );
 </script>
