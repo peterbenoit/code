@@ -110,6 +110,40 @@ showinnav: true
 	</div> -->
 </div>
 
+<div aria-multiselectable="true" class="accordion indicator-plus accordion-white mb-3" id="accordion-4" role="tabpanel">
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-3" data-toggle="collapse" id="accordion-4-card-3" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-3">Notes</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
+			<div class="card-body">
+				<p>Some info on this demo.</p>
+				<p>The <a href="/code/sliders/carousel.html">original carousel version</a> of the Slick slider uses two sliders to implement the carousel. This version uses a single slider which is cloned and massaged to display it as a thumbnail track under the original slider.</p>
+				<p>There are benefits and disadvantages to this...</p>
+				<ol>
+					<li><span style="color: green">Pro:</span>You only need one slider in the markup and one initialization call!</li>
+					<li><span style="color: red">Con:</span>We have to process the markup via javascript which then calls init again in order to display the second slider.</li>
+					<li><span style="color: green">Pro:</span>The sliders are related but do not force navigation on each - meaning if you slide the thumbnail slide, the top slide doesn't auto-advance.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-2" data-toggle="collapse" id="accordion-4-card-2" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-2">Javascript</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-2" class="collapse" id="accordion-4-collapse-2" role="tabpanel">
+			<div class="card-body">
+				<div class="row">
+					<div class="col">
+						<pre id="script-output"></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <script id="prism-source" data-line="5,9-13,23,27-31">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
@@ -130,8 +164,6 @@ window.addEventListener( 'DOMContentLoaded', function() {
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }            
 			]   
 		} );
-
-
 		
 	} )( jQuery );
 } );
