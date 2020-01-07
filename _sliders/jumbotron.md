@@ -173,7 +173,8 @@ showinnav: true
                 'sliderType': 'jumbotron',
                 'bodyClass': '',        
                 'ariaLabel': '',
-                'centerMode': false,
+				'centerMode': false,
+				'dots': false,
                 'lazyLoad': 'ondemand',
                 'ariaLabelTarget': 'sliderLabel1',
                 'responsive': [ 
