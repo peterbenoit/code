@@ -1,8 +1,8 @@
 ---
 layout: template
-permalink: sliders/image-slider.html
-description: Image Slider using Slick Slider
-title: Image Slider 
+permalink: sliders/standard-slider.html
+description: Standard Slider using Slick Slider
+title: Standard Slider 
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -17,8 +17,8 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel">Slick Slider - Image Slider</span>
-			<p>An image card slider used for displaying images with associated content, such as a title and a short description.</p>
+			<span class="h3" id="sliderLabel">Slick Slider - Standard Slider</span>
+			<p>The standard card slider used for displaying images with associated content, such as a title and a short description.</p>
 		</div>
 	</div>
 	<div class="row">
@@ -142,10 +142,12 @@ showinnav: true
 <script id="prism-source">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
+
 		slickInit( '.cdc-card-slider', {
 			'sliderType': '',
 			'bodyClass': '',        
 			'ariaLabel': '',
+			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
 			'responsive': [ 
 				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
@@ -155,6 +157,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]
 		} );
+
 	} )( jQuery );
 } );
 </script>
