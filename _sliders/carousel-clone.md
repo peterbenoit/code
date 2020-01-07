@@ -17,7 +17,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col-md-9">
-			<span class="h3" id="sliderLabel_1">Slick Carousel</span>
+			<span class="h3" id="sliderLabel_1">Slick Carousel (clone)</span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
