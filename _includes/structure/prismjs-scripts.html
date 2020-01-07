@@ -5,9 +5,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/toolbar/prism-toolbar.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/line-highlight/prism-line-highlight.min.js"></script>
+
 <script>
 	var target = document.getElementById( 'script-output' ),
-		source = document.getElementById( 'prism-source' );
+		source = document.getElementById( 'prism-source' ),
+		w =  $( window ).width();
 
 	if( null !== target && null !== source ) {
 		var	code = document.createElement( 'code' );
@@ -23,5 +25,20 @@
 
 		Prism.highlightElement( code );
 		target.appendChild( code );
+
+		setTimeout( function() {
+			duplicate();
+		}, 500 ); 
+	
+		$( window ).resize(function(){
+  			if ( w === $( window ).width() ) return;
+  			w = $( window ).width();
+			duplicate();
+		} );
+	}
+
+	function duplicate() {
+		console.log('dupe')
+		$( target ).appendTo( '#script-source' ).removeAttr( 'style' );
 	}
 </script>

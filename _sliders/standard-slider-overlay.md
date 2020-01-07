@@ -137,8 +137,7 @@ showinnav: true
 		<div aria-labelledby="accordion-4-card-2" class="collapse" id="accordion-4-collapse-2" role="tabpanel">
 			<div class="card-body">
 				<div class="row">
-					<div class="col">
-						<pre id="script-output"></pre>
+					<div class="col" id="script-source">
 					</div>
 				</div>
 			</div>
@@ -146,7 +145,7 @@ showinnav: true
 	</div>
 </div>
 
-<script id="prism-source" data-line="5,9-13,23,27-31">
+<script id="prism-source" data-line="5,10-12">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
@@ -171,3 +170,5 @@ window.addEventListener( 'DOMContentLoaded', function() {
 	} )( jQuery );
 } );
 </script>
+
+<pre id="script-output" style="position: absolute; left: -9999px"></pre>
