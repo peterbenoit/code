@@ -142,8 +142,9 @@ showinnav: true
 <script id="prism-source">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
+
 		slickInit( '.cdc-card-slider', {
-			'sliderType': '',
+			'sliderType': 'standard',
 			'bodyClass': '',        
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel',
@@ -155,6 +156,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]
 		} );
+		
 	} )( jQuery );
 } );
 </script>

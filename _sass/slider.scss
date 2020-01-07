@@ -227,7 +227,16 @@
 	}
 
 	&.cdc-jumbotron-slider {
-		
+		// coming soon!
+	}
+
+	&.cdc-standard-slider {
+		.slider-next {
+			right: -10px !important;
+		}
+		.slider-prev {
+			left: -10px !important;
+		}
 	}
 }
 

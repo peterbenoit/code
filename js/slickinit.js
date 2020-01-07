@@ -49,6 +49,7 @@ function slickInit( target, settings ) {
 	// replace our default settings with whatever is passed in
 	$.extend( true, defaults, s );
 
+	console.info( 'sliderType', defaults.sliderType );
 	if( 'video' === defaults.sliderType ) {
 		// video slider
 		$( t )
@@ -140,6 +141,10 @@ function slickInit( target, settings ) {
 		}
 
 		$( t ).addClass( 'cdc-jumbotron-slider' );
+	} else if ( 'standard' === defaults.sliderType ) {
+		
+		$( t ).addClass( 'cdc-standard-slider' );
+
 	} else if( 'carousel' === defaults.sliderType ) {
 		var t = $( t ),
 			clone = t.clone(),
@@ -149,6 +154,7 @@ function slickInit( target, settings ) {
 			clone.find( '.card-body' ).remove();
 			t.after( clone );
 
+			// init the thumbnail clone
 			slickInit( '#' + id , {
 				'sliderType': 'thumbnail',
 				'bodyClass': '',        
