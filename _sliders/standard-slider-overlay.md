@@ -126,7 +126,7 @@ showinnav: true
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>The standard card slider used for displaying images with associated content, such as a title and a short description which appears beneath the image.</p>
+				<p>The standard card slider with overlay used for displaying images with associated content, such as a title and a short description which appears beneath the image.</p>
 			</div>
 		</div>
 	</div>
@@ -146,7 +146,7 @@ showinnav: true
 	</div>
 </div>
 
-<script id="prism-source">
+<script id="prism-source" data-line="5,9-13,23,27-31">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
@@ -156,6 +156,9 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'ariaLabel': '',
 			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
+			'callback': function( slider, defaults, slick ) {
+				$( slider ).addClass( 'cdc-standard-slider-overlay' );
+			},			
 			'responsive': [ 
 				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
