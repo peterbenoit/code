@@ -1,0 +1,81 @@
+<form id="standard-form-elements" name="standard">
+    <h1 class="bb-1 pt-5 mb-3">HTML5 Standard Form Elements</h1>
+    <fieldset>
+        <legend>Legend</legend>
+        <div>
+            <label>First Name <input autofocus="" id="given-name" name="given-name" placeholder="First name only" required="" type="text"></label>
+        </div>
+        <div>
+            <label>Last Name <input autofocus="" id="family-name" name="family-name" placeholder="Last name only" required="" type="text"></label>
+        </div>
+        <div>
+            <label>Date of Birth <input id="dob" name="dob" required="" type="date"></label>
+        </div>
+        <div>
+            <label>Email <input id="email" name="email" placeholder="example@domain.com" required="" type="email"></label>
+        </div>
+        <div>
+            <label>URL <input id="url" name="url" placeholder="http://mysite.com" type="url"></label>
+        </div>
+        <div>
+            <label>Telephone <input id="phone" name="phone" placeholder="Eg. (555) 555-5555" required="" type="tel"></label>
+        </div>
+        <div>
+            <label>Size <input id="size" max="18" min="5" name="size" step="0.5" type="number" value="9"></label>
+        </div>
+        <div>
+            <label>Level (1 low - 100 high) <input id="level" max="100" min="1" name="level" type="range" value="0"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Billing address</legend>
+        <div>
+            <label>Address 
+            <textarea id="address" name="address" required="" rows="5"></textarea></label>
+        </div>
+        <div>
+            <label>Zip code <input id="zipcode" name="zipcode" required="" type="text"></label>
+        </div>
+        <div>
+            <label>Country <input id="country" list="country-names" name="country" required="" type="text"> 
+                <datalist id="country-names">
+                    <option label="England" value="England"></option>
+                    <option label="USA" value="USA"></option>
+                    <option label="Ireland" value="Ireland"></option>
+                    <option label="Scotland" value="Scotland"></option>
+                    <option label="Wales" value="Wales"></option>
+                </datalist>
+            </label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Card details</legend>
+        <fieldset>
+            <legend>Card type</legend>
+            <div class="card-type">
+                <input id="visa" name="cardtype" type="radio"> <label for="visa">VISA</label> 
+                <input id="mastercard" name="cardtype" type="radio"> <label for="mastercard">Mastercard</label> 
+                <input id="amex" name="cardtype" type="radio"> <label for="amex">AMEX</label>
+            </div>
+        </fieldset>
+        <div>
+            <label>Name <input id="cardName" name="cardName" placeholder="Name as it appears on your card" required="" type="text"></label>
+        </div>
+        <div>
+            <label>Card number <input id="cardNo" name="cardNo" required="" title="The sixteen digit number across the middle of your card." type="number"></label>
+        </div>
+        <div>
+            <label>Security code <input id="security" name="security" pattern="[0-9]{3}" required="" title="The last three digits on the back of your card." type="number"></label>
+        </div>
+        <div>
+            <label>Expiry Date <input id="expiry" name="expiry" type="month"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div>
+            <button type="submit">Submit Button</button>
+            <input type="button" value="Standard Button">
+            <input type="reset" value="Reset Button">
+        </div>
+    </fieldset>
+</form>
