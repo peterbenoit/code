@@ -428,7 +428,7 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jque
 			<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 				<div class="card-body">
 					<p>Some info on this demo.</p>
-					<p>Using the Bootstrap 4 slider to create a card slider.</p>
+					<p>Using the <a href="https://getbootstrap.com/docs/4.0/components/carousel/">Bootstrap 4 Carousel</a> to create a card slider. Swipe capability was added using the <a href="https://github.com/mattbryson/TouchSwipe-Jquery-Plugin">jQuery TouchSwipe plugin</a>.</p>
 				</div>
 			</div>
 		</div>
