@@ -189,21 +189,35 @@ function slickInit( target, settings ) {
 	$( t ).on( 'init', function( event, slick, currentSlide, nextSlide ) {
 		var $t = $( this );
 		
+		// might be a more elegant way of handling this, but I needed a way to return the slick object in other methods. This saves it for later.
 		slik = slick;
-				
+			
+		// append the slider status after the slider
 		$t.after( '<div class="cdc-slider-status" />' );
 		
+		// kick off the slider status count
 		$t.next( '.cdc-slider-status' ).text( '1/' + slick.slideCount );
 		
+		// reduce the bottom space under the jumbotron
 		if ( 'jumbotron' === defaults.sliderType ) {
-			$( t ).find( '.slick-dots' ).css( 'bottom', '0' );
+			$t.find( '.slick-dots' ).css( 'bottom', '0' );
 		}
 
-		$( t ).find( '.slick-arrow' ).attr( 'tabindex', 0 );
+		// add a tabindex to the arrows to make them tabbable
+		$t.find( '.slick-arrow' ).attr( 'tabindex', 0 );
 		
-		// handling number key events on the slider
-		$( t ).on( 'keydown', function( e ) {
-			if ( !isNaN( e.key ) || !e.key === null ) {
+		// handling number key events on the slider so the end user can use 1-0 to navigate or space/enter on arrows
+		$t.on( 'keydown', function( e ) {
+			if ( !isNaN( e.key ) || e.key !== null ) {
+
+				// tab for the future!
+				if( 'tab' === e.key.toLowerCase() ) {
+					// metrics call
+				} else if( ' ' === e.key.toLowerCase() || 'enter' === e.key.toLowerCase() ) {
+					// click on the element that's the target of the action
+					$( e.target ).click();
+				}
+
 				var dots = $( '.slick-dots li' ),
 					key = 0;
 				
