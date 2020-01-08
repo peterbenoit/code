@@ -15,6 +15,7 @@ externaljs:
     .card-img-wrap {
         position: relative;
         vertical-align: middle;
+        overflow: hidden;
     }
 
     .card-img-wrap div {
@@ -23,6 +24,8 @@ externaljs:
         width: 100%;
         height: 100%;
         text-align: center;
+        display: none;
+       overflow: hidden;
     }
 
     .card.card-hover-1 .card-img-wrap div span.btn-learn-more {
@@ -38,10 +41,6 @@ externaljs:
     .card.card-hover-1:hover .card-img-wrap div { 
        display: block;
        background-color:rgba(0, 0, 0, 0.15);
-    }
-    .card-img-wrap div { 
-	   display: none;
-       overflow: hidden;
     }
     a.card {
         color: #000
