@@ -31,8 +31,6 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jque
 	}
 </style>
 
-<p>This is a demo I made some time ago, when working with the default Bootstrap sliders.</p>
-
 <div class="container mt-3 mb-5">
 	<div class="row">
 		<div class="col">
@@ -422,12 +420,35 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jque
 </div>
 
 <div class="container">
-	<div class="row">
-		<div class="col">
-			<pre id="script-output"></pre>
+	<div aria-multiselectable="true" class="accordion indicator-plus accordion-white mb-3" id="accordion-4" role="tabpanel">
+		<div class="card">
+			<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-3" data-toggle="collapse" id="accordion-4-card-3" role="tab">
+				<a class="card-title" data-controls="accordion-4-collapse-3">Notes</a>
+			</div>
+			<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
+				<div class="card-body">
+					<p>Some info on this demo.</p>
+					<p>Using the Bootstrap 4 slider to create a card slider.</p>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-2" data-toggle="collapse" id="accordion-4-card-2" role="tab">
+				<a class="card-title" data-controls="accordion-4-collapse-2">Javascript</a>
+			</div>
+			<div aria-labelledby="accordion-4-card-2" class="collapse" id="accordion-4-collapse-2" role="tabpanel">
+				<div class="card-body">
+					<div class="row">
+						<div class="col">
+							<pre id="script-output"></pre>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
+
 
 <script id="prism-source">
 window.addEventListener( 'DOMContentLoaded', function() {
