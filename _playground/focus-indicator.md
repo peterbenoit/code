@@ -121,6 +121,82 @@ externaljs:
 		<div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
 			<a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
 		</div>
+	</div>
+	
+	<div class="accordion accordion-white mt-3" id="accordionTabs_3">
+		<div class="tabs-module">
+			<ul class="nav nav-tabs no-syndicate" id="tabs-3" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="tab" href="#tabs-3-1" role="tab">Getting Started</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#tabs-3-2" role="tab">Troubleshooting</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#tabs-3-3" role="tab">Getting Help</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="tabs-3-1" role="tabpanel">
+					<p>Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+					<p class="offset1">A: <a href="#">Ut enim ad minim veniam</a>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Q: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
+					<p class="offset1">A: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="tab-pane" id="tabs-3-2" role="tabpanel">
+					<p>Q: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum?</p>
+					<p class="offset1">A: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Q: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
+					<p class="offset1">A: Neque <a href="#">porro quisquam est, qui dolorem</a> ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+				</div>
+				<div class="tab-pane" id="tabs-3-3" role="tabpanel">
+					<p>Q: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi?</p>
+					<p class="offset1">A: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Q: Lorem ipsum dolor sit amet, consectetur <a href="#">adipiscing</a> elit?</p>
+					<p class="offset1">A: Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div aria-multiselectable="true" class="accordion indicator-plus accordion-white mt-3" id="accordion-4" role="tabpanel">
+		<div class="card bar">
+			<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-1" data-toggle="collapse" id="accordion-4-card-1" role="tab">
+				<button class="btn btn-link card-title" data-controls="accordion-4-collapse-1">
+					Accordion Section A
+				</button>				
+			</div>
+			<div aria-labelledby="accordion-4-card-1" class="collapse" id="accordion-4-collapse-1" role="tabpanel">
+				<div class="card-body">
+					<p>This accordion allows the visitor to expand multiple individual panels.&nbsp; This option is controlled in the accordion Settings pop-up. Note that an expand/collapse module is inserted above and below the accordion.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+			</div>
+		</div>
+		<div class="card bar">
+			<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-2" data-toggle="collapse" id="accordion-4-card-2" role="tab">
+				<button class="btn btn-link card-title" data-controls="accordion-4-collapse-2">
+					Accordion Section B
+				</button>				
+			</div>
+			<div aria-labelledby="accordion-4-card-2" class="collapse" id="accordion-4-collapse-2" role="tabpanel">
+				<div class="card-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+		<div class="card bar">
+			<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-3" data-toggle="collapse" id="accordion-4-card-3" role="tab">
+				<button class="btn btn-link card-title" data-controls="accordion-4-collapse-3">
+					Accordion Section C
+				</button>				
+			</div>
+			<div aria-labelledby="accordion-4-card-3" class="collapse" id="accordion-4-collapse-3" role="tabpanel">
+				<div class="card-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
 	</div>	
 </div>
 
@@ -128,9 +204,15 @@ externaljs:
     window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
 
-			$( 'a[href]' ).on( 'click', function(e) {
+			$( 'a[href="#"]' ).on( 'click', function(e) {
 				e.preventDefault();
+			} );
+
+			$( document ).on( 'keyup', function(e) {
+				console.log( $(":focus") )
 			} )
+
+
     
         } )( jQuery );
     } );
