@@ -198,8 +198,8 @@ function slickInit( target, settings ) {
 		if ( 'jumbotron' === defaults.sliderType ) {
 			$( t ).find( '.slick-dots' ).css( 'bottom', '0' );
 		}
-		
-		// $( t ).find( '.slick-arrow' ).each( function ( i ) { $( this ).attr( 'tabindex', i + 1 ); } );
+
+		$( t ).find( '.slick-arrow' ).attr( 'tabindex', 0 );
 		
 		// handling number key events on the slider
 		$( t ).on( 'keydown', function( e ) {
