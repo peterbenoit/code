@@ -1,56 +1,63 @@
 // ie only mq
-@media screen and (-ms-high-contrast:active),screen and (-ms-high-contrast:none){
+@media screen and (-ms-high-contrast:active),
+screen and (-ms-high-contrast:none) {
+
 	// this resets a rule in the Tp that sets the card body height to 100% in IE, which breaks the layout in the card slider.
 	.cdc-card-slider {
 		.card .card-body {
-			height: auto!important;
-		}	
-	}	
+			height: auto !important;
+		}
+	}
 }
 
 .cdc-card-slider {
 	margin-bottom: 0;
 	display: none;
-	
+
 	// normalize the card heights
-	.slick-track{
+	.slick-track {
 		display: flex;
 
-		.slick-slide{
+		.slick-slide {
 			display: flex;
 			height: auto;
 		}
 	}
-	
+
 	&.slick-initialized {
 		display: block;
-	 	animation: fadein 1s;
+		animation: fadein 1s;
 	}
-	
+
 	.video-transcript a {
-		color: #075290!important;
+		color: #075290 !important;
 		margin-right: .5rem;
+
 		span {
-			margin-left: 0!important;
+			margin-left: 0 !important;
+
 			&.cdc-icon-video_01 {
-				color: #000!important;
+				color: #000 !important;
 			}
 		}
-	}	
-	
+	}
+
 	ul.slick-dots {
 		bottom: -20px;
-		
+
 		&.slick-dots-left {
 			text-align: left;
 		}
+
 		&.slick-dots-right {
 			text-align: right;
-		}		
+		}
+
 		&.slick-dots-outline {
-			bottom: 34px!important;
+			bottom: 34px !important;
 			padding-bottom: 10px;
-			background: rgba( 0, 0, 0, .5 );
+			background: rgba(0, 0, 0, .5);
+
 			li {
 				button {
 					border: 1px solid #f0f0f0;
@@ -58,6 +65,7 @@
 					height: 10px;
 					padding: 5px;
 				}
+
 				&.slick-active {
 					button {
 						background-color: #e0e0e0;
@@ -65,30 +73,35 @@
 				}
 			}
 		}
+
 		&.slick-dots-numbers {
 			padding: 2px 0;
+
 			li {
-				button{
+				button {
 					line-height: initial;
 					font-size: 1rem;
 					color: #fff;
 					height: 30px;
+
 					&:hover {
 						color: #000;
 					}
 				}
+
 				&.slick-active {
 					button {
 						color: #000;
+
 						&:hover {
 							color: #000;
 						}
 					}
-				}				
+				}
 			}
 		}
 	}
-	
+
 	.card {
 		margin: 10px;
 
@@ -96,6 +109,7 @@
 			position: relative;
 			overflow: hidden;
 		}
+
 		.playbtn {
 			position: absolute;
 			top: 50%;
@@ -106,15 +120,16 @@
 			height: 80px;
 			cursor: pointer;
 		}
+
 		.card-img-top {
 			max-width: 100%;
-			
+
 			// TODO: revisit this, source not likely from youtube..
 			&[src*="ytimg.com"] {
-    			cursor: pointer;
+				cursor: pointer;
 			}
 		}
-		
+
 		.card-footer {
 			img {
 				width: 16px;
@@ -133,14 +148,15 @@
 			}
 		}
 	}
-	
+
 	.slick-slide {
 		opacity: 1;
+
 		&:hover {
 			opacity: 1;
 		}
 	}
-		
+
 	.slider-prev,
 	.slider-next {
 		cursor: pointer;
@@ -152,12 +168,12 @@
 		height: 45px;
 		display: block;
 		animation: fadein 1s;
-	}	
+	}
 
-	+ .cdc-slider-status {
+	+.cdc-slider-status {
 		text-align: center !important;
 	}
-	
+
 	&.cdc-carousel-thumbnail-slider {
 
 		margin-right: 4px;
@@ -176,7 +192,7 @@
 		.slider-next,
 		.slider-prev {
 			top: calc(50% - 20px);
-		}		
+		}
 	}
 
 	&.cdc-carousel-slider {
@@ -195,8 +211,8 @@
 			}
 		}
 
-		&.d-none  {
-			+ .cdc-slider-status {
+		&.d-none {
+			+.cdc-slider-status {
 				display: none;
 			}
 		}
@@ -209,10 +225,12 @@
 	}
 
 	&.cdc-thumbnail-slider {
-		.slider-prev, .slider-next	{
+
+		.slider-prev,
+		.slider-next {
 			top: calc(50% - 20px);
-			display: block!important;
-		}	
+			display: block !important;
+		}
 	}
 
 	&.cdc-jumbotron-slider {
@@ -223,29 +241,33 @@
 		.slider-next {
 			right: -10px !important;
 		}
+
 		.slider-prev {
 			left: -10px !important;
 		}
+
 		.slick-arrow {
-			display: block!important;
-		}		
+			display: block !important;
+		}
 	}
 
 	&.cdc-centermode-slider {
 		.slider-next {
 			right: -20px !important;
 		}
+
 		.slider-prev {
 			left: -20px !important;
 		}
 
 		.slick-slide {
 			opacity: 0.5;
+
 			&:hover {
 				opacity: 0.5;
 			}
-		}		
-	
+		}
+
 		.slick-slide.slick-active {
 			opacity: 1;
 			box-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
@@ -255,45 +277,49 @@
 
 body.modal-open {
 	.cdc-card-slider {
+
 		// hiding next/previous on modal open
 		.slider-next,
 		.slider-prev {
-			display: none!important;
+			display: none !important;
 			animation: fadeout 1s;
 		}
 	}
-	
+
 	// resizing the large modal for the video player
 	#CDC_videoModal {
 		.close {
 			opacity: .75;
 		}
-		
+
 		.modal-body {
 			padding: 0;
-		}		
-		
+		}
+
 		.modal-lg {
 			width: 60vw;
 			max-width: 60vw;
 		}
+
 		.video-transcript a {
 			display: inline-block;
-			color: #075290!important;
+			color: #075290 !important;
 			margin-right: .5rem;
+
 			span {
-				margin-left: 0!important;
+				margin-left: 0 !important;
+
 				&.cdc-icon-video_01 {
-					color: #000!important;
+					color: #000 !important;
 				}
 			}
-		}			
+		}
 	}
 }
 
 
 @media (max-width: 575.98px) {
-	.cdc-card-slider  {
+	.cdc-card-slider {
 		.card {
 			margin: 3px;
 
@@ -312,24 +338,25 @@ body.modal-open {
 }
 
 @media (max-width: 767.98px) {
+
 	.cdc-card-slider .slick-arrow,
 	.cdc-card-slider .slick-dots {
 		display: none;
 	}
 
 	.cdc-carousel-slider .slick-arrow {
-		display: block!important;
+		display: block !important;
 	}
 
 	.cdc-card-slider .card {
 		margin: 5px;
-		
+
 		.playbtn {
 			width: 50px;
 			height: 50px;
 		}
 	}
-	
+
 	.cdc-card-slider.slick-dotted {
 		margin-bottom: 0;
 	}
@@ -338,27 +365,28 @@ body.modal-open {
 @media (min-width: 767px) {
 	.cdc-card-slider {
 		+.cdc-slider-status:not(.d-block) {
-			display: block!important;
-		}		
+			display: block !important;
+		}
 	}
 }
 
 @media (max-width:991.98px) {
 	body.modal-open {
+
 		// modal is full width in mobile
 		#CDC_videoModal {
 			.modal-lg {
 				width: 100vw;
 				max-width: 100vw;
 				margin: 0;
-			}		
+			}
 		}
 	}
 
 	.cdc-card-slider {
 		&.cdc-carousel-thumbnail-slider {
 			+.cdc-slider-status {
-				display: none!important;
+				display: none !important;
 			}
 		}
 
@@ -373,26 +401,27 @@ body.modal-open {
 @media (min-width:992px) {
 	.cdc-carousel-slider {
 		.slick-arrow {
-			display: none!important;
+			display: none !important;
 		}
 	}
-	.cdc-card-slider + .cdc-slider-status:not(.d-block) {
-		display: none!important;
+
+	.cdc-card-slider+.cdc-slider-status:not(.d-block) {
+		display: none !important;
 	}
-	
+
 	.cdc-standard-slider {
 		&.cdc-standard-slider-overlay {
 			position: relative;
 
 			.card-body {
 				position: absolute;
-				bottom:0;
+				bottom: 0;
 				width: 100%;
-				background: rgba(0,0,0,.7);
+				background: rgba(0, 0, 0, .7);
 				color: #fff;
 			}
 		}
-	}	
+	}
 }
 
 
@@ -400,10 +429,21 @@ body.modal-open {
 
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
+
 @keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
 }
