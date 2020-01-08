@@ -36,25 +36,25 @@ externaljs:
 	.btn-primary:not(:disabled):not(.disabled):active, 
 	.btn-primary:not(:disabled):not(.disabled).active, 
 	.show > .btn-primary.dropdown-toggle {
-		background-color: red;
+		background-color: #005eaa;
 	}	
 
 	.btn-secondary:not(:disabled):not(.disabled):active, 
 	.btn-secondary:not(:disabled):not(.disabled).active, 
 	.show > .btn-secondary.dropdown-toggle {
-		background-color: red;
+		background-color: #88c3ea;
 	}
 
 	.btn-tertiary:not(:disabled):not(.disabled):active, 
 	.btn-tertiary:not(:disabled):not(.disabled).active, 
 	.show > .btn-tertiary.dropdown-toggle {
-		background-color: red;
+		background-color: #c0e9ff;
 	}
 
 	.btn-quaternary:not(:disabled):not(.disabled):active, 
 	.btn-quaternary:not(:disabled):not(.disabled).active, 
 	.show > .btn-quaternary.dropdown-toggle {
-		background-color: red;
+		background-color: #edf9ff;
 	}
 
 	.btn-primary.dropdown-toggle + .dropdown-menu > .dropdown-item.active, 
