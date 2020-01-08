@@ -5,7 +5,7 @@ description: Focus indicator on a variety of elements
 title: Focus Indicator
 type: demo
 localcss: 
-localjs:
+localjs: slickinit.js
 includePrismJs: false
 externalcss: 
 externaljs: 
@@ -198,6 +198,37 @@ externaljs:
 			</div>
 		</div>
 	</div>	
+
+	<h1 class="bb-1 pt-5 mb-3">Template Package 4 Components</h1>
+	<div class="cdc-card-slider">
+		<div class="card">
+			<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
+			<div class="card-body">
+				<div class="card-title h4 text-left">
+					Card Title 1
+				</div>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+			</div>
+		</div>
+		<div class="card">
+			<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300">
+			<div class="card-body">
+				<div class="card-title h4 text-left">
+					Card Title 2
+				</div>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+			</div>
+		</div>
+		<div class="card">
+			<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/821/700/300">
+			<div class="card-body">
+				<div class="card-title h4 text-left">
+					Card Title 3
+				</div>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
@@ -212,7 +243,20 @@ externaljs:
 				console.log( $(":focus") )
 			} )
 
-
+			slickInit( '.cdc-card-slider', {
+				'sliderType': 'standard',
+				'bodyClass': '',        
+				'ariaLabel': '',
+				'centerMode': false,
+				'ariaLabelTarget': 'sliderLabel',
+				'responsive': [ 
+					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+					{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+					{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+				]
+			} );
     
         } )( jQuery );
     } );
