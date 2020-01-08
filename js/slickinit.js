@@ -49,7 +49,6 @@ function slickInit( target, settings ) {
 	// replace our default settings with whatever is passed in
 	$.extend( true, defaults, s );
 
-	console.info( 'sliderType', defaults.sliderType );
 	if( 'video' === defaults.sliderType ) {
 		// video slider
 		$( t )
@@ -181,6 +180,11 @@ function slickInit( target, settings ) {
 
 	} else {
 		console.info( 'No sliderType defined' );
+	}
+
+	// slides are treated a little differently in centerMode, flagging the slider here for use in CSS later
+	if( defaults.centerMode ) {
+		$( t ).addClass( 'cdc-centermode-slider' );
 	}
 		
 	// NOTE: the next two methods do basically the same thing, 
