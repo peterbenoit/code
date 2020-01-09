@@ -1,4 +1,4 @@
-function slickInit( target, settings ) {
+function slickInit2( target, settings ) {
 	var t = target,
 		s = settings || {},
 		slik = null,
@@ -141,10 +141,8 @@ function slickInit( target, settings ) {
 
 		$( t ).addClass( 'cdc-jumbotron-slider' );
 	} else if ( 'standard' === defaults.sliderType ) {
-		
 		$( t ).addClass( 'cdc-standard-slider' );
-
-	} else if( 'carousel' === defaults.sliderType ) {
+	} else if ( 'carousel' === defaults.sliderType ) {
 		var t = $( t ),
 			clone = t.clone(),
 			id = t.attr( 'id' ) + '-clone';
@@ -178,8 +176,12 @@ function slickInit( target, settings ) {
 				]
 			} );			
 
+	} else if ( 0 === defaults.sliderType.trim.length ) {
+		// incase we need this, an empty string was passed in so default back to standard
+		defaults.sliderType = 'standard';
+		$( t ).addClass( 'cdc-standard-slider' );
 	} else {
-		console.info( 'No sliderType defined' );
+		console.warn( 'Unknown sliderType defined' );
 	}
 
 	// slides are treated a little differently in centerMode, flagging the slider here for use in CSS later
@@ -299,12 +301,12 @@ function slickInit( target, settings ) {
 		}
 	} );	
 
+	console.info( 'Initializing Slick with these settings:', defaults );
 	// initialize the slider with the settings
 	$( t ).slick( defaults );
 	
 	// ARIA
 	if( defaults.enableAria ) {
-		
 		// set aria-label on each CARD
 		// remove aria-describedby on each CARD
 		$( t ).find( '.card' ).each( function() { 
