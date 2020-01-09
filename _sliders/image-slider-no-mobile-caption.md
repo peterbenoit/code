@@ -1,8 +1,8 @@
 ---
 layout: template
-permalink: sliders/image-slider.html
-description: Image Slider using Slick Slider
-title: Image Slider 
+permalink: sliders/image-slider-no-mobile-caption.html
+description: Image Slider without a mobile caption
+title: Image Slider
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -17,7 +17,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel">Slick Slider - Standard Image Slider</span>
+			<span class="h3" id="sliderLabel">Slick Slider - No Mobile Caption</span>
 		</div>
 	</div>
 	<div class="row">
@@ -116,9 +116,15 @@ showinnav: true
 			</div>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col">
+
+		</div>
+	</div>
+
 </div>
 
-<script id="prism-source">
+<script id="prism-source" data-line="9">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
@@ -127,6 +133,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'bodyClass': '',        
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel',
+			'mobileCaption': false,
 			'responsive': [ 
 				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
@@ -148,7 +155,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>An image card slider, using the  <a href="https://kenwheeler.github.io/slick/">Slick Carousel library</a>.</p>	
+				<p>An image card slider, the same as the <a href="image-slider.html">image slider demo</a>, except that the mobileCaption setting is false. This prevents the caption from being visible in mobile viewports.</p>	
 			</div>
 		</div>
 	</div>

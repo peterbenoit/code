@@ -1,4 +1,4 @@
-function slickInit2( target, settings ) {
+function slickInit( target, settings ) {
 	var t = target,
 		s = settings || {},
 		slik = null,
@@ -17,6 +17,7 @@ function slickInit2( target, settings ) {
 			centerMode: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			mobileCaption: true,
 			mobileFirst: true,
 			prevArrow: prev,
 			nextArrow: next,
@@ -182,6 +183,10 @@ function slickInit2( target, settings ) {
 		$( t ).addClass( 'cdc-standard-slider' );
 	} else {
 		console.warn( 'Unknown sliderType defined' );
+	}
+
+	if( !defaults.mobileCaption ) {
+		$( t ).addClass( 'cdc-no-mobile-caption' );
 	}
 
 	// slides are treated a little differently in centerMode, flagging the slider here for use in CSS later
