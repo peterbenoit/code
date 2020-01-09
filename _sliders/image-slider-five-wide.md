@@ -25,7 +25,7 @@ showinnav: true
 		<div class="col">
 			<div class="cdc-card-slider">
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/819/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 1
@@ -61,7 +61,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/813/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/823/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 5
@@ -70,7 +70,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/824/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 6
@@ -79,7 +79,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/825/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 7
@@ -88,7 +88,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/821/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/826/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 8
@@ -97,7 +97,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/822/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/827/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 9
@@ -106,7 +106,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/813/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/828/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 10
@@ -123,8 +123,8 @@ showinnav: true
 	window.addEventListener( 'DOMContentLoaded', function() {
 		( function( $ ) {
 
-			slickInit( '.cdc-card-slider', {
-				'sliderType': '',
+			slickInit2( '.cdc-card-slider', {
+				'sliderType': 'standard',
 				'bodyClass': '',        
 				'ariaLabel': '',
 				'ariaLabelTarget': 'sliderLabel',
