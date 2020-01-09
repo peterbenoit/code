@@ -20,7 +20,7 @@ showinnav: true
 			<span class="h3" id="sliderLabel_1">Slick Carousel (clone)</span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/819/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 1
@@ -56,7 +56,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/813/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/823/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 5
@@ -65,7 +65,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/824/700/300">
 					<div class="card-body bg-gray-d2">
 						<div class="card-title h4 text-left">
 							Card Title 6
@@ -74,7 +74,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/825/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 7
@@ -83,7 +83,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/821/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/826/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 8
@@ -92,7 +92,7 @@ showinnav: true
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/822/700/300">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/827/700/300">
 					<div class="card-body bg-gray-d2">
 						<div class="card-title h4 text-left">
 							Card Title 9

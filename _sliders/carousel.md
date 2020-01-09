@@ -9,9 +9,11 @@ localjs: slickinit.js
 includePrismJs: true
 externalcss:
 externaljs:
-showinnav: true
+showinnav: false
 ---
-
+<div class="alert alert-danger" role="alert">
+	This demo is broken due to work on the <a class="alert-link" href="carousel-clone.html">carousel (clone)</a> demo. Please use it instead.
+</div>
 {%- include breadcrumbs.html -%}
 
 <div class="container">
