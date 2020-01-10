@@ -1,5 +1,5 @@
 ---
-layout: bootstrap
+layout: template
 permalink: cards/card-image-scaling.html
 description: Using animations to scale card images larger and smaller
 title: Card Image Scaling
@@ -13,24 +13,26 @@ externaljs:
 
 <style>
 .img-zoom {
-	position: relative;
-	.img-fluid {
-		display: block;
-		cursor: zoom-in;
-		float: left;
-		max-width: initial;
-	}
-	a {
-		background: rgba(0,0,0,0.75);
-		color: #fff;
-		font-weight: bold;
-		padding: 2px 10px;
-		z-index: 9999;
-		position: absolute;
-		display: none;
-		margin: 2px
-	}
+    position: relative;
 }
+	
+.img-zoom .img-fluid {
+    display: block;
+    cursor: zoom-in;
+    float: left;
+    max-width: initial;
+}
+.img-zoom a {
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 10px;
+    z-index: 9999;
+    position: absolute;
+    display: none;
+    margin: 2px
+}
+
 
 </style>
 
