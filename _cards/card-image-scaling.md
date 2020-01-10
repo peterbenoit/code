@@ -11,7 +11,9 @@ externalcss:
 externaljs: 
 ---
 
-<h3>Zoom in/out on Boostrap 4 card images.</h3>
+{%- include breadcrumbs.html -%}
+
+
 <label for="factor">Scale Factor</label> 
 <select class="custom-select w-10" id="factor" name="factor">
 	<option value="1.25">
@@ -60,69 +62,76 @@ externaljs:
     window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
 
-            var factor = 2,
-                scale = 0;
-
-            $('.img-fluid').on('mousedown',function(event) {
-                if ($(':animated').length) {
-                    return false;
-                }
-                $('.img-fluid').css('z-index','0').not(this).removeAttr('style').prev('.reset').hide();
-                $(this).css('z-index','9998');
+            var factor = 2,     // the amount of zoom
+                scale = 0;      // the zoom level
                 
-                switch (event.which) {
-                    case 1:
-                        $(this).css('cursor', 'zoom-in');
-                        scale++;
-                        $(this).animate({
-                            width: $(this).width() * $('#factor').val()
-                        }, function() {
-                            if( 0 === scale ) {
-                                $(this).attr('style','')
-                            }
-                        });
-                        
-                        break;
-                    case 3:
-                        $(this).css('cursor', 'zoom-out');
-                        if( 0 === scale ) { return false; }
-                        scale--;
-                        $(this).animate({
-                            width: $(this).width() / $('#factor').val()
-                        }, function() {
-                            if( 0 === scale ) {
-                                $(this).attr('style','')
-                            }
-                        });
-                        break;
-                    default:
+            $( '.card-img-zoom .img-fluid' ).on( 'mousedown', function( event ) {
+                // if animating, don't allow more clicking
+            	if ( $( ':animated' ).length ) {
+            		return false;
                 }
-                if( 0 === scale ) {
-                    $( this ).prev('.reset').hide();
-                    $( '#overlay' ).hide();
-                } else {
-                    $( this ).prev('.reset').show();
-                    if(  $('#cbox' ).is(':checked')){
-                        $( '#overlay' ).show();
-                    }
-                    
-                }
-            }).on('contextmenu', function() {
-                return false;
-            });
-            
-            $('.img-fluid').before('<a class="btn reset" href="#">reset</a>');
+                
+                // reset all of the images
+                $( '.card-img-zoom .img-fluid' )
+                    .css( 'z-index', '0' )
+                    .not( this ).removeAttr( 'style' ).prev( '.reset' ).hide();
 
+                // put this over most other things
+                $( this ).css( 'z-index', '9998' );
+                
+                // handle which mouse button was clicked
+            	switch ( event.which ) {
+            		case 1:
+                        // zooming in 
+            			$( this ).css( 'cursor', 'zoom-in' );
+            			scale++;
+            			$( this ).animate( {
+            				width: $( this ).width() * $( '#factor' ).val()
+            			}, function() {
+            				if ( 0 === scale ) {
+            					$( this ).attr( 'style', '' )
+            				}
+            			} );
+            			break;
+            		case 3:
+            			$( this ).css( 'cursor', 'zoom-out' );
+            			if ( 0 === scale ) {
+            				return false;
+            			}
+            			scale--;
+            			$( this ).animate( {
+            				width: $( this ).width() / $( '#factor' ).val()
+            			}, function() {
+            				if ( 0 === scale ) {
+            					$( this ).attr( 'style', '' )
+            				}
+            			} );
+            			break;
+            		default:
+            	}
+            	if ( 0 === scale ) {
+            		$( this ).prev( '.reset' ).hide();
+            		$( '#overlay' ).hide();
+            	} else {
+            		$( this ).prev( '.reset' ).show();
+            		if ( $( '#cbox' ).is( ':checked' ) ) {
+            			$( '#overlay' ).show();
+            		}
+            	}
+            } ).on( 'contextmenu', function() {
+            	return false;
+            } );
+            $( '.card-img-zoom .img-fluid' ).before( '<a class="btn reset" href="#">reset</a>' );
             $( 'body' ).append( '<div id="overlay"></div>' )
+            $( '.reset' ).on( 'click', function() {
+            	$( this ).next( '.card-img-zoom .img-fluid' ).attr( 'style', '' ).css( 'cursor', 'zoom-in' );
+            	$( this ).hide();
+            	$( '#overlay' ).hide();
+            	scale = 0;
+            } );
 
-            $( '.reset' ).on('click', function() {
-                $(this).next('.img-fluid').attr('style','').css('cursor', 'zoom-in');
-                $( this ).hide();
-                $( '#overlay' ).hide();
-                scale = 0;
-            });
-    } )( jQuery );
-} );
+        } )( jQuery );
+    } );
 </script>
 
 <div aria-multiselectable="true" class="accordion indicator-plus accordion-white mb-3" id="accordion-4" role="tabpanel">
@@ -134,8 +143,9 @@ externaljs:
 			<div class="card-body">
 				<p>Some info on this demo.</p>
 				<ol>
-					<li>See <a href="card-step-style.html">Card Step Style</a> for details on this demo.</li>
-					<li>The numbers are created using Font Awesome, detailed in <a href="/code/2020/01/06/using-numbers-in-font-awesome-5.html">this post</a>.</li>
+					<li>Zoom in/out on Boostrap 4 card images.</li>
+                    <li>Change the scale amount to change how much the image zooms in and out.</li>
+                    <li>Check Use Overlay in order to dim the screen while zooming.</li>
 				</ol>	
 			</div>
 		</div>
@@ -148,23 +158,11 @@ externaljs:
 			<div class="card-body">
 				<div class="row">
 					<div class="col">
-						<pre><code class="language-markup line-numbers"><script type="prism-html-markup"><div class="card card-step bt-3 bt-primary">
-	<div class="row no-gutters">
-		<div class="col-lg-3">
-			<div class="card">
-				<div class="card-header bg-tertiary h3 r-none"><i class="fas fa-air-freshener c-primary d-lg-none mr-1"></i>Step <span class="d-lg-block">01</span></div>
-				<div class="card-body text-center d-none d-lg-block">
-					<i class="fas fa-air-freshener c-primary"></i>
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="card">
-				<div class="card-header">Header 1</div>
-				<div class="card-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-			</div>
-		</div>
-	</div>
+                        <pre><code class="language-markup line-numbers"><script type="prism-html-markup"><div class="card card-img-zoom">
+    <img alt="Card image cap" class="img-fluid card-img-top" src="https://www.cdc.gov/obesity/data/brfss_2018_ob_white.svg">
+    <div class="card-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis molestias. Quos sit iste cumque incidunt labore at facilis earum suscipit architecto, debitis aliquid ipsum laborum. Eaque cupiditate amet ab.</p>
+    </div>
 </div></script></code></pre>
 					</div>
 				</div>
@@ -179,23 +177,38 @@ externaljs:
 			<div class="card-body">
 				<div class="row">
 					<div class="col">
-						<pre><code class="language-css line-numbers"><script type="prism-html-markup">.card-step {
-	.card-body {
-		i, span {
-			&.fas, &.far, &.fa-stack {
-				font-size:10vw;
-				+.fa-stack-1x {
-					font-size: 7vw;
-				}
-			} 
-		}
-		
-		.fa-stack {
-			height: 1em;
-			width: 1em;
-			line-height: 1em;
-		}
-	}
+						<pre><code class="language-css line-numbers"><script type="prism-html-markup">.card-img-zoom {
+    position: relative;
+    .img-fluid {
+        display: block;
+        cursor: zoom-in;
+        float: left;
+        max-width: initial;
+    }
+    a.reset {
+        background: rgba(0,0,0,0.75);
+        color: #fff;
+        font-weight: bold;
+        padding: 2px 10px;
+        z-index: 9999;
+        position: absolute;
+        display: none;
+        margin: 2px
+    }    
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
 }</script></code></pre>
 					</div>
 				</div>
