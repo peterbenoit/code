@@ -1,8 +1,8 @@
 ---
 layout: template
-permalink: playground/image-zoom.html
+permalink: playground/instagram-zoom.html
 description: Instagram-like zooming of images
-title: Image Zoom
+title: Instagram Zoom
 type: demo
 localcss: 
 localjs:
