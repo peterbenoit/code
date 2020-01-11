@@ -32,7 +32,7 @@ externaljs:
 </div>
 
 <div class="row">
-	<div class="col-4">
+	<div class="col-md-4">
 		<div class="card card-img-zoom">
 			<img alt="Card image cap" class="img-fluid card-img-top" src="https://www.cdc.gov/dhdsp/maps/images/hd_all.jpg">
 			<div class="card-body">
@@ -40,7 +40,7 @@ externaljs:
 			</div>
 		</div>
 	</div>
-	<div class="col-4">
+	<div class="col-md-4">
 		<div class="card card-img-zoom">
 			<img alt="Card image cap" class="img-fluid card-img-top" src="https://www.cdc.gov/obesity/data/brfss_2018_ob_white.svg">
 			<div class="card-body">
@@ -48,7 +48,7 @@ externaljs:
 			</div>
 		</div>
 	</div>
-	<div class="col-4">
+	<div class="col-md-4">
 		<div class="card card-img-zoom">
 			<img alt="Card image cap" class="img-fluid card-img-top" src="https://www.cdc.gov/dhdsp/maps/images/sd_unemployment.jpg">
 			<div class="card-body">
