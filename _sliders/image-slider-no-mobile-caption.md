@@ -116,12 +116,6 @@ showinnav: true
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col">
-
-		</div>
-	</div>
-
 </div>
 
 <script id="prism-source" data-line="9">
