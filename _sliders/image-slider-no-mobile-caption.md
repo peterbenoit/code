@@ -155,7 +155,10 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>An image card slider, the same as the <a href="image-slider.html">image slider demo</a>, except that the mobileCaption setting is false. This prevents the caption from being visible in mobile viewports.</p>	
+				<ol>
+					<li>An image card slider, the same as the <a href="image-slider.html">image slider demo</a>, except that the mobileCaption setting is false. This adds the <code>.cdc-no-mobile-caption</code> class to the slider which prevents the caption from being visible in mobile viewports.</li>
+					<li>This slider uses the centerMode setting, and can because of that, and only slide one at a time [ <a href="https://github.com/kenwheeler/slick/issues/2328">GitHub</a> ].</li>
+				</ol>	
 			</div>
 		</div>
 	</div>
