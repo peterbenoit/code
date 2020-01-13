@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/carousel-clone.html
 description: The original (non-clone) carousel slider required initializing two sliders and then asking them politely to work together. This is <i>mostly</i> fine, however the sync method between the two sliders was problematic. To get around this, and the fact that I had to initialize two sliders, I now clone the original slider and capture events on the clone to handle slide navigation.
-title: Carousel via clone method
+title: Carousel (clone)
 type: demo
 localcss: sliders.css
 localjs: slickinit.js

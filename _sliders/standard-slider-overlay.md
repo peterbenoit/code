@@ -1,9 +1,8 @@
 ---
 layout: template
 permalink: sliders/standard-slider-overlay.html
-description: Standard Slider with overlay using Slick Slider
-title: Standard Slider with overlay 
-type: demo
+description: Standard Slider with overlay instead of a caption
+title: Standard Slider (overlay)
 localcss: sliders.css
 localjs: slickinit.js
 includePrismJs: true
@@ -17,7 +16,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3 d-block" id="sliderLabel">Slick Slider - Standard Slider with overlay</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - Standard Slider with overlay instead of caption</span>
 		</div>
 	</div>
 	<div class="row">
@@ -126,7 +125,7 @@ showinnav: true
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>The standard card slider with overlay used for displaying images with associated content, such as a title and a short description which appears beneath the image.</p>
+				<p>This is the <a href="standard-slider.html">standard Image Slider</a>, with a callback which adds the <code>.cdc-standard-slider-overlay</code> class to the slider. This CSS repositions and changes the style of the Card body, so that it appears over the image as an overlay. </p>
 			</div>
 		</div>
 	</div>
@@ -145,7 +144,7 @@ showinnav: true
 	</div>
 </div>
 
-<script id="prism-source" data-line="5,10-12">
+<script id="prism-source" data-line="10-12">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 

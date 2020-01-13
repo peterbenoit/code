@@ -1,7 +1,7 @@
 ---
 layout: template
 permalink: sliders/image-slider.html
-description: The very basic version of the Slick image slider. This version is the basis for all other versions
+description: The very basic version of the Slick image slider. This version is the basis for all of the other versions of sliders demos here.
 title: Image Slider 
 type: demo
 localcss: sliders.css
@@ -20,9 +20,11 @@ showinnav: true
 			<span class="h3 d-block" id="sliderLabel">Slick Slider - Standard Image Slider</span>
 		</div>
 	</div>
+
+	<span class="h4" id="sliderLabel_1">Using centerMode</span>
 	<div class="row">
 		<div class="col-lg-9">
-			<div class="cdc-card-slider">
+			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/819/700/300">
 					<div class="card-body">
@@ -116,13 +118,111 @@ showinnav: true
 			</div>
 		</div>
 	</div>
+
+	<span class="h4" id="sliderLabel_2">Not using centerMode</span>
+	<div class="row">
+		<div class="col-lg-9">
+			<div class="cdc-card-slider" id="slider_2">
+				<div class="card">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/819/700/300">
+					<div class="card-body">
+						<div class="card-title h4 text-left">
+							Card Title 1
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300">
+					<div class="card-body">
+						<div class="card-title h4 text-left">
+							Card Title 2
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/821/700/300">
+					<div class="card-body">
+						<div class="card-title h4 text-left">
+							Card Title 3
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/822/700/300">
+					<div class="card-body">
+						<div class="card-title h4 text-left">
+							Card Title 4
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/823/700/300">
+					<div class="card-body">
+						<div class="card-title h4 text-left">
+							Card Title 5
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/824/700/300">
+					<div class="card-body">
+						<div class="card-title h4 text-left">
+							Card Title 6
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/825/700/300">
+					<div class="card-body">
+						<div class="card-title h4 text-left">
+							Card Title 7
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/826/700/300">
+					<div class="card-body">
+						<div class="card-title h4 text-left">
+							Card Title 8
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/827/700/300">
+					<div class="card-body">
+						<div class="card-title h4 text-left">
+							Card Title 9
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+					</div>
+				</div>
+				<div class="card">
+					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/828/700/300">
+					<div class="card-body">
+						<div class="card-title h4 text-left">
+							Card Title 10
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 </div>
 
-<script id="prism-source">
+<script id="prism-source" data-line="23">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
-		slickInit( '.cdc-card-slider', {
+		slickInit( '#slider_1', {
 			'sliderType': 'standard',
 			'bodyClass': '',        
 			'ariaLabel': '',
@@ -135,6 +235,21 @@ window.addEventListener( 'DOMContentLoaded', function() {
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]
 		} );
+
+		slickInit( '#slider_2', {
+			'sliderType': 'standard',
+			'bodyClass': '',        
+			'ariaLabel': '',
+			'ariaLabelTarget': 'sliderLabel',
+			'centerMode': false,
+			'responsive': [ 
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+			]
+		} );		
 		
 	} )( jQuery );
 } );
@@ -148,7 +263,11 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>An image card slider, using the  <a href="https://kenwheeler.github.io/slick/">Slick Carousel library</a>.</p>	
+				<p>This is the standard image card slider, using the  <a href="https://kenwheeler.github.io/slick/">Slick Carousel library</a>. </p>
+				<ol>
+					<li>The first slider is the default configuration</li>
+					<li>The second slider has <code>centerMode</code> set to <code>false</code>. </li>
+				</ol>
 			</div>
 		</div>
 	</div>

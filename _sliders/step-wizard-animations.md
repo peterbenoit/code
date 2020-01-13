@@ -1,12 +1,12 @@
 ---
 layout: template
-permalink: sliders/step-wizard-animations.html
-description: Step Wizard with Animations using Slick Slider and Animate.css
+permalink: sliders/form-step-wizard-animations.html
+description: This is the same as the Step Wizard demo, using alternative slider transition animations, some by using the Animate.css CSS library.
 title: Step Wizard with Animation
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
-includePrismJs: false
+includePrismJs: true
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 externaljs: 
 ---
@@ -138,7 +138,7 @@ externaljs:
 	</div>
 </div>
 
-<script id="prism-source">
+<script id="prism-source" data-line="37,38">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
@@ -155,45 +155,20 @@ window.addEventListener( 'DOMContentLoaded', function() {
 					src = img.attr( 'src' ),
 					title = t.find( '.card-title' ),
 					text = title.text();
-				console.log( slick.defaults )
 				return text;
 			},
 			'callback': function( t, d ) {
 				t.addClass( 'cdc-arrow-slider' );
 			},
-			'responsive': [ {
-				'breakpoint': 1200,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 992,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 768,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 576,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 0,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1,
-					'centerPadding': '20px'
-				}
+			'responsive': [ 
+				{'breakpoint': 1200,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+				{'breakpoint': 992,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+				{'breakpoint': 768,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+				{'breakpoint': 576,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+				{'breakpoint': 0,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1,	'centerPadding': '20px'}
 			} ]
 		} );
+
 		slickInit( '#example2', {
 			'sliderType': '',
 			'bodyClass': '',
@@ -209,45 +184,20 @@ window.addEventListener( 'DOMContentLoaded', function() {
 					src = img.attr( 'src' ),
 					title = t.find( '.card-title' ),
 					text = title.text();
-				console.log( slick.defaults )
 				return text;
 			},
 			'callback': function( t, d ) {
 				t.addClass( 'cdc-arrow-slider' );
 			},
-			'responsive': [ {
-				'breakpoint': 1200,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 992,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 768,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 576,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 0,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1,
-					'centerPadding': '20px'
-				}
+			'responsive': [ 
+				{'breakpoint': 1200,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+				{'breakpoint': 992,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+				{'breakpoint': 768,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+				{'breakpoint': 576,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+				{'breakpoint': 0,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1,	'centerPadding': '20px'}
 			} ]
 		} );
+
 		slickInit( '#example3', {
 				'sliderType': '',
 				'bodyClass': '',
@@ -262,43 +212,17 @@ window.addEventListener( 'DOMContentLoaded', function() {
 						src = img.attr( 'src' ),
 						title = t.find( '.card-title' ),
 						text = title.text();
-					console.log( slick.defaults )
 					return text;
 				},
 				'callback': function( t, d ) {
 					t.addClass( 'cdc-arrow-slider' );
 				},
-				'responsive': [ {
-					'breakpoint': 1200,
-					'settings': {
-						'slidesToShow': 1,
-						'slidesToScroll': 1
-					}
-				}, {
-					'breakpoint': 992,
-					'settings': {
-						'slidesToShow': 1,
-						'slidesToScroll': 1
-					}
-				}, {
-					'breakpoint': 768,
-					'settings': {
-						'slidesToShow': 1,
-						'slidesToScroll': 1
-					}
-				}, {
-					'breakpoint': 576,
-					'settings': {
-						'slidesToShow': 1,
-						'slidesToScroll': 1
-					}
-				}, {
-					'breakpoint': 0,
-					'settings': {
-						'slidesToShow': 1,
-						'slidesToScroll': 1,
-						'centerPadding': '20px'
-					}
+				'responsive': [ 
+					{'breakpoint': 1200,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+					{'breakpoint': 992,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+					{'breakpoint': 768,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+					{'breakpoint': 576,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
+					{'breakpoint': 0,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1,	'centerPadding': '20px'}
 				} ]
 			} );
 
@@ -307,12 +231,81 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		} else {
 			$( this ).find( '.card-title' ).removeClass( 'animated fadeInLeft' );
 		}
+
 		$( '#example3' ).on( 'beforeChange', function() {
 			$( this ).find( '.card-title' ).removeClass( 'animated fadeInLeft' );
 			setTimeout( () => {
 				$( this ).find( '.card-title' ).addClass( 'animated fadeInLeft' );
 			}, 100 );
 		} );
+
 	} )( jQuery );
 } );
 </script>
+
+<div aria-multiselectable="true" class="accordion indicator-plus accordion-white mb-3" id="accordion-4" role="tabpanel">
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-3" data-toggle="collapse" id="accordion-4-card-3" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-3">Notes</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
+			<div class="card-body">
+				<p>Some info on this demo.</p>
+				<ol>
+					<li>Using the slider as a form step wizard.</li>
+				</ol>	
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-1" data-toggle="collapse" id="accordion-4-card-1" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-1">HTML</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-1" class="collapse" id="accordion-4-collapse-1" role="tabpanel">
+			<div class="card-body">
+				<div class="row">
+					<div class="col"><pre><code class="language-markup line-numbers"><script type="prism-html-markup"><div class="card">
+	<div class="card-body">
+		<div class="card-title d-none">
+			Step 3
+		</div>
+		<p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse unde iusto minus illum amet aliquam dolorum rem, ea aspernatur earum adipisci culpa. Dolore non eligendi velit iure distinctio illum.</span><span>Eligendi beatae repellendus, animi tempore quibusdam impedit illo doloremque asperiores, veniam esse, perferendis quod recusandae adipisci! Facilis dolorem, voluptatibus, ea voluptate sapiente molestias, enim architecto ipsam ut dolores vel recusandae!</span></p>
+		<p><span>Labore dolor enim impedit modi culpa corrupti, aliquam, quisquam cumque reiciendis quam eum iusto nam aliquid tenetur amet eius, voluptatibus illum recusandae distinctio deserunt vero quos adipisci id velit! Magnam.</span><span>Sed provident saepe ut libero omnis assumenda quasi obcaecati quod optio, repellat ipsum quisquam dolore accusamus fugiat veritatis, fugit aut itaque. Reiciendis, animi. Nulla laudantium unde ad libero est veritatis?</span></p>
+		<div class="form-check">
+			<input class="form-check-input" id="defaultCheck1" required="" type="checkbox" value=""> <label class="form-check-label" for="defaultCheck1">Yes, this seems reasonable.</label>
+		</div>
+	</div>
+	<div class="card-footer">
+		<div class="row">
+			<div class="col">
+				<button class="btn btn-secondary btn-prev">Previous</button>
+			</div>
+			<div class="col">
+				<button class="float-right btn btn-success btn-next" disabled="disabled">Next</button>
+			</div>
+		</div>
+	</div>
+</div></script></code></pre>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-2" data-toggle="collapse" id="accordion-4-card-2" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-2">Javascript</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-2" class="collapse" id="accordion-4-collapse-2" role="tabpanel">
+			<div class="card-body">
+				<div class="row">
+					<div class="col">
+						<div class="col" id="script-source">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<pre id="script-output" style="position:absolute;left:-9999px"></pre>
