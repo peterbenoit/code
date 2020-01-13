@@ -9,9 +9,9 @@ type: home
 
 {% include components/intro.md %}
 
-### What am I looking at?
+### What is all of this?!
 
-I have an assortment of [posts]({{ site.baseurl}}{% link list/posts.html %}) and [projects]({{ site.baseurl}}{% link list/projects.md %}) that I put together.
+Here's an assortment of [posts]({{ site.baseurl}}{% link list/posts.html %}) and [projects]({{ site.baseurl}}{% link list/projects.md %}) that I have put together over the last year. It's built in <a href="https://jekyllrb.com">Jekyll</a> and runs in Github.
 
 ### Recent
 
