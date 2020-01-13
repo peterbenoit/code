@@ -1,7 +1,7 @@
 ---
 layout: template
 permalink: sliders/image-slider-five-wide.html
-description: Five wide image slider built using Slick Slider
+description: This version of the image slider displays five cards at a time. This is the same as the Three Card Image Slider, except for the number of slidesToShow setting
 title: Five wide image slider 
 type: demo
 localcss: sliders.css
