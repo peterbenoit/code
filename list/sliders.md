@@ -7,12 +7,14 @@ type: list
 ---
 
 <p>The <a href="http://kenwheeler.github.io/slick/">Slick Carousel</a> hasn't been updated in a few years, but it still holds its own as a decent enough slider.</p>
-<p>Instead of making changes to the core library, I wrote a custom <code>slickInit()</code> method for taking configuration options and applying them to the slider. Options can be as simple as turning options on or off, or as complex as you callback functions for slider DOM actions. You can see an example of this at the bottom of this page</p>
+<p>Instead of making changes to the core library, I wrote a custom <code>slickInit()</code> method for taking configuration options and applying them to the slider. Options can be as simple as turning options on or off, or as complex as you callback functions for slider DOM actions. You can see an example of this at the bottom of this page.</p>
+
 <p>This method serves a couple of needs.</p>
 <ol>
     <li>End-users won't necessarily know how to work with JavaScript</li>
     <li>Custom and various configurations of the slider should require minimal coding, if any.</li>
 </ol>
+<p>There are also custom styles applied to the slider, in order to produce the different layouts and configurations. This was done using <a href="https://sass-lang.com/">SASS</a> which is compiled into CSS.</p>
 
 <dl>
 {%- for project in site.sliders -%}
