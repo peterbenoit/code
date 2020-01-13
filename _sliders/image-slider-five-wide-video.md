@@ -1,7 +1,7 @@
 ---
 layout: template
 permalink: sliders/video-slider-five-wide.html
-description: A slider that plays videos in a Bootstrap 4 modal. This demo is essentially the same as the Five Wide Image Slider, see the Notes section for more info
+description: A card slider that plays videos in a Bootstrap 4 modal. This demo is essentially the same as the Five Wide Image Slider, except each card image is a link to open a video modal
 title: Five Wide Video Slider 
 type: demo
 localcss: sliders.css
