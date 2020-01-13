@@ -9,11 +9,11 @@ type: home
 
 {% include components/intro.md %}
 
-### What else?
+### What am I looking at?
 
-Pete keeps himself busy on work and hobby projects, [The full list is here]({{ site.baseurl}}{% link list/projects.md %}). 
+I have an assortment of [posts]({{ site.baseurl}}{% link list/posts.html %}) and [projects]({{ site.baseurl}}{% link list/projects.md %}) that I put together.
 
-### Recent Posts ( [all]({{ site.baseurl}}{% link list/posts.html %}) )
+### Recent
 
 {% for post in site.posts limit:3 %}
 {% include components/post-card.html %}
