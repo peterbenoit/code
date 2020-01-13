@@ -374,7 +374,7 @@
 	     				closecard = '</div></div></div></div>',
 	     				description = '',
 	     				output = '',
-	     				slider = '<div id="search-video-results"><span class="h3" id="sliderLabel">Video Results</span><div class="cdc-card-slider"></div></div>';
+	     				slider = '<div id="search-video-results"><span class="h3 d-block" id="sliderLabel">Video Results</span><div class="cdc-card-slider"></div></div>';
 	     			// if we're not filtering and 
 	     			// we're at the 3rd indexed position in the results list and
 	     			// we're on the first page

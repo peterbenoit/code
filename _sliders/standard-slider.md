@@ -17,7 +17,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel">Slick Slider - Standard Slider</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - Standard Slider</span>
 		</div>
 	</div>
 	<div class="row">

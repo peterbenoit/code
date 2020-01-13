@@ -31,7 +31,7 @@ body.modal-open .cdc-card-slider .slider-next,body.modal-open .cdc-card-slider .
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel">Slick Slider - Gallery Modal Slider</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - Gallery Modal Slider</span>
 		</div>
 	</div>
 	<div class="row">

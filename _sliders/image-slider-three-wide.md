@@ -17,7 +17,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel">Slick Slider -  Image Slider Three Wide</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider -  Image Slider Three Wide</span>
 			<p>The standard card slider with the settings updated to display three cards at a time.  This is used for displaying images with associated content, such as a title and a short description.</p>
 		</div>
 	</div>

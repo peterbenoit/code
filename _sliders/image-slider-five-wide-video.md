@@ -17,7 +17,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12">
-			<span class="h3">Video</span>					
+			<span class="h3 d-block">Video</span>					
 			<div class="cdc-card-slider">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="http://i.ytimg.com/vi/iux7NZ56Ei4/mqdefault.jpg"

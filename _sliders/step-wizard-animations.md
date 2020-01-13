@@ -16,12 +16,12 @@ externaljs:
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel">Slick Slider - Step Wizard Slider with Animations</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - Step Wizard Slider with Animations</span>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel1">Slick Slider - Step Wizard</span>
+			<span class="h3 d-block" id="sliderLabel1">Slick Slider - Step Wizard</span>
 			<div class="cdc-card-slider" id="example1">
 				<div class="card">
 					<div class="card-body">
@@ -60,7 +60,7 @@ externaljs:
 	</div>
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel2">Slick Slider - Step Wizard (Fade)</span>
+			<span class="h3 d-block" id="sliderLabel2">Slick Slider - Step Wizard (Fade)</span>
 			<div class="cdc-card-slider" id="example2">
 				<div class="card">
 					<div class="card-body">
@@ -99,7 +99,7 @@ externaljs:
 	</div>
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel3">Slick Slider - Step Wizard (Slide In Text)</span>
+			<span class="h3 d-block" id="sliderLabel3">Slick Slider - Step Wizard (Slide In Text)</span>
 			<div class="cdc-card-slider" id="example3">
 				<div class="card">
 					<div class="card-body">

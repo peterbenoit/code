@@ -18,7 +18,7 @@ showinnav: true
 
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel">Slick Slider - Step Wizard Slider</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - Step Wizard Slider</span>
 		</div>
 	</div>
 

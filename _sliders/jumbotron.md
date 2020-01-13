@@ -17,7 +17,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col-12">
-			<span class="h3" id="sliderLabel1">Jumbotron (no dots)</span>
+			<span class="h3 d-block" id="sliderLabel1">Jumbotron (no dots)</span>
 			<div class="cdc-card-slider" id="example1">
 				<div class="jumbotron jumbotron-dark p-0">
 					<a href="https://www.cdc.gov/"><img alt="Summer" class="w-100 p-0 img-fluid" src="https://www.cdc.gov/wcms/4.0/cdc-wp/sample-pages/seasons/beachhouse_900px.png"></a>
@@ -54,7 +54,7 @@ showinnav: true
 	</div>
 	<div class="row">
 		<div class="col-12">
-			<span class="h3" id="sliderLabel2">Jumbotron (just dots)</span>
+			<span class="h3 d-block" id="sliderLabel2">Jumbotron (just dots)</span>
 			<div class="cdc-card-slider" id="example2">
 				<div class="jumbotron jumbotron-dark p-0">
 					<a href="https://www.cdc.gov/"><img alt="Summer" class="w-100 p-0 img-fluid" src="https://www.cdc.gov/wcms/4.0/cdc-wp/sample-pages/seasons/beachhouse_900px.png"></a>
@@ -91,7 +91,7 @@ showinnav: true
 	</div>
 	<div class="row">
 		<div class="col-12">
-			<span class="h3" id="sliderLabel3">Jumbotron (dots with numbers)</span>
+			<span class="h3 d-block" id="sliderLabel3">Jumbotron (dots with numbers)</span>
 			<div class="cdc-card-slider" id="example3">
 				<div class="jumbotron jumbotron-dark p-0">
 					<a href="https://www.cdc.gov/"><img alt="Summer" class="w-100 p-0 img-fluid" src="https://www.cdc.gov/wcms/4.0/cdc-wp/sample-pages/seasons/beachhouse_900px.png"></a>
@@ -128,7 +128,7 @@ showinnav: true
 	</div>
 	<div class="row">
 		<div class="col-12">
-			<span class="h3" id="sliderLabel4">Jumbotron (dots with numbers on right)</span>
+			<span class="h3 d-block" id="sliderLabel4">Jumbotron (dots with numbers on right)</span>
 			<div class="cdc-card-slider" id="example4">
 				<div class="jumbotron jumbotron-dark p-0">
 					<a href="https://www.cdc.gov/"><img alt="Summer" class="w-100 p-0 img-fluid" src="https://www.cdc.gov/wcms/4.0/cdc-wp/sample-pages/seasons/beachhouse_900px.png"></a>

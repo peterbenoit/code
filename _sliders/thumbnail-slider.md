@@ -17,7 +17,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col-lg-9">
-			<span class="h3" id="sliderLabel">Thumbnail Slider</span>
+			<span class="h3 d-block" id="sliderLabel">Thumbnail Slider</span>
 			<div class="cdc-card-slider">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">

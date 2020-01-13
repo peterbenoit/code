@@ -19,7 +19,7 @@ showinnav: false
 <div class="container">
 	<div class="row">
 		<div class="col-lg-9">
-			<span class="h3" id="sliderLabel_1">Slick Carousel</span>
+			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel</span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
@@ -102,7 +102,7 @@ showinnav: false
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 					</div>
 				</div>
-			</div><span class="h3 sr-only" id="sliderLabel_2">Thumbnail Nav</span>
+			</div><span class="h3 d-block sr-only" id="sliderLabel_2">Thumbnail Nav</span>
 			<div class="cdc-card-slider d-none d-lg-block" id="slider_2">
 				<div class="card"><img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300"></div>
 				<div class="card"><img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300"></div>
@@ -146,7 +146,7 @@ showinnav: false
 			<div class="card-body">
 				<div class="row">
 					<div class="col">
-						<pre><code class="language-markup line-numbers"><script type="prism-html-markup"><span class="h3" id="sliderLabel_1">Slick Carousel</span>
+						<pre><code class="language-markup line-numbers"><script type="prism-html-markup"><span class="h3 d-block" id="sliderLabel_1">Slick Carousel</span>
 <div class="cdc-card-slider" id="slider_1">
 	<div class="card">
 		<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
@@ -168,7 +168,7 @@ showinnav: false
 	</div>
 </div>
 							
-<span class="h3 sr-only" id="sliderLabel_2">Thumbnail Nav</span>
+<span class="h3 d-block sr-only" id="sliderLabel_2">Thumbnail Nav</span>
 <div class="cdc-card-slider d-none d-lg-block" id="slider_2">
 	<div class="card"><img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300"></div>
 	<div class="card"><img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300"></div>

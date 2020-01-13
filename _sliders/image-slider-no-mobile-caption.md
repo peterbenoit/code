@@ -17,7 +17,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel">Slick Slider - No Mobile Caption</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - No Mobile Caption</span>
 		</div>
 	</div>
 	<div class="row">

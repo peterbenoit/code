@@ -17,7 +17,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3" id="sliderLabel">Slick Slider - Video Slider</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - Video Slider</span>
 			<p>The standard card slider used for displaying videos with associated content, such as a title and a short description.</p>
 			<p>The video slider contains markup to identify each slide with an associated video. This is done through data attributes placed on the card image. You can see this on lines <a href="#html-output">3&ndash;7</a>.</p>
 			<p>As for the script, on <a href="#script-output">line 3</a> set the <code>sliderType</code> variable to <code>video</code></p>

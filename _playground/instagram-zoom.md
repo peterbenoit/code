@@ -31,7 +31,7 @@ externaljs: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.
 </style>
 
 <div class="container">
-	<span class="h3">Instagram Style Press-n-Hold to Zoom</span>
+	<span class="h3 d-block">Instagram Style Press-n-Hold to Zoom</span>
 	<p>Click and hold on the card image to zoom in or simply click on the image to view it in a new tab.</p>
 	<div class="row mb-3">
 		<div class="col-md-4">
