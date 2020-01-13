@@ -317,17 +317,20 @@ body.modal-open {
 	}
 }
 
-
+// small VPs only
 @media (max-width: 575.98px) {
 	.cdc-card-slider {
 		.card {
+			// reduce the margin
 			margin: 3px;
 
+			// reduce the play button a little bit more
 			.playbtn {
 				width: 45px;
 				height: 45px;
 			}
 
+			// stack the anchors in the footer
 			.card-footer {
 				a {
 					display: block;
@@ -337,17 +340,20 @@ body.modal-open {
 	}
 }
 
+// everything smaller than medium
 @media (max-width: 767.98px) {
 
-	.cdc-card-slider .slick-arrow,
-	.cdc-card-slider .slick-dots {
-		display: none;
-	}
+	// .cdc-card-slider .slick-arrow,
+	// .cdc-card-slider .slick-dots {
+	// 	display: none;
+	// }
 
-	.cdc-carousel-slider .slick-arrow {
-		display: block !important;
-	}
+	// arrows should be visible by default
+	// .cdc-carousel-slider .slick-arrow {
+	// 	display: block !important;
+	// }
 
+	// if there's a play button, set it's size
 	.cdc-card-slider .card {
 		margin: 5px;
 
@@ -357,25 +363,29 @@ body.modal-open {
 		}
 	}
 
+	// remove the bottom margin on the standard slider
 	.cdc-card-slider.slick-dotted {
 		margin-bottom: 0;
 	}
 
+	// hide everything but the card-title inside the card-body
 	.cdc-card-slider.cdc-no-mobile-caption {
-		.card-body {
+		.card-body *:not(.card-title) {
 			display: none;
 		}
 	}
 }
 
+// in medium VPs and larger
 @media (min-width: 767px) {
-	.cdc-card-slider {
-		+.cdc-slider-status:not(.d-block) {
-			display: block !important;
-		}
-	}
+	// .cdc-card-slider {
+	// 	+.cdc-slider-status:not(.d-block) {
+	// 		display: block !important;
+	// 	}
+	// }
 }
 
+// in everything up to large VPs
 @media (max-width:991.98px) {
 	body.modal-open {
 
@@ -390,11 +400,11 @@ body.modal-open {
 	}
 
 	.cdc-card-slider {
-		&.cdc-carousel-thumbnail-slider {
-			+.cdc-slider-status {
-				display: none !important;
-			}
-		}
+		// &.cdc-carousel-thumbnail-slider {
+		// 	+.cdc-slider-status {
+		// 		display: none !important;
+		// 	}
+		// }
 
 		// &.cdc-standard-slider {
 		// 	.slick-arrow {
@@ -404,17 +414,20 @@ body.modal-open {
 	}
 }
 
+// in large VPs and larger
 @media (min-width:992px) {
+	// don't show the arrows on the top carousel slider
 	.cdc-carousel-slider {
 		.slick-arrow {
 			display: none !important;
 		}
 	}
 
-	.cdc-card-slider+.cdc-slider-status:not(.d-block) {
-		display: none !important;
-	}
+	// .cdc-card-slider+.cdc-slider-status:not(.d-block) {
+	// 	display: none !important;
+	// }
 
+	// position the overlay, using the card body
 	.cdc-standard-slider {
 		&.cdc-standard-slider-overlay {
 			position: relative;
