@@ -1,7 +1,7 @@
 ---
 layout: template
 permalink: sliders/thumbnail-gallery.html
-description: Thumbnail gallery slider built using Slick Slider
+description: Slick slider can be controlled in a number of ways. This demo takes all of the slides from the slider and builds a gallery type navigation
 title: Thumbnail Gallery slider 
 type: demo
 localcss: sliders.css
@@ -167,14 +167,16 @@ window.addEventListener( 'DOMContentLoaded', function() {
 						}
 
 				} );
-				if ( 'gallery' === defaults.sliderType ) {
-					if ( 'undefined' === typeof defaults.galleryTarget ) {
-						slider.after( grid );
-					} else {
-							$( defaults.galleryTarget ).append( grid );
-							$( '#list' ).append( list )
-					}
-				}
+
+				// if ( 'gallery' === defaults.sliderType ) {
+				// 	if ( 'undefined' === typeof defaults.galleryTarget ) {
+				// 		slider.after( grid );
+				// 	} else {
+						$( defaults.galleryTarget ).append( grid );
+						$( '#list' ).append( list )
+				// 	}
+				// }
+
 				$( 'a[data-slide]' ).click( function( e ) {
 					e.preventDefault();
 						var idx = $( this ).data( 'slide' );
@@ -183,38 +185,12 @@ window.addEventListener( 'DOMContentLoaded', function() {
 					slider.slick( 'slickGoTo', idx );
 				} );
 			},
-			'responsive': [ {
-				'breakpoint': 1200,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 992,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 768,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 576,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1
-				}
-			}, {
-				'breakpoint': 0,
-				'settings': {
-					'slidesToShow': 1,
-					'slidesToScroll': 1,
-					'centerPadding': '20px'
-				}
-			} ]
+			'responsive': [ 
+				{ 'breakpoint': 1200, 'settings': { 	'slidesToShow': 1, 	'slidesToScroll': 1 }},
+				{ 'breakpoint': 992, 'settings': { 	'slidesToShow': 1, 	'slidesToScroll': 1 }},
+				{ 'breakpoint': 768, 'settings': { 	'slidesToShow': 1, 	'slidesToScroll': 1 }},
+				{ 'breakpoint': 576, 'settings': { 	'slidesToShow': 1, 	'slidesToScroll': 1 }},
+				{ 'breakpoint': 0, 'settings': { 	'slidesToShow': 1, 	'slidesToScroll': 1, 	'centerPadding': '20px' }} ]
 		} );
 
 	} )( jQuery );
