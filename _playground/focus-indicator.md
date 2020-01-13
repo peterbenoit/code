@@ -31,6 +31,7 @@ externaljs:
 	.form-control:focus {
 		outline: 0;
 		box-shadow: 0 0 0 0.2rem rgba(255, 102, 1, 0.5);
+		transition: box-shadow 0.2s ease-in-out;
 	}
 
 	.btn-primary:not(:disabled):not(.disabled):active, 
