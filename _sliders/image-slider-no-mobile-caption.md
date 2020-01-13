@@ -1,8 +1,8 @@
 ---
 layout: template
 permalink: sliders/image-slider-no-mobile-caption.html
-description: Image Slider without a mobile caption
-title: Image Slider
+description: This is the same as the standard Image Slider demo, except for the option to hide the caption in mobile viewports 
+title: Image Slider (no mobile caption)
 type: demo
 localcss: sliders.css
 localjs: slickinit.js

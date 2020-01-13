@@ -1,7 +1,7 @@
 ---
 layout: template
 permalink: sliders/image-slider.html
-description: Image Slider using Slick Slider
+description: The very basic version of the Slick image slider. This version is the basis for all other versions
 title: Image Slider 
 type: demo
 localcss: sliders.css
