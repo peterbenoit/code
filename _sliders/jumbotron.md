@@ -1,7 +1,7 @@
 ---
 layout: template
 permalink: sliders/jumbotron.html
-description: Jumbotron Slider built using Slick Slider
+description: Jumbotron Slider built using Slick slider, based off the standard Image Slider demo
 title: Jumbotron Slider 
 type: demo
 localcss: sliders.css
