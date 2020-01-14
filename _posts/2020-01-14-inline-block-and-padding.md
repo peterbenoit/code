@@ -25,7 +25,7 @@ Will render differently than this <i class="fa fa-arrow-down" aria-hidden="true"
 <div><div>1</div><div>2</div></div>
 {%- endhighlight -%}
 
-And finally, here's a working example of what they were working with.
+Here's a working example of what the developer was working with
 
 <p class="codepen" data-height="300" data-theme-id="22720" data-default-tab="html,result" data-user="peterbenoit" data-slug-hash="povZoZz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Inline Block with padding">
   <span>See the Pen <a href="https://codepen.io/peterbenoit/pen/povZoZz">
