@@ -114,3 +114,5 @@ defaults:
 
 exclude:
   - node_modules
+  - .git
+  - .jekyll-cache
