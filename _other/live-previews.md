@@ -1,7 +1,7 @@
 ---
 layout: bootstrap
 permalink: other/live-previews.html
-description: Responsive live previewer of demo content
+description: I create a lot of demo content which always need corresponding documentation. I'm a big fan of keeping both the demo and the documentation together, since one or the other will inevitably become lost and/or separated. As part of this effort, I wanted a way to display the demo within the documentation in manner that was useful.
 title: Live Previews
 type: demo
 localcss: previews.css
@@ -24,9 +24,8 @@ showinnav: true
 
 <div class="container">
     <h1 class="display-3">Live Previews</h1>
-    <p class="lead">Demo to include markup into an iframe in which it has all the styles of the template, as well
-        as can be resposive (iframe resize). For instance, you can load <a href="#iframe-target" onclick="loadHtml( '.lead' ); return false;"> this paragraph</a> 
-        into it, or even load <a href="#iframe-target" onclick="loadHtml( 'template' ); return	false;">predefined templates</a> for testing.</p>
+    <p class="lead">{{page.description}}  
+        As an example, you can load <a href="#iframe-target" onclick="loadHtml( '.lead' ); return false;"> this paragraph</a> into the viewer, or even load <a href="#iframe-target" onclick="loadHtml( 'template' ); return	false;">predefined templates</a>.</p>
     <div class="row">
         <div class="col previews">
             <div class="row buttons ml-0 mt-3 fs0875">
