@@ -36,7 +36,7 @@ externaljs: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.
 	<div class="row mb-3">
 		<div class="col-md-4">
 			<div class="card">
-				<a href="https://lorempixel.com/800/800/animals/1/" target="_blank"><img alt="animal1" class="card-img-top w-100" data-large="https://lorempixel.com/800/800/animals/1/" src="https://lorempixel.com/400/200/animals/1/"></a>
+				<a href="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-12/img%20(34).jpg" target="_blank"><img alt="animal1" class="card-img-top w-100" data-large="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-12/img%20(34).jpg" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(34).jpg"></a>
 				<div class="card-body">
 					<div class="card-title h4">
 						Animal 1
@@ -47,7 +47,7 @@ externaljs: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.
 		</div>
 		<div class="col-md-4">
 			<div class="card">
-				<a href="https://lorempixel.com/800/800/animals/2/" target="_blank"><img alt="animal2" class="card-img-top w-100" data-large="https://lorempixel.com/800/800/animals/2/" src="https://lorempixel.com/400/200/animals/2/"></a>
+				<a href="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-12/img%20(35).jpg" target="_blank"><img alt="animal2" class="card-img-top w-100" data-large="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-12/img%20(35).jpg" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg"></a>
 				<div class="card-body">
 					<div class="card-title h4">
 						Animal 2
@@ -58,7 +58,7 @@ externaljs: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.
 		</div>
 		<div class="col-md-4">
 			<div class="card">
-				<a href="https://lorempixel.com/800/800/animals/3/" target="_blank"><img alt="animal3" class="card-img-top w-100" data-large="https://lorempixel.com/800/800/animals/3/" src="https://lorempixel.com/400/200/animals/3/"></a>
+				<a href="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-12/img%20(36).jpg" target="_blank"><img alt="animal3" class="card-img-top w-100" data-large="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-12/img%20(36).jpg" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(36).jpg"></a>
 				<div class="card-body">
 					<div class="card-title h4">
 						Animal 3
