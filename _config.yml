@@ -112,3 +112,5 @@ defaults:
   #     show_profile: false
   #     layout: defaults/project
 
+exclude:
+  - node_modules
