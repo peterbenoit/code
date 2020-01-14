@@ -11,7 +11,7 @@ type: home
 
 ### What is all of this?!
 
-Here's an assortment of [posts]({{ site.baseurl}}{% link list/posts.html %}) and [projects]({{ site.baseurl}}{% link list/projects.md %}) that I have put together over the last year. It's built in <a href="https://jekyllrb.com">Jekyll</a> and runs in Github.
+Here's an assortment of [posts]({{ site.baseurl}}{% link list/posts.html %}) and [projects]({{ site.baseurl}}{% link list/projects.md %}) that I have put together over the last year. It's built in <a href="https://jekyllrb.com">Jekyll</a> and runs in Github or in your local dev environment. That is, assuming you have Ruby installed.
 
 Most of my project work is still in [Codepen](https://codepen.io/peterbenoit/), but thanks to constant issues with their hosting, I'm slowly migrating it all here.
 
