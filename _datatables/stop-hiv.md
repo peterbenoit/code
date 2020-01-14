@@ -46,7 +46,7 @@
 	<div class="container d-flex flex-wrap body-wrapper">
 		<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
 			<div class="row">
-				<div class="col-md-3 border"></div>
+				<div class="col-md-3 border">"leftnav"</div>
 				<div class="col-md-9">
 					<h3>DataTables Sort &amp; Filter</h3>
 					<p>Data from https://www.cdc.gov/stophivtogether/library</p><a class="btn btn-outline-primary" href="#" id="datatable"><i class="material-icons">view_headline</i> Datatable</a> <a class="btn btn-outline-secondary" href="#" id="card"><i class="material-icons">view_module</i> Card</a> <a class="btn btn-outline-secondary" href="#" id="details"><i class="material-icons">view_stream</i> Details</a>
@@ -98,7 +98,7 @@
 	   
 	   // TODO: should only do this once, on the first load
 	   // using getJSON to fetch the search json 
-	   $.getJSON( 'https://www.cdc.gov/stophivtogether/library/search.json', function( result ) {
+	   $.getJSON( ''https://raw.githubusercontent.com/peterbenoit/cdn/master/data/datatables/hiv/search.json', function( result ) {
 	       filters = result.filters;
 	       sort = result.sort;
 	       items = result.items;
