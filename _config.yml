@@ -54,9 +54,9 @@ collections:
     output: true
     title: Datatables
     permalink: /:collection/:name.html
-  playground:
+  other:
     output: true
-    title: Playground
+    title: Other
     permalink: /:collection/:name.html
   syntaxhighlighter:
     output: true
