@@ -56,7 +56,7 @@ console.log('hash')
 	<div class="container d-flex flex-wrap body-wrapper">
 		<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
 			<div class="row">
-				<div class="col-md-3 border"></div>
+				<div class="col-md-3 border">"leftnav"</div>
 				<div class="col-md-9">
 					<h3>DataTables Sort &amp; Filter</h3>
 					<p>Data from https://www.cdc.gov/niosh/programs/hwd/resources.html</p><a class="btn btn-outline-primary" href="#" id="datatable"><i class="material-icons">view_headline</i> Datatable</a> <a class="btn btn-outline-secondary" href="#" id="card"><i class="material-icons">view_module</i> Card</a> <a class="btn btn-outline-secondary" href="#" id="details"><i class="material-icons">view_stream</i> Details</a>
@@ -83,7 +83,7 @@ console.log('hash')
 	   items = {},
 	   keys = {},
 	   tableId = '#results',
-	   dataUrl = 'https://www.cdc.gov/niosh/programs/hwd/files/sortable-5.json';
+	   dataUrl = 'https://raw.githubusercontent.com/peterbenoit/cdn/master/data/datatables/niosh/sortable-5.json';
 
 	function init() {
 	   if ( $.fn.DataTable.isDataTable( tableId ) ) {
