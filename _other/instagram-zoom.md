@@ -82,7 +82,7 @@ externaljs: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.
 					$( this ).attr( 'id', 'cit_' + i );
 				}
 						
-				var modal = '<div class="modal animated zoomIn" id="modal_'+i+'" role="dialog" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-body"><img src="'+$( this ).data( 'large' )+'" alt="animal'+i+'" class="w-100" /></div><div class="modal-footer bg-gray-d2"><div data-icon="ei-comment"></div><div data-icon="ei-heart"></div><div data-icon="ei-share-google"></div></div></div></div></div>';
+				var modal = '<div class="modal animated zoomIn" id="modal_'+i+'" role="dialog" tabindex="-1"><div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-body"><img src="'+$( this ).data( 'large' )+'" alt="animal'+i+'" class="w-100" /></div><div class="modal-footer bg-gray-d2"><div data-icon="ei-comment"></div><div data-icon="ei-heart"></div><div data-icon="ei-share-google"></div></div></div></div></div>';
 				
 				$( 'body' ).append( modal );
 			} );
