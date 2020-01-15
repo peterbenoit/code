@@ -25,5 +25,36 @@
 
 	{%- if page.includePrismJs And page.includePrismJs != "" And page.includePrismJs != nil -%}
 		{%- include structure/prismjs-css.html -%}
-	{%- endif -%}	
+	{%- endif -%}
+
+	<style>
+		#vp-size {
+			position: fixed;
+			right: -150px;
+			top: 0;
+			width: 180px;
+			background: rgba(0,0,0,0.75);
+			color: #fff;
+			padding: .5rem;
+			transition: 0.75s;
+			font-size: 0.75rem;
+			cursor: pointer;
+		}
+		#vp-size span + span {
+			margin-left: 10px;
+		}
+		#vp-size span.icon {
+			transition: transform 0.75s;
+			transform: rotate(0);
+			vertical-align: top;
+		}
+			
+		#vp-size.open {
+			right: 0;
+		}
+
+		#vp-size.open span.icon {
+			transform: rotate(-180deg);
+		}
+	</style>
 </head>

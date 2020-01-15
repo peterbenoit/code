@@ -24,20 +24,25 @@
 var tp4 = typeof CDC.tp4 !== 'undefined',
 	tp3 = typeof CDC.App !== 'undefined',
 	jquery = typeof jQuery !== 'undefined',
-	canrun = ( tp4 || tp3 ) && jquery,
-	style = 'top: 0!important; right: 0!important; position: fixed!important; opacity: .75; background-color: #333!important; color: #fff; padding: .25rem!important; font-size: .75rem;';
+	canrun = ( tp4 || tp3 ) && jquery;
 
 if( canrun ) {
 	if( $( '#vp-size' ).length ) {
 		$( '#vp-size' ).remove();
 	} else {	
-		$( '<span style="'+style+'" id="vp-size" />' ).appendTo( 'body' );
+		$( '<div id="vp-size" />' ).appendTo( 'body' );
 		
 		$( window ).on( 'load resize', function() {
 			var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 			var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;			
-			$( '#vp-size' ).html( w + 'px &times; ' + h + 'px (vp' + vp( tp4 ) + ')' );
-		} );		
+			$( '#vp-size' )
+				.html( '<span class="cdc-icon-chevron-circle-left-light icon"></span><span>' + w + 'px &times; ' + h + 'px (vp' + vp( tp4 ) + ')</span>' );
+		} );
+
+		$( '#vp-size' ).on( 'click', function() {
+			var t = $( this );
+			t.toggleClass( 'open' );
+		} );
 	}
 } else {
 	alert( 'Could not load script. Be sure you\'re on a Template page for this to work' );
