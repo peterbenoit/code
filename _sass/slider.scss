@@ -391,7 +391,6 @@ body.modal-open {
 	&.cdc-carousel-slider {
 		+ .cdc-slider-status {
 			display: block!important;
-			color: green;
 		}
 	}
 
@@ -408,10 +407,16 @@ body.modal-open {
 @media (min-width: 767px) {
 	.cdc-card-slider {
 		+.cdc-slider-status:not(.d-block) {
-			display: block!important;
-			color: blue;
+			display: none!important;
 		}
 	}
+	.cdc-card-slider {
+		&.cdc-carousel-slider {
+			+.cdc-slider-status:not(.d-block) {
+				display: block!important;
+			}
+		}
+	}	
 }
 
 // in large VPs and larger
@@ -422,6 +427,14 @@ body.modal-open {
 			display: none !important;
 		}
 	}
+
+	.cdc-card-slider {
+		&.cdc-carousel-slider {
+			+.cdc-slider-status:not(.d-block) {
+				display: none!important;
+			}
+		}
+	}		
 
 	// .cdc-card-slider+.cdc-slider-status:not(.d-block) {
 	// 	display: none !important;
