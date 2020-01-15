@@ -273,6 +273,7 @@
 	}
 }
 
+// video modal related
 body.modal-open {
 	.cdc-card-slider {
 
@@ -398,11 +399,11 @@ body.modal-open {
 	}
 
 	.cdc-card-slider {
-		// &.cdc-carousel-thumbnail-slider {
-		// 	+.cdc-slider-status {
-		// 		display: none !important;
-		// 	}
-		// }
+		&.cdc-carousel-thumbnail-slider {
+			+.cdc-slider-status {
+				display: none !important;
+			}
+		}
 
 		// &.cdc-standard-slider {
 		// 	.slick-arrow {
