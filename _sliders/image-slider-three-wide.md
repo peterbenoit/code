@@ -10,6 +10,7 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
+order: 3
 ---
 
 {%- include breadcrumbs.html -%}

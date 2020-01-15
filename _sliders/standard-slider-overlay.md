@@ -1,14 +1,15 @@
 ---
 layout: template
-permalink: sliders/standard-slider-overlay.html
-description: Standard Slider with overlay instead of a caption
-title: Standard Slider (overlay)
+permalink: sliders/image-slider-overlay.html
+description: Image Slider with overlay instead of a caption
+title: Image Slider (overlay)
 localcss: sliders.css
 localjs: slickinit.js
 includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
+order: 2
 ---
 
 {%- include breadcrumbs.html -%}

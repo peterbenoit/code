@@ -1,6 +1,6 @@
 ---
 layout: template
-permalink: sliders/gallery-modal-slider.html
+permalink: sliders/other/gallery-modal-slider.html
 description: Using a Card image to indicate more images are available, then opening the slider in a Bootstrap 4 modal when clicking on it. I also included an option for a dark background, since most of these types of components use dark backgrounds.
 title: Gallery Modal Slider
 type: demo
