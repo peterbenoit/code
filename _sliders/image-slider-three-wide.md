@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/image-slider-three-wide.html
 description: This version of the image slider displays three cards at a time. This is the same as the standard Image Slider, except for the number of slidesToShow setting
-title: Three wide image slider 
+title: Image Slider - Three Wide
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
