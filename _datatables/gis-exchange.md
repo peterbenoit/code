@@ -1,5 +1,7 @@
 ---
-#front stuff
+permalink: datatables/gis-exchange.html
+description: Data from https://www.cdc.gov/dhdsp/maps/gisx/
+title: GIS Exchange
 ---
 
 <html class="theme-blue" lang="en">

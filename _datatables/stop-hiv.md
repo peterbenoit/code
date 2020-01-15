@@ -1,7 +1,8 @@
 ---
-#front stuff
+permalink: datatables/stop-hiv.html
+description: Data from https://www.cdc.gov/stophivtogether/library
+title: Stop HIV
 ---
-
 <html class="theme-blue" lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -98,7 +99,7 @@
 	   
 	   // TODO: should only do this once, on the first load
 	   // using getJSON to fetch the search json 
-	   $.getJSON( ''https://raw.githubusercontent.com/peterbenoit/cdn/master/data/datatables/hiv/search.json', function( result ) {
+	   $.getJSON( 'https://raw.githubusercontent.com/peterbenoit/cdn/master/data/datatables/hiv/search.json', function( result ) {
 	       filters = result.filters;
 	       sort = result.sort;
 	       items = result.items;

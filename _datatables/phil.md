@@ -1,5 +1,7 @@
 ---
-#front stuff
+permalink: datatables/phil.html
+description: PHIL Images
+title: Public Health Image Library
 ---
 
 <html lang="en">

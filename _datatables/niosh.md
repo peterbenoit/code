@@ -1,5 +1,7 @@
 ---
-#front stuff
+permalink: datatables/niosh.html
+description: Data from https://www.cdc.gov/niosh/programs/hwd/resources.html
+title: NOISH Resources
 ---
 
 <html class="theme-blue" lang="en">
