@@ -1,5 +1,7 @@
 ---
-#front stuff
+permalink: datatables/custom-search-results.html
+description: The Datatables library can be used in a variety of ways. Here's an example of using it to display search results from CDC.gov.
+title: Custom Search Results
 ---
 
 <html class="theme-blue" lang="en">
@@ -100,7 +102,7 @@
 									<form>
 										<div class="input-group flex-fill">
 											<input aria-label="Search Value" class="form-control border-right-0" placeholder="Search CDC" type="text"> <span class="input-group-append"></span>
-											<div class="input-group-text bg-transparent">
+											<div class="input-group-text bg-transparent r-none">
 												<span class="input-group-append"><i class="fa fa-times v-hidden"></i></span>
 											</div>
 											<div class="input-group-append">
