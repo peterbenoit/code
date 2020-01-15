@@ -317,7 +317,7 @@ body.modal-open {
 }
 
 // small VPs only
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
 	.cdc-card-slider {
 		.card {
 			// reduce the margin
@@ -340,7 +340,7 @@ body.modal-open {
 }
 
 // everything smaller than medium
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 
 	// .cdc-card-slider .slick-arrow,
 	// .cdc-card-slider .slick-dots {
@@ -351,6 +351,11 @@ body.modal-open {
 	// .cdc-carousel-slider .slick-arrow {
 	// 	display: block !important;
 	// }
+
+	.cdc-card-slider .slick-arrow, .cdc-card-slider .slick-dots {
+		display: block;
+	}
+	
 
 	// if there's a play button, set it's size
 	.cdc-card-slider .card {
@@ -376,7 +381,7 @@ body.modal-open {
 }
 
 // in everything up to large VPs
-@media (max-width:991.98px) {
+@media (max-width:992px) {
 	body.modal-open {
 		// modal is full width in mobile
 		#CDC_videoModal {
@@ -452,6 +457,13 @@ body.modal-open {
 				background: rgba(0, 0, 0, 0.7);
 				color: #fff;
 			}
+
+			&.light {
+				.card-body {
+					background: rgba(255, 255, 255, 0.85);
+					color: #000;
+				}
+			}			
 		}
 	}
 }
