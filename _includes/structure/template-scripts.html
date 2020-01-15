@@ -12,7 +12,7 @@
 {%- if page.localjs And page.localjs != "" And page.localjs != nil -%}
     {%- assign pgs = page.localjs | split: "," -%}
     {%- for pg in pgs -%}
-        <script src="{{ site.baseurl }}/js/{{ pg | strip }}"></script> 
+        <script src="{{ site.baseurl }}/js/{{ pg | strip }}?{{ site.time | date:'%Y%m%d%U%H%N%S' }}"></script> 
     {%- endfor -%}
 {%- endif -%}
 
