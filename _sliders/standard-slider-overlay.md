@@ -126,7 +126,7 @@ order: 2
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>This is the <a href="standard-slider.html">standard Image Slider</a>, with a callback which adds the <code>.cdc-standard-slider-overlay</code> class to the slider. This CSS repositions and changes the style of the Card body, so that it appears over the image as an overlay. </p>
+				<p>This is the <a href="standard-slider.html">standard Image Slider</a>, with a callback which adds the <code>.cdc-standard-slider-overlay</code> class to the slider. This CSS repositions and changes the style of the Card body, so that it appears over the image as an overlay in desktop viewports, and as a standard caption in mobile. </p>
 			</div>
 		</div>
 	</div>
