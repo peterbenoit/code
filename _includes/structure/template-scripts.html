@@ -19,3 +19,47 @@
 {%- if page.includePrismJs And page.includePrismJs != "" And page.includePrismJs != nil -%}
     {%- include structure/prismjs-scripts.html -%}
 {%- endif -%}
+
+<script>
+var tp4 = typeof CDC.tp4 !== 'undefined',
+	tp3 = typeof CDC.App !== 'undefined',
+	jquery = typeof jQuery !== 'undefined',
+	canrun = ( tp4 || tp3 ) && jquery,
+	style = 'top: 0!important; right: 0!important; position: fixed!important; opacity: .75; background-color: #333!important; color: #fff; padding: .25rem!important; font-size: .75rem;';
+
+if( canrun ) {
+	if( $( '#vp-size' ).length ) {
+		$( '#vp-size' ).remove();
+	} else {	
+		$( '<span style="'+style+'" id="vp-size" />' ).appendTo( 'body' );
+		
+		$( window ).on( 'load resize', function() {
+			var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+			var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;			
+			$( '#vp-size' ).html( w + 'px &times; ' + h + 'px (vp' + vp( tp4 ) + ')' );
+		} );		
+	}
+} else {
+	alert( 'Could not load script. Be sure you\'re on a Template page for this to work' );
+}
+
+function vp( tp4 ) {
+	var ret;
+	if( tp4 ) {
+		ret = CDC.tp4[ "public" ].getViewport();
+	} else {
+		var html = $( 'html' );
+
+		if( html.hasClass( 'four' ) ) {
+			ret = 4;
+		} else if( html.hasClass( 'three' ) ) {
+			ret = 3;
+		} else if( html.hasClass( 'two' ) ) {
+			ret = 2;
+		} else {
+			ret = 1;
+		}	
+	}
+	return ret;
+}
+</script>

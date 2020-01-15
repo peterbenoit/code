@@ -136,7 +136,7 @@
 				margin-right: 5px;
 			}
 		}
-	}
+	} 
 
 	&.video-modal {
 		.card {
@@ -155,8 +155,7 @@
 		}
 	}
 
-	.slider-prev,
-	.slider-next {
+	.slick-arrow {
 		cursor: pointer;
 		position: absolute;
 		top: 50%;
@@ -164,13 +163,24 @@
 		z-index: 5555;
 		width: 45px;
 		height: 45px;
-		display: block;
-		animation: fadein 1s;
+		display: block!important;
+		animation: fadein 0.75s;
+	}
+
+	.slider-next {
+		right: -10px !important;
+	}
+
+	.slider-prev {
+		left: -10px !important;
 	}
 
 	+ .cdc-slider-status {
 		text-align: center !important;
 	}
+
+
+	// customizations to each slider type appears below
 
 	&.cdc-carousel-thumbnail-slider {
 
@@ -190,6 +200,10 @@
 		.slider-next,
 		.slider-prev {
 			top: calc(50% - 20px);
+		}
+
+		+.cdc-slider-status {
+			display: none !important;
 		}
 	}
 
@@ -233,20 +247,6 @@
 
 	&.cdc-jumbotron-slider {
 		// coming soon!
-	}
-
-	&.cdc-standard-slider {
-		.slider-next {
-			right: -10px !important;
-		}
-
-		.slider-prev {
-			left: -10px !important;
-		}
-
-		.slick-arrow {
-			display: block !important;
-		}
 	}
 
 	&.cdc-centermode-slider {
@@ -375,19 +375,9 @@ body.modal-open {
 	}
 }
 
-// in medium VPs and larger
-@media (min-width: 767px) {
-	// .cdc-card-slider {
-	// 	+.cdc-slider-status:not(.d-block) {
-	// 		display: block !important;
-	// 	}
-	// }
-}
-
 // in everything up to large VPs
 @media (max-width:991.98px) {
 	body.modal-open {
-
 		// modal is full width in mobile
 		#CDC_videoModal {
 			.modal-lg {
@@ -398,18 +388,29 @@ body.modal-open {
 		}
 	}
 
-	.cdc-card-slider {
-		&.cdc-carousel-thumbnail-slider {
-			+.cdc-slider-status {
-				display: none !important;
-			}
+	&.cdc-carousel-slider {
+		+ .cdc-slider-status {
+			display: block!important;
+			color: green;
 		}
+	}
 
+	.cdc-card-slider {
 		// &.cdc-standard-slider {
 		// 	.slick-arrow {
 		// 		display: block!important;
 		// 	}
 		// }
+	}
+}
+
+// in medium VPs and larger
+@media (min-width: 767px) {
+	.cdc-card-slider {
+		+.cdc-slider-status:not(.d-block) {
+			display: block!important;
+			color: blue;
+		}
 	}
 }
 
