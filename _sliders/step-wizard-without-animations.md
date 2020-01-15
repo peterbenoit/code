@@ -1,6 +1,6 @@
 ---
 layout: template
-permalink: sliders/form-step-wizard.html
+permalink: sliders/step-wizard.html
 description: We occasionally ask a user to follow a series of like-minded steps for a variety of reasons. One idea I had was to place this functionality into a slider, this is an example of that.
 title: Step Wizard Slider 
 type: demo
