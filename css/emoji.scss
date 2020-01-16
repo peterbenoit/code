@@ -2907,15 +2907,7 @@
 .emoji-zero {
 	background-position: -645px -45px
 }
-.emojiPicker {
-	position: absolute;
-	border: none;
-	box-shadow: 0 0 7px #555;
-	border-radius: 4px;
-    width: 425px;
-	left: 1rem;
-	top: 7rem;
-} 
+
 
 span.emoji {
 	width: 30px;
@@ -2925,14 +2917,9 @@ span.emoji {
 	overflow: hidden;
 	text-indent: -9999px;
 	vertical-align: middle;
+	padding: 5px;
 }
-//.emojiPicker section.recent.show-image span.emoji.people, .emojiPicker section.search span.emoji.people, .emojiPicker section.show-image 
-//.emojiPicker section.recent.show-image span.emoji.nature, .emojiPicker section.search span.emoji.nature, .emojiPicker section.show-image 
-//.emojiPicker section.recent.show-image span.emoji.food, .emojiPicker section.search span.emoji.food, .emojiPicker section.show-image 
-//.emojiPicker section.recent.show-image span.emoji.activity, .emojiPicker section.search span.emoji.activity, .emojiPicker section.show-image 
-//.emojiPicker section.recent.show-image span.emoji.travel, .emojiPicker section.search span.emoji.travel, .emojiPicker section.show-image 
-//.emojiPicker section.recent.show-image span.emoji.object, .emojiPicker section.search span.emoji.object, .emojiPicker section.show-image 
-//.emojiPicker section.recent.show-image span.emoji.symbol, .emojiPicker section.search span.emoji.symbol, .emojiPicker section.show-image 
+
 span.emoji.people {
 	background-image: url(https://raw.githubusercontent.com/peterbenoit/cdn/master/images/emoji/sprite-people.png)
 }
@@ -2954,34 +2941,17 @@ span.emoji.object {
 span.emoji.symbol {
 	background-image: url(https://raw.githubusercontent.com/peterbenoit/cdn/master/images/emoji/sprite-symbol.png)
 }
-.emojiPicker section {
-	overflow: hidden;
-	width: 100%;
-	padding-top: 1%
-}
-.emojiPicker section h1 {
-	font-size: 14px;
-	margin-left: 10px;
-	color: #999;
-	font-weight: 100
-} 
-.emojiPicker section em {
-	float: left;
-	display: inline-block;
-	padding: 2%;
-	border-radius: 4px;
+
+.ep em {
 	cursor: pointer;
-	transition: -webkit-transform 60ms ease-out;
 	transition: transform 60ms ease-out;
-	transition: transform 60ms ease-out, -webkit-transform 60ms ease-out;
+	transition-delay: 60ms;
+	padding: 5px;
+}
+.ep em div.emoji, .ep em span.emoji {
+	transition: transform 60ms ease-out;
 	transition-delay: 60ms
 }
-.emojiPicker section em div.emoji, .emojiPicker section em span.emoji {
-	transition: -webkit-transform 60ms ease-out;
-	transition: transform 60ms ease-out;
-	transition: transform 60ms ease-out, -webkit-transform 60ms ease-out;
-	transition-delay: 60ms
-}
-.emojiPicker section em:hover div.emoji, .emojiPicker section em:hover span.emoji {
+.ep em:hover div.emoji, .ep em:hover span.emoji {
 	transform: scale(1.1)
 }
