@@ -122,7 +122,7 @@ title: Public Health Image Library
             $( '#details' ).removeClass( 'btn-outline-secondary' ).addClass( 'btn-outline-primary' );
         }
         
-        var url = 'https://tools.cdc.gov/api/v2/resources/media?parentid=132567&max=225&fields=id,name,description,targetUrl,enclosures,datePublished';
+        var url = 'https://tools.cdc.gov/api/v2/resources/media?parentid=132567&max=225&fields=datePublished,id,name,description,targetUrl,enclosures';
 
             $( '#results' )
             .on( 'preInit.dt', function() {
