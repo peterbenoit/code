@@ -149,7 +149,7 @@ order:
 					</div>
 				</div>
 			</div>
-			<div class="row mb-3">
+			<div class="row mb-3 mt-3">
 				<div class="col">
 					<div class="card bg-gray-l2">
 						<div class="card-body">
