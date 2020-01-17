@@ -1,6 +1,6 @@
 ---
 permalink: datatables/phil.html
-description: PHIL Images
+description: PHIL Images in a standard Row/Column Card layout
 title: Public Health Image Library
 ---
 
@@ -90,7 +90,7 @@ title: Public Health Image Library
 </head>
 <body translate="no">
 	<div class="container mt-5 mb-5">
-		<h3>PHIL using DataTables.js v2</h3><small class="d-block">Pulls data from tools, so give it a moment to load...</small> <a class="btn btn-outline-primary" href="#" id="card"><i class="material-icons">view_module</i> Card</a> <a class="btn btn-outline-secondary" href="#" id="details"><i class="material-icons">view_stream</i> Details</a>
+		<h3>PHIL using DataTables.js Row/Column layout</h3> <a class="btn btn-outline-primary" href="#" id="card"><i class="material-icons">view_module</i> Card</a> <a class="btn btn-outline-secondary" href="#" id="details"><i class="material-icons">view_stream</i> Details</a>
 		<table id="results"></table>
 	</div>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> 
@@ -121,9 +121,12 @@ title: Public Health Image Library
             $( '#card' ).removeClass( 'btn-outline-primary' ).addClass( 'btn-outline-secondary' );
             $( '#details' ).removeClass( 'btn-outline-secondary' ).addClass( 'btn-outline-primary' );
         }
-        
-        var url = 'https://tools.cdc.gov/api/v2/resources/media?parentid=132567&max=225&fields=datePublished,id,name,description,targetUrl,enclosures';
 
+        var fields = ['id','name','description','targetUrl','enclosures','datePublished'];
+            fields = shuffle( fields );
+        
+        var url = 'https://tools.cdc.gov/api/v2/resources/media?parentid=132567&max=225&fields=' + fields;
+        
             $( '#results' )
             .on( 'preInit.dt', function() {
                 console.log( 'preInit' );
