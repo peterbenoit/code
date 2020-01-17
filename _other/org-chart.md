@@ -142,7 +142,7 @@ order:
 						<div class="card-body bg-quaternary pl-md-5">
 							<img src="https://www.cdc.gov/about/images/leadership/leaders/adc.jpg" class="mr-md-3" alt="">
 							<h4>Associate Director for Communication</h4>
-							<a href="https://www.cdc.gov/about/leadership/leaders/adc.html">Michelle E. Bonds, MBA</a>
+							<a class="d-inline-block" href="https://www.cdc.gov/about/leadership/leaders/adc.html">Michelle E. Bonds, MBA</a><span>**</span>
 						</div>
 						<div class="card-body bg-quaternary pl-md-5">
 							<img src="https://www.cdc.gov/about/images/leadership/leaders/adlss.jpg" class="mr-md-3" alt="">
