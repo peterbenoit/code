@@ -7,8 +7,8 @@ highlighter:      rouge
 excerpt_separator: <!--more-->
 
 # Config for your profile.
-title:            Pete Benoit Blog            # Site title
-name:             Pete Benoit                 # Your name
+title:            code          # Site title
+name:             Code                 # Your name
 avatar:           /theme/img/avatar.jpg       # Path to an avatar image
 description:      
 

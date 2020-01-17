@@ -226,6 +226,17 @@ function slickInit( target, settings ) {
 		var $t = $( this ),
 			swipeOrDrag = event.changedTouches ? 'swipe' : 'mousedrag',
 			direction = 'slider-prev';
+
+		// on the carousel slider, if the user navigates by sliding the top slider, update the thumbnail slider location
+		if( $t.hasClass( 'cdc-carousel-slider' ) ) {
+			var cts = $('.cdc-carousel-thumbnail-slider'),
+				step = 4;
+
+			if( 0 === nextSlide % step ) {
+				cts[0].slick.slickGoTo( nextSlide );
+			}
+		}
+		
 		// this was largely copied from existing code in TP4
 		if ( 1 === Math.abs( nextSlide - currentSlide ) ) {
 			direction = 0 < nextSlide - currentSlide ? 'slider-next' : 'slider-prev';
@@ -246,7 +257,7 @@ function slickInit( target, settings ) {
 			}
 		}
 	} );
-	console.info( 'Initializing Slick with these settings:', defaults );
+
 	// initialize the slider with the settings
 	$( t ).slick( defaults );
 	// ARIA
