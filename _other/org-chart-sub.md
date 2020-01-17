@@ -126,7 +126,7 @@ order:
 						</div>
 						<div class="card-body bg-tertiary">
 							<img src="https://www.cdc.gov/about/images/leadership/leaders/pdd.jpg" class="ml-0 mr-3 float-left" alt="">
-							<h4>CDC Director</h4>
+							<h4>Principal Deputy Director</h4>
 							<a href="https://www.cdc.gov/about/leadership/director.htm">Anne Schuchat, MD (RADM, USPHS, RET)</a>
 							<a href="org-chart.html" class="d-inline-block"><span class="cdc-icon-arrow-alt-circle-left-solid"></span></a> <a class="d-inline-block" href="org-chart.html">Go Up a Level</a>	
 						</div>
