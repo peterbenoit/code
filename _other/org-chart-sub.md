@@ -149,7 +149,6 @@ order:
 					</div>
 				</div>
 			</div>
-			<div class="row mt-3 mb-3"><div class="col">** Acting position</div></div>
 			<div class="row mb-3">
 				<div class="col">
 					<div class="card bg-gray-l2">
