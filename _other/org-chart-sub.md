@@ -121,9 +121,6 @@ order:
 			<div class="row">
 				<div class="col">
 					<div class="card">
-						<div class="card-header h4 bg-primary">
-							Office of the Director
-						</div>
 						<div class="card-body bg-tertiary">
 							<img src="https://www.cdc.gov/about/images/leadership/leaders/pdd.jpg" class="ml-0 mr-3 float-left" alt="">
 							<h4>Principal Deputy Director</h4>
