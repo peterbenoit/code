@@ -16,7 +16,52 @@ order:
 {%- include breadcrumbs.html -%}
 
 <style>
+
+@media (min-width: 576px) { 
+	.org-chart img {
+		
+	}	
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.org-chart img {
+		width: 110px;
+		height: 110px;
+		border-radius: 50% !important;
+		margin-right: 10px;
+		float: left;
+	}
+	.org-chart .pl-5 {
+		padding-left:3rem!important;
+	}	
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
 	/* https://codepen.io/peterbenoit/pen/LYYjGYY */
+
+.org-chart .pl-5 {
+	padding-left:1rem!important;
+}
+.org-chart img {
+	border-radius: 50% !important;
+	width: 90px;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+
+
+
 .org-chart.bg-primary {
   color: #000 !important;
 }
@@ -46,13 +91,7 @@ order:
 .org-chart .cdc-icon-chevron-circle-right {
   font-size: 24px;
 }
-.org-chart img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50% !important;
-  margin-right: 10px;
-  float: left;
-}
+
 .org-chart .badge {
   position: absolute;
   left: 100px;
@@ -76,7 +115,7 @@ order:
 <div class="container">
 	<span class="h3 d-block">Org Chart</span>
 	<div class="row org-chart">
-		<div class="col-md-3 vh100" style="border: 1px solid #005eaa">left nav</div>
+		<div class="col-md-3 vh100 d-none d-md-block" style="border: 1px solid #005eaa">left nav</div>
 		<div class="col-md-9">
 			<h1 id="content">CDC Organization Chart</h1>
 			<div class="row">
@@ -86,23 +125,23 @@ order:
 							Office of the Director
 						</div>
 						<div class="card-body bg-tertiary">
-							<img src="https://www.cdc.gov/about/images/leadership/leaders/cdcdirector.jpg" class="large" alt="">
+							<img src="https://www.cdc.gov/about/images/leadership/leaders/cdcdirector.jpg" class="ml-0 mr-3 float-left" alt="">
 							<h4>CDC Director</h4>
 							<a href="https://www.cdc.gov/about/leadership/director.htm">Robert R. Redfield, MD</a>
 						</div>
-						<div class="card-body bg-quaternary pl-5">
-							<img src="https://www.cdc.gov/about/images/leadership/leaders/pdd.jpg" class="large" alt="">
+						<div class="card-body bg-quaternary pl-md-5">
+							<img src="https://www.cdc.gov/about/images/leadership/leaders/pdd.jpg" class="mr-md-3" alt="">
 							<h4>Principal Deputy Director</h4>
 							<a href="https://www.cdc.gov/about/leadership/leaders/pdd.html">Anne Schuchat, MD (RADM, USPHS, RET)</a>
 							<a href="#">View CIO Direct Reports <span class="cdc-icon-arrow-alt-circle-right-solid"></span></a>						
 						</div>
-						<div class="card-body bg-quaternary pl-5">
-							<img src="https://www.cdc.gov/about/images/leadership/leaders/adc.jpg" alt="">
+						<div class="card-body bg-quaternary pl-md-5">
+							<img src="https://www.cdc.gov/about/images/leadership/leaders/adc.jpg" class="mr-md-3" alt="">
 							<h4>Associate Director for Communication</h4>
 							<a href="https://www.cdc.gov/about/leadership/leaders/adc.html">Katherine Lyon Daniel, PhD</a>
 						</div>
-						<div class="card-body bg-quaternary pl-5">
-							<img src="https://www.cdc.gov/about/images/leadership/leaders/adlss.jpg" alt="">
+						<div class="card-body bg-quaternary pl-md-5">
+							<img src="https://www.cdc.gov/about/images/leadership/leaders/adlss.jpg" class="mr-md-3" alt="">
 							<h4>Office of Laboratory Science and Safety (OLSS)</h4>
 							<a href="https://www.cdc.gov/about/leadership/leaders/adlss.html">Steve Monroe, PhD</a>
 						</div>
