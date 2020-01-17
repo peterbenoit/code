@@ -1,15 +1,15 @@
 ---
 layout: template
-permalink: other/org-chart.html
+permalink: other/org-chart-sub.html
 description: 
-title: Org Chart
+title: Org Chart Sub
 type: demo
 localcss: 
 localjs:
 includePrismJs: false
 externalcss: 
 externaljs:  
-showinnav: true
+showinnav: false
 order: 
 ---
 
@@ -82,7 +82,7 @@ order:
   display: block;
 }
 .org-chart a:not(.btn) + a span {
-  /* margin-left: 10px; */
+  margin-left: 10px;
   font-size: 30px;
 }
 .org-chart .cdc-icon-arrow-alt-circle-down-solid {
@@ -91,10 +91,6 @@ order:
 .org-chart .cdc-icon-chevron-circle-right {
   font-size: 24px;
 }
-.org-chart .cdc-icon-chevron-circle-left {
-  font-size: 24px;
-}
-
 
 .org-chart .badge {
   position: absolute;
@@ -129,25 +125,26 @@ order:
 							Office of the Director
 						</div>
 						<div class="card-body bg-tertiary">
-							<img src="https://www.cdc.gov/about/images/leadership/leaders/cdcdirector.jpg" class="ml-0 mr-3 float-left" alt="">
+							<img src="https://www.cdc.gov/about/images/leadership/leaders/pdd.jpg" class="ml-0 mr-3 float-left" alt="">
 							<h4>CDC Director</h4>
-							<a href="https://www.cdc.gov/about/leadership/director.htm">Robert R. Redfield, MD</a>
+							<a href="https://www.cdc.gov/about/leadership/director.htm">Anne Schuchat, MD (RADM, USPHS, RET)</a>
+							<a href="org-chart.html" class="d-inline-block"><span class="cdc-icon-arrow-alt-circle-left-solid"></span></a> <a class="d-inline-block" href="org-chart.html">Go Up a Level</a>	
 						</div>
 						<div class="card-body bg-quaternary pl-md-5">
-							<img src="https://www.cdc.gov/about/images/leadership/leaders/pdd.jpg" class="mr-md-3" alt="">
-							<h4>Principal Deputy Director</h4>
-							<a href="https://www.cdc.gov/about/leadership/leaders/pdd.html">Anne Schuchat, MD (RADM, USPHS, RET)</a>
-							<a class="d-inline-block" href="org-chart-sub.html">View CIO Direct Reports</a> <a class="d-inline-block" href="org-chart-sub.html"><span class="cdc-icon-arrow-alt-circle-right-solid"></span></a>				
+							<img src="https://www.cdc.gov/about/images/leadership/leaders/niosh.jpg" class="mr-md-3" alt="">
+							<h4>Director for National Institute for Occupational Safety and Health</h4>
+							<a href="https://www.cdc.gov/about/leadership/leaders/noish.html">John Howard, MD, MPH, JD, LLM, MBA</a>
+												
 						</div>
 						<div class="card-body bg-quaternary pl-md-5">
-							<img src="https://www.cdc.gov/about/images/leadership/leaders/adc.jpg" class="mr-md-3" alt="">
-							<h4>Associate Director for Communication</h4>
-							<a href="https://www.cdc.gov/about/leadership/leaders/adc.html">Michelle E. Bonds, MBA</a>
+							<img src="https://www.cdc.gov/about/images/leadership/leaders/DDPHSIS.jpg" class="mr-md-3" alt="">
+							<h4>Deputy Director for Public Health Service and Implementation Science</h4>
+							<a href="https://www.cdc.gov/about/leadership/leaders/ddphsis.html">Stephen C. Redd, MD (RADM, USPHS)</a>
 						</div>
 						<div class="card-body bg-quaternary pl-md-5">
-							<img src="https://www.cdc.gov/about/images/leadership/leaders/adlss.jpg" class="mr-md-3" alt="">
-							<h4>Office of Laboratory Science and Safety (OLSS)</h4>
-							<a href="https://www.cdc.gov/about/leadership/leaders/adlss.html">Steve Monroe, PhD</a>
+							<img src="https://www.cdc.gov/about/images/leadership/leaders/ophss.jpg" class="mr-md-3" alt="">
+							<h4>Deputy Director for Public Health Science and Surveillance</h4>
+							<a href="https://www.cdc.gov/about/leadership/leaders/ophss.html">Chesley Richards, MD, MPH, FACP</a>
 						</div>
 					</div>
 				</div>
