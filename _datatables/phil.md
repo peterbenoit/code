@@ -106,25 +106,7 @@ title: Public Health Image Library
         sessionStorage.viewType = 'details';
         init();
         } );
-
-        function shuffle(array) {
-            var currentIndex = array.length, temporaryValue, randomIndex;
-
-            // While there remain elements to shuffle...
-            while (0 !== currentIndex) {
-
-                // Pick a remaining element...
-                randomIndex = Math.floor(Math.random() * currentIndex);
-                currentIndex -= 1;
-
-                // And swap it with the current element.
-                temporaryValue = array[currentIndex];
-                array[currentIndex] = array[randomIndex];
-                array[randomIndex] = temporaryValue;
-            }
-
-            return array;
-        }        
+  
 
         function init() {
         if ( $.fn.DataTable.isDataTable( '#results' ) ) {
@@ -141,10 +123,7 @@ title: Public Health Image Library
             $( '#details' ).removeClass( 'btn-outline-secondary' ).addClass( 'btn-outline-primary' );
         }
 
-        var fields = ['id','name','description','targetUrl','enclosures','datePublished'];
-            fields = shuffle( fields );
-        
-        var url = 'https://tools.cdc.gov/api/v2/resources/media?parentid=132567&max=225&fields=' + fields;
+        var url = 'https://raw.githubusercontent.com/peterbenoit/cdn/master/data/datatables/phil/media.json';
         
             $( '#results' )
             .on( 'preInit.dt', function() {
@@ -207,7 +186,7 @@ title: Public Health Image Library
 
         function drawCard( data ) {
         var openrow = '<div class="row">',
-            opencard = '<div class="col-lg-4 mb-2"><a href="#" id="'+data['id']+'" class="card h-100" style="border: 1px solid rgba(0,0,0,.125)">',
+            opencard = '<div class="col-lg-4 mb-2"><a href="'+data['targetUrl']+'" id="'+data['id']+'" target="_blank" class="card h-100" style="border: 1px solid rgba(0,0,0,.125)">',
             cardbody = '<div class="card-body">',
             cardimg = '<img class="card-img-top" src="'+ data.enclosures[0].resourceUrl+'" alt="">',
             carddate = '<div class="card-subtitle">'+ moment( data.datePublished ).format('LL') +'</div>',

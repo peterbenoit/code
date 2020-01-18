@@ -107,25 +107,6 @@ title: Public Health Image Library
             init();
         } );
 
-        function shuffle(array) {
-            var currentIndex = array.length, temporaryValue, randomIndex;
-
-            // While there remain elements to shuffle...
-            while (0 !== currentIndex) {
-
-                // Pick a remaining element...
-                randomIndex = Math.floor(Math.random() * currentIndex);
-                currentIndex -= 1;
-
-                // And swap it with the current element.
-                temporaryValue = array[currentIndex];
-                array[currentIndex] = array[randomIndex];
-                array[randomIndex] = temporaryValue;
-            }
-
-            return array;
-        }        
-
         function init() {
         if ( $.fn.DataTable.isDataTable( '#results' ) ) {
             $( '#results' ).DataTable().clear().destroy();
@@ -141,17 +122,14 @@ title: Public Health Image Library
             $( '#details' ).removeClass( 'btn-outline-secondary' ).addClass( 'btn-outline-primary' );
         }
 
-        var fields = ['id','name','description','targetUrl','enclosures','datePublished'];
-            fields = shuffle( fields );
-        
-        var url = 'https://tools.cdc.gov/api/v2/resources/media?parentid=132567&max=225&fields=' + fields;
+        var url = 'https://raw.githubusercontent.com/peterbenoit/cdn/master/data/datatables/phil/media.json';
 
             $( '#results' )
             .on( 'preInit.dt', function() {
                 console.log( 'preInit' );
 
                 // append the output div
-                $( this ).after( '<div id="out" class="card-columns"></div>' );
+                $( this ).after( '<div id="out"></div>' );
             } ).DataTable( {
             ajax: {
                 url: url,
@@ -186,15 +164,16 @@ title: Public Health Image Library
             },
             drawCallback: function( settings ) {
                 
-                // if( sessionStorage.viewType === 'card' ) {
-                //     // after the rows (columns) have been generated, wrap them into rows as needed
-                //     var divs = $( '#out > .col-lg-4' );
-                //     for ( var i = 0; i < divs.length; i += 3 ) {
-                //         divs.slice( i, i + 3 ).wrapAll( '<div class="row mb-3"></div>' );
-                //     }           
-                // } else {
-                //     $( '#out > .col' ).wrap( '<div class="row"></div>' );
-                // }
+                if( sessionStorage.viewType === 'card' ) {
+                    // after the rows (columns) have been generated, wrap them into rows as needed
+                    // var divs = $( '#out > .col-lg-4' );
+                    // for ( var i = 0; i < divs.length; i += 3 ) {
+                    //     divs.slice( i, i + 3 ).wrapAll( '<div class="row mb-3"></div>' );
+                    // }    
+                    $( '#out' ).addClass( 'card-columns' );       
+                } else {
+                    $( '#out > .col' ).wrap( '<div class="row"></div>' );
+                }
 
                 console.log( 'drawCallback' );
             },
@@ -207,7 +186,7 @@ title: Public Health Image Library
         }
 
         function drawCard( data ) {
-            var opencard = '<a href="#" id="'+data['id']+'" class="card h-100" style="border: 1px solid rgba(0,0,0,.125)">',
+            var opencard = '<a href="'+data['targetUrl']+'" id="'+data['id']+'" target="_blank" class="card" style="border: 1px solid rgba(0,0,0,.125)">',
                 cardbody = '<div class="card-body">',
                 cardimg = '<img class="card-img-top" src="'+ data.enclosures[0].resourceUrl+'" alt="">',
                 carddate = '<div class="card-subtitle">'+ moment( data.datePublished ).format('LL') +'</div>',
