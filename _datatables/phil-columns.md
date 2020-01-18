@@ -186,7 +186,7 @@ title: Public Health Image Library
         }
 
         function drawCard( data ) {
-            var opencard = '<a href="'+data['targetUrl']+'" id="'+data['id']+'" target="_blank" class="card" style="border: 1px solid rgba(0,0,0,.125)">',
+            var opencard = '<a href="'+data['targetUrl']+'" id="'+data['id']+'" data-id="'+data['name']+'" target="_blank" class="card" style="border: 1px solid rgba(0,0,0,.125)">',
                 cardbody = '<div class="card-body">',
                 cardimg = '<img class="card-img-top" src="'+ data.enclosures[0].resourceUrl+'" alt="">',
                 carddate = '<div class="card-subtitle">'+ moment( data.datePublished ).format('LL') +'</div>',
@@ -217,7 +217,7 @@ title: Public Health Image Library
 
         function drawDetails( data ) {
             var openrow = '<div class="row">',
-                opencard = '<div class="col mb-2"><a href="'+data['targetUrl']+'" class="card h-100" style="border: 1px solid rgba(0,0,0,.125)">',
+                opencard = '<div class="col mb-2"><a href="'+data['targetUrl']+'" data-id="'+data['name']+'" class="card h-100" style="border: 1px solid rgba(0,0,0,.125)">',
                 cardbody = '<div class="card-body"><div class="row">',
                 cardimg = '<div class="col-4"><img class="card-img-left w-100" src="'+ data.enclosures[0].resourceUrl+'" alt=""></div>',
                 carddate = '<div class="card-subtitle">'+ moment( data.datePublished ).format('LL') +'</div>',
@@ -244,6 +244,7 @@ title: Public Health Image Library
         }
 
         function drawModal( id ) {
+            console.log('https://tools.cdc.gov/api/v2/resources/media/' + id + '.json')
             var open = '<div id="preview-modal" class="modal fade" role="dialog"><div class="modal-dialog modal-lg modal-xlg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body">',
                 close = '</div><div class="modal-footer"></div></div></div></div>',
                 body = '';
@@ -271,7 +272,7 @@ title: Public Health Image Library
         $( 'a.card' ).on( 'click', function( e ) {
             e.preventDefault();
             
-            drawModal( this.id );
+            drawModal( $(this).data('id') );
         } )
         }
 
