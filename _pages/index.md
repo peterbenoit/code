@@ -9,7 +9,7 @@ type: home
 
 {% include components/intro.md %}
 
-### What is all of this?!
+### Intro
 
 Here's an assortment of [posts]({{ site.baseurl}}{% link list/posts.html %}) and [projects]({{ site.baseurl}}{% link list/projects.md %}) that I have put together over the last year. It's built in <a href="https://jekyllrb.com">Jekyll</a> and runs in Github or in your local dev environment. That is, assuming you have Ruby installed.
 
