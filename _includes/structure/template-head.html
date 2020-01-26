@@ -9,6 +9,8 @@
 	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css" rel="stylesheet">
 	<link href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css" rel="stylesheet">
 
+	{%- include ga.html -%}
+
 	{%- if page.externalcss And page.externalcss != "" And page.externalcss != nil -%}
 		{%- assign pgs = page.externalcss | split: "," -%}
 		{%- for pg in pgs -%}

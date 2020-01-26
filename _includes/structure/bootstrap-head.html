@@ -15,6 +15,8 @@
         }
     </style>
 
+{%- include ga.html -%}
+
 {%- if page.externalcss And page.externalcss != "" And page.externalcss != nil -%}
 {%- assign pgs = page.externalcss | split: "," -%}
 {%- for pg in pgs -%}
@@ -25,7 +27,7 @@
 {%- if page.localcss And page.localcss != "" And page.localcss != nil -%}
 {%- assign pgs = page.localcss | split: "," -%}
 {%- for pg in pgs -%}
-	<link href="{{ site.baseurl }}/css/{{ pg | strip }}" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/{{ pg | strip }}?{{ site.time | date:'%Y%m%d%U%H%N%S' }}" rel="stylesheet">
 {%- endfor -%}
 {%- endif -%}
 
