@@ -133,7 +133,12 @@ showinnav: true
 			<div class="card">
 				<div class="card-header bg-tertiary h3 r-none"><i class="fas fa-air-freshener c-primary d-lg-none mr-1"></i>Step <span class="d-lg-block">01</span></div>
 				<div class="card-body text-center d-none d-lg-block">
-					<i class="fas fa-air-freshener c-primary"></i>
+					<span class="fa-stack c-primary">
+						<span class="far fa-circle fa-stack-2x"></span>
+						<strong class="fa-stack-1x">
+						<span class="number">1</span>    
+						</strong>
+					</span>
 				</div>
 			</div>
 		</div>
