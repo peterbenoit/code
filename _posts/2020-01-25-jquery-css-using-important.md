@@ -19,4 +19,3 @@ setMyCSS( 'body', 'background-color', 'red' );
 
 
 {%- endhighlight -%}
-
