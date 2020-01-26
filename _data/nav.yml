@@ -1,4 +1,4 @@
-- title: Home
+- title: Code
   href: index.html
 
 # - title: About
@@ -9,6 +9,9 @@
 
 - title: Projects
   href: list/projects.html
+
+- title: About
+  href: http://www.peterbenoit.com
 
 # - title: Portfolio
 #   href: list/portfolio.html
