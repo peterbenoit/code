@@ -29,7 +29,7 @@ showinnav: true
 					<div class="card card-step bt-3 bt-primary">
 						<div class="row no-gutters">
 							<div class="col-lg-3">
-								<div class="card">>
+								<div class="card">
 									<div class="card-body text-center d-none d-lg-block">
 										<i class="fas fa-air-freshener c-primary"></i>
 									</div>
@@ -50,7 +50,7 @@ showinnav: true
 					<div class="card card-step bt-3 bt-primary">
 						<div class="row no-gutters">
 							<div class="col-lg-3">
-								<div class="card">>
+								<div class="card">
 									<div class="card-body text-center d-none d-lg-block">
 										<i class="fas fa-drumstick-bite c-primary"></i>
 									</div>
@@ -95,7 +95,7 @@ showinnav: true
 <pre><code class="language-markup line-numbers"><script type="prism-html-markup"><div class="card card-step bt-3 bt-primary">
 	<div class="row no-gutters">
 		<div class="col-lg-3">
-			<div class="card">>
+			<div class="card">
 				<div class="card-body text-center d-none d-lg-block">
 					<i class="fas fa-air-freshener c-primary"></i>
 				</div>
