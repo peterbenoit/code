@@ -10,8 +10,10 @@ As with most things in development, there are often a handful of ways to do the 
 
 Here's one way to do it using Jekyll. The site.time is the current time when the <code>jekyll</code> command is run; typically this is when the site is built.
 
-{%- highlight html -%}
+{%- highlight liquid -%}
+{% raw %}
   <link href="{{ site.baseurl }}/css/{{ pg | strip }}?{{ site.time | date:'%Y%m%d%U%H%N%S' }}" rel="stylesheet">
+{% endraw %}
 {%- endhighlight -%}
 
 The output with the querystring
