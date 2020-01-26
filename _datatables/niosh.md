@@ -55,6 +55,7 @@ console.log('hash')
 	</script>
 </head>
 <body translate="no">
+	{%- include breadcrumbs.html -%}
 	<div class="container d-flex flex-wrap body-wrapper">
 		<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
 			<div class="row">

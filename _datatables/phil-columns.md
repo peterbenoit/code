@@ -89,6 +89,7 @@ title: Public Health Image Library
 	</style>
 </head>
 <body translate="no">
+    {%- include breadcrumbs.html -%}
 	<div class="container mt-5 mb-5">
 		<h3>PHIL using DataTables.js Column Layout</h3><a class="btn btn-outline-primary" href="#" id="card"><i class="material-icons">view_module</i> Card</a> <a class="btn btn-outline-secondary" href="#" id="details"><i class="material-icons">view_stream</i> Details</a>
 		<table id="results"></table>
