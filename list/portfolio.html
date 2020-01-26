@@ -24,12 +24,8 @@ type: list
 {%- endfor -%}
 
 <script type="text/javascript">
-
-
-
     window.addEventListener( 'DOMContentLoaded', function() {
 	    ( function( $ ) {
-
 
             var parseHash = function() {
                 if (document.location.hash.length > 0) {
@@ -41,8 +37,6 @@ type: list
                     clearSkills()
                 }
             }    
-
-
 
             var showPortfolioBySkill = function(skill, name) {
                 $("#currently-showing").show()
@@ -72,14 +66,10 @@ type: list
             
             parseHash();
 
-$(window).on('hashchange', parseHash)
-
+            $(window).on('hashchange', parseHash)
 
         } )( jQuery );
 } );
-
-
-
 </script>
 
 
