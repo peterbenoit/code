@@ -167,22 +167,19 @@
 		animation: fadein 0.75s;
 	}
 
+	.slider-next {
+		right: -25px !important;
+	}
+
+	.slider-prev {
+		left: -25px !important;
+	}	
+
 	+ .cdc-slider-status {
 		text-align: center !important;
 	}
 
 	// customizations to each slider type appears below
-
-	&.cdc-centermode-slider {
-		.slider-next {
-			right: -10px !important;
-		}
-	
-		.slider-prev {
-			left: -10px !important;
-		}		
-	}
-
 	&.cdc-carousel-thumbnail-slider {
 
 		margin-right: 4px;
@@ -248,7 +245,7 @@
 
 	&.cdc-jumbotron-slider {
 		// coming soon!
-	}
+	}	
 
 	&.cdc-centermode-slider {
 		.slider-next {
