@@ -260,7 +260,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
 			'callback': function( slider, defaults, slick ) {
-				$( slider ).addClass( 'cdc-standard-slider-overlay' );
+				$( slider ).addClass( 'cdc-standard-slider-overlay dark' );
 			},			
 			'responsive': [ 
 				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
@@ -278,7 +278,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
 			'callback': function( slider, defaults, slick ) {
-				$( slider ).addClass( 'cdc-standard-slider-overlay light' );
+				$( slider ).addClass( 'cdc-standard-slider-overlay' );
 			},			
 			'responsive': [ 
 				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
