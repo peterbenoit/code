@@ -272,6 +272,21 @@
 			box-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
 		}
 	}
+
+	&.cdc-standard-slider-overlay {
+		.card-body {
+			background: rgba(255, 255, 255, 0.85);
+			color: #000;
+		}
+
+		&.dark {
+			.card-body {
+				background: rgba(0, 0, 0, 0.7);
+				color: #fff;
+			}
+		}			
+	}
+	
 }
 
 // video modal related
@@ -455,16 +470,13 @@ body.modal-open {
 				position: absolute;
 				bottom: 0;
 				width: 100%;
-				background: rgba(0, 0, 0, 0.7);
-				color: #fff;
 			}
-
-			&.light {
+			
+			&.dark {
 				.card-body {
-					background: rgba(255, 255, 255, 0.85);
-					color: #000;
+					background: rgba(0, 0, 0, 0.7);
 				}
-			}			
+			}				
 		}
 	}
 }
