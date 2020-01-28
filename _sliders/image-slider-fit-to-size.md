@@ -10,7 +10,6 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
-order: 1
 ---
 
 <style>
