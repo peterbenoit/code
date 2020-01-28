@@ -122,6 +122,8 @@ function slickInit( target, settings ) {
 		clone.attr( 'id', id );
 		clone.find( '.card-body' ).remove();
 		t.after( clone );
+
+		// TODO: way to control number of slides to show here
 		// init the thumbnail clone
 		slickInit( '#' + id, {
 			'sliderType': 'thumbnail',
