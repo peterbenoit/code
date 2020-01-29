@@ -7,7 +7,7 @@ type: demo
 localcss: sliders.css
 localjs: slickinit.js
 includePrismJs: true
-externalcss: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
+externalcss: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css, https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 externaljs:
 showinnav: true
 ---
@@ -32,7 +32,36 @@ showinnav: true
 	.cdc-card-fit-slider .fa-stack .fa-square {
 		color:rgba(0, 0, 0, 0.8);
 	}
-	
+
+	.modal-body {
+		padding: 0;	
+		text-align: center;
+	}
+
+
+	.modal {
+		animation-duration: .3s;
+		animation-delay: 0s;
+		padding-right: 0!important;
+		
+	}
+
+	.modal-content {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.modal-body .modal-notice {
+		background-color: rgba(0, 0, 0, 0.9);
+		border-radius: 30px;
+		padding: 20px;
+		color: white;
+		position: absolute;
+		left: 45%;
+		top: 100px;
+		animation-duration: 2s;
+		animation-delay: 2s;		
+		box-shadow: 0px 0px 18px 0px rgba(255, 127, 0, 0.75);
+	}	
 </style>
 
 
@@ -322,8 +351,22 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 				$( '.cdc-card-fit-slider .card-img-top' ).each( function() { 
 					$( this )
-						.css('max-height', ch )
-						.after( '<span class="fa-stack"><i class="fas fa-square fa-stack-2x"></i><i class="fas fa-expand fa-stack-1x fa-inverse"></i></span>' );
+						.css({'max-height': ch, 'cursor': 'pointer'})
+						.after( '<span class="fa-stack card-img-zoom" style="cursor:pointer"><i class="fas fa-square fa-stack-2x"></i><i class="fas fa-expand fa-stack-1x fa-inverse"></i></span>' );
+				} );
+
+				$( document ).on( 'click', '.card-img-top, .card-img-zoom', function() {
+					var t = $( this );
+
+					if( t.hasClass( 'fa-stack' ) ) {
+						t = t.prev( '.card-img-top' );
+					}
+
+					$( '#modal_zoom' )
+						.modal( 'show' )
+						.find( '.modal-body' )
+						.empty()
+						.append( '<div class="modal-notice animated fadeOut">Press ESC to close</div><img src="'+t[0].src+'" class="img-fluid" />' );
 				} );
 
 				var dots = $('.slick-dots').find('li'),
@@ -338,6 +381,13 @@ window.addEventListener( 'DOMContentLoaded', function() {
 						$( this ).width( dotwidth );
 					} );
 				}
+
+				var modal = '<div class="modal animated zoomIn" id="modal_zoom" role="dialog" tabindex="-1">' +
+						'<div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document"><div class="modal-content">' +
+						'<div class="modal-body"></div>' +
+						'</div></div></div>';
+					
+					$( 'body' ).append( modal );		
 
 			},
 			'slideCss': { },
