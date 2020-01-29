@@ -7,7 +7,7 @@ type: demo
 localcss: sliders.css
 localjs: slickinit.js
 includePrismJs: true
-externalcss:
+externalcss: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
 externaljs:
 showinnav: true
 ---
@@ -23,7 +23,16 @@ showinnav: true
 	.cdc-card-fit-slider .card-body {
 		background: rgba(0, 0, 0, 0.8);
 		color: #fff;
-	}	
+	}
+
+	.cdc-card-fit-slider .fa-stack {
+		position: absolute;
+    	right: 0;
+	}
+	.cdc-card-fit-slider .fa-stack .fa-square {
+		color:rgba(0, 0, 0, 0.8);
+	}
+	
 </style>
 
 
@@ -41,7 +50,7 @@ showinnav: true
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_1997.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_1997.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 1997
@@ -51,7 +60,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_1998.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_1998.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 1998
@@ -61,7 +70,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_1999.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_1999.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 1999
@@ -71,7 +80,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2000.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2000.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2000
@@ -81,7 +90,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2001.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2001.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2001
@@ -91,7 +100,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2002.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2002.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2002
@@ -101,7 +110,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2003.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2003.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2003
@@ -111,7 +120,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2004.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2004.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2004
@@ -121,7 +130,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2005.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2005.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2005
@@ -131,7 +140,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2006.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2006.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2006
@@ -141,7 +150,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2007.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2007.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2007
@@ -151,7 +160,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2008.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2008.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2008
@@ -161,7 +170,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2009.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2009.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2009
@@ -171,7 +180,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2010.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2010.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2010
@@ -181,7 +190,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2011.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2011.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 10
@@ -191,7 +200,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2012.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2012.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 10
@@ -201,7 +210,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2013.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2013.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 10
@@ -211,7 +220,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2014.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2014.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2014
@@ -221,7 +230,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2015.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2015.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2015
@@ -231,7 +240,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2016.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2016.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2016
@@ -241,7 +250,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2017.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2017.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2017
@@ -251,7 +260,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2018.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2018.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2018
@@ -261,7 +270,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2019.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2019.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							CDC 2019
@@ -271,7 +280,7 @@ showinnav: true
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top img-fluid"
-										data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2020.jpg">
+						data-lazy="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/over-the-years/www.cdc.gov_2020.jpg">
 					<div class="card-body">
 						<div class="card-title h4 text-left dark">
 							CDC 2020
@@ -301,7 +310,8 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 				// set each card height to 1/2 of the width of the slider
 				t.find( '.card' ).each( function() {
-					$( this ).height( w / 2 );
+					$( this )
+						.height( w / 2 );
 				} );
 
 				// get the new slider height
@@ -311,7 +321,9 @@ window.addEventListener( 'DOMContentLoaded', function() {
 				console.log( h );
 
 				$( '.cdc-card-fit-slider .card-img-top' ).each( function() { 
-					$(this).css('max-height', ch );
+					$( this )
+						.css('max-height', ch )
+						.after( '<span class="fa-stack"><i class="fas fa-square fa-stack-2x"></i><i class="fas fa-expand fa-stack-1x fa-inverse"></i></span>' );
 				} );
 
 				var dots = $('.slick-dots').find('li'),
