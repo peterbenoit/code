@@ -82,6 +82,7 @@
 		object-fit: cover;
 		-o-object-position: 100% 0;
 		object-position: 100% 0;
+		font-family: 'object-fit: cover; object-position: 100% 0';
 	}
 
 
@@ -335,6 +336,9 @@
 	</div>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> 
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script> 
+
+	<!-- object-fit for IE	 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script> 
 	<script>
 	$( function() {
 	   var modal = '<div class="modal animated zoomIn" id="modal_zoom" role="dialog" tabindex="-1">' +
@@ -353,6 +357,8 @@
 	           .empty()
 	           .append( '<div class="modal-notice animated fadeOut">Press ESC to close</div><img src="'+t[0].src+'" class="img-fluid" />' );       
 	   } );
+
+	   objectFitImages();
 	   
 	} );
 	</script>
