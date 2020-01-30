@@ -18,16 +18,16 @@ description: A timeline tour of the CDC Homepage since 1997
 	}
 	.timeline:before {
 		content: "";
-		width: 3px;
+		width: 1px;
 		height: 100%;
-		background: #bfbfbf;
+		background: rgba(0, 0, 0, 0.1);;
 		position: absolute;
 		top: 0;
 		left: 50%;
 	}
 	.timeline .timeline-card {
 		position: relative;
-	}
+	}	
 	.timeline .timeline-card:before, .timeline .timeline-card:after {
 		content: "";
 		display: block;
@@ -55,6 +55,7 @@ description: A timeline tour of the CDC Homepage since 1997
 		text-align: right;
 		-webkit-transition: all 0.3s ease 0s;
 		transition: all 0.3s ease 0s;
+		border: 1px solid rgba(0, 0, 0, 0.1);
 	}
 	.timeline .title {
 		font-size: 24px;
@@ -90,6 +91,18 @@ description: A timeline tour of the CDC Homepage since 1997
 		font-family: 'object-fit: cover; object-position: 100% 0';
 	}
 
+	@media only screen and (min-width: 768px) {
+		.timeline .timeline-card:nth-child(even) {
+			margin-top: -500px;
+		}
+	}
+
+	@media only screen and (min-width: 992px) {
+		.timeline .timeline-card:nth-child(even) {
+			margin-top: -300px;
+		}
+	}
+
 	@media only screen and (max-width: 767px) {
 		.timeline:before {
 			left: 0;
@@ -105,7 +118,10 @@ description: A timeline tour of the CDC Homepage since 1997
 		}
 		.modal-body .modal-notice {
 			display: none;
-		}	
+		}
+		.timeline .timeline-card {
+			margin-top: 1rem;
+		}			
 	}
 	.modal {
 		-webkit-animation-duration: .3s;
