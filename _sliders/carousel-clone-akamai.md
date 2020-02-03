@@ -1,7 +1,7 @@
 ---
 layout: template
 permalink: sliders/carousel-clone-akamai.html
-description: The original (non-clone) carousel slider required initializing two sliders and then asking them politely to work together. This is <i>mostly</i> fine, however the sync method between the two sliders was problematic. To get around this, and the fact that I had to initialize two sliders, I now clone the original slider and capture events on the clone to handle slide navigation.
+description: This is the same as the Carousel, except I'm using deelay.me to render the images with a delay; this mimics the Akamai Image Manager delay.
 title: Carousel (clone)
 type: demo
 localcss: sliders.css
@@ -18,7 +18,7 @@ order: 5
 <div class="container">
 	<div class="row">
 		<div class="col-md-9">
-			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel (clone) - Using Akamai</span>
+			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel (clone) - Using Delaay.me</span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="http://deelay.me/1000/https://picsum.photos/id/819/700/300">
