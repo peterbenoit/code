@@ -106,12 +106,13 @@ order: 5
 	</div>
 </div>
 
-<script id="prism-source" data-line="5,9-11">
+<script id="prism-source" data-line="5,6,10-12">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
 		slickInit( '#slider_1', {
 			'sliderType': 'carousel',
+			'thumbnailsToShow': 4,
 			'bodyClass': '',        
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel_1',
