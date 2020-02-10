@@ -124,6 +124,8 @@ function slickInit( target, settings ) {
 		clone.find( '.card-body' ).remove();
 		t.after( clone );
 
+		var thumbnails = defaults.thumbnailsToShow || 4;
+
 		// TODO: way to control number of slides to show here
 		// init the thumbnail clone
 		slickInit( '#' + id, {
@@ -132,8 +134,8 @@ function slickInit( target, settings ) {
 			'ariaLabel': '',
 			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
-			'slidesToShow': 4,
-			'slidesToScroll': 4,	
+			'slidesToShow': thumbnails,
+			'slidesToScroll': thumbnails,	
 			'slideCss': {
 				'box-shadow': 'none',
 				'margin': '0 3px'
@@ -148,14 +150,14 @@ function slickInit( target, settings ) {
 			'responsive': [ {	
 				'breakpoint': 1200,	
 				'settings': {	
-					'slidesToShow': 4,	
-					'slidesToScroll': 4	
+					'slidesToShow': thumbnails,	
+					'slidesToScroll': thumbnails	
 				}	
 			}, {	
 				'breakpoint': 992,	
 				'settings': {	
-					'slidesToShow': 4,	
-					'slidesToScroll': 4	
+					'slidesToShow': thumbnails,	
+					'slidesToScroll': thumbnails	
 				}	
 			}, {	
 				'breakpoint': 768,	
@@ -185,6 +187,8 @@ function slickInit( target, settings ) {
 		clone.attr( 'id', id );
 		clone.find( '.card-body' ).remove();
 
+		var thumbnails = defaults.thumbnailsToShow || 4;
+
 		clone.find( '.embed-responsive' ).each( function() {
 			var t = $( this ),
 				iframe = t.find( 'iframe' ),
@@ -211,8 +215,8 @@ function slickInit( target, settings ) {
 			'ariaLabel': '',
 			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
-			'slidesToShow': 4,
-			'slidesToScroll': 4,	
+			'slidesToShow': thumbnails,
+			'slidesToScroll': thumbnails,	
 			'slideCss': {
 				'box-shadow': 'none',
 				'margin': '0 3px'
@@ -227,14 +231,14 @@ function slickInit( target, settings ) {
 			'responsive': [ {	
 				'breakpoint': 1200,	
 				'settings': {	
-					'slidesToShow': 4,	
-					'slidesToScroll': 4	
+					'slidesToShow': thumbnails,	
+					'slidesToScroll': thumbnails	
 				}	
 			}, {	
 				'breakpoint': 992,	
 				'settings': {	
-					'slidesToShow': 4,	
-					'slidesToScroll': 4	
+					'slidesToShow': thumbnails,	
+					'slidesToScroll': thumbnails	
 				}	
 			}, {	
 				'breakpoint': 768,	
