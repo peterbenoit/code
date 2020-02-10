@@ -82,10 +82,11 @@ function slickInit( target, settings ) {
 				// remove the playbutton
 				$c.prev( '.playbtn' ).remove();
 				// get the data attributes from the image
+
 				newData = $c.data();
 				if ( '' !== newData.videoId ) {
 					// define the video embed
-					video = '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + data.videoId + '?enablejsapi=1&version=3&playerapiid=ytplayer" allow="" allowfullscreen=""></iframe></div>';
+					video = '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + newData.videoId + '?enablejsapi=1&version=3&playerapiid=ytplayer" allow="" allowfullscreen=""></iframe></div>';
 					// replace the image with the video embed
 					$c.replaceWith( video );
 				} else {
@@ -143,8 +144,119 @@ function slickInit( target, settings ) {
 					var index = $( this ).data( 'slick-index' );
 					t[ 0 ].slick.slickGoTo( index );
 				} );
-			}
+			},				
+			'responsive': [ {	
+				'breakpoint': 1200,	
+				'settings': {	
+					'slidesToShow': 4,	
+					'slidesToScroll': 4	
+				}	
+			}, {	
+				'breakpoint': 992,	
+				'settings': {	
+					'slidesToShow': 4,	
+					'slidesToScroll': 4	
+				}	
+			}, {	
+				'breakpoint': 768,	
+				'settings': {	
+					'slidesToShow': 1,	
+					'slidesToScroll': 1	
+				}	
+			}, {	
+				'breakpoint': 576,	
+				'settings': {	
+					'slidesToShow': 1,	
+					'slidesToScroll': 1	
+				}	
+			}, {	
+				'breakpoint': 0,	
+				'settings': {	
+					'slidesToShow': 1,	
+					'slidesToScroll': 1,	
+					'centerPadding': '20px'	
+				}	
+			} ]
 		} );
+	} else if ( 'video-carousel' === defaults.sliderType ) {
+		var t = $( t ),
+			clone = t.clone(),
+			id = t.attr( 'id' ) + '-clone';
+		clone.attr( 'id', id );
+		clone.find( '.card-body' ).remove();
+
+		clone.find( '.embed-responsive' ).each( function() {
+			var t = $( this ),
+				iframe = t.find( 'iframe' ),
+				src = iframe[0].src,
+				regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/,
+				videoId = src.match( regExp ),
+				cit = '';
+
+				if( videoId && videoId[2].length === 11 ) {
+					cit = '<img alt="Card image cap" class="card-img-top" src="http://i.ytimg.com/vi/' + videoId[2] + '/mqdefault.jpg" />';
+				}
+
+				t.after( cit );
+				t.remove();
+		} );
+
+		t.after( clone );
+
+		// TODO: way to control number of slides to show here
+		// init the thumbnail clone
+		slickInit( '#' + id, {
+			'sliderType': 'thumbnail',
+			'bodyClass': '',
+			'ariaLabel': '',
+			'centerMode': false,
+			'ariaLabelTarget': 'sliderLabel',
+			'slidesToShow': 4,
+			'slidesToScroll': 4,	
+			'slideCss': {
+				'box-shadow': 'none',
+				'margin': '0 3px'
+			},
+			'callback': function( slider ) {
+				slider.addClass( 'cdc-carousel-thumbnail-slider d-none d-lg-block' );
+				slider.find( '.card' ).on( 'click', function() {
+					var index = $( this ).data( 'slick-index' );
+					t[ 0 ].slick.slickGoTo( index );
+				} );
+			},				
+			'responsive': [ {	
+				'breakpoint': 1200,	
+				'settings': {	
+					'slidesToShow': 4,	
+					'slidesToScroll': 4	
+				}	
+			}, {	
+				'breakpoint': 992,	
+				'settings': {	
+					'slidesToShow': 4,	
+					'slidesToScroll': 4	
+				}	
+			}, {	
+				'breakpoint': 768,	
+				'settings': {	
+					'slidesToShow': 1,	
+					'slidesToScroll': 1	
+				}	
+			}, {	
+				'breakpoint': 576,	
+				'settings': {	
+					'slidesToShow': 1,	
+					'slidesToScroll': 1	
+				}	
+			}, {	
+				'breakpoint': 0,	
+				'settings': {	
+					'slidesToShow': 1,	
+					'slidesToScroll': 1,	
+					'centerPadding': '20px'	
+				}	
+			} ]
+		} );			
 	} else if ( 0 === defaults.sliderType.trim.length ) {
 		// incase we need this, an empty string was passed in so default back to standard
 		defaults.sliderType = 'standard';
