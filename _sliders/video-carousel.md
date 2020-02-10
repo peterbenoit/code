@@ -130,6 +130,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 		slickInit( '#slider_1', {
 			'sliderType': 'video-carousel',
+			'thumbnailsToShow': 3,
 			'bodyClass': '',        
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel_1',
