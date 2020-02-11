@@ -29,9 +29,9 @@ order: 5
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 					</div>
 				</div>
-				<div class="card">
+				<div class="card dark">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300">
-					<div class="card-body bg-gray-d2">
+					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 2
 						</div>
@@ -47,9 +47,9 @@ order: 5
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 					</div>
 				</div>
-				<div class="card">
+				<div class="card dark">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/822/700/300">
-					<div class="card-body bg-gray-d2">
+					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 4
 						</div>
@@ -65,9 +65,9 @@ order: 5
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 					</div>
 				</div>
-				<div class="card">
+				<div class="card dark">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/824/700/300">
-					<div class="card-body bg-gray-d2">
+					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 6
 						</div>
@@ -92,9 +92,9 @@ order: 5
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 					</div>
 				</div>
-				<div class="card">
+				<div class="card dark">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/827/700/300">
-					<div class="card-body bg-gray-d2">
+					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 9
 						</div>
