@@ -119,6 +119,12 @@
 			cursor: pointer;
 		}
 
+		&.dark {
+			background-color: #333!important;
+			color: #fff;
+			overflow: hidden;
+		}
+
 		.card-img-top {
 			max-width: 100%;
 
@@ -167,12 +173,52 @@
 		animation: fadein 0.75s;
 	}
 
+	&.cdc-standard-slider {
+		.slider-next {
+			right: -20px !important;
+		}
+	
+		.slider-prev {
+			left: -20px !important;
+		}			
+	}
+
+	&.cdc-carousel-slider {
+		.slider-next {
+			right: -20px !important;
+		}
+	
+		.slider-prev {
+			left: -20px !important;
+		}			
+	}
+
+	&.cdc-carousel-thumbnail-slider {
+		.slider-next {
+			right: -20px !important;
+		}
+	
+		.slider-prev {
+			left: -20px !important;
+		}			
+	}
+
+	&.cdc-thumbnail-slider {
+		.slider-next {
+			right: -20px !important;
+		}
+	
+		.slider-prev {
+			left: -20px !important;
+		}			
+	}	
+
 	.slider-next {
-		right: -25px !important;
+		right: -20px !important;
 	}
 
 	.slider-prev {
-		left: -25px !important;
+		left: -20px !important;
 	}	
 
 	+ .cdc-slider-status {
@@ -203,6 +249,11 @@
 		+.cdc-slider-status {
 			display: none !important;
 		}
+
+		.playbtn {
+			width: 45px;
+			height: 45px;
+		}		
 	}
 
 	&.cdc-carousel-slider {
@@ -249,11 +300,11 @@
 
 	&.cdc-centermode-slider {
 		.slider-next {
-			right: -20px !important;
+			right: -25px !important;
 		}
 
 		.slider-prev {
-			left: -20px !important;
+			left: -25px !important;
 		}
 
 		.slick-slide {
@@ -277,6 +328,9 @@
 		}
 
 		&.dark {
+			.card {
+				overflow: hidden;
+			}
 			.card-body {
 				background: rgba(0, 0, 0, 0.8);
 				color: #fff;
@@ -352,23 +406,15 @@ body.modal-open {
 	}
 }
 
+@media (max-width: 766px) {
+	//.cdc-card-slider .slick-arrow, 
+	.cdc-card-slider .slick-dots {
+		display: none!important;
+	}
+}
+
 // everything smaller than medium
 @media (max-width: 768px) {
-
-	// .cdc-card-slider .slick-arrow,
-	// .cdc-card-slider .slick-dots {
-	// 	display: none;
-	// }
-
-	// arrows should be visible by default
-	// .cdc-carousel-slider .slick-arrow {
-	// 	display: block !important;
-	// }
-
-	.cdc-card-slider .slick-arrow, .cdc-card-slider .slick-dots {
-		display: block;
-	}
-	
 
 	// if there's a play button, set it's size
 	.cdc-card-slider .card {
@@ -470,6 +516,9 @@ body.modal-open {
 			}
 			
 			&.dark {
+				.card {
+					overflow: hidden;
+				}
 				.card-body {
 					background: rgba(0, 0, 0, 0.8);
 				}
