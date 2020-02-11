@@ -83,6 +83,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'sliderType': 'embedded-video',
 			'bodyClass': '',        
 			'ariaLabel': 'Video Slider',
+			'centerMode': false,
 			'ariaLabelTarget': '',
 			'responsive': [ 
 				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
