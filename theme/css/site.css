@@ -61,4 +61,9 @@ h2[id]::before {
     margin-top: -80px;
 }
 
+blockquote {
+    padding: 0 1rem;
+    color: #6a737d;
+    border-left: .25em solid #dfe2e5;
+}
 
