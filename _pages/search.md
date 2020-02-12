@@ -44,19 +44,12 @@ type: home
             if ( null !== localStorage.getItem( 'searchval' ) ) {
                 document.getElementById('search-input').value = localStorage.getItem( 'searchval' );
 
-                SimpleJekyllSearch( {
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        // searchResultTemplate: '<div><a href="{{ site.url }}{url}"><h3>{title}</h3></a><div>{{ site.url }}{url}{desc}</div><p></p></div>',
-        json: 'search.json'
-    } );
-
-                triggerEvent( document.getElementById('search-input'), 'keyup' )
+                window.setTimeout( function() { 
+                    triggerEvent( document.getElementById('search-input'), 'keyup' )
+                }, 100 );
             }
         }
     }
-
-
 
     function triggerEvent( el, type ) {
         if ('createEvent' in document) {
