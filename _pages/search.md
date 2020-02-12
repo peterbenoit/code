@@ -15,15 +15,6 @@ type: home
 <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
 
 <script>
-
-    document.getElementById('search-input').addEventListener('keyup', function (e) {
-
-
-        // emptyResultsContainer()
-
-
-    })
-
     //https://github.com/christian-fei/Simple-Jekyll-Search/wiki#options
     SimpleJekyllSearch( {
         searchInput: document.getElementById('search-input'),
@@ -38,7 +29,6 @@ type: home
         }
     } );
     
-
     if( window.performance.navigation.type === 2 ) {
         if ( 'undefined' !== typeof( Storage ) ) {
             if ( null !== localStorage.getItem( 'searchval' ) ) {

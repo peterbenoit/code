@@ -84,3 +84,24 @@ blockquote {
     color: rgb(102, 138, 98);
     font-weight: bold;
 }
+
+.btn-search {
+    height: calc(1.5em + .75rem + 2px);
+    border-top-right-radius: 3px!important;
+    border-bottom-right-radius: 3px!important;    
+}
+
+#results-container {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#results-container a {
+    color: #fff;
+    margin: .5rem 1rem;
+    display: inline-block;
+}
