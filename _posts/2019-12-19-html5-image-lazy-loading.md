@@ -7,6 +7,8 @@ tags:
 type: post
 ---
 
+The browser support for lazy loading images <a href="https://caniuse.com/#feat=loading-lazy-attr">isn't quite there yet</a>... dare to dream.
+
 <ul>
 	<li><code>auto</code> - default</li>
 	<li><code>lazy</code> - loads the image when it becomes visible based on scroll position</li>

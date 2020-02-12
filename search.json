@@ -1,64 +1,27 @@
 ---
 ---
 [
-  {% for post in site.posts %}
+  {%- for post in site.posts -%}
     {
-
-      "title"    : "{{ post.title | escape }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "title" : "{{ post.title | escape }}",
+      "url" : "{{ site.baseurl }}{{ post.url }}",
       "category" : "{{ post.category }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "description" : "{{post.description | strip_html | strip_newlines | escape }}",
-      "date"     : "{{ post.date }}"
-
+      "tags" : "{{ post.tags | join: ', ' }}",
+      "desc" : "{{post.description | strip_html | strip_newlines | escape }}",
+      "date" : "{{ post.date }}"
     },
-  {% endfor %}
-  {% for project in site.cards %}
+  {%- endfor -%}
+
+  {% assign projects = site.cards | concat: site.datatables | concat: site.sliders | concat: site.other %}
+
+  {%- for project in projects -%}
     {
-
-        "title"         : "{{ project.title | escape }}",
-        "url"           : "{{ site.baseurl }}{{ project.url }}",
-        "category"      : "{{ project.category }}",
-        "tags"          : "{{ project.tags | join: ', ' }}",
-        "description"   : "{{ project.description | strip_html | strip_newlines | escape }}",
-        "date"          : "{{ project.date }}"
-
-    },
-  {% endfor %}
-  {% for project in site.datatables %}
-    {
-
-        "title"         : "{{ project.title | escape }}",
-        "url"           : "{{ site.baseurl }}{{ project.url }}",
-        "category"      : "{{ project.category }}",
-        "tags"          : "{{ project.tags | join: ', ' }}",
-        "description"   : "{{ project.description | strip_html | strip_newlines | escape }}",
-        "date"          : "{{ project.date }}"
-
-    },
-  {% endfor %}
-  {% for project in site.sliders %}
-    {
-
-        "title"         : "{{ project.title | escape }}",
-        "url"           : "{{ site.baseurl }}{{ project.url }}",
-        "category"      : "{{ project.category }}",
-        "tags"          : "{{ project.tags | join: ', ' }}",
-        "description"   : "{{ project.description | strip_html | strip_newlines | escape }}",
-        "date"          : "{{ project.date }}"
-
-    },
-  {% endfor %}   
-  {% for project in site.other %}
-    {
-
-        "title"         : "{{ project.title | escape }}",
-        "url"           : "{{ site.baseurl }}{{ project.url }}",
-        "category"      : "{{ project.category }}",
-        "tags"          : "{{ project.tags | join: ', ' }}",
-        "description"   : "{{ project.description | strip_html | strip_newlines | escape }}",
-        "date"          : "{{ project.date }}"
-
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}  
+      "title" : "{{ project.title | escape }}",
+      "url" : "{{ site.baseurl }}{{ project.url }}",
+      "category" : "{{ project.category }}",
+      "tags" : "{{ project.tags | join: ', ' }}",
+      "desc" : "{{ project.description | strip_html | strip_newlines | escape }}",
+      "date" : "{{ project.date }}"
+    }{% unless forloop.last %},{% endunless %}
+  {%- endfor -%}
 ]

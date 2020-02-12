@@ -67,3 +67,20 @@ blockquote {
     border-left: .25em solid #dfe2e5;
 }
 
+#search-container {
+
+}
+
+#search-container a {
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
+#search-container a h3 {
+    margin-bottom: 0;
+    font-weight: lighter;
+}
+
+#search-container a + div {
+    color: rgb(102, 138, 98);
+    font-weight: bold;
+}
