@@ -31,11 +31,11 @@ order: 5
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 					</div>
 				</div>
-				<div class="card">
+				<div class="card dark">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/xCFkTmI_9kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="card-body bg-gray-d2">
+					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 2
 						</div>
@@ -53,11 +53,11 @@ order: 5
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 					</div>
 				</div>
-				<div class="card">
+				<div class="card dark">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/323v_FtWqvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="card-body bg-gray-d2">
+					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 4
 						</div>
@@ -75,11 +75,11 @@ order: 5
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 					</div>
 				</div>
-				<div class="card">
+				<div class="card dark">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/0xZ52mG1yIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="card-body bg-gray-d2">
+					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 6
 						</div>
@@ -112,7 +112,7 @@ order: 5
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/ctPt74CNBA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="card-body bg-gray-d2">
+					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 9
 						</div>
@@ -172,7 +172,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 	<div class="embed-responsive embed-responsive-16by9">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/ctPt74CNBA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
-	<div class="card-body bg-gray-d2">
+	<div class="card-body">
 		<div class="card-title h4 text-left">
 			Card Title 9
 		</div>
