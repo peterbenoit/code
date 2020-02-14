@@ -68,8 +68,6 @@ order: 7
 						</p>
 					</div>
 				</div>
-
-				
 			</div>
 		</div>
 	</div>
