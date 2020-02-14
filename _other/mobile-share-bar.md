@@ -40,11 +40,12 @@ order:
 .share-bar li {
   margin-bottom: 0;
 }
-.share-bar .navbar-brand {
+.share-bar .navbar-brand img {
 	width: 60px;
 }
 
 </style>
+
 
 <div class="container d-flex flex-wrap body-wrapper">
 	<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
