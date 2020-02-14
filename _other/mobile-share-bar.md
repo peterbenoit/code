@@ -34,7 +34,7 @@ order:
 }
 
 .share-bar {
-  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.3);
   padding: 0.3rem 0.75rem;
 }
 .share-bar li {
