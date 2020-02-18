@@ -8,7 +8,7 @@ localcss:
 localjs:
 includePrismJs: true
 externalcss: 
-externaljs: https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js
+externaljs: https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js, https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js
 showinnav: true
 order: 
 ---
@@ -181,6 +181,8 @@ order:
 			<a href="https://api.addthis.com/oexchange/0.8/forward/email/offer?url=https://search.cdc.gov/search/index.html?query=zika&amp;sitelimit=&amp;utf8=%25E2%259C%2593&amp;affiliate=cdc-main&amp;title=Search%20Results%20%7C%20CDC&amp;description=undefined&amp;via=CDCgov&amp;ct=0&amp;media=undefined" class="nav-link">
 				<span class="sr-only">Email</span><span class="fi cdc-icon-email x24"></span>
 			</a>
+		</li><li class="nav-item">
+			<button class="nav-link clipboard btn btn-link" style="padding-top: 5px;"><span class="sr-only">Copy to Clipboard</span><span class="x24 fill-p cdc-icon-link-light"></span></button>
 		</li>
 	</ul>
 </nav>
@@ -222,6 +224,38 @@ order:
 					$( '.navbar' ).fadeOut( 'slow' );
 				}
 			}, 250 ) );
+
+
+			new ClipboardJS( '.clipboard', {
+				text: function( t, e ) {
+					console.log( t, e )
+					return location.href;
+				}
+			} ).on( 'success', function( e ) {
+				setTooltip( e.trigger, 'Copied!' );
+				hideTooltip( e.trigger );
+			} ).on( 'error', function( e ) {
+				setTooltip( e.trigger, 'Failed!' );
+				hideTooltip( e.trigger );
+			} );
+
+			$( '.clipboard' ).tooltip( {
+				trigger: 'click',
+				placement: 'top'
+			} );
+
+			// show the tooltip with the message passed in
+			function setTooltip( btn, message ) {
+				$( btn ).tooltip( 'hide' ).attr( 'data-original-title', message ).tooltip( 'show' );
+			}
+
+			// hide the tooltip after timeout
+			function hideTooltip( btn ) {
+				setTimeout( function() {
+					$( btn ).tooltip( 'hide' );
+				}, 1000 );
+			}
+
 
         } )( jQuery );
     } );
