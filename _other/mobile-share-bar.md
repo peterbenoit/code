@@ -165,28 +165,24 @@ order:
 
 <nav class="navbar navbar-expand navbar-white bg-white fixed-bottom justify-content-between share-bar">
     <a class="navbar-brand" href="http://www.cdc.gov"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/US-CDC-Logo.png" style="width: 60px" alt=""></a>
-
-    
-        <ul class="navbar-nav ml-auto"><li class="nav-item">
-                <a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https://search.cdc.gov/search/index.html?query=zika&amp;sitelimit=&amp;utf8=%25E2%259C%2593&amp;affiliate=cdc-main&amp;title=Search%20Results%20%7C%20CDC&amp;description=undefined&amp;via=undefined&amp;media=undefined" class="nav-link">
-                    <span class="sr-only">Facebook</span><span class="fi cdc-icon-fb x24"></span>
-                </a>
-            </li><li class="nav-item">
-                <a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=https://search.cdc.gov/search/index.html?query=zika&amp;sitelimit=&amp;utf8=%25E2%259C%2593&amp;affiliate=cdc-main&amp;title=Search%20Results%20%7C%20CDC&amp;description=undefined&amp;via=CDCgov&amp;ct=0&amp;media=undefined" class="nav-link">
-                    <span class="sr-only">Twitter</span><span class="fi cdc-icon-twitter-white x24"></span>
-                </a>
-            </li><li class="nav-item">
-                <a href="https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=https://search.cdc.gov/search/index.html?query=zika&amp;sitelimit=&amp;utf8=%25E2%259C%2593&amp;affiliate=cdc-main&amp;title=Search%20Results%20%7C%20CDC&amp;description=undefined&amp;via=undefined&amp;ct=0&amp;media=undefined" class="nav-link">
-                    <span class="sr-only">LinkedIn</span><span class="fi cdc-icon-linkedin x24"></span>
-                </a>
-            </li><li class="nav-item">
-                <a href="https://api.addthis.com/oexchange/0.8/forward/email/offer?url=https://search.cdc.gov/search/index.html?query=zika&amp;sitelimit=&amp;utf8=%25E2%259C%2593&amp;affiliate=cdc-main&amp;title=Search%20Results%20%7C%20CDC&amp;description=undefined&amp;via=CDCgov&amp;ct=0&amp;media=undefined" class="nav-link">
-                    <span class="sr-only">Email</span><span class="fi cdc-icon-email x24"></span>
-                </a>
-            </li>
-
-        </ul>
-    
+	<ul class="navbar-nav ml-auto"><li class="nav-item">
+			<a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https://search.cdc.gov/search/index.html?query=zika&amp;sitelimit=&amp;utf8=%25E2%259C%2593&amp;affiliate=cdc-main&amp;title=Search%20Results%20%7C%20CDC&amp;description=undefined&amp;via=undefined&amp;media=undefined" class="nav-link">
+				<span class="sr-only">Facebook</span><span class="fi cdc-icon-fb x24"></span>
+			</a>
+		</li><li class="nav-item">
+			<a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=https://search.cdc.gov/search/index.html?query=zika&amp;sitelimit=&amp;utf8=%25E2%259C%2593&amp;affiliate=cdc-main&amp;title=Search%20Results%20%7C%20CDC&amp;description=undefined&amp;via=CDCgov&amp;ct=0&amp;media=undefined" class="nav-link">
+				<span class="sr-only">Twitter</span><span class="fi cdc-icon-twitter-white x24"></span>
+			</a>
+		</li><li class="nav-item">
+			<a href="https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=https://search.cdc.gov/search/index.html?query=zika&amp;sitelimit=&amp;utf8=%25E2%259C%2593&amp;affiliate=cdc-main&amp;title=Search%20Results%20%7C%20CDC&amp;description=undefined&amp;via=undefined&amp;ct=0&amp;media=undefined" class="nav-link">
+				<span class="sr-only">LinkedIn</span><span class="fi cdc-icon-linkedin x24"></span>
+			</a>
+		</li><li class="nav-item">
+			<a href="https://api.addthis.com/oexchange/0.8/forward/email/offer?url=https://search.cdc.gov/search/index.html?query=zika&amp;sitelimit=&amp;utf8=%25E2%259C%2593&amp;affiliate=cdc-main&amp;title=Search%20Results%20%7C%20CDC&amp;description=undefined&amp;via=CDCgov&amp;ct=0&amp;media=undefined" class="nav-link">
+				<span class="sr-only">Email</span><span class="fi cdc-icon-email x24"></span>
+			</a>
+		</li>
+	</ul>
 </nav>
 
 <script>
