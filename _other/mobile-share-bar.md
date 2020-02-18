@@ -1,14 +1,14 @@
 ---
 layout: template
 permalink: other/mobile-share-bar.html
-description: This is a 2020 version of the share bar that is only visible in mobile.
+description: This is a 2020 version of the share bar that is only available in mobile. The share bar will only be visible if the user is over 100 pixels from the top of the page, and scrolling up. There's also an event for displaying it on resize if the scroll position far enough down the page.
 title: Mobile Share Bar
 type: demo
 localcss: 
 localjs:
-includePrismJs: false
+includePrismJs: true
 externalcss: 
-externaljs:  
+externaljs: https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js
 showinnav: true
 order: 
 ---
@@ -185,12 +185,13 @@ order:
 	</ul>
 </nav>
 
-<script>
+<script id="prism-source">
     window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
+
 			var topContainerHeight = parseInt( $( '.navbar' ).css( 'height' ) );
 			var scrolled = false;
-			$( window ).scroll( function() {
+			$( window ).on( 'scroll', function() {
 				if ( scrolled ) {
 					var isMobile = $( window ).width() < 768;
 					if ( isMobile ) {
@@ -209,7 +210,19 @@ order:
 				}
 				scrolled = true;
 				prevScrollTop = $( this ).scrollTop();
-			} );
+			} ).on( 'load resize', _.debounce( function() {
+				var isMobile = $( window ).width() < 768;
+				if ( isMobile ) {
+					if ( $( this ).scrollTop() <= 100 ) {
+						$( '.navbar' ).fadeOut( 'slow' );
+					} else {
+						$( '.navbar' ).fadeIn( 'slow' );
+					}
+				} else {
+					$( '.navbar' ).fadeOut( 'slow' );
+				}
+			}, 250 ) );
+
         } )( jQuery );
     } );
 </script>
@@ -224,10 +237,68 @@ order:
 			<div class="card-body">
 				<p>Some info on this demo.</p>
 				<p>{{- page.description -}}</p>
-				<ol>
-					<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-				</ol>
 			</div>
 		</div>
 	</div>
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-2" data-toggle="collapse" id="accordion-4-card-2" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-2">Javascript</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-2" class="collapse" id="accordion-4-collapse-2" role="tabpanel">
+			<div class="card-body">
+				<div class="row">
+					<div class="col">
+						<pre id="script-output"></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-1" data-toggle="collapse" id="accordion-4-card-1" role="tab">
+			<a class="card-title" data-controls="accordion-4-collapse-1">CSS</a>
+		</div>
+		<div aria-labelledby="accordion-4-card-1" class="collapse" id="accordion-4-collapse-1" role="tabpanel">
+			<div class="card-body">
+				<div class="row">
+					<div class="col">
+						<pre><code class="language-css line-numbers"><script type="prism-html-markup">.cdc-icon-fb {
+	color: #3b5998;
+}
+
+.cdc-icon-twitter-white {
+	color: #00b6f1;
+}
+
+.navbar {
+	display: none;
+}
+
+.navbar[style*='display: block'] {
+	display: -webkit-box !important;
+	display: flex !important;
+}
+
+[class*='cdc-icon-linkedin'] {
+	color: #007bb5;
+}
+
+.cdc-icon-email {
+	color: #333;
+}
+
+.share-bar {
+	box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.5);
+	padding: 0.3rem 0.75rem;
+}
+
+.share-bar li {
+	margin-bottom: 0;
+}</script></code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 </div>
