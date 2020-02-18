@@ -1,7 +1,7 @@
 ---
 layout: template
 permalink: other/mobile-share-bar.html
-description: This is a 2020 version of the share bar that is only visibile in mobile.
+description: This is a 2020 version of the share bar that is only visible in mobile.
 title: Mobile Share Bar
 type: demo
 localcss: 
@@ -25,6 +25,15 @@ order:
   color: #00b6f1;
 }
 
+.navbar {
+  display: none;
+}
+
+.navbar[style*='display: block'] {
+  display: -webkit-box !important;
+  display: flex !important;
+}
+
 [class*='cdc-icon-linkedin'] {
   color: #007bb5;
 }
@@ -34,15 +43,13 @@ order:
 }
 
 .share-bar {
-  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.5);
   padding: 0.3rem 0.75rem;
 }
 .share-bar li {
   margin-bottom: 0;
 }
-.share-bar .navbar-brand img {
-	width: 60px;
-}
+
 
 </style>
 
@@ -87,7 +94,28 @@ order:
 <script>
     window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
-
+			var topContainerHeight = parseInt( $( '.navbar' ).css( 'height' ) );
+			var scrolled = false;
+			$( window ).scroll( function() {
+				if ( scrolled ) {
+					var isMobile = $( window ).width() < 768;
+					if ( isMobile ) {
+						if ( $( this ).scrollTop() > prevScrollTop ) {
+							if( $( '.navbar' ).is( ':visible') ) {
+								$( '.navbar' ).fadeOut( 'slow' );
+							}
+						} else if ( $( this ).scrollTop() < prevScrollTop ) {
+							if ( $( this ).scrollTop() <= 100 ) {
+								$( '.navbar' ).fadeOut( 'slow' );
+							} else {
+								$( '.navbar' ).fadeIn( 'slow' );
+							}
+						}
+					}
+				}
+				scrolled = true;
+				prevScrollTop = $( this ).scrollTop();
+			} );
         } )( jQuery );
     } );
 </script>
