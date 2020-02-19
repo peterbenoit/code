@@ -21,7 +21,6 @@ order:
 
 {%- include breadcrumbs.html -%}
 
-
 <div class="container d-flex flex-wrap body-wrapper">
 	<main class="col-12 order-lg-2" role="main" aria-label="Main Content Area">
 
