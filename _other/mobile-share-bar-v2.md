@@ -1,7 +1,7 @@
 ---
 layout: template
 permalink: other/mobile-share-bar-v2.html
-description: This is a 2020 version of the share bar that is only available in mobile. The share bar will only be visible if the user is over 100 pixels from the top of the page, and scrolling up. There's also an event for displaying it on resize if the scroll position far enough down the page.
+description: This is a 2020 version (version 2) of the share bar that is only available in mobile. The share bar will only be visible if the user is over 100 pixels from the top of the page, and scrolling up. There's also an event for displaying it on resize if the scroll position far enough down the page.
 title: Mobile Share Bar v2
 type: demo
 localcss: 
