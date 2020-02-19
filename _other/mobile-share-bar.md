@@ -51,6 +51,10 @@ order:
 }
 
 
+.body-wrapper {
+	margin-bottom: 60px;
+}
+
 </style>
 
 
@@ -193,46 +197,45 @@ order:
 
 			var topContainerHeight = parseInt( $( '.navbar' ).css( 'height' ) );
 			var scrolled = false;
-			$( window ).on( 'scroll', function() {
+			$( window ).on( 'scroll', _.debounce( function() {
 				if ( scrolled ) {
 					var isMobile = $( window ).width() < 768;
 					if ( isMobile ) {
-						console.log( $( this ).scrollTop() )
+						
 						if ( $( this ).scrollTop() > prevScrollTop ) {
 							if( $( '.navbar' ).is( ':visible') ) {
-								$( '.navbar' ).fadeOut( 'slow' );
+								$( '.navbar' ).hide();
 							}
 						} else if ( $( this ).scrollTop() < prevScrollTop ) {
 							if ( $( this ).scrollTop() <= 100 ) {
-								$( '.navbar' ).fadeOut( 'slow' );
+								$( '.navbar' ).hide();
 							} else {
-								$( '.navbar' ).fadeIn( 'slow' );
+								$( '.navbar' ).show();
 							}
 						}
 						if ( ( window.innerHeight + window.pageYOffset ) >= document.body.offsetHeight ) {
-							$( '.navbar' ).fadeIn( 'slow' );
+							$( '.navbar' ).stop( true, true ).fadeIn( 'slow' );
     					}
 					}
 				}
 				scrolled = true;
 				prevScrollTop = $( this ).scrollTop();
-			} ).on( 'load resize', _.debounce( function() {
+			} ) ).on( 'load resize', _.debounce( function() {
 				var isMobile = $( window ).width() < 768;
 				if ( isMobile ) {
 					if ( $( this ).scrollTop() <= 100 ) {
-						$( '.navbar' ).fadeOut( 'slow' );
+						$( '.navbar' ).hide();
 					} else {
-						$( '.navbar' ).fadeIn( 'slow' );
+						$( '.navbar' ).show();
 					}
 				} else {
-					$( '.navbar' ).fadeOut( 'slow' );
+					$( '.navbar' ).hide();
 				}
 			}, 250 ) );
 
 
 			new ClipboardJS( '.clipboard', {
 				text: function( t, e ) {
-					console.log( t, e )
 					return location.href;
 				}
 			} ).on( 'success', function( e ) {
@@ -259,7 +262,6 @@ order:
 					$( btn ).tooltip( 'hide' );
 				}, 1000 );
 			}
-
 
         } )( jQuery );
     } );
