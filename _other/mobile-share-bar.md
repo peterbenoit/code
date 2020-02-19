@@ -197,6 +197,7 @@ order:
 				if ( scrolled ) {
 					var isMobile = $( window ).width() < 768;
 					if ( isMobile ) {
+						console.log( $( this ).scrollTop() )
 						if ( $( this ).scrollTop() > prevScrollTop ) {
 							if( $( '.navbar' ).is( ':visible') ) {
 								$( '.navbar' ).fadeOut( 'slow' );
@@ -208,6 +209,9 @@ order:
 								$( '.navbar' ).fadeIn( 'slow' );
 							}
 						}
+						if ( ( window.innerHeight + window.pageYOffset ) >= document.body.offsetHeight ) {
+							$( '.navbar' ).fadeIn( 'slow' );
+    					}
 					}
 				}
 				scrolled = true;
