@@ -1,0 +1,31 @@
+    <div class="headerSearch atsdr-header-search">
+        <form accept-charset="UTF-8" action="https://search.cdc.gov/search" method="get" autocomplete="off">
+
+            <button class="btn btn-primary dropdown-toggle no-toggle search-button ssi d-xl-none"
+                    type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Buscar</span>
+                <i class="fi cdc-icon-magnify dropdown-menu-medium-search-icon x24" aria-hidden="true"></i>
+                <i class="fi cdc-icon-close dropdown-menu-medium-close-icon x24" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-search dropdown-menu-medium-search">
+                <div class="input-group">
+                    <!--<label id="headerSearchLabel" for="headerSearch"><span class="sr-only">Search</span></label>-->
+                    <input id="headerSearch" type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" name="query">
+                    <span class="form-control-clear">×</span>
+                    <div class="input-group-append">
+                        <button class="btn search-submit"
+                                type="button"><span
+                                class="sr-only">Enviar</span>
+                            <i class="fi cdc-icon-magnify x24" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="a-z-index fs0875">
+                    <span class="d-xl-none">Para una lista completa de temas: </span><a id="az-large" href="https://www.atsdr.cdc.gov/az/a.html">Índice A-Z de los CDC</a>
+                </div>
+            </div>
+            <input type="hidden" name="sitelimit" value="">
+            <input type="hidden" name="utf8" value="✓">
+            <input type="hidden" name="affiliate" value="cdc-main">
+        </form>
+    </div>

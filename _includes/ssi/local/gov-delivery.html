@@ -1,0 +1,33 @@
+<div class="card tp-gov-d">
+    <div class="card-header h4">
+        <span class="fi cdc-icon-email x32" aria-hidden="true"></span> Get Email Updates
+    </div>
+    <div class="card-body">
+        <p>To receive email updates about this page, enter your email address:</p>
+        <form method="get" action="https://tools.cdc.gov/campaignproxyservice/subscriptions.aspx">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="gov-d-email">
+                        <span class="sr-only">Email Address</span>
+                        <input id="gov-d-email" name="login" type="email" class="form-control" placeholder="Email Address" required="required">
+                    </label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-6">
+                    <a class="explain" href="http://www.cdc.gov/Other/emailupdates/">What's this?</a>
+                </div>
+                <div class="col-6 text-right">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            <input id="gov-d-topic" name="topic_id" type="hidden" value="TOPIC_ID_HERE" /><!-- TO BE POPULATED WITH TOPIC -->
+            <input id="gov-d-origin" name="origin" type="hidden" value="" /><!-- THIS (REFERRRING) PAGE, SET MANUALLY OR USE JS BELOW -->
+            <input id="gov-d-pop" name="pop" type="hidden" value="t" /><!-- NOT SURE IF NEEDED, IF NOT, REMOVE -->
+        </form>
+        <script>
+            // IF NEEDED, THIS WILL POPOULATE THE CURRENT LOCATION AS THE VALUE OF THE ORIGIN FIELD
+            document.getElementById("gov-d-origin").setAttribute("value", window.location.href.toLowerCase());
+        </script>
+    </div>
+</div>

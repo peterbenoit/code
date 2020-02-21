@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 title:            code          # Site title
 name:             Code                 # Your name
 avatar:           /theme/img/avatar.jpg       # Path to an avatar image
-description:      
+description:
 
 # The theme uses the baseurl throughout, which is useful for running the entire
 # site under a subdir, like for this GitHub Pages deployment as a project site.
@@ -61,15 +61,19 @@ collections:
   syntaxhighlighter:
     output: true
     title: Syntax Highlighter
-    permalink: /:collection/:name.html    
+    permalink: /:collection/:name.html
   bookmarklets:
     output: true
     title: Bookmarklets
-    permalink: /:collection/:name.html 
+    permalink: /:collection/:name.html
   cards:
     output: true
     title: Cards
-    permalink: /:collection/:name.html         
+    permalink: /:collection/:name.html
+  tp4:
+    output: true
+    title: Template Package 4
+    permalink: /:collection/:name.html
 defaults:
 # Turn the profile sidebar on for all pages by default, except for the
 # collections, where it is off and replaced by useful things on the sidebar.
