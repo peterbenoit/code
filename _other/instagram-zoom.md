@@ -126,7 +126,7 @@ externaljs: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.
 </script>
 
 
-<div aria-multiselectable="true" class="accordion indicator-plus accordion-white mb-3" id="accordion-4" role="tabpanel">
+<div aria-multiselectable="true" class="accordion indicator-plus accordion-white mb-3 mt-3" id="accordion-4" role="tabpanel">
 	<div class="card">
 		<div aria-expanded="false" class="card-header collapsed" data-target="#accordion-4-collapse-3" data-toggle="collapse" id="accordion-4-card-3" role="tab">
 			<a class="card-title" data-controls="accordion-4-collapse-3">Notes</a>
