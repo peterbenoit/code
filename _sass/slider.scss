@@ -142,7 +142,7 @@
 				margin-right: 5px;
 			}
 		}
-	} 
+	}
 
 	&.video-modal {
 		.card {
@@ -177,41 +177,41 @@
 		.slider-next {
 			right: -20px !important;
 		}
-	
+
 		.slider-prev {
 			left: -20px !important;
-		}			
+		}
 	}
 
 	&.cdc-carousel-slider {
 		.slider-next {
 			right: -20px !important;
 		}
-	
+
 		.slider-prev {
 			left: -20px !important;
-		}			
+		}
 	}
 
 	&.cdc-carousel-thumbnail-slider {
 		.slider-next {
 			right: -20px !important;
 		}
-	
+
 		.slider-prev {
 			left: -20px !important;
-		}			
+		}
 	}
 
 	&.cdc-thumbnail-slider {
 		.slider-next {
 			right: -20px !important;
 		}
-	
+
 		.slider-prev {
 			left: -20px !important;
-		}			
-	}	
+		}
+	}
 
 	.slider-next {
 		right: -20px !important;
@@ -219,7 +219,7 @@
 
 	.slider-prev {
 		left: -20px !important;
-	}	
+	}
 
 	+ .cdc-slider-status {
 		text-align: center !important;
@@ -253,7 +253,7 @@
 		.playbtn {
 			width: 45px;
 			height: 45px;
-		}		
+		}
 	}
 
 	&.cdc-carousel-slider {
@@ -296,7 +296,7 @@
 
 	&.cdc-jumbotron-slider {
 		// coming soon!
-	}	
+	}
 
 	&.cdc-centermode-slider {
 		.slider-next {
@@ -335,9 +335,9 @@
 				background: rgba(0, 0, 0, 0.8);
 				color: #fff;
 			}
-		}			
+		}
 	}
-	
+
 }
 
 // video modal related
@@ -407,7 +407,7 @@ body.modal-open {
 }
 
 @media (max-width: 766px) {
-	//.cdc-card-slider .slick-arrow, 
+	//.cdc-card-slider .slick-arrow,
 	.cdc-card-slider .slick-dots {
 		display: none!important;
 	}
@@ -480,7 +480,7 @@ body.modal-open {
 				display: block!important;
 			}
 		}
-	}	
+	}
 }
 
 // in large VPs and larger
@@ -498,14 +498,14 @@ body.modal-open {
 				display: none!important;
 			}
 		}
-	}		
+	}
 
 	// .cdc-card-slider+.cdc-slider-status:not(.d-block) {
 	// 	display: none !important;
 	// }
 
 	// position the overlay, using the card body
-	.cdc-standard-slider {
+	.cdc-card-slider {
 		&.cdc-standard-slider-overlay {
 			position: relative;
 
@@ -514,7 +514,7 @@ body.modal-open {
 				bottom: 0;
 				width: 100%;
 			}
-			
+
 			&.dark {
 				.card {
 					overflow: hidden;
@@ -522,7 +522,7 @@ body.modal-open {
 				.card-body {
 					background: rgba(0, 0, 0, 0.8);
 				}
-			}				
+			}
 		}
 	}
 }
