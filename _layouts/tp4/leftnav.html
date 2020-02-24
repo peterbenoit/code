@@ -1,21 +1,85 @@
 <!DOCTYPE html>
 <html lang="en" class="theme-blue">
 
-{%- include structure/template-head.html -%}
+    {%- include ssi/global/header/head-content.html -%}
+
 
 <body class="no-js">
 
-    <h3>LeftNav</h3>
+    <div class="container-fluid header-wrapper">
+        <div class="container">
+            <header aria-label="Header" class="pt-2 pb-2" role="banner">
+                <div class="row">
+                    <div class="col cdc-logo">
+                        {%- include ssi/global/header/header-logo.html -%}
+                    </div>
+                    <div class="col-2 col-md-3 col-xl-5 col-xxl-4 tp-search">
+                        {%- include ssi/global/header/header-search.html -%}
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="container-fluid site-title">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {%- include ssi/local/site-title.html -%}
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Mobile Nav" class="sticky-top" id="mobilenav" role="navigation">
+        {%- include ssi/local/nav-mobile.html -%}
+    </nav>
+    <div class="container breadcrumb-share">
+        {%- include ssi/local/nav-breadcrumb.html -%}
+    </div>
+    <div class="container-fluid feature-area">
+        <div class="container"><!-- feature area --></div>
+    </div>
 
     <div class="container d-flex flex-wrap body-wrapper">
 		<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
-
-            {{ content }}
-
+            <div class="row visual-element">
+                <div class="col">
+                    <!-- Visual Element (site identity) -->
+                </div>
+            </div>
+            <div class="section-nav-area">
+                <nav aria-label="Section Nav" class="w-100 sticky-top" role="navigation">
+                    <!-- Page Title/Section Nav (mobile) -->
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col content">
+                    <!-- content -->
+                    {{ content }}
+                </div>
+            </div>
+            <div class="row d-none d-lg-block">
+                <div class="col pca">
+                    <!-- Persistent Content Area -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col last-reviewed">
+                    Page last reviewed: <span id="last-reviewed-date">February 20, 2020</span>
+                    <div class="d-none d-lg-block content-source">
+                        Content source: [CONTENT_SOURCE]
+                    </div>
+                </div>
+            </div>
         </main>
+        <div class="col-lg-3 order-lg-1 leftnav-wrapper">
+            <!-- main (left) nav -->
+            <nav aria-label="Left Navigation Menu" role="navigation">
+                Nav
+            </nav>
+        </div>
     </div>
-
-{%- include structure/template-scripts.html -%}
-
+    <footer aria-label="Footer" role="contentinfo">
+        {%- include ssi/global/footer/footer.html -%}
+    </footer>
 </body>
 </html>
