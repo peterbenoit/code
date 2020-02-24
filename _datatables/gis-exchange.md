@@ -38,8 +38,9 @@ title: GIS Exchange
 	 max-width: 100%;
 	 overflow-x: hidden;
 	}
-	.dataTables_wrapper .col-sm-12 {
-	 overflow-x: scroll;
+
+	.dataTables_wrapper .row:nth-child(2) {
+		overflow-x: auto;
 	}
 
 	.dataTables_info {
