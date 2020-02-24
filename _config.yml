@@ -25,6 +25,11 @@ include: ["_pages", "_portfolio"]
 #    sass_dir: _sass
 #    style: :compressed
 
+tp:
+  - bootstrapcss: https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/css/bootstrap.css
+  - appcss: https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.css
+  - printcss: https://www.cdc.gov/TemplatePackage/4.0/assets/css/print.css
+
 # plugins: [bourbon, neat, jekyll-sitemap, jekyll-assets]
 sass:
   style: compressed
