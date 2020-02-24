@@ -10,4 +10,4 @@ type: post
 
 Use in a sentence.
 
-> I don't know if you necessarily had a bad attitude or if it was simply anxiety around the expectation of the awful.
+> I don't know if you necessarily had a bad attitude or if you were anxious about the expectation of the awful.
