@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/video-slider.html
 description: Video Slider using Slick Slider
-title: Video Slider 
+title: Video Slider
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -80,13 +80,13 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 		slickInit( '.cdc-card-slider', {
 			'sliderType': 'video',
-			'bodyClass': '',        
+			'bodyClass': '',
 			'ariaLabel': 'Video Slider',
 			'ariaLabelTarget': '',
-			'responsive': [ 
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]
@@ -135,7 +135,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			</p>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>

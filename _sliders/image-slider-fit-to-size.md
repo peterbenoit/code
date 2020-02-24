@@ -17,7 +17,7 @@ showinnav: true
 		object-fit: cover;
 		object-position: 100% 0;
 		height: 300px;
-		max-height: 300px;		
+		max-height: 300px;
 	}
 
 	.cdc-card-fit-slider .card-body {
@@ -34,7 +34,7 @@ showinnav: true
 	}
 
 	.modal-body {
-		padding: 0;	
+		padding: 0;
 		text-align: center;
 	}
 
@@ -43,7 +43,7 @@ showinnav: true
 		animation-duration: .3s;
 		animation-delay: 0s;
 		padding-right: 0!important;
-		
+
 	}
 
 	.modal-content {
@@ -59,9 +59,9 @@ showinnav: true
 		left: 45%;
 		top: 100px;
 		animation-duration: 2s;
-		animation-delay: 2s;		
+		animation-delay: 2s;
 		box-shadow: 0px 0px 18px 0px rgba(255, 127, 0, 0.75);
-	}	
+	}
 </style>
 
 
@@ -328,7 +328,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 		slickInit( '#slider_1', {
 			'sliderType': 'standard',
-			'bodyClass': '',        
+			'bodyClass': '',
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel',
 			'centerMode': false,
@@ -349,7 +349,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 				console.log( h );
 
-				$( '.cdc-card-fit-slider .card-img-top' ).each( function() { 
+				$( '.cdc-card-fit-slider .card-img-top' ).each( function() {
 					$( this )
 						.css({'max-height': ch, 'cursor': 'pointer'})
 						.after( '<span class="fa-stack card-img-zoom" style="cursor:pointer"><i class="fas fa-square fa-stack-2x"></i><i class="fas fa-expand fa-stack-1x fa-inverse"></i></span>' );
@@ -386,16 +386,16 @@ window.addEventListener( 'DOMContentLoaded', function() {
 						'<div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document"><div class="modal-content">' +
 						'<div class="modal-body"></div>' +
 						'</div></div></div>';
-					
-					$( 'body' ).append( modal );		
+
+					$( 'body' ).append( modal );
 
 			},
 			'slideCss': { },
 			'sliderCss': { },
-			'responsive': [ 
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]
@@ -441,7 +441,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>

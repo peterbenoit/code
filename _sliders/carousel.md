@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/carousel.html
 description: Carousel built using Slick Slider
-title: Carousel 
+title: Carousel
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -134,7 +134,7 @@ showinnav: false
 				<ol>
 					<li>The current Carousel in the template clones the first slider into the thumbnail slider under it. This can eventually be done (it is a work in progress),  however it is two sliders right now - one standard and one thumbnail.</li>
 					<li>The <code>.d-none</code> and <code>.d-lg-block</code> classes on the second slider are important for it to be hidden in mobile.</li>
-				</ol>	
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -167,7 +167,7 @@ showinnav: false
 		</div>
 	</div>
 </div>
-							
+
 <span class="h3 d-block sr-only" id="sliderLabel_2">Thumbnail Nav</span>
 <div class="cdc-card-slider d-none d-lg-block" id="slider_2">
 	<div class="card"><img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300"></div>
@@ -200,18 +200,18 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 		slickInit( '#slider_1', {
 			'sliderType': 'carousel',
-			'ariaLabelTarget': 'sliderLabel_1', 
+			'ariaLabelTarget': 'sliderLabel_1',
 			'centerMode': false,
 			'arrows': false,
 			'dots': false,
 			'sliderClass': 'cdc-carousel-slider',
-			'responsive': [             
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }            
-			]   
+				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+			]
 		} );
 
 		slickInit( '#slider_2', {
@@ -227,15 +227,15 @@ window.addEventListener( 'DOMContentLoaded', function() {
 					$( defaults.asNavFor ).slick( 'slickGoTo', idx );
 				} );
 			},
-			'responsive': [             
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },         
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },
 				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }            
-			]   
+				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+			]
 		} );
-		
+
 	} )( jQuery );
 } );
 </script>

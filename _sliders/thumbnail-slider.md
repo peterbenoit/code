@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/thumbnail-slider.html
 description: This is the thumbnail version of the Slick slider, which isn't much different from the other multi-card sliders
-title: Thumbnail slider 
+title: Thumbnail slider
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -31,7 +31,7 @@ order: 6
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300">
-					<div class="card-body">
+					<div cl\ass="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 2
 						</div>
@@ -94,7 +94,7 @@ order: 6
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
 
 <script id="prism-source" data-line="5,10-13">
@@ -103,7 +103,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 		slickInit( '.cdc-card-slider', {
 			'sliderType': 'thumbnail',
-			'bodyClass': '',        
+			'bodyClass': '',
 			'ariaLabel': '',
 			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
@@ -111,10 +111,10 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'callback': function( slider ) {
 				slider.addClass( 'cdc-thumbnail-slider' );
 			},
-			'responsive': [ 
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 4, 'slidesToScroll': 4 } },         
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 4, 'slidesToScroll': 4 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 4, 'slidesToScroll': 4 } },
-				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]
@@ -137,7 +137,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 					<li><code>sliderType</code> is set to <code>'thumbnail'</code></li>
 					<li><code>slideCss</code> removes the <code>box-shadow</code> and reduces the <code>margin</code> slightly</li>
 					<li>The <code>callback</code> function sets the <code>.cdc-thumbnail-slider</code> class for use via CSS.</li>
-				</ol>	
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -158,7 +158,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>

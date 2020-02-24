@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/thumbnail-gallery.html
 description: Slick slider can be controlled in a number of ways. This demo takes all of the slides from the slider and builds a gallery type navigation
-title: Thumbnail Gallery slider 
+title: Thumbnail Gallery slider
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -121,7 +121,7 @@ showinnav: true
 		</div>
 		<div class="col-4">
 			<ul id="list">
-				
+
 			</ul>
 		</div>
 	</div>
@@ -151,13 +151,13 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'callback': function( slider, defaults, slick ) {
 					var grid = $( '<div class="slick-grid row" />' ),
 					list = '';
-				
+
 				slider.addClass( 'cdc-gallery-slider' );
-					
+
 				slick.$slides.each( function( i, t ) {
 					var $t = $( t );
 						img = $t.find( 'img' );
-						
+
 						if( 0 ===  i ) {
 							grid.append( '<div class="col-4 mb-3"><a href="#" data-slide="' + i + '" class="card bb-5 bb-primary">' + t.innerHTML + '</a></div>' );
 							list += '<li><a href="#" data-slide="'+i+'" class=" bb-5 bb-primary">' + $( t ).find('.card-title').text() + '</a></li>';
@@ -185,7 +185,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 					slider.slick( 'slickGoTo', idx );
 				} );
 			},
-			'responsive': [ 
+			'responsive': [
 				{ 'breakpoint': 1200, 'settings': { 	'slidesToShow': 1, 	'slidesToScroll': 1 }},
 				{ 'breakpoint': 992, 'settings': { 	'slidesToShow': 1, 	'slidesToScroll': 1 }},
 				{ 'breakpoint': 768, 'settings': { 	'slidesToShow': 1, 	'slidesToScroll': 1 }},

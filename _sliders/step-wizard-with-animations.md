@@ -8,7 +8,7 @@ localcss: sliders.css
 localjs: slickinit.js
 includePrismJs: true
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
-externaljs: 
+externaljs:
 ---
 
 {%- include breadcrumbs.html -%}
@@ -160,7 +160,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'callback': function( t, d ) {
 				t.addClass( 'cdc-arrow-slider' );
 			},
-			'responsive': [ 
+			'responsive': [
 				{'breakpoint': 1200,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
 				{'breakpoint': 992,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
 				{'breakpoint': 768,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
@@ -189,7 +189,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'callback': function( t, d ) {
 				t.addClass( 'cdc-arrow-slider' );
 			},
-			'responsive': [ 
+			'responsive': [
 				{'breakpoint': 1200,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
 				{'breakpoint': 992,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
 				{'breakpoint': 768,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
@@ -217,7 +217,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 				'callback': function( t, d ) {
 					t.addClass( 'cdc-arrow-slider' );
 				},
-				'responsive': [ 
+				'responsive': [
 					{'breakpoint': 1200,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
 					{'breakpoint': 992,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
 					{'breakpoint': 768,'settings': {	'slidesToShow': 1,	'slidesToScroll': 1} },
@@ -253,7 +253,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 				<p>Some info on this demo.</p>
 				<ol>
 					<li>Using the slider as a form step wizard.</li>
-				</ol>	
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -285,7 +285,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			</div>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>

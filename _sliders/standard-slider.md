@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/standard-slider.html
 description: Standard Slider using Slick Slider
-title: Standard Slider 
+title: Standard Slider
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -152,14 +152,14 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 		slickInit( '.cdc-card-slider', {
 			'sliderType': 'standard',
-			'bodyClass': '',        
+			'bodyClass': '',
 			'ariaLabel': '',
 			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
-			'responsive': [ 
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]

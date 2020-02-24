@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/jumbotron.html
 description: Jumbotron Slider built using Slick slider, based off the standard Image Slider demo
-title: Jumbotron Slider 
+title: Jumbotron Slider
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -168,45 +168,45 @@ showinnav: true
 <script id="prism-source" data-line="5,8-10,27,45,48-50,66">
 	window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
-  
+
            slickInit( '#example1', {
                 'sliderType': 'jumbotron',
-                'bodyClass': '',        
+                'bodyClass': '',
                 'ariaLabel': '',
 				'centerMode': false,
 				'dots': false,
                 'lazyLoad': 'ondemand',
                 'ariaLabelTarget': 'sliderLabel1',
-                'responsive': [ 
-                    { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+                'responsive': [
+                    { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-                    { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+                    { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
                 ]
             } );
-            
+
             slickInit( '#example2', {
                 'sliderType': 'jumbotron',
-                'bodyClass': '',        
+                'bodyClass': '',
                 'ariaLabel': '',
                 'centerMode': false,
                 'arrows': false,
 				'dotsClass': 'slick-dots slick-dots-outline',
 				'lazyLoad': 'ondemand',
                 'ariaLabelTarget': 'sliderLabel2',
-                'responsive': [ 
-                    { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+                'responsive': [
+                    { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-                    { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+                    { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
                 ]
             } );
-            
+
             slickInit( '#example3', {
                 'sliderType': 'jumbotron',
-                'bodyClass': '',        
+                'bodyClass': '',
                 'ariaLabel': '',
                 'centerMode': false,
                 'arrows': false,
@@ -216,18 +216,18 @@ showinnav: true
                 'callback': function( t, defaults  ) {
                     $( '.slick-dots li' ).css( { 'height': 'auto'} ).find( 'button' ).css( 'line-height', '1' );
                 },
-                'responsive': [ 
-                    { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+                'responsive': [
+                    { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-                    { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+                    { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
                 ]
             } );
-            
+
             slickInit( '#example4', {
                 'sliderType': 'jumbotron',
-                'bodyClass': '',        
+                'bodyClass': '',
                 'ariaLabel': '',
                 'centerMode': false,
                 'arrows': false,
@@ -237,10 +237,10 @@ showinnav: true
                 'callback': function( t, defaults  ) {
                     $( '.slick-dots li' ).css( { 'height': 'auto'} ).find( 'button' ).css( 'line-height', '1' );
                 },
-                'responsive': [ 
-                    { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+                'responsive': [
+                    { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-                    { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+                    { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
                     { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
                 ]
@@ -258,7 +258,7 @@ showinnav: true
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>Examples using the standard <a href="image-slider.html">Image Slider</a>.</p>	
+				<p>Examples using the standard <a href="image-slider.html">Image Slider</a>.</p>
 			</div>
 		</div>
 	</div>
@@ -279,7 +279,7 @@ showinnav: true
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>

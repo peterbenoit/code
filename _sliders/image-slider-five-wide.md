@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/image-slider-five-wide.html
 description: This version of the image slider displays five cards at a time. This is the same as the Three Card Image Slider, except for the number of slidesToShow setting
-title: Image Slider - Five Wide 
+title: Image Slider - Five Wide
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -215,7 +215,7 @@ order: 4
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
 
 <script id="prism-source" data-line="23">
@@ -224,13 +224,13 @@ order: 4
 
 			slickInit( '#slider_1', {
 				'sliderType': 'standard',
-				'bodyClass': '',        
+				'bodyClass': '',
 				'ariaLabel': '',
 				'ariaLabelTarget': 'sliderLabel sliderLabel_1',
-				'responsive': [ 
-					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 5, 'slidesToScroll': 5 } },         
+				'responsive': [
+					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 5, 'slidesToScroll': 5 } },
 					{ 'breakpoint': 992, 'settings': { 'slidesToShow': 5, 'slidesToScroll': 5 } },
-					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 				]
@@ -238,19 +238,19 @@ order: 4
 
 			slickInit( '#slider_2', {
 				'sliderType': 'standard',
-				'bodyClass': '',        
+				'bodyClass': '',
 				'ariaLabel': '',
 				'ariaLabelTarget': 'sliderLabel sliderLabel_2',
 				'centerMode': false,
-				'responsive': [ 
-					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 5, 'slidesToScroll': 5 } },         
+				'responsive': [
+					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 5, 'slidesToScroll': 5 } },
 					{ 'breakpoint': 992, 'settings': { 'slidesToShow': 5, 'slidesToScroll': 5 } },
-					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 				]
-			} );			
-			
+			} );
+
 		} )( jQuery );
 	} );
 </script>
@@ -267,7 +267,7 @@ order: 4
 					<li>The standard card slider with the settings updated to display five cards at a time in desktop viewports and 1 in mobile.</li>
 					<li>The first demo uses the default <code>slickInit()</code> settings, which includes the <code>centerMode</code> setting enabled by default.</li>
 					<li>The second demo has <code>centerMode</code> set to false, disabling it, allowing the slider to slide more than 1 at a time. </li>
-				</ol>	
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -288,7 +288,7 @@ order: 4
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>

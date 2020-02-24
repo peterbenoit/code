@@ -22,7 +22,7 @@ body.modal-open .cdc-card-slider .slider-next,body.modal-open .cdc-card-slider .
 	padding-right: 0!important;
 }
 .cdc-card-slider.slick-initialized {
-	margin: 1rem;	
+	margin: 1rem;
 }
 </style>
 
@@ -50,8 +50,8 @@ body.modal-open .cdc-card-slider .slider-next,body.modal-open .cdc-card-slider .
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" id="useDark">
 						<label class="custom-control-label" for="useDark">Use Dark Background</label>
-					  </div>					
-				</div>	
+					  </div>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-4 mb-3">
@@ -195,7 +195,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			.on( 'shown.bs.modal', function ( e ) {
 				slickInit( '.cdc-card-slider', {
 					'sliderType': '',
-					'bodyClass': '',		
+					'bodyClass': '',
 					'ariaLabel': '',
 					'ariaLabelTarget': 'sliderLabel',
 					'centerMode': false,
@@ -233,7 +233,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 					<li>This opens the standard implementation of the Slick slider in a modal as a "gallery".</li>
 					<li>The modal uses a custom <code>.modal-fullscreen</code> class to display it in fullscreen.</li>
 					<li>This demo also uses the <a href="https://daneden.github.io/animate.css/">animate.css</a> CSS library to change how the modal appears.</li>
-				</ol>	
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -254,7 +254,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>

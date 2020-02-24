@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/image-slider.html
 description: The very basic version of the Slick image slider. This version is the basis for all of the other versions of sliders demos here.
-title: Image Slider 
+title: Image Slider
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -216,7 +216,7 @@ order: 1
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
 
 <script id="prism-source" data-line="23">
@@ -225,13 +225,13 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 		slickInit( '#slider_1', {
 			'sliderType': 'standard',
-			'bodyClass': '',        
+			'bodyClass': '',
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel',
-			'responsive': [ 
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]
@@ -239,19 +239,19 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 		slickInit( '#slider_2', {
 			'sliderType': 'standard',
-			'bodyClass': '',        
+			'bodyClass': '',
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel',
 			'centerMode': false,
-			'responsive': [ 
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]
-		} );		
-		
+		} );
+
 	} )( jQuery );
 } );
 </script>
@@ -289,7 +289,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>

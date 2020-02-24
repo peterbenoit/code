@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/single-card-slider.html
 description: Replacing a card image/body with a slider. This slider slides within a single card.
-title: Single card image slider 
+title: Single card image slider
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -148,13 +148,13 @@ showinnav: true
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
 
 <script id="prism-source" data-line="10-15">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
-		
+
 		slickInit( '.cdc-card-slider', {
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel',
@@ -167,7 +167,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			},
 			'prevArrow': '<img role="button" class="slider-prev" src="https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/previous-128.png" style="background:rgba(255,255,255,.25);left: -30px!important" />',
 			'nextArrow': '<img role="button" class="slider-next" src="https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/next-128.png" style="background:rgba(255,255,255,.25);right: -30px!important" />',
-			'responsive': [ 
+			'responsive': [
 				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
@@ -188,7 +188,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>An image card slider, using the  <a href="https://kenwheeler.github.io/slick/">Slick Carousel library</a>.</p>	
+				<p>An image card slider, using the  <a href="https://kenwheeler.github.io/slick/">Slick Carousel library</a>.</p>
 			</div>
 		</div>
 	</div>
@@ -216,7 +216,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			</div>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>

@@ -17,7 +17,7 @@ order: 2
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="display-4 d-block mb-5" id="sliderLabel">Slick Slider - Overlay</span>
+			<span class="display-5 d-block mb-5" id="sliderLabel">Slick Slider - Overlay</span>
 		</div>
 	</div>
 
@@ -215,7 +215,7 @@ order: 2
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
 
 <div aria-multiselectable="true" class="accordion indicator-plus accordion-white mb-3 mt-3" id="accordion-4" role="tabpanel">
@@ -255,17 +255,17 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 		slickInit( '#slider_1', {
 			'sliderType': 'standard',
-			'bodyClass': '',        
+			'bodyClass': '',
 			'ariaLabel': '',
 			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
 			'callback': function( slider, defaults, slick ) {
 				$( slider ).addClass( 'cdc-standard-slider-overlay dark' );
-			},			
-			'responsive': [ 
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+			},
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]
@@ -273,21 +273,21 @@ window.addEventListener( 'DOMContentLoaded', function() {
 
 		slickInit( '#slider_2', {
 			'sliderType': 'standard',
-			'bodyClass': '',        
+			'bodyClass': '',
 			'ariaLabel': '',
 			'centerMode': false,
 			'ariaLabelTarget': 'sliderLabel',
 			'callback': function( slider, defaults, slick ) {
 				$( slider ).addClass( 'cdc-standard-slider-overlay' );
-			},			
-			'responsive': [ 
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+			},
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 			]
-		} );		
+		} );
 
 	} )( jQuery );
 } );
