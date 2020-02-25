@@ -108,12 +108,44 @@
             </div>
         </div>
     </footer>
-
     <!-- social media nav -->
+    {%- include ssi/global/footer/social-media-footer.html -%}
 
     <!-- local -->
     {%- include ssi/local/metrics.html -%}
     <!-- global -->
     {%- include ssi/global/footer/scripts.html -%}
+
+    <!-- global -->
+    {%- include ssi/global/body/page-bottom-extras.html -%}
+
+
+    <!-- site catalyst code, doesn't appear to be in an SSI -->
+    <script>
+        s.pageName=document.title;
+        s.channel="CDC Top Tier";
+        siteCatalyst.setLevel1("CDC Top Tier");
+        siteCatalyst.setLevel2("CDC.gov Home Page");
+    </script>
+
+    <!-- page options which are passed to the template init -->
+    <script>
+        window.shortTitle = "SHORT TITLE";
+        window.pageOptions = window.pageOptions || {};
+        window.pageOptions.navigation = window.pageOptions.navigation || { showFourthLevel: true };
+        window.pageOptions.navigation.breadcrumbs = {
+            mode: 'auto',
+            showCurrentPage: false,
+            prefix: [{
+                text: 'CDC',
+                href: 'https://www.cdc.gov/'
+            }]
+        };
+        window.CDC.tp4.public.appInit( window.pageOptions );
+
+        // $( document ).ready( function() {
+        //     CDC.Search.init();
+        // } );
+    </script>
 </body>
 </html>
