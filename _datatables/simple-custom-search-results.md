@@ -18,11 +18,11 @@ title: Simple Custom Search Results
 </head>
 <body translate="no">
 	<div class="container d-flex flex-wrap body-wrapper">
-	<main class="col-12 order-lg-2" role="main" aria-label="Main Content Area">
-		<p>This is a <b><i>very</i></b> basic example of working with <a href="https://www.datatables.net">datatables</a> to produce custom output.</p>
+		<main class="col-12 order-lg-2" role="main" aria-label="Main Content Area">
+			<p>This is a <b><i>very</i></b> basic example of working with <a href="https://www.datatables.net">datatables</a> to produce custom output.</p>
 
-		<table id="datatable"></table>
-	</main>
+			<table id="datatable"></table>
+		</main>
 	</div>
 	<script src='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/jquery.min.js'></script>
 	<script src='https://www.cdc.gov/TemplatePackage/4.0/assets/vendor/js/bootstrap.bundle.min.js'></script>
