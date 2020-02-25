@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="theme-blue">
-
+    <!-- global -->
     {%- include ssi/global/header/head-content.html -%}
 
-
 <body class="no-js">
-
     <div class="container-fluid header-wrapper">
         <div class="container">
             <header aria-label="Header" class="pt-2 pb-2" role="banner">
                 <div class="row">
                     <div class="col cdc-logo">
+                        <!-- global -->
                         {%- include ssi/global/header/header-logo.html -%}
                     </div>
                     <div class="col-2 col-md-3 col-xl-5 col-xxl-4 tp-search">
+                        <!-- global -->
                         {%- include ssi/global/header/header-search.html -%}
                     </div>
                 </div>
@@ -24,16 +24,29 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+                    <!-- local -->
                     {%- include ssi/local/site-title.html -%}
                 </div>
             </div>
         </div>
     </div>
     <nav aria-label="Mobile Nav" class="sticky-top" id="mobilenav" role="navigation">
+        <!-- local -->
         {%- include ssi/local/nav-mobile.html -%}
     </nav>
     <div class="container breadcrumb-share">
-        {%- include ssi/local/nav-breadcrumb.html -%}
+        <div class="d-none d-lg-block">
+            <div class="row">
+                <div class="col-sm-8 col-xl-9">
+                    <!-- local -->
+                    {%- include ssi/local/nav-breadcrumb.html -%}
+                </div>
+                <div class="col-sm-4 col-xl-3 page-share">
+                    <!-- global -->
+                    {%- include ssi/global/body/page-share.html -%}
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container-fluid feature-area">
         <div class="container"><!-- feature area --></div>
