@@ -1,8 +1,8 @@
 ---
 layout: tp4/leftnav
 permalink: tp4/leftnav.html
-description:
-title:
+description: META DESCRIPTION
+title: PAGE TITLE
 type:
 localcss:
 localjs:
