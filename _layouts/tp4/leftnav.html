@@ -2,7 +2,8 @@
 <html lang="en" class="theme-blue">
     <!-- global -->
     {%- include ssi/global/header/head-content.html -%}
-
+    <!-- even though this is in the global folder, it is a local SSI for the meta details -->
+    {%- include ssi/global/header/head-content-meta-local.html -%}
 <body class="no-js">
     <div class="container-fluid header-wrapper">
         <div class="container">
@@ -49,11 +50,13 @@
         </div>
     </div>
     <div class="container-fluid feature-area">
-        <div class="container"><!-- feature area --></div>
+        <div class="container">
+            <!-- feature area -->
+        </div>
     </div>
 
     <div class="container d-flex flex-wrap body-wrapper">
-		<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
+		<main aria-label="Main Content Area" class="col-lg-9 order-lg-2" role="main">
             <div class="row visual-element">
                 <div class="col">
                     <!-- Visual Element (site identity) -->
@@ -85,14 +88,25 @@
             </div>
         </main>
         <div class="col-lg-3 order-lg-1 leftnav-wrapper">
-            <!-- main (left) nav -->
-            <nav aria-label="Left Navigation Menu" role="navigation">
-                Nav
-            </nav>
+            <!-- local - main (left) nav -->
+            {%- include ssi/local/nav-main.html -%}
+            <!-- local -->
+            {%- include ssi/local/under-nav-left.html -%}
         </div>
     </div>
     <footer aria-label="Footer" role="contentinfo">
-        {%- include ssi/global/footer/footer.html -%}
+        <div class="container-fluid footer-wrapper">
+            <div class="container">
+                <!-- global -->
+                {%- include ssi/global/footer/footer-cdc.html -%}
+            </div>
+        </div>
+        <div class="container-fluid agency-footer">
+            <div class="container">
+                <!-- global -->
+                {%- include ssi/global/footer/footer-agency.html -%}
+            </div>
+        </div>
     </footer>
 </body>
 </html>
