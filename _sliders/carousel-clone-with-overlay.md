@@ -106,7 +106,7 @@ order: 5
 	</div>
 </div>
 
-<script id="prism-source" data-line="5,6,10-12">
+<script id="prism-source" data-line="13-15">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
