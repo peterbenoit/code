@@ -55,11 +55,16 @@ order:
     window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
 
-			$( '.form-secret' )
-				.on( 'input', function( e ) {
+		
+			$( '.form-secret' ).on( { 
+				keydown: function( e ) {
+					// if we're not allowing spaces
+					if ( e.which === 32 ) return false;					
+				},
+				input: function( e ) {
 					var $t = $( this ),
 						demand = $t.hasClass( 'form-secret-demand' ),
-						$n = $t.next( 'input' ),
+						$n = $t.next( 'input:hidden' ),
 						$indicator = $t.siblings( '.far' ),
 						str = '',
 						val = '',
@@ -69,19 +74,19 @@ order:
 						if( demand ) {
 							val = $n.val();
 							
-							if( 'insertText' === e.originalEvent.inputType ) { 
+							if( 'insertText' === oe.inputType ) { 
 								// typing
-								val += e.originalEvent.data;
+								val += oe.data;
 								$n.val( val );
 								for( var i = 0; i < $t.val().length; i++ ) {
 									str += '*';
 								}
 								$t.val( str );
-							} else if( 'deleteContentBackward' === e.originalEvent.inputType ) {
+							} else if( 'deleteContentBackward' === oe.inputType ) {
 								// deleting
 								val = val.substring( 0, val.length - 1 );
 								$n.val( val );
-							} else if( 'insertFromPaste' === e.originalEvent.inputType ) {
+							} else if( 'insertFromPaste' === oe.inputType ) {
 								// pasting
 								return false;
 							}
@@ -93,14 +98,15 @@ order:
 					} else {
 						$n.val( '' );
 						$indicator.removeClass( 'fa-eye-slash' ).addClass( 'fa-eye' );
-					}
-				} )
-				.on( 'blur', function() {
+					}					
+				},
+				paste: function( e ) {},
+				blur: function() {
 					var $t = $( this ),
 						random = $t.hasClass( 'form-secret-random' ),
 						fixed = $t.hasClass( 'form-secret-fixed' ),
 						demand = $t.hasClass( 'form-secret-demand' ),
-						$n = $t.next( 'input' ),
+						$n = $t.next( 'input:hidden' ),
 						$indicator = $t.siblings( '.far' ),
 						str = '';
 				
@@ -122,21 +128,77 @@ order:
 						}
 						$t.val( str );
 						$indicator.removeClass( 'fa-eye' ).addClass( 'fa-eye-slash' );
-					}
-				} )
-				.on( 'focus', function() {
+					}					
+				},
+				focus: function() {
 					var $t = $( this ),
 						$indicator = $t.siblings( '.far' ),
 						demand = $t.hasClass( 'form-secret-demand' ),
-						$n = $t.next( 'input' );
+						$n = $t.next( 'input:hidden' );
 				
 					if( !demand ) {
 						$t.val( $n.val() );
 						$indicator.removeClass( 'fa-eye-slash' ).addClass( 'fa-eye' );			
+					}					
+				},
+				paste: function() {
+					var text = e.originalEvent.clipboardData.getData( 'text' ).trim(),
+						$t = $( this ),
+						$n = $t.next( 'input:hidden' );
+
+					if( text.length ) {
+						setTimeout( function() { 
+							$n.val( $t.val() );
+						}, 100 );
+					} else {
+						// don't allow pasting of empty spaces
+						return false;
 					}
-				} ).each( function() {
-					var $t = $( this );
-					$t.after( '<input type="hidden" /><i class="far fa-eye"></i>' );
+				}
+			} )
+			.each( function() {
+				var $t = $( this );
+				$t.after( '<input type="hidden" /><i class="far fa-eye btn-status cur-pointer"></i>' );
+			} );
+
+			$( '.btn-status' ).on( {
+				mousedown: function( e ) {
+					var $t = $( this ),
+						$input = $t.siblings(' .form-secret' ),
+						$n = $t.prev( 'input:hidden' );
+
+					if( $input.val().trim().length ) {
+						$input.val( $n.val() );
+					}
+
+					$t.removeClass( 'fa-eye-slash' ).addClass( 'fa-eye' );	
+				},
+				mouseup: function() {
+					var $t = $( this ),
+						$input = $t.siblings(' .form-secret' ),
+						$n = $t.prev( 'input:hidden' ),
+						str = '',
+						random = $input.hasClass( 'form-secret-random' ),
+						fixed = $input.hasClass( 'form-secret-fixed' ),
+						demand = $input.hasClass( 'form-secret-demand' );
+
+					if( random ) {
+						var random = Math.floor( Math.random() * ( 15 - 5 + 1 ) + 5 );
+						for( var i = 0; i < random; i++ ) {
+							str += '*';
+						}	
+					} else if ( fixed ) {
+						for( var i = 0; i < 10; i++ ) {
+							str += '*';
+						}		
+					} else {
+						for( var i = 0; i < $n.val().length; i++ ) {
+							str += '*';
+						}
+					}
+					$input.val( str );
+					$t.removeClass( 'fa-eye' ).addClass( 'fa-eye-slash' );
+				}
 			} );
 			
         } )( jQuery );
