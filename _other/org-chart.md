@@ -17,11 +17,11 @@ order:
 
 <style>
 
-@media (min-width: 576px) { 
+/* @media (min-width: 576px) { 
 	.org-chart img {
 		
 	}	
-}
+} */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
