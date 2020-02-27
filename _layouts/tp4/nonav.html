@@ -1,21 +1,154 @@
 <!DOCTYPE html>
 <html lang="en" class="theme-blue">
-
-{%- include structure/template-head.html -%}
-
+    <!-- global -->
+    {%- include ssi/global/header/head-content.html -%}
+    <title>PAGE_TITLE</title>
+    <!-- even though this is in the global folder, it is a local SSI for the meta details -->
+    {%- include ssi/global/header/head-content-meta-local.html -%}
 <body class="no-js">
-
-    <h3>NoNav</h3>
-
-    <div class="container d-flex flex-wrap body-wrapper">
-		<main aria-label="Main Content Area" class="col-12 order-lg-2" role="main">
-
-            {{ content }}
-
-        </main>
+    <!-- skipmenu -->
+    <div class="container-fluid header-wrapper">
+        <div class="container">
+            <header aria-label="Header" class="pt-2 pb-2" role="banner">
+                <div class="row">
+                    <div class="col cdc-logo">
+                        <!-- global -->
+                        {%- include ssi/global/header/header-logo.html -%}
+                    </div>
+                    <div class="col-2 col-md-3 col-xl-5 col-xxl-4 tp-search">
+                        <!-- global -->
+                        <!-- searches search.cdc.gov. alternatively copy this to your own local include or custom search markup here -->
+                        {%- include ssi/global/header/header-search.html -%}
+                    </div>
+                </div>
+            </header>
+        </div>
     </div>
+    <div class="container-fluid site-title">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- local -->
+                    {%- include ssi/local/site-title.html -%}
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Mobile Nav" class="sticky-top" id="mobilenav" role="navigation">
+        <!-- local -->
+        {%- include ssi/local/nav-mobile.html -%}
+    </nav>
+    <div class="container breadcrumb-share">
+        <div class="d-none d-lg-block">
+            <div class="row">
+                <div class="col-sm-8 col-xl-9">
+                    <!-- local -->
+                    <!-- alternatively create the breadcrumb markup here -->
+                    {%- include ssi/local/nav-breadcrumb.html -%}
+                </div>
+                <div class="col-sm-4 col-xl-3 page-share">
+                    <!-- global -->
+                    {%- include ssi/global/body/page-share.html -%}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid feature-area">
+        <div class="container">
+            <!-- feature area -->
+        </div>
+    </div>
+    <div class="container d-flex flex-wrap body-wrapper">
+		<main aria-label="Main Content Area" class="col-12" role="main">
+            <div class="row visual-element">
+                <div class="col">
+                    <!-- Visual Element (site identity) -->
+                </div>
+            </div>
+            <div class="section-nav-area">
+                <nav aria-label="Section Nav" class="w-100 sticky-top" role="navigation">
+                    <!-- Page Title/Section Nav (mobile) -->
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col content content-fullwidth">
+                    <!-- content -->
+                    {{ content }}
+                </div>
+            </div>
+            <div class="row d-none d-lg-block">
+                <div class="col pca">
+                    <!-- Persistent Content Area -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col last-reviewed">
+                    Page last reviewed: <span id="last-reviewed-date">February 20, 2020</span>
+                    <div class="d-none d-lg-block content-source">
+                        Content source: [CONTENT_SOURCE]
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="col-12 d-lg-none leftnav-wrapper">
+            <!-- local - main (left) nav -->
+            {%- include ssi/local/nav-main.html -%}
+            <!-- local -->
+            {%- include ssi/local/under-nav-left.html -%}
+        </div>
+    </div>
+    <footer aria-label="Footer" role="contentinfo">
+        <div class="container-fluid footer-wrapper">
+            <div class="container">
+                <!-- global -->
+                {%- include ssi/global/footer/footer-cdc.html -%}
+            </div>
+        </div>
+        <div class="container-fluid agency-footer">
+            <div class="container">
+                <!-- global -->
+                {%- include ssi/global/footer/footer-agency.html -%}
+            </div>
+        </div>
+    </footer>
+    <!-- social media nav -->
+    {%- include ssi/global/footer/social-media-footer.html -%}
+    <!-- local -->
+    {%- include ssi/local/metrics.html -%}
+    <!-- global -->
+    {%- include ssi/global/footer/scripts.html -%}
+    <!-- global -->
+    {%- include ssi/global/body/page-bottom-extras.html -%}
 
-{%- include structure/template-scripts.html -%}
+    <!-- site catalyst code, doesn't appear to be in an SSI -->
+    <script>
+        s.pageName=document.title;
+        s.channel="";
+        siteCatalyst.setLevel1("");
+        siteCatalyst.setLevel2("");
+    </script>
 
+    <!-- page options which are passed to the template init -->
+    <script>
+        window.shortTitle = "SHORT TITLE";
+        window.pageOptions = window.pageOptions || {};
+        window.pageOptions.navigation = window.pageOptions.navigation || { showFourthLevel: true };
+        window.pageOptions.navigation.breadcrumbs = {
+            mode: 'auto',
+            showCurrentPage: false,
+            prefix: [{
+                text: 'CDC',
+                href: 'https://www.cdc.gov/'
+            }]
+        };
+        window.CDC.tp4.public.appInit( window.pageOptions );
+
+        // *******************************
+        // JIM!? 
+        // *******************************
+        // $( document ).ready( function() {
+        //     CDC.Search.init();
+        // } );
+    </script>
 </body>
 </html>
