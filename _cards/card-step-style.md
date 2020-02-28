@@ -10,6 +10,7 @@ includePrismJs: true
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
 externaljs:
 showinnav: true
+image: step_style.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -51,7 +52,7 @@ showinnav: true
 										<i class="fas fa-drumstick-bite c-primary"></i>
 									</div>
 								</div>
-							</div>					
+							</div>
 							<div class="col">
 								<div class="card">
 									<div class="card-header">Step 2</div>
@@ -72,7 +73,7 @@ showinnav: true
 										<i class="fas fa-cat c-primary"></i>
 									</div>
 								</div>
-							</div>					
+							</div>
 							<div class="col">
 								<div class="card">
 									<div class="card-header">Step 3</div>
@@ -82,7 +83,7 @@ showinnav: true
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 </div>
@@ -96,7 +97,7 @@ showinnav: true
 				<p>Some info on this demo.</p>
 				<p>Cards are one of the more flexible components available in the Bootstrap 4 framework, and can be used in a variety of ways. This is a demo of "step style" cards, where each card is a step in a series.</p>
 				<p>This demo was built to work with the Template, however it could be easily modified to work with default Bootstrap 4. It includes Font Awesome 5 icons with each card.</p>
-					
+
 			</div>
 		</div>
 	</div>
