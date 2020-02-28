@@ -4,9 +4,6 @@ description: A simple version of the custom search results example.
 title: Simple Custom Search Results
 ---
 
-
-
-<!DOCTYPE html>
 <html lang="en" class="theme-blue">
 <head>
 	<meta charset="UTF-8">
