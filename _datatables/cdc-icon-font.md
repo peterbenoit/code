@@ -5,14 +5,15 @@ description: Using Datatables to provide default functionality, with a custom re
 title: Font Icons
 type: demo
 localcss: datatables.css
-localjs: 
+localjs:
 includePrismJs: true
 externalcss: https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css, https://cdn.datatables.net/buttons/1.6.1/css/buttons.bootstrap4.min.css, https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css
 externaljs: https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js, https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js, https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js, https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js, https://cdn.datatables.net/buttons/1.6.1/js/buttons.bootstrap4.min.js, https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js, https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js, https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js
+image: Icons.jpg
 ---
 
 {%- include breadcrumbs.html -%}
- 
+
 <style>
 	/* styles for this demo */
 	.card {
@@ -30,7 +31,7 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js, htt
 		font-size: smaller;
 	}
 
-	@media (max-width: 767.98px) { 
+	@media (max-width: 767.98px) {
 		.btn-group {
 			margin-bottom: 1rem;
 		}
@@ -46,7 +47,7 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js, htt
 		}
 		#datatable td, #datatable th {
 			display: none;
-		}		
+		}
 	}
 </style>
 
@@ -86,7 +87,7 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js, htt
 					<li>Copy to Clipboard functionality is done using a custom call to the <a href="https://clipboardjs.com/">clipboard.js</a> library.</li>
 					<li>Postback position is retained and adjusted when the table reloads. This really isn't a problem on pages with only the datatable control, however longer pages seem to redirect to the bottom on pagination clicks. Ideally, this would be caught with a <code>.preventDefault()</code> on the anchors, however it wasn't working. More to do.</li>
 					<li>The Datatables library auto-filtering works great, however I don't believe it's 508 compliant. I added code on lines 167-172 to account for this.</li>
-				</ol>	
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -172,7 +173,7 @@ function loadCategories( icons ) {
 				category = getProperty( function() {
 					return t.categories;
 				}, [] );
-				obj.categories = category;				
+				obj.categories = category;
 			} );
 			loadData( icons );
 		},
@@ -289,7 +290,7 @@ function addClearButton( table ) {
 	} );
 
 	// NOTE: removing the comments here will turn off the auto-filtering done and require the need to click the search button
-	// filter.find('input.form-control.form-control-sm').off('keyup.DT search.DT input.DT paste.DT cut.DT').off( 'keypress.DT' ).on( 'keypress.DT', function(e) { 
+	// filter.find('input.form-control.form-control-sm').off('keyup.DT search.DT input.DT paste.DT cut.DT').off( 'keypress.DT' ).on( 'keypress.DT', function(e) {
 	// 	if ( e.keyCode == 13 ) {
 	// 		$( '#btn-search' ).click();
 	// 	}

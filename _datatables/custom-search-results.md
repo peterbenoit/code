@@ -2,6 +2,7 @@
 permalink: datatables/custom-search-results.html
 description: The Datatables library can be used in a variety of ways. Here's an example of using it to display search results from CDC.gov.
 title: Custom Search Results
+image: Custom_search.jpg
 ---
 
 <html class="theme-blue" lang="en">

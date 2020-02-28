@@ -2,6 +2,7 @@
 permalink: datatables/phil.html
 description: PHIL Images in a standard Row/Column Card layout
 title: Public Health Image Library
+image: PHIL.jpg
 ---
 
 <html lang="en">

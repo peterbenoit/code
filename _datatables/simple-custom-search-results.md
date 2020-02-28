@@ -2,6 +2,7 @@
 permalink: datatables/simple-custom-search-results.html
 description: A simple version of the custom search results example.
 title: Simple Custom Search Results
+image: simple.jpg
 ---
 
 <html lang="en" class="theme-blue">

@@ -2,6 +2,7 @@
 permalink: datatables/stop-hiv.html
 description: Data from https://www.cdc.gov/stophivtogether/library
 title: Stop HIV
+image: hiv.jpg
 ---
 <html class="theme-blue" lang="en">
 <head>

@@ -2,6 +2,7 @@
 permalink: datatables/phil-columns.html
 description: PHIL Images in a Bootstrap 4 Column layout
 title: Public Health Image Library
+image: PHIL_columns.jpg
 ---
 
 <html lang="en">
@@ -94,9 +95,9 @@ title: Public Health Image Library
 		<h3>PHIL using DataTables.js Column Layout</h3><a class="btn btn-outline-primary" href="#" id="card"><i class="material-icons">view_module</i> Card</a> <a class="btn btn-outline-secondary" href="#" id="details"><i class="material-icons">view_stream</i> Details</a>
 		<table id="results"></table>
 	</div>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> 
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script> 
-	<script src='https://cdn.datatables.net/v/bs4-4.1.1/dt-1.10.20/datatables.min.js'></script> 
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+	<script src='https://cdn.datatables.net/v/bs4-4.1.1/dt-1.10.20/datatables.min.js'></script>
 	<script>
         $( '#card' ).on( 'click', function() {
             sessionStorage.viewType = 'card';
@@ -112,9 +113,9 @@ title: Public Health Image Library
         if ( $.fn.DataTable.isDataTable( '#results' ) ) {
             $( '#results' ).DataTable().clear().destroy();
         }
-        
+
         sessionStorage.viewType = sessionStorage.viewType || 'card';
-        
+
         if( sessionStorage.viewType === 'card' ) {
             $( '#card' ).removeClass( 'btn-outline-secondary' ).addClass( 'btn-outline-primary' );
             $( '#details' ).removeClass( 'btn-outline-primary' ).addClass( 'btn-outline-secondary' );
@@ -150,7 +151,7 @@ title: Public Health Image Library
             dom: '<"top"flp>rt<"bottom"i><"clear">',
             rowCallback: function( row, data, index ) {
                 console.log( 'rowCallback', data );
-                
+
                 if( sessionStorage.viewType === 'card' ) {
                     drawCard( data );
                 } else {
@@ -164,26 +165,26 @@ title: Public Health Image Library
                 $( '#out' ).empty();
             },
             drawCallback: function( settings ) {
-                
+
                 if( sessionStorage.viewType === 'card' ) {
                     // after the rows (columns) have been generated, wrap them into rows as needed
                     // var divs = $( '#out > .col-lg-4' );
                     // for ( var i = 0; i < divs.length; i += 3 ) {
                     //     divs.slice( i, i + 3 ).wrapAll( '<div class="row mb-3"></div>' );
-                    // }    
-                    $( '#out' ).addClass( 'card-columns' );       
+                    // }
+                    $( '#out' ).addClass( 'card-columns' );
                 } else {
                     $( '#out > .col' ).wrap( '<div class="row"></div>' );
                 }
 
                 console.log( 'drawCallback' );
             },
-            initComplete: function( settings ) { 
+            initComplete: function( settings ) {
                 finalize();
                 // this is the only way I could reliably maintain scroll position in Win Chrome
                 $( 'html,body' ).animate({ scrollTop: sessionStorage.scrollPos || 0 }, 100 );
             }
-        } );    
+        } );
         }
 
         function drawCard( data ) {
@@ -210,7 +211,7 @@ title: Public Health Image Library
             if( description.length > 150 ) {
                 output += '<p>' + description.substr( 0,150 ) + '&hellip;' + '</p>';
             } else {
-                output += '<p>' + description + '</p>'; 
+                output += '<p>' + description + '</p>';
             }
 
             $( '#out' ).append( opencard + cardimg + cardbody + output + close + closecard );
@@ -238,7 +239,7 @@ title: Public Health Image Library
             if( description.length > 500 ) {
                 output += '<p>' + description.substr( 0,500 ) + '&hellip;' + '</p>';
             } else {
-                output += '<p>' + description + '</p>'; 
+                output += '<p>' + description + '</p>';
             }
 
             $( '#out' ).append( opencard + cardbody + cardimg + output + '</div>' + closebody + closecard );
@@ -249,10 +250,10 @@ title: Public Health Image Library
             var open = '<div id="preview-modal" class="modal fade" role="dialog"><div class="modal-dialog modal-lg modal-xlg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body">',
                 close = '</div><div class="modal-footer"></div></div></div></div>',
                 body = '';
-            
+
             $.getJSON( 'https://tools.cdc.gov/api/v2/resources/media/' + id + '.json', function( data ) {
                 var r = data.results[0];
-                
+
                 console.log( r );
 
                 body += '<img src="' + r.enclosures[0].resourceUrl + '" class="w-100 mb-3" />';
@@ -262,17 +263,17 @@ title: Public Health Image Library
 
                     // output += ;
                 $( 'body' ).append( open + body + close );
-                
+
                 $( '#preview-modal' ).modal( 'show' ).on( 'hidden.bs.modal', function ( e ) {
                     $( this ).remove();
-                } );        
+                } );
             } );
         }
 
         function finalize() {
         $( 'a.card' ).on( 'click', function( e ) {
             e.preventDefault();
-            
+
             drawModal( $(this).data('id') );
         } )
         }
@@ -286,11 +287,11 @@ title: Public Health Image Library
         } );
 
         // we update the querystring on events which keeps our event state in history, but doesn't allow refresh on back/forward button nav
-        // this captures that navigation and redirects 
+        // this captures that navigation and redirects
         window.onpopstate = function(event) {
             //console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
             top.location.href = document.location;
-        };        
+        };
 	</script>
 </body>
 </html>
