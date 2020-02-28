@@ -37,22 +37,3 @@ type: list
     {%- endif -%}
     {%- endfor -%}
 </dl>
-
-{%- highlight javascript -%}
-slickInit( '#slider_1', {
-    'sliderType': 'carousel',
-    'bodyClass': '',        
-    'ariaLabel': '',
-    'ariaLabelTarget': 'sliderLabel_1',
-    'centerMode': false,
-    'dots': false,
-    'sliderClass': 'cdc-carousel-slider',
-    'responsive': [             
-        { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
-        { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-        { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-        { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-        { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }            
-    ]   
-} );
-{%- endhighlight -%}
