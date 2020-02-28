@@ -26,7 +26,7 @@ externaljs: https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js
 <form>
 	<input type="file"> <span id="fileSize">total size: 0</span>
 </form>
-<table id="results"></table>
+<table id="results" class="table table-striped"></table>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <!-- <script src="https://cdn.datatables.net/v/bs4-4.1.1/dt-1.10.20/datatables.min.js"></script> -->
