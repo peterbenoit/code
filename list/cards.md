@@ -19,7 +19,7 @@ type: list
     {% if project.showinnav != false %}
     <div class="card shadow-sm">
         {% if project.image %}
-        <img src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/cards/{{ project.image }}" alt="{{ project.title }}" class="card-img-top">
+        <a href="{{ site.baseurl }}{{ project.url }}"><img src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/cards/{{ project.image }}" alt="{{ project.title }}" class="card-img-top"></a>
         {% endif %}
         <div class="card-body">
             <h5 class="card-title"><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h5>
