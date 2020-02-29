@@ -1,8 +1,8 @@
 ---
 layout: template
 permalink: sliders/video-carousel-embedded.html
-description: Built from the carousel (clone) slider, this one contains embedded videos.
-title: Embedded Video Carousel
+description: Built from the carousel slider, this one contains embedded videos.
+title: Video Carousel
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -10,7 +10,9 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
-order: 5
+order: 2
+slidertype: video
+image: video_carousel.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -18,7 +20,7 @@ order: 5
 <div class="container">
 	<div class="row">
 		<div class="col-md-9">
-			<span class="h3 d-block" id="sliderLabel_1">Slick Embedded Video Carousel </span>
+			<span class="h3 d-block" id="sliderLabel_1">Slick Slider - Video Carousel </span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<div class="embed-responsive embed-responsive-16by9">

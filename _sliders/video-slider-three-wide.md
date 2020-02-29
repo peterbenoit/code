@@ -1,7 +1,7 @@
 ---
 layout: template
 permalink: sliders/video-slider-three-wide.html
-description: A card slider that plays videos in a Bootstrap 4 modal. This demo is essentially the same as the three Wide Image Slider, except each card image is a link to open a video modal
+description: A card slider that plays videos in a Bootstrap 4 modal. This demo is essentially the same as the Three Wide Image Slider, except each card image is a link to open a video modal
 title: Video Slider - Three Wide
 type: demo
 localcss: sliders.css
@@ -10,7 +10,9 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
-order: 8
+order: 3
+slidertype: video
+image: video_slider_three.jpg
 ---
 
 {%- include breadcrumbs.html -%}

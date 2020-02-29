@@ -10,8 +10,9 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
-order: 5
+order: 1
 slidertype: carousel
+image: carousel.jpg
 ---
 
 {%- include breadcrumbs.html -%}

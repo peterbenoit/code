@@ -9,6 +9,9 @@ localjs: slickinit.js
 includePrismJs: true
 externalcss:
 externaljs:
+order: 3
+slidertype: carousel
+image: carousel.jpg
 ---
 
 {%- include breadcrumbs.html -%}

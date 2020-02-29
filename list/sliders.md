@@ -40,16 +40,58 @@ type: list
     {%- endfor -%}
 </div>
 
-
-<span class="display-5">Standard Sliders</span>
-<dl>
+<span class="display-5">Carousel Sliders</span>
+<div class="card-columns">
     {%- for project in sliders -%}
-    {% if project.showinnav != false and project.order %}
-    <dt><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></dt>
-    <dd class="ml-5">{{ project.description }} <a href="{{ site.baseurl }}{{ project.url }}">more &hellip;</a></dd>
+    {% if project.showinnav != false and project.slidertype == 'carousel' %}
+    <div class="card shadow-sm">
+        {% if project.image %}
+        <a href="{{ site.baseurl }}{{ project.url }}"><img src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/sliders/{{ project.image }}" alt="{{ project.title }}" class="card-img-top"></a>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title"><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h5>
+            <p class="card-text">
+                {{ project.description }}
+            </p>
+        </div>
+        <div class="card-footer text-right">
+            <a class="btn btn-link" href="{{ site.baseurl }}{{ project.url }}">View Project</a>
+        </div>
+    </div>
     {%- endif -%}
     {%- endfor -%}
-</dl>
+</div>
+
+<span class="display-5">Video Sliders</span>
+<div class="card-columns">
+    {%- for project in sliders -%}
+    {% if project.showinnav != false and project.slidertype == 'video' %}
+    <div class="card shadow-sm">
+        {% if project.image %}
+        <a href="{{ site.baseurl }}{{ project.url }}"><img src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/sliders/{{ project.image }}" alt="{{ project.title }}" class="card-img-top"></a>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title"><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h5>
+            <p class="card-text">
+                {{ project.description }}
+            </p>
+        </div>
+        <div class="card-footer text-right">
+            <a class="btn btn-link" href="{{ site.baseurl }}{{ project.url }}">View Project</a>
+        </div>
+    </div>
+    {%- endif -%}
+    {%- endfor -%}
+</div>
+
+
+
+
+
+
+
+
+
 
 <span class="display-5">Other Slider Types</span>
 <dl>

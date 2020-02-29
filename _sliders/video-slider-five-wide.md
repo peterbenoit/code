@@ -10,7 +10,9 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
-order: 9
+order: 4
+slidertype: video
+image: video_slider_five.jpg
 ---
 
 {%- include breadcrumbs.html -%}
