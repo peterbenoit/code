@@ -11,7 +11,7 @@ externalcss:
 externaljs:
 showinnav: true
 slidertype: other
-image: gallery_slider.jpg
+image: thumbnail_gallery.jpg
 ---
 
 {%- include breadcrumbs.html -%}
