@@ -17,6 +17,30 @@ type: list
 <p>There are also custom styles applied to the slider, in order to produce the different layouts and configurations. This was done using <a href="https://sass-lang.com/">SASS</a> which is compiled into CSS.</p>
 
 {% assign sliders = site.sliders | sort: 'order' %}
+
+<span class="display-5">Image Sliders</span>
+<div class="card-columns">
+    {%- for project in sliders -%}
+    {% if project.showinnav != false and project.slidertype == 'image' %}
+    <div class="card shadow-sm">
+        {% if project.image %}
+        <a href="{{ site.baseurl }}{{ project.url }}"><img src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/sliders/{{ project.image }}" alt="{{ project.title }}" class="card-img-top"></a>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title"><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h5>
+            <p class="card-text">
+                {{ project.description }}
+            </p>
+        </div>
+        <div class="card-footer text-right">
+            <a class="btn btn-link" href="{{ site.baseurl }}{{ project.url }}">View Project</a>
+        </div>
+    </div>
+    {%- endif -%}
+    {%- endfor -%}
+</div>
+
+
 <span class="display-5">Standard Sliders</span>
 <dl>
     {%- for project in sliders -%}
@@ -27,7 +51,6 @@ type: list
     {%- endfor -%}
 </dl>
 
-{% assign sliders = site.sliders | sort: 'order'  %}
 <span class="display-5">Other Slider Types</span>
 <dl>
     {%- for project in sliders -%}

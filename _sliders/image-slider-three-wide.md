@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/image-slider-three-wide.html
 description: This version of the image slider displays three cards at a time. This is the same as the standard Image Slider, except for the number of slidesToShow setting
-title: Image Slider - Three Wide
+title: Image Slider (Three Wide)
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -11,6 +11,8 @@ externalcss:
 externaljs:
 showinnav: true
 order: 3
+slidertype: image
+image: three_wide.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -18,7 +20,7 @@ order: 3
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3 d-block" id="sliderLabel">Slick Slider -  Image Slider Three Wide</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - Image Slider (Three Wide)</span>
 		</div>
 	</div>
 

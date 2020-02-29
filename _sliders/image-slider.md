@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/image-slider.html
 description: The very basic version of the Slick image slider. This version is the basis for all of the other versions of sliders demos here.
-title: Image Slider
+title: Image Slider (standard and centerMode)
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -11,6 +11,8 @@ externalcss:
 externaljs:
 showinnav: true
 order: 1
+slidertype: image
+image: standard.jpg
 ---
 
 {%- include breadcrumbs.html -%}

@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/carousel-clone-with-overlay.html
 description: This is the carousel slider using an overlay.
-title: Carousel with Overlay
+title: Carousel (Overlay)
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -11,6 +11,7 @@ externalcss:
 externaljs:
 showinnav: true
 order: 5
+slidertype: carousel
 ---
 
 {%- include breadcrumbs.html -%}
@@ -18,7 +19,7 @@ order: 5
 <div class="container">
 	<div class="row">
 		<div class="col-md-9">
-			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel with Overlay</span>
+			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel with (Overlay)</span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/819/700/300">

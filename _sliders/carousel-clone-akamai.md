@@ -142,13 +142,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>The <a href="/code/sliders/carousel.html">original carousel version</a> of the Slick slider uses two sliders to implement the carousel. This version uses a single slider which is cloned and massaged to display it as a thumbnail track under the original slider.</p>
-				<p>There are benefits and disadvantages to this...</p>
-				<ol>
-					<li><span style="color: green">Pro:</span>You only need one slider in the markup and one initialization call!</li>
-					<li><span style="color: red">Con:</span>We have to process the markup via javascript which then calls init again in order to display the second slider.</li>
-					<li><span style="color: green">Pro:</span>The sliders are related but do not force navigation on each - meaning if you slide the thumbnail slide, the top slide doesn't auto-advance.</li>
-				</ol>
+				<p>This demo is the same as the <a href="/code/sliders/carousel-clone.html">carousel</a> except for the delay purposefully added to simulate latency.</p>
 			</div>
 		</div>
 	</div>

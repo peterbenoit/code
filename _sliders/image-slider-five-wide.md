@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/image-slider-five-wide.html
 description: This version of the image slider displays five cards at a time. This is the same as the Three Card Image Slider, except for the number of slidesToShow setting
-title: Image Slider - Five Wide
+title: Image Slider (Five Wide)
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -11,6 +11,8 @@ externalcss:
 externaljs:
 showinnav: true
 order: 4
+slidertype: image
+image: five_wide.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -18,7 +20,7 @@ order: 4
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3 d-block" id="sliderLabel">Slick Slider -  Image Slider Five Wide</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - Image Slider (Five Wide)</span>
 		</div>
 	</div>
 
