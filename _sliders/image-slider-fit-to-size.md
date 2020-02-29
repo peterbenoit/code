@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/image-slider-fit-to-size.html
 description: This takes the basic image slider and adds an option for adjusting the images in the slider to fit
-title: Image Slider fit-to-size
+title: Image Slider fit-to-size with Zoom
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -10,6 +10,8 @@ includePrismJs: true
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css, https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 externaljs:
 showinnav: true
+slidertype: other
+image: image_fit_with_zoom.jpg
 ---
 
 <style>
@@ -70,7 +72,7 @@ showinnav: true
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3 d-block" id="sliderLabel">Slick Slider - Fit Image Slider</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - Fit Image Slider with Zoom</span>
 		</div>
 	</div>
 

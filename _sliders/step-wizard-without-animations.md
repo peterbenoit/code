@@ -2,7 +2,7 @@
 layout: template
 permalink: sliders/step-wizard.html
 description: We occasionally ask a user to follow a series of like-minded steps for a variety of reasons. One idea I had was to place this functionality into a slider, this is an example of that.
-title: Step Wizard Slider 
+title: Step Wizard Slider
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -10,6 +10,8 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
+slidertype: other
+image: step_wizard.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -140,15 +142,15 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'callback': function( t, d ) {
 				t.addClass( 'cdc-arrow-slider' );
 			},
-			'responsive': [ 
-				{ 'breakpoint': 1200,'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } }, 
+			'responsive': [
+				{ 'breakpoint': 1200,'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992,'settings': {	'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 768,'settings': {	'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576,'settings': {	'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' }
 			} ]
 		} );
-	     
+
 	     $( '.btn-next' ).on( 'click', function() {
 	     	$( '.cdc-card-slider' ).slick( 'slickNext' );
 	     } );
@@ -173,7 +175,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 				<p>Some info on this demo.</p>
 				<ol>
 					<li>Using the slider as a form step wizard.</li>
-				</ol>	
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -205,7 +207,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			</div>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>
