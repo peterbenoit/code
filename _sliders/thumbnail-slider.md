@@ -31,7 +31,7 @@ order: 6
 				</div>
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300">
-					<div cl\ass="card-body">
+					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 2
 						</div>
