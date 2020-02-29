@@ -2,15 +2,13 @@
 layout: template
 permalink: sliders/carousel-clone-akamai.html
 description: This is the same as the Carousel, except I'm using deelay.me to render the images with a delay; this mimics the Akamai Image Manager delay.
-title: Carousel (clone)
+title: Carousel using Deelay.me
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
 includePrismJs: true
 externalcss:
 externaljs:
-showinnav: false
-order: 5
 ---
 
 {%- include breadcrumbs.html -%}
@@ -18,7 +16,7 @@ order: 5
 <div class="container">
 	<div class="row">
 		<div class="col-md-9">
-			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel (clone) - Using Delaay.me</span>
+			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel using Deelay.me - Using Deelay.me</span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="http://deelay.me/1000/https://picsum.photos/id/819/700/300">
@@ -102,6 +100,11 @@ order: 5
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-9">
+			<p class="text-center small">Thanks to <a href="http://deelay.me/">http://deelay.me/</a></p>
 		</div>
 	</div>
 </div>
