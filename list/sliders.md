@@ -107,14 +107,3 @@ type: list
     {%- endif -%}
     {%- endfor -%}
 </div>
-
-
-
-<dl>
-    {%- for project in sliders -%}
-    {% if project.showinnav != false and project.order == nil %}
-    <dt><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></dt>
-    <dd class="ml-5">{{ project.description }} <a href="{{ site.baseurl }}{{ project.url }}">more &hellip;</a></dd>
-    {%- endif -%}
-    {%- endfor -%}
-</dl>
