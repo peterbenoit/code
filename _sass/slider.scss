@@ -294,10 +294,6 @@
 		}
 	}
 
-	&.cdc-jumbotron-slider {
-		// coming soon!
-	}
-
 	&.cdc-centermode-slider {
 		.slider-next {
 			right: -25px !important;
@@ -467,14 +463,6 @@ body.modal-open {
 		+ .cdc-slider-status {
 			display: block!important;
 		}
-	}
-
-	.cdc-card-slider {
-		// &.cdc-standard-slider {
-		// 	.slick-arrow {
-		// 		display: block!important;
-		// 	}
-		// }
 	}
 }
 
