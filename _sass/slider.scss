@@ -338,6 +338,17 @@
 		}
 	}
 
+	&.cdc-carousel-slider {
+		&.cdc-carousel-mobile {
+			+.cdc-slider-status:not(.d-block) {
+				display: none!important;
+			}
+
+			.slick-arrow {
+				display: none!important;
+			}
+		}
+	}
 }
 
 // video modal related

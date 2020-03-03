@@ -264,6 +264,7 @@ function handleCarousel( $t, defaults ) {
 	$t.after( clone );
 
 	var thumbnails = defaults.thumbnailsToShow || 4;
+	var showThumbnailsInMobile = defaults.showThumbnailsInMobile || false;
 
 	slickInit( '#' + id, {
 		'sliderType': 'thumbnail',
@@ -278,7 +279,10 @@ function handleCarousel( $t, defaults ) {
 			'margin': '0 3px'
 		},
 		'callback': function( slider ) {
-			slider.addClass( 'cdc-carousel-thumbnail-slider d-none d-lg-block' );
+			if ( !showThumbnailsInMobile ) {
+				slider.addClass( 'd-none' );
+			}
+			slider.addClass( 'cdc-carousel-thumbnail-slider d-lg-block' );
 			slider.find( '.card' ).on( 'click', function() {
 				var index = $( this ).data( 'slick-index' );
 				$t[ 0 ].slick.slickGoTo( index );
@@ -299,20 +303,20 @@ function handleCarousel( $t, defaults ) {
 		}, {
 			'breakpoint': 768,
 			'settings': {
-				'slidesToShow': 1,
-				'slidesToScroll': 1
+				'slidesToShow': thumbnails,
+				'slidesToScroll': thumbnails
 			}
 		}, {
 			'breakpoint': 576,
 			'settings': {
-				'slidesToShow': 1,
-				'slidesToScroll': 1
+				'slidesToShow': 3,
+				'slidesToScroll': 3
 			}
 		}, {
 			'breakpoint': 0,
 			'settings': {
-				'slidesToShow': 1,
-				'slidesToScroll': 1,
+				'slidesToShow': 2,
+				'slidesToScroll': 2,
 				'centerPadding': '20px'
 			}
 		} ]
