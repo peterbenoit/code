@@ -9,6 +9,7 @@ localjs:
 includePrismJs: true
 externalcss:
 externaljs: https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js
+image: carousel.jpg
 ---
 
 <style>
@@ -36,7 +37,7 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jque
 		<div class="col">
 			<div class="carousel slide carousel-multi-item" data-interval="false" id="multi-item-example">
 				<div class="controls-top float-right">
-					<a class="btn btn-outline-secondary prev" data-slide="prev" href="#multi-item-example"><i class="fas fa-angle-left"></i></a> 
+					<a class="btn btn-outline-secondary prev" data-slide="prev" href="#multi-item-example"><i class="fas fa-angle-left"></i></a>
 					<a class="btn btn-outline-secondary next" data-slide="next" href="#multi-item-example"><i class="fas fa-angle-right"></i></a>
 				</div>
 				<h3 class="d-inline-block mb-3">Card Carousel</h3>

@@ -1,8 +1,8 @@
 ---
 layout: template
 permalink: sliders/embedded-video-slider.html
-description: Embedded Video Slider using Slick Slider
-title: Embedded Video Slider
+description: Video Slider using Slick Slider
+title: Video Slider
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -10,7 +10,9 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
-order: 7
+order: 1
+slidertype: video
+image: video_slider.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -18,7 +20,7 @@ order: 7
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<span class="h3 d-block" id="sliderLabel">Slick Slider - Embedded Video Slider</span>
+			<span class="h3 d-block" id="sliderLabel">Slick Slider - Video Slider</span>
 		</div>
 	</div>
 	<div class="row">

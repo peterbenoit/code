@@ -1,8 +1,8 @@
 ---
 layout: template
 permalink: sliders/carousel-clone.html
-description: The original (non-clone) carousel slider required initializing two sliders and then asking them politely to work together. This is <i>mostly</i> fine, however the sync method between the two sliders was problematic. To get around this, and the fact that I had to initialize two sliders, I now clone the original slider and capture events on the clone to handle slide navigation.
-title: Carousel (clone)
+description: The original carousel slider required initializing two sliders and then asking them politely to work together. This is <i>mostly</i> fine, however the sync method between the two sliders was problematic. To get around this, and the fact that I had to initialize two sliders, I now clone the original slider and capture events on the clone to handle slide navigation.
+title: Carousel
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -10,7 +10,9 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
-order: 5
+order: 1
+slidertype: carousel
+image: carousel.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -18,7 +20,7 @@ order: 5
 <div class="container">
 	<div class="row">
 		<div class="col-md-9">
-			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel (clone)</span>
+			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel</span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/819/700/300">

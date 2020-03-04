@@ -10,6 +10,7 @@ includePrismJs: true
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
 externaljs:
 showinnav: true
+image: numbers.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -31,7 +32,7 @@ showinnav: true
 										<span class="fa-stack c-primary">
 											<span class="far fa-circle fa-stack-2x"></span>
 											<strong class="fa-stack-1x">
-											<span class="number">1</span>    
+											<span class="number">1</span>
 											</strong>
 										</span>
 									</div>
@@ -58,12 +59,12 @@ showinnav: true
 										<span class="fa-stack c-primary">
 											<span class="far fa-circle fa-stack-2x"></span>
 											<strong class="fa-stack-1x">
-											<span class="number">2</span>    
+											<span class="number">2</span>
 											</strong>
 										</span>
 									</div>
 								</div>
-							</div>					
+							</div>
 							<div class="col">
 								<div class="card">
 									<div class="card-header">Header 2</div>
@@ -85,12 +86,12 @@ showinnav: true
 										<span class="fa-stack c-primary">
 											<span class="far fa-circle fa-stack-2x"></span>
 											<strong class="fa-stack-1x">
-											<span class="number">3</span>    
+											<span class="number">3</span>
 											</strong>
 										</span>
 									</div>
 								</div>
-							</div>					
+							</div>
 							<div class="col">
 								<div class="card">
 									<div class="card-header">Header 3</div>
@@ -100,7 +101,7 @@ showinnav: true
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 </div>
@@ -115,7 +116,7 @@ showinnav: true
 				<ol>
 					<li>See <a href="card-step-style.html">Card Step Style</a> for details on this demo.</li>
 					<li>The numbers are created using Font Awesome, detailed in <a href="/code/2020/01/06/using-numbers-in-font-awesome-5.html">this post</a>.</li>
-				</ol>	
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -136,7 +137,7 @@ showinnav: true
 					<span class="fa-stack c-primary">
 						<span class="far fa-circle fa-stack-2x"></span>
 						<strong class="fa-stack-1x">
-						<span class="number">1</span>    
+						<span class="number">1</span>
 						</strong>
 					</span>
 				</div>
@@ -171,9 +172,9 @@ showinnav: true
 				+.fa-stack-1x {
 					font-size: 7vw;
 				}
-			} 
+			}
 		}
-		
+
 		.fa-stack {
 			height: 1em;
 			width: 1em;

@@ -294,10 +294,6 @@
 		}
 	}
 
-	&.cdc-jumbotron-slider {
-		// coming soon!
-	}
-
 	&.cdc-centermode-slider {
 		.slider-next {
 			right: -25px !important;
@@ -338,6 +334,17 @@
 		}
 	}
 
+	&.cdc-carousel-slider {
+		&.cdc-carousel-mobile {
+			+.cdc-slider-status:not(.d-block) {
+				display: none!important;
+			}
+
+			.slick-arrow {
+				display: none!important;
+			}
+		}
+	}
 }
 
 // video modal related
@@ -456,14 +463,6 @@ body.modal-open {
 		+ .cdc-slider-status {
 			display: block!important;
 		}
-	}
-
-	.cdc-card-slider {
-		// &.cdc-standard-slider {
-		// 	.slick-arrow {
-		// 		display: block!important;
-		// 	}
-		// }
 	}
 }
 

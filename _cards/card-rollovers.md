@@ -8,7 +8,8 @@ localcss: cards.css
 localjs:
 includePrismJs: true
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
-externaljs: 
+externaljs:
+image: rollovers.jpg
 ---
 
 <style>
@@ -37,8 +38,8 @@ externaljs:
         padding: .5rem 2rem;
         text-transform: uppercase;
         font-weight: bold;
-    }    
-    .card.card-hover-1:hover .card-img-wrap div { 
+    }
+    .card.card-hover-1:hover .card-img-wrap div {
        display: block;
        background-color:rgba(0, 0, 0, 0.15);
     }
@@ -48,13 +49,13 @@ externaljs:
     a.card:hover {
         text-decoration: none;
     }
-    .card.card-hover-2:hover .card-img-wrap div { 
+    .card.card-hover-2:hover .card-img-wrap div {
         display: block;
         background-color:rgba(0, 94, 170, 0.795);
         padding-left: 1rem;
         padding-right: 1rem;
         color: #fff;
-        
+
     }
     .card.card-hover-2:hover .card-img-wrap span.btn-learn-more {
         float: right;
@@ -64,7 +65,7 @@ externaljs:
         content: ' >'
     }
 
-    .card.card-hover-3:hover .card-img-wrap div { 
+    .card.card-hover-3:hover .card-img-wrap div {
        display: block;
        background-color:rgba(0, 0, 0, 0.15);
     }
@@ -78,9 +79,9 @@ externaljs:
         font-weight: bold;
         bottom: -14px;
         right: 0;
-    }  
+    }
 
-    .card.card-hover-3 .card-img-wrap div span.btn-learn-more.animated {  
+    .card.card-hover-3 .card-img-wrap div span.btn-learn-more.animated {
         bottom: 0;
     }
 </style>
@@ -184,5 +185,5 @@ externaljs:
             </a>
         </div>
     </div>
-  
+
 </div>

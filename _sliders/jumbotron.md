@@ -10,6 +10,8 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
+slidertype: other
+image: jumbotron.jpg
 ---
 
 {%- include breadcrumbs.html -%}

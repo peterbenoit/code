@@ -2,15 +2,16 @@
 layout: template
 permalink: sliders/carousel-clone-akamai.html
 description: This is the same as the Carousel, except I'm using deelay.me to render the images with a delay; this mimics the Akamai Image Manager delay.
-title: Carousel (clone)
+title: Carousel using Deelay.me
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
 includePrismJs: true
 externalcss:
 externaljs:
-showinnav: false
-order: 5
+order: 3
+slidertype: carousel
+image: carousel.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -18,7 +19,7 @@ order: 5
 <div class="container">
 	<div class="row">
 		<div class="col-md-9">
-			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel (clone) - Using Delaay.me</span>
+			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel using Deelay.me - Using Deelay.me</span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<img alt="Card image cap" class="card-img-top" src="http://deelay.me/1000/https://picsum.photos/id/819/700/300">
@@ -104,6 +105,11 @@ order: 5
 			</div>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-md-9">
+			<p class="text-center small">Thanks to <a href="http://deelay.me/">http://deelay.me/</a></p>
+		</div>
+	</div>
 </div>
 
 <script id="prism-source" data-line="5,9-11">
@@ -139,13 +145,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>The <a href="/code/sliders/carousel.html">original carousel version</a> of the Slick slider uses two sliders to implement the carousel. This version uses a single slider which is cloned and massaged to display it as a thumbnail track under the original slider.</p>
-				<p>There are benefits and disadvantages to this...</p>
-				<ol>
-					<li><span style="color: green">Pro:</span>You only need one slider in the markup and one initialization call!</li>
-					<li><span style="color: red">Con:</span>We have to process the markup via javascript which then calls init again in order to display the second slider.</li>
-					<li><span style="color: green">Pro:</span>The sliders are related but do not force navigation on each - meaning if you slide the thumbnail slide, the top slide doesn't auto-advance.</li>
-				</ol>
+				<p>This demo is the same as the <a href="/code/sliders/carousel-clone.html">carousel</a> except for the delay purposefully added to simulate latency.</p>
 			</div>
 		</div>
 	</div>

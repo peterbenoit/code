@@ -8,7 +8,8 @@ localcss: cards.css
 localjs:
 includePrismJs: true
 externalcss:
-externaljs: 
+externaljs:
+image: styles.jpg
 ---
 
 <style>
@@ -26,7 +27,7 @@ externaljs:
         height: 200px;
         margin: 1rem auto;
         object-fit: cover;
-    } 
+    }
 
     .card.card-profile-2 .card-img-profile {
         width: 150px;
@@ -43,8 +44,8 @@ externaljs:
         width: 80px;
         margin-top: -40px; /* 1/2 of the width */
         margin-left: auto;
-    } 
-    
+    }
+
     .card.card-profile-4 .card-img-profile {
         width: 150px;
         margin: 0 auto;
@@ -52,7 +53,7 @@ externaljs:
         border: 10px solid rgba(255,255,255,.5);
         border-radius: 50%;
         height: 150px; /* same as width */
-    } 
+    }
 
     .card.card-profile-4a .card-img-profile {
         width: 150px;
@@ -62,7 +63,7 @@ externaljs:
         border-radius: 50%;
         height: 150px; /* same as width */
     }
-    
+
     .card.card-profile-4a .card-title {
         font-size: 2rem;
         font-weight: bold;
@@ -81,7 +82,7 @@ externaljs:
         height: 100px; /* same as width */
         box-shadow: 0px 2px 4px #000000;
     }
-    
+
     .fa-facebook-square {
         color: #3b5998
     }
@@ -132,7 +133,7 @@ externaljs:
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg">
                     <img alt="Card image profile" class="card-img-profile"
-                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/avatars/avatar%20(2).png">                    
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/avatars/avatar%20(2).png">
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -147,7 +148,7 @@ externaljs:
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(39).jpg">
                     <img alt="Card image profile" class="card-img-profile right"
-                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/avatars/avatar%20(3).png">                     
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/avatars/avatar%20(3).png">
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -160,7 +161,7 @@ externaljs:
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
                 <img alt="Card image profile" class="card-img-profile"
-                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">                         
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -173,7 +174,7 @@ externaljs:
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(38).jpg">
                 <img alt="Card image profile" class="card-img-profile"
-                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(2).png">                      
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(2).png">
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -188,7 +189,7 @@ externaljs:
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
                 <img alt="Card image profile" class="card-img-profile"
-                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">                         
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -201,7 +202,7 @@ externaljs:
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
                 <img alt="Card image profile" class="card-img-profile"
-                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">                         
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">
                 <div class="card-body">
                     <h4 class="card-title">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -214,7 +215,7 @@ externaljs:
                 <img alt="Card image cap" class="img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
                 <img alt="Card image profile" class="card-img-profile"
-                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">                         
+                    src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">
                 <div class="card-body">
                     <h4 class="card-title text-uppercase">Card title</h4>
                     <p class="card-text">Some quick example text to build on the card title and
@@ -226,8 +227,8 @@ externaljs:
                     <i class="fab fa-twitter-square"></i>
                 </div>
             </div>
-        </div>             
-    </div>    
+        </div>
+    </div>
 </div>
 <div class="container">
 <div aria-multiselectable="true" class="accordion indicator-plus accordion-white mb-3 mt-3" id="accordion-4" role="tabpanel">
@@ -238,7 +239,7 @@ externaljs:
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>A variety of Bootstrap 4 card styles.</p>	
+				<p>A variety of Bootstrap 4 card styles.</p>
 			</div>
 		</div>
 	</div>

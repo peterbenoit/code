@@ -11,6 +11,8 @@ externalcss:
 externaljs:
 showinnav: true
 order: 2
+slidertype: image
+image: no_mobile_caption.jpg
 ---
 
 {%- include breadcrumbs.html -%}

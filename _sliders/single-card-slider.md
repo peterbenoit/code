@@ -10,6 +10,8 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
+slidertype: other
+image: single_card.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -165,8 +167,6 @@ window.addEventListener( 'DOMContentLoaded', function() {
 				'box-shadow': 'none',
 				'margin': '0'
 			},
-			'prevArrow': '<img role="button" class="slider-prev" src="https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/previous-128.png" style="background:rgba(255,255,255,.25);left: -30px!important" />',
-			'nextArrow': '<img role="button" class="slider-next" src="https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/next-128.png" style="background:rgba(255,255,255,.25);right: -30px!important" />',
 			'responsive': [
 				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },

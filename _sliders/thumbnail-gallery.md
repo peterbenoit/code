@@ -10,6 +10,8 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
+slidertype: other
+image: thumbnail_gallery.jpg
 ---
 
 {%- include breadcrumbs.html -%}

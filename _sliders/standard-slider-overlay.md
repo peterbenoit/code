@@ -10,6 +10,8 @@ externalcss:
 externaljs:
 showinnav: true
 order: 2
+slidertype: image
+image: overlay.jpg
 ---
 
 {%- include breadcrumbs.html -%}

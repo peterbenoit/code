@@ -10,6 +10,7 @@ includePrismJs: true
 externalcss:
 externaljs:
 showinnav: true
+image: columns.jpg
 ---
 
 <p></p>

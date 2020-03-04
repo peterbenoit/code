@@ -1,8 +1,8 @@
 ---
 layout: template
-permalink: sliders/carousel-clone-with-overlay.html
-description: This is the carousel slider using an overlay.
-title: Carousel (Overlay)
+permalink: sliders/video-carousel-embedded.html
+description: Built from the carousel slider, this one contains embedded videos.
+title: Video Carousel
 type: demo
 localcss: sliders.css
 localjs: slickinit.js
@@ -11,8 +11,8 @@ externalcss:
 externaljs:
 showinnav: true
 order: 2
-slidertype: carousel
-image: carousel_with_overlay.jpg
+slidertype: video
+image: video_carousel.jpg
 ---
 
 {%- include breadcrumbs.html -%}
@@ -20,10 +20,12 @@ image: carousel_with_overlay.jpg
 <div class="container">
 	<div class="row">
 		<div class="col-md-9">
-			<span class="h3 d-block" id="sliderLabel_1">Slick Carousel with (Overlay)</span>
+			<span class="h3 d-block" id="sliderLabel_1">Slick Slider - Video Carousel </span>
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/819/700/300">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/tKvDw6cfR3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 1
@@ -32,7 +34,9 @@ image: carousel_with_overlay.jpg
 					</div>
 				</div>
 				<div class="card dark">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/820/700/300">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/xCFkTmI_9kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 2
@@ -41,7 +45,9 @@ image: carousel_with_overlay.jpg
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/821/700/300">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/xTrwT0jSUg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 3
@@ -50,7 +56,9 @@ image: carousel_with_overlay.jpg
 					</div>
 				</div>
 				<div class="card dark">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/822/700/300">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/323v_FtWqvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 4
@@ -59,7 +67,9 @@ image: carousel_with_overlay.jpg
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/823/700/300">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/q0r-dKImVLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 5
@@ -68,7 +78,9 @@ image: carousel_with_overlay.jpg
 					</div>
 				</div>
 				<div class="card dark">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/824/700/300">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/0xZ52mG1yIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 6
@@ -77,7 +89,9 @@ image: carousel_with_overlay.jpg
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/825/700/300">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/nv6FMEvNiWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 7
@@ -86,7 +100,9 @@ image: carousel_with_overlay.jpg
 					</div>
 				</div>
 				<div class="card">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/826/700/300">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/DXm2y4KD6fk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 8
@@ -94,8 +110,10 @@ image: carousel_with_overlay.jpg
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 					</div>
 				</div>
-				<div class="card dark">
-					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/827/700/300">
+				<div class="card">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/ctPt74CNBA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 9
@@ -108,31 +126,28 @@ image: carousel_with_overlay.jpg
 	</div>
 </div>
 
-<script id="prism-source" data-line="13-15">
+<script id="prism-source" data-line="5,9-11">
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
 		slickInit( '#slider_1', {
-			'sliderType': 'carousel',
-			'thumbnailsToShow': 4,
-			'bodyClass': '',
+			'sliderType': 'video-carousel',
+			'thumbnailsToShow': 3,
+			'bodyClass': '',        
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel_1',
 			'centerMode': false,
 			'dots': false,
 			'sliderClass': 'cdc-carousel-slider',
-			'callback': function( slider, defaults, slick ) {
-				$( slider ).addClass( 'cdc-standard-slider-overlay dark' );
-			},
-			'responsive': [
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
+			'responsive': [             
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
-			]
+				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }            
+			]   
 		} );
-
+		
 	} )( jQuery );
 } );
 </script>
@@ -145,7 +160,6 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		<div aria-labelledby="accordion-4-card-3" class="collapse show" id="accordion-4-collapse-3" role="tabpanel">
 			<div class="card-body">
 				<p>Some info on this demo.</p>
-				<p>This is the same as the <a href="/code/sliders/carousel.html">carousel (clone) demo</a>, except I've added a callback to add the overlay class.</p>
 			</div>
 		</div>
 	</div>
@@ -156,17 +170,17 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		<div aria-labelledby="accordion-4-card-1" class="collapse" id="accordion-4-collapse-1" role="tabpanel">
 			<div class="card-body">
 				<div class="row">
-					<div class="col"><pre><code class="language-markup line-numbers"><script type="prism-html-markup"><div class="cdc-card-slider">
-	<div class="card">
-		<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/849/700/300">
-		<div class="card-body">
-			<div class="card-title h4 text-left">
-				Card Title 1
-			</div>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
-		</div>
+					<div class="col"><pre><code class="language-markup line-numbers"><script type="prism-html-markup"><div class="card">
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ctPt74CNBA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
-</div></script></code></pre>
+	<div class="card-body">
+		<div class="card-title h4 text-left">
+			Card Title 9
+		</div>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
+	</div>
+</div></script></code></pre>						
 					</div>
 				</div>
 			</div>

@@ -10,6 +10,8 @@ includePrismJs: true
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
 externaljs:
 showinnav: true
+slidertype: other
+image: gallery_modal.jpg
 ---
 
 <style>

@@ -8,13 +8,14 @@ localcss: cards.css
 localjs:
 includePrismJs: true
 externalcss:
-externaljs: 
+externaljs:
+image: scaling.jpg
 ---
 
 {%- include breadcrumbs.html -%}
 
 
-<label for="factor">Scale Factor</label> 
+<label for="factor">Scale Factor</label>
 <select class="custom-select w-10" id="factor" name="factor">
 	<option value="1.25">
 		1.25
@@ -64,13 +65,13 @@ externaljs:
 
             var factor = 2,     // the amount of zoom
                 scale = 0;      // the zoom level
-                
+
             $( '.card-img-zoom .img-fluid' ).on( 'mousedown', function( event ) {
                 // if animating, don't allow more clicking
             	if ( $( ':animated' ).length ) {
             		return false;
                 }
-                
+
                 // reset all of the images
                 $( '.card-img-zoom .img-fluid' )
                     .css( 'z-index', '0' )
@@ -78,11 +79,11 @@ externaljs:
 
                 // put this over most other things
                 $( this ).css( 'z-index', '9998' );
-                
+
                 // handle which mouse button was clicked
             	switch ( event.which ) {
             		case 1:
-                        // zooming in 
+                        // zooming in
             			$( this ).css( 'cursor', 'zoom-in' );
             			scale++;
             			$( this ).animate( {
@@ -146,7 +147,7 @@ externaljs:
 					<li>Zoom in/out on Boostrap 4 card images.</li>
                     <li>Change the scale amount to change how much the image zooms in and out.</li>
                     <li>Check Use Overlay in order to dim the screen while zooming.</li>
-				</ol>	
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -194,7 +195,7 @@ externaljs:
         position: absolute;
         display: none;
         margin: 2px
-    }    
+    }
 }
 
 #overlay {

@@ -7,8 +7,8 @@
     <li class="breadcrumb-item active" aria-current="page">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</li>
     {% if jekyll.environment != 'production' %}
     <li class="breadcrumb-item"><a href="https://peterbenoit.github.io/code{{- page.url -}}" target="_blank">View Live</a></li>
-    {% endif %}    
-    
+    {% endif %}
+
     {%- else -%}
     <li class="breadcrumb-item"><a href="{%- assign crumb_limit = forloop.index | plus: 1 -%}{%- for crumb in crumbs limit: crumb_limit -%}{{ crumb | append: '/' }}{%- endfor -%}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
     {%- endif -%}

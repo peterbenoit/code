@@ -6,13 +6,32 @@ show_profile: true
 type: list
 ---
 
+<style>
+    .card-img-top  {
+        padding: 0.5rem;
+    }
+</style>
+
 <p>These card demos were created using <a href="https://getbootstrap.com">Bootstrap 4</a> and a little bit O' gumption.</p>
 
-<dl>
+<div class="card-columns">
     {%- for project in site.cards -%}
     {% if project.showinnav != false %}
-    <dt><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></dt>
-    <dd class="ml-5">{{ project.description }} <a href="{{ site.baseurl }}{{ project.url }}">more &hellip;</a></dd>
+    <div class="card shadow-sm">
+        {% if project.image %}
+        <a href="{{ site.baseurl }}{{ project.url }}"><img src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/cards/{{ project.image }}" alt="{{ project.title }}" class="card-img-top"></a>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title"><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h5>
+            <p class="card-text">
+                {{ project.description }}
+            </p>
+        </div>
+        <div class="card-footer text-right">
+            <a class="btn btn-link" href="{{ site.baseurl }}{{ project.url }}">View Project</a>
+        </div>
+    </div>
     {%- endif -%}
     {%- endfor -%}
-</dl>
+</div>
+

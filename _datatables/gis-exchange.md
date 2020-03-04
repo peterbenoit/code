@@ -2,6 +2,7 @@
 permalink: datatables/gis-exchange.html
 description: Data from https://www.cdc.gov/dhdsp/maps/gisx/
 title: GIS Exchange
+image: GIS.jpg
 ---
 
 <html class="theme-blue" lang="en">

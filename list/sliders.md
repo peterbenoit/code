@@ -17,42 +17,93 @@ type: list
 <p>There are also custom styles applied to the slider, in order to produce the different layouts and configurations. This was done using <a href="https://sass-lang.com/">SASS</a> which is compiled into CSS.</p>
 
 {% assign sliders = site.sliders | sort: 'order' %}
-<span class="display-5">Standard Sliders</span>
-<dl>
+
+<span class="display-5">Image Sliders</span>
+<div class="card-columns">
     {%- for project in sliders -%}
-    {% if project.showinnav != false and project.order %}
-    <dt><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></dt>
-    <dd class="ml-5">{{ project.description }} <a href="{{ site.baseurl }}{{ project.url }}">more &hellip;</a></dd>
+    {% if project.showinnav != false and project.slidertype == 'image' %}
+    <div class="card shadow-sm">
+        {% if project.image %}
+        <a href="{{ site.baseurl }}{{ project.url }}"><img src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/sliders/{{ project.image }}" alt="{{ project.title }}" class="card-img-top"></a>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title"><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h5>
+            <p class="card-text">
+                {{ project.description }}
+            </p>
+        </div>
+        <div class="card-footer text-right">
+            <a class="btn btn-link" href="{{ site.baseurl }}{{ project.url }}">View Project</a>
+        </div>
+    </div>
     {%- endif -%}
     {%- endfor -%}
-</dl>
+</div>
 
-{% assign sliders = site.sliders | sort: 'order'  %}
+<span class="display-5">Carousel Sliders</span>
+<div class="card-columns">
+    {%- for project in sliders -%}
+    {% if project.showinnav != false and project.slidertype == 'carousel' %}
+    <div class="card shadow-sm">
+        {% if project.image %}
+        <a href="{{ site.baseurl }}{{ project.url }}"><img src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/sliders/{{ project.image }}" alt="{{ project.title }}" class="card-img-top"></a>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title"><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h5>
+            <p class="card-text">
+                {{ project.description }}
+            </p>
+        </div>
+        <div class="card-footer text-right">
+            <a class="btn btn-link" href="{{ site.baseurl }}{{ project.url }}">View Project</a>
+        </div>
+    </div>
+    {%- endif -%}
+    {%- endfor -%}
+</div>
+
+<span class="display-5">Video Sliders</span>
+<div class="card-columns">
+    {%- for project in sliders -%}
+    {% if project.showinnav != false and project.slidertype == 'video' %}
+    <div class="card shadow-sm">
+        {% if project.image %}
+        <a href="{{ site.baseurl }}{{ project.url }}"><img src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/sliders/{{ project.image }}" alt="{{ project.title }}" class="card-img-top"></a>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title"><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h5>
+            <p class="card-text">
+                {{ project.description }}
+            </p>
+        </div>
+        <div class="card-footer text-right">
+            <a class="btn btn-link" href="{{ site.baseurl }}{{ project.url }}">View Project</a>
+        </div>
+    </div>
+    {%- endif -%}
+    {%- endfor -%}
+</div>
+
+
+
 <span class="display-5">Other Slider Types</span>
-<dl>
+<div class="card-columns">
     {%- for project in sliders -%}
-    {% if project.showinnav != false and project.order == nil %}
-    <dt><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></dt>
-    <dd class="ml-5">{{ project.description }} <a href="{{ site.baseurl }}{{ project.url }}">more &hellip;</a></dd>
+    {% if project.showinnav != false and project.slidertype == 'other' %}
+    <div class="card shadow-sm">
+        {% if project.image %}
+        <a href="{{ site.baseurl }}{{ project.url }}"><img src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/sliders/{{ project.image }}" alt="{{ project.title }}" class="card-img-top"></a>
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title"><a class="text-body" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h5>
+            <p class="card-text">
+                {{ project.description }}
+            </p>
+        </div>
+        <div class="card-footer text-right">
+            <a class="btn btn-link" href="{{ site.baseurl }}{{ project.url }}">View Project</a>
+        </div>
+    </div>
     {%- endif -%}
     {%- endfor -%}
-</dl>
-
-{%- highlight javascript -%}
-slickInit( '#slider_1', {
-    'sliderType': 'carousel',
-    'bodyClass': '',        
-    'ariaLabel': '',
-    'ariaLabelTarget': 'sliderLabel_1',
-    'centerMode': false,
-    'dots': false,
-    'sliderClass': 'cdc-carousel-slider',
-    'responsive': [             
-        { 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
-        { 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-        { 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-        { 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-        { 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }            
-    ]   
-} );
-{%- endhighlight -%}
+</div>
