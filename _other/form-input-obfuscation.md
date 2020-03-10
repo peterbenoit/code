@@ -1,16 +1,16 @@
 ---
 layout: template
 permalink: other/form-input-obfuscation.html
-description: Some forms provide some basic security through obfuscation, essentially preventing prying eyes from seeing your input. This is most commonly used on social security number inputs, but it can be used for anything. This demo provides four methods for obfuscation, by changing the input values to asterisk's, though it could be any character you choose. 
+description: Some forms provide some basic security through obfuscation, essentially preventing prying eyes from seeing your input. This is most commonly used on social security number inputs, but it can be used for anything. This demo provides four methods for obfuscation, by changing the input values to asterisk's, though it could be any character you choose.
 title: Form Input Obfuscation
 type: demo
-localcss: 
+localcss:
 localjs:
 includePrismJs: true
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css
-externaljs:  
+externaljs:
 showinnav: true
-order: 
+order:
 ---
 
 {%- include breadcrumbs.html -%}
@@ -42,24 +42,24 @@ order:
 			<small class="form-text w-100 text-muted">Fixed number (10) of replacement characters</small>
 		</div>
 	</div>
-	
+
 	<div class="form-inline mt-3">
 		<div class="form-group w-50">
 			<input type="text" class="form-control mr-2 form-secret form-secret-demand" placeholder="On-demand Secret Data" id="data4" name="data4">
 			<small class="form-text w-100 text-muted">Hides characters as you type</small>
 		</div>
-	</div>	
+	</div>
 </div>
 
 <script id="prism-source">
     window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
 
-		
-			$( '.form-secret' ).on( { 
+
+			$( '.form-secret' ).on( {
 				keydown: function( e ) {
 					// if we're not allowing spaces
-					if ( e.which === 32 ) return false;					
+					if ( e.which === 32 ) return false;
 				},
 				input: function( e ) {
 					var $t = $( this ),
@@ -73,8 +73,8 @@ order:
 					if( $t.val().length ) {
 						if( demand ) {
 							val = $n.val();
-							
-							if( 'insertText' === oe.inputType ) { 
+
+							if( 'insertText' === oe.inputType ) {
 								// typing
 								val += oe.data;
 								$n.val( val );
@@ -90,7 +90,7 @@ order:
 								// pasting
 								return false;
 							}
-							
+
 							$indicator.removeClass( 'fa-eye' ).addClass( 'fa-eye-slash' );
 						} else {
 							$n.val( $t.val() );
@@ -98,7 +98,7 @@ order:
 					} else {
 						$n.val( '' );
 						$indicator.removeClass( 'fa-eye-slash' ).addClass( 'fa-eye' );
-					}					
+					}
 				},
 				paste: function( e ) {},
 				blur: function() {
@@ -109,18 +109,18 @@ order:
 						$n = $t.next( 'input:hidden' ),
 						$indicator = $t.siblings( '.far' ),
 						str = '';
-				
+
 					if( $t.val().length ) {
-						
+
 						if( random ) {
 							var random = Math.floor( Math.random() * ( 15 - 5 + 1 ) + 5 );
 							for( var i = 0; i < random; i++ ) {
 								str += '*';
-							}	
+							}
 						} else if ( fixed ) {
 							for( var i = 0; i < 10; i++ ) {
 								str += '*';
-							}		
+							}
 						} else {
 							for( var i = 0; i < $t.val().length; i++ ) {
 								str += '*';
@@ -128,18 +128,18 @@ order:
 						}
 						$t.val( str );
 						$indicator.removeClass( 'fa-eye' ).addClass( 'fa-eye-slash' );
-					}					
+					}
 				},
 				focus: function() {
 					var $t = $( this ),
 						$indicator = $t.siblings( '.far' ),
 						demand = $t.hasClass( 'form-secret-demand' ),
 						$n = $t.next( 'input:hidden' );
-				
+
 					if( !demand ) {
 						$t.val( $n.val() );
-						$indicator.removeClass( 'fa-eye-slash' ).addClass( 'fa-eye' );			
-					}					
+						$indicator.removeClass( 'fa-eye-slash' ).addClass( 'fa-eye' );
+					}
 				},
 				paste: function() {
 					var text = e.originalEvent.clipboardData.getData( 'text' ).trim(),
@@ -147,7 +147,7 @@ order:
 						$n = $t.next( 'input:hidden' );
 
 					if( text.length ) {
-						setTimeout( function() { 
+						setTimeout( function() {
 							$n.val( $t.val() );
 						}, 100 );
 					} else {
@@ -171,7 +171,7 @@ order:
 						$input.val( $n.val() );
 					}
 
-					$t.removeClass( 'fa-eye-slash' ).addClass( 'fa-eye' );	
+					$t.removeClass( 'fa-eye-slash' ).addClass( 'fa-eye' );
 				},
 				mouseup: function() {
 					var $t = $( this ),
@@ -186,11 +186,11 @@ order:
 						var random = Math.floor( Math.random() * ( 15 - 5 + 1 ) + 5 );
 						for( var i = 0; i < random; i++ ) {
 							str += '*';
-						}	
+						}
 					} else if ( fixed ) {
 						for( var i = 0; i < 10; i++ ) {
 							str += '*';
-						}		
+						}
 					} else {
 						for( var i = 0; i < $n.val().length; i++ ) {
 							str += '*';
@@ -200,7 +200,7 @@ order:
 					$t.removeClass( 'fa-eye' ).addClass( 'fa-eye-slash' );
 				}
 			} );
-			
+
         } )( jQuery );
     } );
 </script>
@@ -231,5 +231,5 @@ order:
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>

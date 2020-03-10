@@ -1,16 +1,16 @@
 ---
 layout: bootstrap
 permalink: other/bootstrap-starter-page.html
-description: DESCRIPTION 
+description: DESCRIPTION
 title: TITLE
 type: demo
-localcss: 
+localcss:
 localjs:
 includePrismJs: false
-externalcss: 
-externaljs:  
+externalcss:
+externaljs:
 showinnav: false
-order: 
+order:
 ---
 
 {%- include breadcrumbs.html -%}
@@ -27,7 +27,7 @@ order:
 <script>
     window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
-    
+
         } )( jQuery );
     } );
 </script>

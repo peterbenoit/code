@@ -1,10 +1,10 @@
 ---
 layout: template
 permalink: other/instagram-zoom.html
-description: I stumbled across the ability to zoom in on images in Instagram the other day ("Hey, would you look at that!"), and thought it'd be fun to recreate it. 
+description: I stumbled across the ability to zoom in on images in Instagram the other day ("Hey, would you look at that!"), and thought it'd be fun to recreate it.
 title: Instagram Zoom
 type: demo
-localcss: 
+localcss:
 localjs:
 includePrismJs: false
 externalcss: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.css, https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css
@@ -15,7 +15,7 @@ externaljs: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.
 
 <style>
 .modal-body {
-	padding: 0;	
+	padding: 0;
 }
 
 .modal-footer {
@@ -76,22 +76,22 @@ externaljs: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.
 			$( '.card-img-top' ).each( function( i ) {
 				var id = ''
 					large = $( this ).data( 'large' );
-				
+
 				if( !this.id ) {
 					$( this ).attr( 'id', 'cit_' + i );
 				}
-				
+
 				if( 'undefined' !== typeof large ) {
 					var modal = '<div class="modal animated zoomIn" id="modal_'+i+'" role="dialog" tabindex="-1">' +
 						'<div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document"><div class="modal-content">' +
 						'<div class="modal-body"><img src="'+large+'" alt="animal'+i+'" class="w-100" /></div>' +
-						'<div class="modal-footer bg-gray-d2"><div data-icon="ei-comment"></div><div data-icon="ei-heart"></div>' + 
+						'<div class="modal-footer bg-gray-d2"><div data-icon="ei-comment"></div><div data-icon="ei-heart"></div>' +
 						'<div data-icon="ei-share-google"></div></div></div></div></div>';
-					
-					$( 'body' ).append( modal );					
+
+					$( 'body' ).append( modal );
 				}
 			} );
-			
+
 			var clickStart = ( ( document.ontouchstart !== null ) ? 'mousedown' : 'touchstart' ),
 				clickEnd = ( ( document.ontouchstart !== null ) ? 'mouseup' : 'touchend' );
 
@@ -99,11 +99,11 @@ externaljs: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.
 			$( '.card-img-top, .modal' ).on( clickEnd, function( e ) {
 				clearTimeout( dt );
 				if( 'icon' === e.target.classList[0] ) {
-					if( 'icon--ei-comment' === e.target.classList[1] ) { 
+					if( 'icon--ei-comment' === e.target.classList[1] ) {
 						alert( 'comment' );
-					} else if( 'icon--ei-heart' === e.target.classList[1] ) { 
+					} else if( 'icon--ei-heart' === e.target.classList[1] ) {
 						alert( 'like' );
-					} else if( 'icon--ei-share-google' === e.target.classList[1] ) { 
+					} else if( 'icon--ei-share-google' === e.target.classList[1] ) {
 						alert( 'share' );
 					}
 				}
@@ -111,16 +111,16 @@ externaljs: https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.
 				return false;
 			} ).on( clickStart, function( e ) {
 				e.preventDefault();
-				e.stopPropagation(); 
+				e.stopPropagation();
 				var t = $( this ),
 					id = '#modal_' + t[0].id.split( '_' )[1];
-				
+
 				dt = window.setTimeout( function() {
 					$( id ).modal( 'show' );
 				}, 500 );
 				return false;
-			} ); 
-    
+			} );
+
         } )( jQuery );
     } );
 </script>

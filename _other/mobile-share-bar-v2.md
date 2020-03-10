@@ -4,13 +4,13 @@ permalink: other/mobile-share-bar-v2.html
 description: This is a 2020 version (version 2) of the share bar that is only available in mobile. The share bar will only be visible if the user is over 100 pixels from the top of the page, and scrolling up. There's also an event for displaying it on resize if the scroll position far enough down the page.
 title: Mobile Share Bar v2
 type: demo
-localcss: 
+localcss:
 localjs:
 includePrismJs: true
 externalcss: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css, https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css
 externaljs: https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js, https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js
 showinnav: true
-order: 
+order:
 ---
 
 {%- include breadcrumbs.html -%}
@@ -220,7 +220,7 @@ order:
 				if ( scrolled ) {
 					var isMobile = $( window ).width() < 768;
 					if ( isMobile ) {
-						
+
 						if ( $( this ).scrollTop() > prevScrollTop ) {
 							if( $( '.navbar' ).is( ':visible') ) {
 								$( '.navbar' ).hide();
@@ -370,5 +370,5 @@ order:
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
