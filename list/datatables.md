@@ -13,7 +13,7 @@ type: list
 </style>
 
 <p>These projects were created using the <a href="https://datatables.net">Datatables</a> Javascript library.</p>
-<p>This library displays huge datasets very quickly and has built-in sort/filter functionality as well as pagination, just to name a few of the things it does out of the box. The demos below take advantage of the Datatables engine to show some ways it can be used to build custom layouts quickly and reliably.</p>
+<p>This library displays huge datasets with ease, has built-in sort/filter functionality, pagination and search, just to name a few of the things it does out of the box. The demos below take advantage of the Datatables engine to show some ways it can be used to build custom layouts quickly and reliably.</p>
 
 <div class="card-columns">
     {%- for project in site.datatables -%}
