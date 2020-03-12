@@ -82,7 +82,7 @@
 							</div>
 														<div class="col-2 col-md-3 col-xl-5 col-xxl-4 tp-search mt-lg-3">
 								<div class="headerSearch cdc-header-search">
-    <form accept-charset="UTF-8" action="//search.cdc.gov/search/index.html" method="get" autocomplete="off">
+    <form accept-charset="UTF-8" action="http://127.0.0.1:4000/code/search/index.html" method="get" autocomplete="off">
 
         <button class="btn btn-primary dropdown-toggle no-toggle search-button ssi d-xl-none"
                 type="button"
@@ -509,7 +509,7 @@
 
 <!-- TP APP JS -->
 <script src="https://www.cdc.gov/TemplatePackage/contrib/libs/cdc/ab/4.0.0/ab.js"></script>
-<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/js/app.min.js?v=20-02-27T19:10:04Z"></script>
+<script src="/code/js/cdc_search/app.js?v=20-02-27T19:10:04Z"></script>
 
 <!-- @pageinfo@ -->
 
@@ -738,9 +738,9 @@
 
 <!-- JS Added Dynamically Here -->
 <script type="text/javascript" src="https://www.cdc.gov/TemplatePackage/contrib/libs/moment/2.24.0/moment.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/libs/cdc_search/tp-search-journals.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/libs/cdc_search/tp-search-podcasts.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/libs/cdc_search/tp-search-videos.js"></script>
+<script type="text/javascript" src="/code/js/cdc_search/tp-search-journals.js"></script>
+<script type="text/javascript" src="/code/js/cdc_search/tp-search-podcasts.js"></script>
+<script type="text/javascript" src="/code/js/cdc_search/tp-search-videos.js"></script>
 
 <script>
 
@@ -755,7 +755,7 @@
     </script>
 <script type="text/javascript" src="https://www.cdc.gov/TemplatePackage/contrib/libs/typeahead/js/typeahead.bundle.min.js"></script>
 <script type="text/javascript" src="https://www.cdc.gov/TemplatePackage/4.0/assets/js/tp-peoplefinder.js"></script>
-<script src="https://raw.githubusercontent.com/peterbenoit/cdn/master/libs/cdc_search/tp-search.js"></script>
+<!-- <script src="/code/js/cdc_search/tp-search.js"></script> -->
 <script>
 	window.shortTitle = "Search Results";
 	window.pageOptions = window.pageOptions || {};
