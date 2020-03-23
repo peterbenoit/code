@@ -109,3 +109,31 @@ blockquote {
     margin: .5rem 1rem;
     display: inline-block;
 }
+
+a.bookmarklet {
+    display: inline-block;
+    padding: 6px;
+    color: #fff;
+    background: #32a0eb;
+    border-radius: 4px;
+}
+
+.cp_embed_wrapper {
+    margin: 1rem auto;
+}
+abbr {
+    position: relative;
+}
+
+abbr:hover::after {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    display: block;
+    padding: 0.4rem 1rem ;
+    background: rgb(80, 80, 80);
+    color: white;
+    content: attr(title);
+    white-space: nowrap;
+    overflow: hidden;
+}
