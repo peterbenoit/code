@@ -82,7 +82,7 @@
 							</div>
 														<div class="col-2 col-md-3 col-xl-5 col-xxl-4 tp-search mt-lg-3">
 								<div class="headerSearch cdc-header-search">
-    <form accept-charset="UTF-8" action="http://127.0.0.1:4000/code/search/index.html" method="get" autocomplete="off">
+    <form accept-charset="UTF-8" action="/code/search/index.html" method="get" autocomplete="off">
 
         <button class="btn btn-primary dropdown-toggle no-toggle search-button ssi d-xl-none"
                 type="button"
