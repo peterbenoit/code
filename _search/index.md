@@ -61,7 +61,7 @@
 					#cdcAdvancedSearch .row {
 						margin-bottom: 0.5rem;
 					}
-/* 
+/*
 					#cdcAdvancedSearch #numbers-ranging-from,
 					#cdcAdvancedSearch #numbers-ranging-to {
 						width: 40%;
@@ -157,34 +157,6 @@
 								<div class="collapse" id="cdcAdvancedSearch">
 									<div class="card card-body fs0875">
 										<form accept-charset="UTF-8" action="/code/search/index.html" class="form-inlinsadfe" method="get" autocomplete="off">
-											<!-- <div class="form-group">
-												<label for="all-these-words">all these words:</label>
-												<input class="form-control mx-sm-3" type="text" id="all-these-words" aria-describedby="all-these-words-help" />
-												<small class="text-muted">Type the important words:  flu disease treatment</small>
-											</div>
-											<div class="form-group">
-												<label for="exact-words">this exact word or phrase:</label>
-												<input class="form-control mx-sm-3" type="text" id="exact-words" aria-describedby="exact-words-help" />
-												<small class="text-muted">Put exact words in quotes: "flu treatment"</small>
-											</div>
-											<div class="form-group">
-												<label for="any-words">any of these words:</label>
-												<input class="form-control mx-sm-3" type="text" id="any-words" aria-describedby="any-words-help" />
-												<small class="text-muted">Type OR between all the words you want: flu OR ebola</small>
-											</div>
-											<div class="form-group">
-												<label for="none-of-these-words">none of these words:</label>
-												<input class="form-control mx-sm-3" type="text" id="none-of-these-words" aria-describedby="none-of-these-words-help" />
-												<small class="text-muted">Put a minus sign just before words you don't want: -flu, -"Laboratory Testing"</small>
-											</div>
-											<div class="form-group">
-												<label for="numbers-ranging-from">numbers ranging from:</label>
-												<input class="form-control mx-sm-3 halfwidth" type="text" id="numbers-ranging-from" aria-describedby="numbers-ranging-from-help" />
-												<label for="numbers-ranging-to">to:</label>
-												<input class="form-control mx-sm-3 halfwidth" type="text" id="numbers-ranging-to" aria-describedby="numbers-ranging-to-help" />
-												<small class="text-muted">Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</small>
-											</div> -->
-
 											<div class="row">
 												<div class="col-md-2"><label for="all-these-words">all these words:</label></div>
 												<div class="col-md-5"><input class="form-control" type="text" id="all-these-words" aria-describedby="all-these-words-help" /></div>
@@ -217,6 +189,28 @@
 													</div>
 												</div>
 												<div class="col-md-5"><small class="text-muted">Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</small></div>
+											</div>
+											<div class="row">
+												<div class="col-md-2"><label for="all-these-words">terms appearing:</label></div>
+												<div class="col-md-5"><select class="custom-select" id="terms-appearing">
+													<option selected value="anywhere">Anywhere in the page</option>
+													<option value="title">The title of the page</option>
+													<option value="text">The text of the page</option>
+													<option value="url">The url of the page</option>
+													<option value="links">The links to the page</option>
+												  </select></div>
+												<div class="col-md-5"><small class="text-muted">Search for terms in the whole page, page title, or web address, or links to the page you're looking for.</small></div>
+											</div>
+											<div class="row">
+												<div class="col-md-2"><label for="all-these-words">language:</label></div>
+												<div class="col-md-5"><select class="custom-select" id="language">
+													<option selected value="English">English</option>
+													<option value="Spanish">Spanish</option>
+													<option value="Chinese">Chinese</option>
+													<option value="Korean">Korean</option>
+													<option value="Vietnamese">Vietnamese</option>
+												  </select></div>
+												<div class="col-md-5"><small class="text-muted">Find pages in the language you select</small></div>
 											</div>
 											<div class="row">
 												<div class="col-md-7">
