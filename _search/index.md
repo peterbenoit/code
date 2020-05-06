@@ -178,19 +178,6 @@
 												<div class="col-md-5"><small class="text-muted">Put a minus sign just before words you don't want: -flu, -"Laboratory Testing"</small></div>
 											</div>
 											<div class="row">
-												<div class="col-md-2"><label for="numbers-ranging-from">numbers ranging from:</label></div>
-												<div class="col-md-5">
-													<div class="row no-gutters">
-														<div class="col-md-5"><input class="form-control" type="text" id="numbers-ranging-from" aria-describedby="numbers-ranging-from-help" /></div>
-														<div class="col-md-1 text-center"><label for="numbers-ranging-to">to:</label></div>
-														<div class="col-md-6">
-															<input class="form-control" type="text" id="numbers-ranging-to" aria-describedby="numbers-ranging-to-help" />
-														</div>
-													</div>
-												</div>
-												<div class="col-md-5"><small class="text-muted">Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</small></div>
-											</div>
-											<div class="row">
 												<div class="col-md-2"><label for="all-these-words">terms appearing:</label></div>
 												<div class="col-md-5"><select class="custom-select" id="terms-appearing">
 													<option selected value="anywhere">Anywhere in the page</option>
