@@ -139,9 +139,12 @@
 											<div class="a-z-index fs0875">
 												<span class="d-xl-none">For a full list of topics: </span><a id="az-large" href="https://www.cdc.gov/az/">A-Z Index</a>
 											</div>
+											<div class="fs0875 d-md-none">
+												<a href="#" data-toggle="collapse" href="#cdcAdvancedSearch" aria-expanded="false" aria-controls="cdcAdvancedSearch" style="text-decoration: underline!important;">Advanced Search</a>
+											</div>
 										</div>
 										<!-- PETE added advanced search link -->
-										<div class="fs0875">
+										<div class="fs0875 d-none d-md-block">
 											<a href="#" data-toggle="collapse" href="#cdcAdvancedSearch" aria-expanded="false" aria-controls="cdcAdvancedSearch">Advanced Search</a>
 										</div>
 										<input type="hidden" name="sitelimit" value="">
@@ -163,7 +166,7 @@
 												<div class="col-md-5"><small class="text-muted">Type the important words:  flu disease treatment</small></div>
 											</div>
 											<div class="row">
-												<div class="col-md-2">this exact word or phrase:</div>
+												<div class="col-md-2"><label for="exact-words">this exact word or phrase:</label></div>
 												<div class="col-md-5"><input class="form-control" type="text" id="exact-words" aria-describedby="exact-words-help" /></div>
 												<div class="col-md-5"><small class="text-muted">Put exact words in quotes: "flu treatment"</small></div>
 											</div>
@@ -178,7 +181,7 @@
 												<div class="col-md-5"><small class="text-muted">Put a minus sign just before words you don't want: -flu, -"Laboratory Testing"</small></div>
 											</div>
 											<div class="row">
-												<div class="col-md-2"><label for="all-these-words">terms appearing:</label></div>
+												<div class="col-md-2"><label for="terms-appearing">terms appearing:</label></div>
 												<div class="col-md-5"><select class="custom-select" id="terms-appearing">
 													<option selected value="anywhere">Anywhere in the page</option>
 													<option value="title">The title of the page</option>
