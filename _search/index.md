@@ -61,6 +61,10 @@
 					#cdcAdvancedSearch .row {
 						margin-bottom: 0.5rem;
 					}
+
+					.cdc-header-search > form > .fs0875 > a[href="#cdcAdvancedSearch"] {
+						line-height: 3;
+					}
 /*
 					#cdcAdvancedSearch #numbers-ranging-from,
 					#cdcAdvancedSearch #numbers-ranging-to {
@@ -145,7 +149,7 @@
 										</div>
 										<!-- PETE added advanced search link -->
 										<div class="fs0875 d-none d-md-block">
-											<a href="#" data-toggle="collapse" href="#cdcAdvancedSearch" aria-expanded="false" aria-controls="cdcAdvancedSearch">Advanced Search</a>
+											<a href="#" data-toggle="collapse" href="#cdcAdvancedSearch" aria-expanded="false" aria-controls="cdcAdvancedSearch">Advanced Search</a><span class="ml-2 x24 fill-p cdc-icon-cog-light"></span>
 										</div>
 										<input type="hidden" name="sitelimit" value="">
 										<input type="hidden" name="utf8" value="✓">
@@ -310,8 +314,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#podcastresults" role="tab">Podcasts</a>
-                    </li>
-                </ul>
+					</li>
+					<li><a class="ml-5 lh2" href="#" data-toggle="collapse" href="#cdcAdvancedSearch" aria-expanded="false" aria-controls="cdcAdvancedSearch" style="text-decoration: underline!important;">Advanced Search</a><span class="ml-2 x24 fill-p cdc-icon-cog-light"></span></li>
+				</ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="allresults" role="tabpanel">
                         <div class="searchResultsData"></div>
