@@ -65,6 +65,10 @@
 					.cdc-header-search > form > .fs0875 > a[href="#cdcAdvancedSearch"] {
 						line-height: 3;
 					}
+
+					li.bl-1 {
+						border-color: #eee!important;
+					}
 /*
 					#cdcAdvancedSearch #numbers-ranging-from,
 					#cdcAdvancedSearch #numbers-ranging-to {
@@ -315,7 +319,7 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#podcastresults" role="tab">Podcasts</a>
 					</li>
-					<li><a class="ml-5 lh2" href="#" data-toggle="collapse" href="#cdcAdvancedSearch" aria-expanded="false" aria-controls="cdcAdvancedSearch" style="text-decoration: underline!important;">Advanced Search</a><span class="ml-2 x24 fill-p cdc-icon-cog-light"></span></li>
+					<li class="bl-1"><a class="ml-4 lh2" href="#" data-toggle="collapse" href="#cdcAdvancedSearch" aria-expanded="false" aria-controls="cdcAdvancedSearch" style="text-decoration: underline!important;">Advanced Search</a><span class="ml-2 x24 fill-p cdc-icon-cog-light"></span></li>
 				</ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="allresults" role="tabpanel">
