@@ -129,8 +129,9 @@ body.covid-home div.covid-home {
     .covid-home {
       font-size: 18px; } }
   @media only screen and (min-width: 1200px) {
-    .covid-home {
-      font-size: 20px; } }
+    /* PETE - REMOVED */
+    /* .covid-home {
+      font-size: 20px; } } */
   .covid-home span.force-wrap {
     display: inline-block; }
   .covid-home h1, .covid-home h2, .covid-home h3, .covid-home h4, .covid-home h5 {
@@ -201,6 +202,7 @@ body.covid-home div.covid-home {
       flex-direction: column;
       align-items: center;
       position: relative; }
+      /* PETE - REMOVED */
       /* .covid-home .hero-area > .container:before {
         position: absolute;
         z-index: 0;
@@ -1065,7 +1067,7 @@ body.covid-home div.covid-home {
 }
 .covid-navbar .dropdown.show .dropdown-menu {
   max-height: 600px;
-  height: 440px;
+  height: 380px;
   opacity: 1;
   z-index: 9999;
 }
