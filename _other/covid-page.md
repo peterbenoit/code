@@ -450,68 +450,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-xl yamm p-0">
             <div class="navbar-collapse collapse" id="navbar-collapse-grid">
-                <ul class="nav navbar-nav nav-justified w-100">
-                  <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">
-        About</a>
-                        <ul class="dropdown-menu">
-                            <li class="menu-body">
-                                <div class="row">
-                                    <div class="col-5">
-                                        <ul class="linked-list">
-                                            <li>
-                                                <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>About</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                            </li>
-                                            <li>
-                                                <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                            </li>
-                                            <li>
-                                                <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                            </li>
-                                            <li>
-                                                <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-6 covid-callouts">
-                                        <a href="#" class="row mb-2">
-                                            <div class="col-2">
-                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                            </div>
-                                            <div class="col-8">
-                                                <span>
-                                                    <span class="h4 open m-0">Callout Title 1</span>
-                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                                </span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="row mb-2">
-                                            <div class="col-2">
-                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                            </div>
-                                            <div class="col-8">
-                                                <span>
-                                                    <span class="h4 open m-0">Callout Title 2</span>
-                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                                </span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="row mb-2">
-                                            <div class="col-2">
-                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                            </div>
-                                            <div class="col-8">
-                                                <span>
-                                                    <span class="h4 open m-0">Callout Title 3</span>
-                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>                              
+                <ul class="nav navbar-nav nav-justified w-100">                             
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#">
         Cases &amp; Data</a>
@@ -873,7 +812,67 @@
                             </li>
                         </ul>
                     </li>
-                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">
+        About</a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-body">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <ul class="linked-list">
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>About</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 covid-callouts">
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 1</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 2</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 3</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li> 
                 </ul>
             </div>
         </nav>
