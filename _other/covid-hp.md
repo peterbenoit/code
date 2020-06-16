@@ -963,7 +963,7 @@ body.covid-home div.covid-home {
 
 <style>
 .covid-navbar {
-  box-shadow: 0 8px 4px -4px rgba(240,240,240, 0.5);
+  box-shadow: 0 8px 4px -4px rgba(240, 240, 240, 0.5);
 }
 .covid-navbar .yamm .nav-item.dropdown.show a.nav-link {
   background-color: #fff;
@@ -1002,6 +1002,10 @@ body.covid-home div.covid-home {
   width: 100%;
   box-shadow: none;
   border: none;
+  box-shadow: 
+  0 8px 4px -4px  rgba(240, 240, 240, 0.5), 
+        -4px 4px 85px  rgba(240, 240, 240, 0.5), 
+        4px 4px 85px  rgba(240, 240, 240, 0.5);
 }
 .covid-navbar .yamm .dropdown-menu .linked-list a {
   color: #000 !important;
@@ -1016,41 +1020,47 @@ body.covid-home div.covid-home {
   height: auto;
 }
 .covid-navbar .yamm .nav-item:nth-child(1) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(1) .nav-link.selected {
-  border-color: #4ebaaa;
-}
-.covid-navbar .yamm .nav-item:nth-child(1) .nav-link[aria-expanded="true"] {
-  border-color: #4ebaaa;
-}
-.covid-navbar .yamm .nav-item:nth-child(2) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(2) .nav-link.selected {
-  border-color: #b890bb;
-}
-.covid-navbar .yamm .nav-item:nth-child(2) .nav-link[aria-expanded="true"] {
-  border-color: #b890bb;
-}
-.covid-navbar .yamm .nav-item:nth-child(3) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(3) .nav-link.selected {
-  border-color: #7e9ba5;
-}
-.covid-navbar .yamm .nav-item:nth-child(3) .nav-link[aria-expanded="true"] {
-  border-color: #7e9ba5;
-}
-.covid-navbar .yamm .nav-item:nth-child(4) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(4) .nav-link.selected {
-  border-color: #92a6dd;
-}
-.covid-navbar .yamm .nav-item:nth-child(4) .nav-link[aria-expanded="true"] {
-  border-color: #92a6dd;
-}
-.covid-navbar .yamm .nav-item:nth-child(5) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(5) .nav-link.selected {
-  border-color: #88c3ea;
-}
-.covid-navbar .yamm .nav-item:nth-child(5) .nav-link[aria-expanded="true"] {
-  border-color: #88c3ea
-}
-.covid-navbar .yamm .nav-item:nth-child(6) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(6) .nav-link.selected {
-  border-color: #84bc49;;
-}
-.covid-navbar .yamm .nav-item:nth-child(6) .nav-link[aria-expanded="true"] {
-  border-color: #84bc49;;
-}
+      border-color: #7e9ba5;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(1) .nav-link[aria-expanded="true"] {
+      border-color: #7e9ba5;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(2) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(2) .nav-link.selected {
+      border-color: #65b0bd;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(2) .nav-link[aria-expanded="true"] {
+      border-color: #65b0bd;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(3) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(3) .nav-link.selected {
+      border-color: #b890bb;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(3) .nav-link[aria-expanded="true"] {
+      border-color: #b890bb;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(4) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(4) .nav-link.selected {
+      border-color: #88c3ea;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(4) .nav-link[aria-expanded="true"] {
+      border-color: #88c3ea;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(5) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(5) .nav-link.selected {
+      border-color: #84bc49;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(5) .nav-link[aria-expanded="true"] {
+      border-color: #84bc49;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(6) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(6) .nav-link.selected {
+      border-color: #92a6dd;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(6) .nav-link[aria-expanded="true"] {
+      border-color: #92a6dd;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(7) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(7) .nav-link.selected {
+      border-color: #4ebaaa;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(7) .nav-link[aria-expanded="true"] {
+      border-color: #4ebaaa;
+    }   
 .covid-navbar .dropdown-toggle::after {
   border: none !important;
   display: inline-block;

@@ -121,10 +121,13 @@
       border-bottom: 3px solid #fff;
     }
     .covid-navbar .yamm .dropdown-menu {
-      left: 0;
-      width: 100%;
-      box-shadow: none;
-      border: none;
+        left: 0;
+        width: 100%;
+        border: none;
+        box-shadow: 
+        0 8px 4px -4px  rgba(240, 240, 240, 0.5), 
+            -4px 4px 85px  rgba(240, 240, 240, 0.5), 
+            4px 4px 85px  rgba(240, 240, 240, 0.5);
     }
     .covid-navbar .yamm .dropdown-menu .linked-list a {
       color: #000 !important;
@@ -139,22 +142,22 @@
       height: auto;
     }
     .covid-navbar .yamm .nav-item:nth-child(1) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(1) .nav-link.selected {
-      border-color: #4ebaaa;
+      border-color: #7e9ba5;
     }
     .covid-navbar .yamm .nav-item:nth-child(1) .nav-link[aria-expanded="true"] {
-      border-color: #4ebaaa;
+      border-color: #7e9ba5;
     }
     .covid-navbar .yamm .nav-item:nth-child(2) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(2) .nav-link.selected {
-      border-color: #b890bb;
+      border-color: #65b0bd;
     }
     .covid-navbar .yamm .nav-item:nth-child(2) .nav-link[aria-expanded="true"] {
-      border-color: #b890bb;
+      border-color: #65b0bd;
     }
     .covid-navbar .yamm .nav-item:nth-child(3) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(3) .nav-link.selected {
-      border-color: #7e9ba5;
+      border-color: #b890bb;
     }
     .covid-navbar .yamm .nav-item:nth-child(3) .nav-link[aria-expanded="true"] {
-      border-color: #7e9ba5;
+      border-color: #b890bb;
     }
     .covid-navbar .yamm .nav-item:nth-child(4) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(4) .nav-link.selected {
       border-color: #88c3ea;
@@ -169,11 +172,17 @@
       border-color: #84bc49;
     }
     .covid-navbar .yamm .nav-item:nth-child(6) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(6) .nav-link.selected {
-      border-color: red;
+      border-color: #92a6dd;
     }
     .covid-navbar .yamm .nav-item:nth-child(6) .nav-link[aria-expanded="true"] {
-      border-color: red;
+      border-color: #92a6dd;
     }
+    .covid-navbar .yamm .nav-item:nth-child(7) .nav-link:hover, .covid-navbar .yamm .nav-item:nth-child(7) .nav-link.selected {
+      border-color: #4ebaaa;
+    }
+    .covid-navbar .yamm .nav-item:nth-child(7) .nav-link[aria-expanded="true"] {
+      border-color: #4ebaaa;
+    }   
     .covid-navbar .dropdown-toggle::after {
       border: none !important;
       display: inline-block;
