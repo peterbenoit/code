@@ -445,375 +445,379 @@
 			</nav>
 
 
-<!-- REMOVED BREADCRUMB BAR -->
-<div class="container covid-navbar">
-<nav class="navbar navbar-expand-xl yamm p-0 covid-navbar">
-    <div class="navbar-collapse collapse" id="navbar-collapse-grid">
-        <ul class="nav navbar-nav nav-justified w-100">
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="#">
-Individuals &amp; Families</a>
-                <ul class="dropdown-menu">
-                    <li class="menu-body">
-                        <div class="row">
-                            <div class="col-5">
-                                <ul class="linked-list">
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 covid-callouts">
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+<!-- PETE - REMOVED BREADCRUMB BAR -->
+<div class="container-fluid covid-navbar mb-4">
+    <div class="container">
+        <nav class="navbar navbar-expand-xl yamm p-0">
+            <div class="navbar-collapse collapse" id="navbar-collapse-grid">
+                <ul class="nav navbar-nav nav-justified w-100">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">
+        Individuals &amp; Families</a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-body">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <ul class="linked-list">
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 1</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 2</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 3</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>								
-                        </div>
+                                    <div class="col-6 covid-callouts">
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 1</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 2</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 3</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>								
+                                </div>
+                            </li>
+                        </ul>
                     </li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link selected" href="#">Communty, Work, School</a>
-                <ul class="dropdown-menu">
-                    <li class="menu-body">
-                        <div class="row">
-                            <div class="col-5">
-                                <ul class="linked-list">
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 covid-callouts">
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link selected" href="#">Communty, Work, School</a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-body">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <ul class="linked-list">
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 1</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 2</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 3</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>								
-                        </div>
+                                    <div class="col-6 covid-callouts">
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 1</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 2</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 3</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>								
+                                </div>
+                            </li>
+                        </ul>
                     </li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Healthcare Workers &amp; Labs</a>
-                <ul class="dropdown-menu">
-                    <li class="menu-body">
-                        <div class="row">
-                            <div class="col-5">
-                                <ul class="linked-list">
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 covid-callouts">
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">Healthcare Workers</a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-body">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <ul class="linked-list">
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 1</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 2</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 3</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>								
-                        </div>
+                                    <div class="col-6 covid-callouts">
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 1</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 2</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 3</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>								
+                                </div>
+                            </li>
+                        </ul>
                     </li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown d-none d-xl-list-item">
-                <a class="nav-link" href="#">Health Departments</a>
-                <ul class="dropdown-menu">
-                    <li class="menu-body">
-                        <div class="row">
-                            <div class="col-5">
-                                <ul class="linked-list">
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 covid-callouts">
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">Labs</a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-body">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <ul class="linked-list">
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 1</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
+                                    <div class="col-6 covid-callouts">
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 1</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 2</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 3</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>								
+                                </div>
+                            </li>
+                        </ul>
+                    </li>            
+                    <li class="nav-item dropdown d-none d-xl-list-item">
+                        <a class="nav-link" href="#">Health Departments</a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-body">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <ul class="linked-list">
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 2</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 3</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>								
-                        </div>
+                                    <div class="col-6 covid-callouts">
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 1</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 2</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 3</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>								
+                                </div>
+                            </li>
+                        </ul>
                     </li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Cases &amp; Data</a>
-                <ul class="dropdown-menu">
-                    <li class="menu-body">
-                        <div class="row">
-                            <div class="col-5">
-                                <ul class="linked-list">
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 covid-callouts">
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">Cases &amp; Data</a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-body">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <ul class="linked-list">
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 1</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 2</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 3</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>								
-                        </div>
+                                    <div class="col-6 covid-callouts">
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 1</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 2</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="row mb-2">
+                                            <div class="col-2">
+                                                <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
+                                            </div>
+                                            <div class="col-8">
+                                                <span>
+                                                    <span class="h4 open m-0">Callout Title 3</span>
+                                                    <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>								
+                                </div>
+                            </li>
+                        </ul>
                     </li>
+                                
                 </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Labs</a>
-                <ul class="dropdown-menu">
-                    <li class="menu-body">
-                        <div class="row">
-                            <div class="col-5">
-                                <ul class="linked-list">
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html"><span>Symptoms</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/testing/index.html"><span>Testing</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/prevent-getting-sick/index.html"><span>Prevent Getting Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/coronavirus/2019-ncov/if-you-are-sick/index.html"><span>If You Are Sick</span><span class="x24 fill-p cdc-icon-single_arrow"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 covid-callouts">
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 1</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 2</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                                <a href="#" class="row mb-2">
-                                    <div class="col-2">
-                                        <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/daily-life-coping/GettyImages-1149531679-dog-walking-medium.jpg" alt="" class="w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <span>
-                                            <span class="h4 open m-0">Callout Title 3</span>
-                                            <p>Description for the call out area <span class="x16 fill-p cdc-icon-single_arrow"></span></p>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>								
-                        </div>
-                    </li>
-                </ul>
-            </li>            
-        </ul>
+            </div>
+        </nav>
     </div>
-</nav>    
+    
 </div>
 
 
@@ -982,7 +986,12 @@ Individuals &amp; Families</a>
 				<div class="col-lg-3 order-lg-1 leftnav-wrapper">
 			<!-- include virtual="https://www.cdc.gov/TemplatePackage/4.0/includes/nav-main.html" -->
 			<nav role="navigation" aria-label="Left Navigation Menu">
-				<div class="nav-section-home d-sm-block"><span class="sr-only">home</span><span class="fi cdc-icon-home nav-home-icon x24" aria-hidden="true"></span><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">Coronavirus Disease 2019 (COVID-19)</a></div><ul class="list-group tp-nav-main"><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/index.html">Testing</a><a href="#nav-group-cbad2" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-cbad2"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-cbad2" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/testing.html">Testing for COVID-19</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/diagnostic-testing.html">Test for Current Infection</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/serology-overview.html">Test for Past Infection</a></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">Prevent Getting Sick</a><a href="#nav-group-8f32e" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-8f32e"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-8f32e" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html">How It Spreads</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Protect Yourself</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">Cloth Face Covers</a><a href="#nav-group-d2bbd" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-d2bbd"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-d2bbd" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">About Cloth Face Coverings</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Cloth Face Coverings</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">Wash Cloth Face Coverings</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-make-cloth-face-covering.html">Make Cloth Face Coverings</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover.html">Recommendations for Cloth Face Covers</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/gloves.html">Wearing Gloves</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">Cleaning Your Home</a><a href="#nav-group-03315" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-03315"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-03315" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Detailed Disinfection Guidance</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Social Distancing</a></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">If You Are Sick</a><a href="#nav-group-8cefa" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-8cefa"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-8cefa" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to Do If You Are Sick</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">Caring for Someone</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">When You Can be Around Others</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">Quarantine &amp; Isolation</a></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/index.html">Daily Life &amp; Coping</a><a href="#nav-group-f5aa6" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-f5aa6"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-f5aa6" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/at-home.html">At Home</a><a href="#nav-group-0c3e2" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-0c3e2"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-0c3e2" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/checklist-household-ready.html">Household Checklist</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">Living in Close Quarters</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">Living in Shared Housing</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html">Errands &amp; Going Out</a><a href="#nav-group-24264" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-24264"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-24264" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/activities.html">Deciding to Go Out</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">Running Errands</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/using-transportation.html">Using Transportation</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/doctor-visits-medicine.html">Doctor Visits &amp; Getting Medicines</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/visitors.html">Visiting Parks &amp; Recreational Facilities</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/caring-for-children.html">Caring for Children</a><a href="#nav-group-1af98" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-1af98"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-1af98" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">For Parents: MIS-C</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">Keep Children Healthy</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/protect-children.html">Stop the Spread in Children</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/learning.html">Help Children Learn</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/talking-with-children.html">Talking to Children</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/index.html">Stress &amp; Coping</a><a href="#nav-group-623e1" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-623e1"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-623e1" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html">Coping with Stress</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/for-parents.html">Helping Children Cope</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/reducing-stigma.html">Reducing Stigma</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/share-facts.html">Stop the Spread of Rumors</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/grief-loss.html">Grief and Loss</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/alcohol-use.html">Alcohol and Substance Use</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/abuse.html">Support for People Experiencing Abuse</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/veterans.html">Support for Veterans</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/young-adults.html">Support For Teens and Young Adults</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/funeral-guidance.html">Funeral Guidance</a></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">People Who Need Extra Precautions</a><a href="#nav-group-18a97" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-18a97"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-18a97" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">People Who Are At Higher Risk</a><a href="#nav-group-c506b" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-c506b"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-c506b" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html">Older Adults</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/asthma.html">People with Asthma</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/hiv.html">People with HIV</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/immunocompromised.html">People Who Are Immunocompromised</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/liver-disease.html">People with Liver Disease</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/groups-at-higher-risk.html">At Risk for Severe Illness</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/other-at-risk-populations.html">Others At Risk</a><a href="#nav-group-80854" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-80854"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-80854" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-disabilities.html">People with Disabilities</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/direct-service-providers.html">Caring for People with Disabilities</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-developmental-behavioral-disabilities.html">People with Developmental &amp; Behavioral Disorders</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/developmental-behavioral-disorders.html">Caring for People with Developmental &amp; Behavioral Disorders</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/caregivers-dementia.html">Caregivers of People Living with Dementia</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/racial-ethnic-minorities.html">Racial &amp; Ethnic Minority Groups</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/pregnancy-breastfeeding.html">Pregnancy &amp; Breastfeeding</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/homelessness.html">Homelessness</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/refugee-populations.html">Newly Resettled Refugee Populations</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/communication-toolkit.html">Resources for Limited-English-Proficient Populations</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/what-you-can-do.html">What You Can Do</a></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/pets-other-animals.html">Pets &amp; Other Animals</a><a href="#nav-group-03366" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-03366"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-03366" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/animals.html">Animals &amp; COVID-19</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">If You Have Pets</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/positive-pet.html">If Your Pet Tests Positive</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/service-therapy-animals.html">Guidance for Handlers of Service &amp; Therapy Animals</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/veterinarians.html">Guidance for Veterinarians</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/toolkit.html">Toolkit for State Public Health Veterinarians</a></li><!--mp_trans_remove_start-->
+                <div class="nav-section-home d-sm-block">
+                    <!-- PETE - REMOVED TOP HOME LINK -->
+                    <!-- <span class="sr-only">home</span><span class="fi cdc-icon-home nav-home-icon x24" aria-hidden="true"></span>
+                    <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">Coronavirus Disease 2019 (COVID-19)</a></div> -->
+                    <ul class="list-group tp-nav-main"><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/index.html">Testing</a><a href="#nav-group-cbad2" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-cbad2"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-cbad2" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/testing.html">Testing for COVID-19</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/diagnostic-testing.html">Test for Current Infection</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/serology-overview.html">Test for Past Infection</a></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">Prevent Getting Sick</a><a href="#nav-group-8f32e" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-8f32e"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-8f32e" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html">How It Spreads</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Protect Yourself</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">Cloth Face Covers</a><a href="#nav-group-d2bbd" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-d2bbd"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-d2bbd" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">About Cloth Face Coverings</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Cloth Face Coverings</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">Wash Cloth Face Coverings</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-make-cloth-face-covering.html">Make Cloth Face Coverings</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover.html">Recommendations for Cloth Face Covers</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/gloves.html">Wearing Gloves</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">Cleaning Your Home</a><a href="#nav-group-03315" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-03315"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-03315" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Detailed Disinfection Guidance</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Social Distancing</a></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/index.html">If You Are Sick</a><a href="#nav-group-8cefa" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-8cefa"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-8cefa" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to Do If You Are Sick</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">Caring for Someone</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html">When You Can be Around Others</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">Quarantine &amp; Isolation</a></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/index.html">Daily Life &amp; Coping</a><a href="#nav-group-f5aa6" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-f5aa6"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-f5aa6" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/at-home.html">At Home</a><a href="#nav-group-0c3e2" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-0c3e2"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-0c3e2" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/checklist-household-ready.html">Household Checklist</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">Living in Close Quarters</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">Living in Shared Housing</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html">Errands &amp; Going Out</a><a href="#nav-group-24264" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-24264"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-24264" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/activities.html">Deciding to Go Out</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">Running Errands</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/using-transportation.html">Using Transportation</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/doctor-visits-medicine.html">Doctor Visits &amp; Getting Medicines</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/visitors.html">Visiting Parks &amp; Recreational Facilities</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/caring-for-children.html">Caring for Children</a><a href="#nav-group-1af98" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-1af98"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-1af98" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">For Parents: MIS-C</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">Keep Children Healthy</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/protect-children.html">Stop the Spread in Children</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/learning.html">Help Children Learn</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/talking-with-children.html">Talking to Children</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/index.html">Stress &amp; Coping</a><a href="#nav-group-623e1" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-623e1"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-623e1" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html">Coping with Stress</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/for-parents.html">Helping Children Cope</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/reducing-stigma.html">Reducing Stigma</a></li>
+                    <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/share-facts.html">Stop the Spread of Rumors</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/grief-loss.html">Grief and Loss</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/alcohol-use.html">Alcohol and Substance Use</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/abuse.html">Support for People Experiencing Abuse</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/veterans.html">Support for Veterans</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/young-adults.html">Support For Teens and Young Adults</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/funeral-guidance.html">Funeral Guidance</a></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">People Who Need Extra Precautions</a><a href="#nav-group-18a97" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-18a97"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-18a97" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">People Who Are At Higher Risk</a><a href="#nav-group-c506b" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-c506b"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-c506b" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html">Older Adults</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/asthma.html">People with Asthma</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/hiv.html">People with HIV</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/immunocompromised.html">People Who Are Immunocompromised</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/liver-disease.html">People with Liver Disease</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/groups-at-higher-risk.html">At Risk for Severe Illness</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/other-at-risk-populations.html">Others At Risk</a><a href="#nav-group-80854" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-80854"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-80854" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-disabilities.html">People with Disabilities</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/direct-service-providers.html">Caring for People with Disabilities</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-developmental-behavioral-disabilities.html">People with Developmental &amp; Behavioral Disorders</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/developmental-behavioral-disorders.html">Caring for People with Developmental &amp; Behavioral Disorders</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/caregivers-dementia.html">Caregivers of People Living with Dementia</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/racial-ethnic-minorities.html">Racial &amp; Ethnic Minority Groups</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/pregnancy-breastfeeding.html">Pregnancy &amp; Breastfeeding</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/homelessness.html">Homelessness</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/refugee-populations.html">Newly Resettled Refugee Populations</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/communication-toolkit.html">Resources for Limited-English-Proficient Populations</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/what-you-can-do.html">What You Can Do</a></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/pets-other-animals.html">Pets &amp; Other Animals</a><a href="#nav-group-03366" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-03366"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-03366" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/animals.html">Animals &amp; COVID-19</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/pets.html">If You Have Pets</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/positive-pet.html">If Your Pet Tests Positive</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/service-therapy-animals.html">Guidance for Handlers of Service &amp; Therapy Animals</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/veterinarians.html">Guidance for Veterinarians</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/toolkit.html">Toolkit for State Public Health Veterinarians</a></li><!--mp_trans_remove_start-->
 <li class="list-group-item nav-lvl2" data-mp-trans="remove"><a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/interim-guidance-managing-people-in-home-care-and-isolation-who-have-pets.html">Public Health Guidance: Households with Pets</a></li>
 <!--mp_trans_remove_end--><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/animal-testing.html">Animal Testing Guidance</a><a href="#nav-group-44916" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-44916"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-44916" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/animals/pets-other-animals/wildlife-testing.html">Wildlife Testing Guidance</a></li></ul></li></ul></li><li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/index.html">Travel</a><a href="#nav-group-c756a" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-c756a"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-c756a" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-in-the-us.html">Travel in the US</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/map-and-travel-notices.html">Travel Health Notices</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/after-travel-precautions.html">Returning from International Travel</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/returning-cruise-voyages.html">Cruise Ship Travel</a><a href="#nav-group-5ce24" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-5ce24"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-5ce24" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/cruise-ship/what-cdc-is-doing.html">What CDC is Doing for Cruise Travelers</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/cruise-ship/cruise-ship-member-disembarkations.html">Disembarkations of Crew Members</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/crew-disembarkations-commercial-travel.html">Crew Disembarkations through Commercial Travel</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/faqs.html">Travel FAQs</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/from-other-countries.html">Travelers Prohibited from Entry to the US</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/communication-resources.html">Communication Resources for Travelers</a><a href="#nav-group-6db17" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-6db17"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-6db17" class="collapse"><li class="list-group-item nav-lvl3"><a href="/coronavirus/2019-ncov/travelers/transportation-toolkit.html">Road Travel Toolkit for Transportation Partners</a></li><li class="list-group-item nav-lvl3"><a href="/coronavirus/2019-ncov/travelers/airline-toolkit.html">Air Travel Toolkit for Airline Partners</a></li></ul></li></ul></li><li class="list-group-item nav-lvl1"><a href="/coronavirus/2019-ncov/faq.html">Frequently Asked Questions</a></li><li class="list-group-item nav-lvl1"><a href="/coronavirus/2019-ncov/cases-updates/index.html">Cases, Data &amp; Surveillance</a><a href="#nav-group-3fd93" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-3fd93"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-3fd93" class="collapse"><!--mp_trans_remove_start-->
 <li class="list-group-item nav-lvl2" data-mp-trans="remove"><a href="/coronavirus/2019-ncov/covid-data/covidview/index.html">COVIDView Weekly Summary</a><a href="#nav-group-5df20" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-5df20"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-5df20" class="collapse"><li class="list-group-item nav-lvl3" data-mp-trans="remove"><a href="/coronavirus/2019-ncov/covid-data/covidview/purpose-methods.html">Purpose &amp; Methods</a></li><li class="list-group-item nav-lvl3" data-mp-trans="remove"><a href="/coronavirus/2019-ncov/covid-data/covidview/covid-view-past-summaries.html">Past Weekly Reports</a></li></ul></li>
@@ -1230,11 +1239,11 @@ Individuals &amp; Families</a>
 </nav>
 <div id="metrics">
 	<!-- Google DAP inclusion -->
-	<script id="_fed_an_ua_tag" src="/JScript/metrics/google/Universal-Federated-Analytics-Min.js?agency=HHS&amp;subagency=CDC"></script>
+	<script id="_fed_an_ua_tag" src="https://www.cdc.gov/JScript/metrics/google/Universal-Federated-Analytics-Min.js?agency=HHS&amp;subagency=CDC"></script>
 
 	<!-- Begin Adobe Analytics code version: JS-2.0 -->
-	<script src="/JScript/metrics/topic_levels.js"></script>
-	<script src="/JScript/metrics/adobe/analytics_cdcgov.js"></script>
+	<script src="https://www.cdc.gov/JScript/metrics/topic_levels.js"></script>
+	<script src="https://www.cdc.gov/JScript/metrics/adobe/analytics_cdcgov.js"></script>
 	<noscript>
 		<a href="https://www.adobe.com"><img src="https://cdc.112.2o7.net/b/ss/cdcgov/1/H.21--NS/01/H.21--NS/0" height="1" width="1" alt="Web Analytics" /></a>
 	</noscript>
@@ -1242,16 +1251,16 @@ Individuals &amp; Families</a>
 	<!-- End Adobe Analytics code version: JS-2.0 -->
 </div>
 <!-- Application Requirements; Jquery, Bootstrap, typeahead, A/B testing, AppJs, and foresee metrics  -->
-<script src="/TemplatePackage/contrib/libs/jquery/latest/jquery.min.js"></script>
-<script src="/TemplatePackage/contrib/libs/bootstrap/latest/js/bootstrap.bundle.min.js"></script>
+<script src="https://www.cdc.gov/TemplatePackage/contrib/libs/jquery/latest/jquery.min.js"></script>
+<script src="https://www.cdc.gov/TemplatePackage/contrib/libs/bootstrap/latest/js/bootstrap.bundle.min.js"></script>
 
 <!-- @axejs@ -->
 <!-- @prismjs@ -->
 <!-- @typeaheadjs@ -->
 
 <!-- TP APP JS -->
-<script src="/TemplatePackage/contrib/libs/cdc/ab/4.0.0/ab.js"></script>
-<script src="/TemplatePackage/4.0/assets/js/app.min.js?v=20-06-04T19:34:55Z"></script>
+<script src="https://www.cdc.gov/TemplatePackage/contrib/libs/cdc/ab/4.0.0/ab.js"></script>
+<script src="https://www.cdc.gov/TemplatePackage/4.0/assets/js/app.min.js?v=20-06-04T19:34:55Z"></script>
 
 <!-- @pageinfo@ -->
 <svg viewBox="0 0 40 40" class="d-none">
