@@ -1,30 +1,30 @@
 ---
 layout: template
 permalink: other/org-chart.html
-description: 
+description:
 title: Org Chart
 type: demo
-localcss: 
+localcss:
 localjs:
 includePrismJs: false
-externalcss: 
-externaljs:  
+externalcss:
+externaljs:
 showinnav: true
-order: 
+order:
 ---
 
 {%- include breadcrumbs.html -%}
 
 <style>
 
-/* @media (min-width: 576px) { 
+/* @media (min-width: 576px) {
 	.org-chart img {
-		
-	}	
+
+	}
 } */
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 	.org-chart img {
 		width: 110px;
 		height: 110px;
@@ -34,12 +34,12 @@ order:
 	}
 	.org-chart .pl-5 {
 		padding-left:3rem!important;
-	}	
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-	
+@media (min-width: 992px) {
+
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -137,7 +137,7 @@ order:
 							<img src="https://www.cdc.gov/about/images/leadership/leaders/pdd.jpg" class="mr-md-3" alt="">
 							<h4>Principal Deputy Director</h4>
 							<a href="https://www.cdc.gov/about/leadership/leaders/pdd.html">Anne Schuchat, MD (RADM, USPHS, RET)</a>
-							<a class="d-inline-block" href="org-chart-sub.html">View CIO Direct Reports</a> <a class="d-inline-block" href="org-chart-sub.html"><span class="cdc-icon-arrow-alt-circle-right-solid"></span></a>				
+							<a class="d-inline-block" href="org-chart-sub.html">View CIO Direct Reports</a> <a class="d-inline-block" href="org-chart-sub.html"><span class="cdc-icon-arrow-alt-circle-right-solid"></span></a>
 						</div>
 						<div class="card-body bg-quaternary pl-md-5">
 							<img src="https://www.cdc.gov/about/images/leadership/leaders/adc.jpg" class="mr-md-3" alt="">
@@ -169,7 +169,7 @@ order:
 <script>
     window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
-    
+
         } )( jQuery );
     } );
 </script>

@@ -27,7 +27,7 @@ description: A timeline tour of the CDC Homepage since 1997 - this one has diffe
 	}
 	.timeline .timeline-card {
 		position: relative;
-	}	
+	}
 	.timeline .timeline-card:before, .timeline .timeline-card:after {
 		content: "";
 		display: block;
@@ -121,7 +121,7 @@ description: A timeline tour of the CDC Homepage since 1997 - this one has diffe
 		}
 		.timeline .timeline-card {
 			margin-top: 1rem;
-		}			
+		}
 	}
 	.modal {
 		-webkit-animation-duration: .3s;
@@ -353,11 +353,11 @@ description: A timeline tour of the CDC Homepage since 1997 - this one has diffe
 			</div>
 		</div>
 	</div>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> 
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script> 
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
 
 	<!-- object-fit for IE	 -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
 	<script>
 	$( function() {
 	   var modal = '<div class="modal animated zoomIn" id="modal_zoom" role="dialog" tabindex="-1">' +
@@ -366,19 +366,19 @@ description: A timeline tour of the CDC Homepage since 1997 - this one has diffe
 	       '</div></div></div>';
 
 	   $( 'body' ).append( modal );
-	   
-	   $( '.timeline-image img' ).on( 'click', function() { 
+
+	   $( '.timeline-image img' ).on( 'click', function() {
 	       var t = $( this );
-	       
+
 	       $( '#modal_zoom' )
 	           .modal( 'show' )
 	           .find( '.modal-body' )
 	           .empty()
-	           .append( '<div class="modal-notice animated fadeOut">Press ESC to close</div><img src="'+t[0].src+'" class="img-fluid" />' );       
+	           .append( '<div class="modal-notice animated fadeOut">Press ESC to close</div><img src="'+t[0].src+'" class="img-fluid" />' );
 	   } );
 
 	   objectFitImages();
-	   
+
 	} );
 	</script>
 </body>

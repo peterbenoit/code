@@ -4,13 +4,13 @@ permalink: other/number-to-time.html
 description: Jira auto-converts numbers into time for time tracking. An example of this would be 1.5 converts to 1 hour and 30 minutes. I thought re-creating that would be a fun exercise, so here's what I came up with.
 title: Number to Time converter
 type: demo
-localcss: 
+localcss:
 localjs:
 includePrismJs: true
-externalcss: 
+externalcss:
 externaljs: https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js
 showinnav: true
-order: 
+order:
 ---
 
 <style>
@@ -32,9 +32,9 @@ order:
 			<li><span>1.5</span> => <span id="onepointfive"></span></li>
 			<li><span>120</span> => <span id="onetwenty"></span></li>
 			<li><span>24.75</span> => <span id="twentyfoursevenfive"></span></li>
-			<li><span>9e9</span> => <span id="nineenine"></span></li>	
+			<li><span>9e9</span> => <span id="nineenine"></span></li>
 		</ul>
-		
+
 		<p>Or try your own:</p>
 		<input type="number" id="number" oninput="calcTime( this.value, 'time' )" placeholder="Number" class="form-control w-50">
 		<span id="time"></span>
@@ -51,7 +51,7 @@ order:
 			calcTime = function( input, target ) {
 				input = _.toNumber( input );
 				var timevalue = 0;
-				
+
 				if( _.isNumber( input ) && !_.isNaN( input ) ) {
 					if( input < 1 ) {
 						timevalue = ( input * 60 )  + ' minutes';
@@ -76,7 +76,7 @@ order:
 						}
 					}
 				}
-				
+
 				document.getElementById( target ).innerText = timevalue;
 			}
 
@@ -116,5 +116,5 @@ order:
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>

@@ -1,30 +1,30 @@
 ---
 layout: template
 permalink: other/org-chart-sub.html
-description: 
+description:
 title: Org Chart Sub
 type: demo
-localcss: 
+localcss:
 localjs:
 includePrismJs: false
-externalcss: 
-externaljs:  
+externalcss:
+externaljs:
 showinnav: false
-order: 
+order:
 ---
 
 {%- include breadcrumbs.html -%}
 
 <style>
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
 	.org-chart img {
-		
-	}	
+
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 	.org-chart img {
 		width: 110px;
 		height: 110px;
@@ -34,12 +34,12 @@ order:
 	}
 	.org-chart .pl-5 {
 		padding-left:3rem!important;
-	}	
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-	
+@media (min-width: 992px) {
+
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -125,13 +125,13 @@ order:
 							<img src="https://www.cdc.gov/about/images/leadership/leaders/pdd.jpg" class="ml-0 mr-3 float-left" alt="">
 							<h4>Principal Deputy Director</h4>
 							<a href="https://www.cdc.gov/about/leadership/director.htm">Anne Schuchat, MD (RADM, USPHS, RET)</a>
-							<a href="org-chart.html" class="d-inline-block"><span class="cdc-icon-arrow-alt-circle-left-solid"></span></a> <a class="d-inline-block" href="org-chart.html">Go Up a Level</a>	
+							<a href="org-chart.html" class="d-inline-block"><span class="cdc-icon-arrow-alt-circle-left-solid"></span></a> <a class="d-inline-block" href="org-chart.html">Go Up a Level</a>
 						</div>
 						<div class="card-body bg-quaternary pl-md-5">
 							<img src="https://www.cdc.gov/about/images/leadership/leaders/niosh.jpg" class="mr-md-3" alt="">
 							<h4>Director for National Institute for Occupational Safety and Health</h4>
 							<a href="https://www.cdc.gov/about/leadership/leaders/noish.html">John Howard, MD, MPH, JD, LLM, MBA</a>
-												
+
 						</div>
 						<div class="card-body bg-quaternary pl-md-5">
 							<img src="https://www.cdc.gov/about/images/leadership/leaders/DDPHSIS.jpg" class="mr-md-3" alt="">
@@ -162,7 +162,7 @@ order:
 <script>
     window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
-    
+
         } )( jQuery );
     } );
 </script>

@@ -28,7 +28,7 @@ image: three_wide.jpg
 	<div class="row">
 		<div class="col">
 			<div class="cdc-card-slider" id="slider_1">
-				<div class="card">
+				<div class="card ds-8">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/819/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -125,7 +125,7 @@ image: three_wide.jpg
 	<div class="row">
 		<div class="col">
 			<div class="cdc-card-slider" id="slider_2">
-				<div class="card">
+				<div class="card ds-8">
 					<img alt="Card image cap" class="card-img-top" src="https://picsum.photos/id/819/700/300">
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -217,7 +217,7 @@ image: three_wide.jpg
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
 
 <script id="prism-source" data-line="23">
@@ -226,13 +226,13 @@ image: three_wide.jpg
 
 			slickInit( '#slider_1', {
 				'sliderType': 'standard',
-				'bodyClass': '',        
+				'bodyClass': '',
 				'ariaLabel': '',
 				'ariaLabelTarget': 'sliderLabel sliderLabel_1',
-				'responsive': [ 
-					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },         
+				'responsive': [
+					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },
 					{ 'breakpoint': 992, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },
-					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 				]
@@ -240,19 +240,19 @@ image: three_wide.jpg
 
 			slickInit( '#slider_2', {
 				'sliderType': 'standard',
-				'bodyClass': '',        
+				'bodyClass': '',
 				'ariaLabel': '',
 				'ariaLabelTarget': 'sliderLabel sliderLabel_2',
 				'centerMode': false,
-				'responsive': [ 
-					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },         
+				'responsive': [
+					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },
 					{ 'breakpoint': 992, 'settings': { 'slidesToShow': 3, 'slidesToScroll': 3 } },
-					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 				]
-			} );			
-			
+			} );
+
 		} )( jQuery );
 	} );
 </script>
@@ -269,7 +269,7 @@ image: three_wide.jpg
 					<li>The standard card slider with the settings updated to display five cards at a time in desktop viewports and 1 in mobile.</li>
 					<li>The first demo uses the default <code>slickInit()</code> settings, which includes the <code>centerMode</code> setting enabled by default.</li>
 					<li>The second demo has <code>centerMode</code> set to false, disabling it, allowing the slider to slide more than 1 at a time. </li>
-				</ol>	
+				</ol>
 			</div>
 		</div>
 	</div>
@@ -290,7 +290,7 @@ image: three_wide.jpg
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 		</div>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>

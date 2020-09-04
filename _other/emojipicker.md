@@ -7,7 +7,7 @@ type: demo
 localcss: emoji.css
 localjs:
 includePrismJs: false
-externalcss: 
+externalcss:
 externaljs: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js
 ---
 
@@ -18,7 +18,7 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.
 				<div class="card-body">
 					<span id="selected"></span>
 				</div>
-			</div>			
+			</div>
 		</div>
 		<div class="col">
 			<div class="card">
@@ -694,9 +694,9 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.
 				<em><span class="emoji activity emoji-dart" title="dart"></span></em>
 				<em><span class="emoji activity emoji-game_die" title="game_die"></span></em>
 				<em><span class="emoji activity emoji-slot_machine" title="slot_machine"></span></em>
-				<em><span class="emoji activity emoji-bowling" title="bowling"></span></em>				
+				<em><span class="emoji activity emoji-bowling" title="bowling"></span></em>
 			</div>
-		</div>			
+		</div>
 		<div class="card">
 			<div class="card-header">Objects</div>
 			<div class="card-body object show-image">
@@ -884,7 +884,7 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.
 				<em><span class="emoji object emoji-black_left_pointing_double_triangle_with_vertical_bar" title="black_left_pointing_double_triangle_with_vertical_bar"></span></em>
 				<em><span class="emoji object emoji-fast_forward" title="fast_forward"></span></em>
 				<em><span class="emoji object emoji-right_anger_bubble" title="right_anger_bubble"></span></em>
-				<em><span class="emoji object emoji-left_speech_bubble" title="left_speech_bubble"></span></em>				
+				<em><span class="emoji object emoji-left_speech_bubble" title="left_speech_bubble"></span></em>
 			</div>
 		</div>
 		<div class="card">
@@ -1017,11 +1017,11 @@ externaljs: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.
 window.addEventListener( 'DOMContentLoaded', function() {
 	( function( $ ) {
 
-        $( 'span.emoji' ).on( 'click', function() { 
+        $( 'span.emoji' ).on( 'click', function() {
 			console.log( this.className );
 			$( 'span#selected' ).removeClass().addClass( this.className )
 		} );
-		
+
 		new ClipboardJS( 'span.emoji', {
 			text: function( t ) {
 				var t = $( t ),
@@ -1042,7 +1042,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			trigger: 'click',
 			placement: 'bottom'
 		} );
-		
+
 		function setTooltip( btn, message ) {
 			$( btn ).tooltip( 'hide' ).attr( 'data-original-title', message ).tooltip( 'show' );
 		}
@@ -1052,10 +1052,10 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			setTimeout( function() {
 				$( btn ).tooltip( 'hide' );
 			}, 1000 );
-		}		
+		}
 
 	} )( jQuery );
 
-	
+
 } );
 </script>

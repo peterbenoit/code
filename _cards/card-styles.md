@@ -130,7 +130,7 @@ image: styles.jpg
         </div>
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card card-profile-3">
-                <img alt="Card image cap" class="img-fluid"
+                <img alt="Card image cap" class="card-img-top img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg">
                     <img alt="Card image profile" class="card-img-profile"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/avatars/avatar%20(2).png">
@@ -145,7 +145,7 @@ image: styles.jpg
     <div class="row">
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card card-profile-3">
-                <img alt="Card image cap" class="img-fluid"
+                <img alt="Card image cap" class="card-img-top img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(39).jpg">
                     <img alt="Card image profile" class="card-img-profile right"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/avatars/avatar%20(3).png">
@@ -158,7 +158,7 @@ image: styles.jpg
         </div>
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card card-profile-4">
-                <img alt="Card image cap" class="img-fluid"
+                <img alt="Card image cap" class="card-img-top img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
                 <img alt="Card image profile" class="card-img-profile"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">
@@ -171,7 +171,7 @@ image: styles.jpg
         </div>
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card card-profile-5">
-                <img alt="Card image cap" class="img-fluid"
+                <img alt="Card image cap" class="card-img-top img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(38).jpg">
                 <img alt="Card image profile" class="card-img-profile"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(2).png">
@@ -186,7 +186,7 @@ image: styles.jpg
     <div class="row">
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card card-profile-4 text-center">
-                <img alt="Card image cap" class="img-fluid"
+                <img alt="Card image cap" class="card-img-top img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
                 <img alt="Card image profile" class="card-img-profile"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">
@@ -199,7 +199,7 @@ image: styles.jpg
         </div>
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card card-profile-4a text-center">
-                <img alt="Card image cap" class="img-fluid"
+                <img alt="Card image cap" class="card-img-top img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
                 <img alt="Card image profile" class="card-img-profile"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">
@@ -212,7 +212,7 @@ image: styles.jpg
         </div>
         <div class="col-lg-4 col-md-6 mb-3">
             <div class="card card-profile-4a text-center">
-                <img alt="Card image cap" class="img-fluid"
+                <img alt="Card image cap" class="card-img-top img-fluid"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(16).jpg">
                 <img alt="Card image profile" class="card-img-profile"
                     src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/users/user%20(3).png">

@@ -1,14 +1,14 @@
 ---
 layout: template
 permalink: other/focus-indicator.html
-description: The ability to highlight an element or component with a focus indicator is a major contributing factor to making a page Section 508 accessible. The default browser indicator can vary depending on the users operating system, and the browser they use. 
+description: The ability to highlight an element or component with a focus indicator is a major contributing factor to making a page Section 508 accessible. The default browser indicator can vary depending on the users operating system, and the browser they use.
 title: Focus Indicator
 type: demo
-localcss: 
+localcss:
 localjs: slickinit.js
 includePrismJs: false
-externalcss: 
-externaljs: 
+externalcss:
+externaljs:
 ---
 
 <style>
@@ -34,49 +34,49 @@ externaljs:
 		transition: box-shadow 0.2s ease-in-out;
 	}
 
-	.btn-primary:not(:disabled):not(.disabled):active, 
-	.btn-primary:not(:disabled):not(.disabled).active, 
+	.btn-primary:not(:disabled):not(.disabled):active,
+	.btn-primary:not(:disabled):not(.disabled).active,
 	.show > .btn-primary.dropdown-toggle {
 		background-color: #005eaa;
-	}	
+	}
 
-	.btn-secondary:not(:disabled):not(.disabled):active, 
-	.btn-secondary:not(:disabled):not(.disabled).active, 
+	.btn-secondary:not(:disabled):not(.disabled):active,
+	.btn-secondary:not(:disabled):not(.disabled).active,
 	.show > .btn-secondary.dropdown-toggle {
 		background-color: #88c3ea;
 	}
 
-	.btn-tertiary:not(:disabled):not(.disabled):active, 
-	.btn-tertiary:not(:disabled):not(.disabled).active, 
+	.btn-tertiary:not(:disabled):not(.disabled):active,
+	.btn-tertiary:not(:disabled):not(.disabled).active,
 	.show > .btn-tertiary.dropdown-toggle {
 		background-color: #c0e9ff;
 	}
 
-	.btn-quaternary:not(:disabled):not(.disabled):active, 
-	.btn-quaternary:not(:disabled):not(.disabled).active, 
+	.btn-quaternary:not(:disabled):not(.disabled):active,
+	.btn-quaternary:not(:disabled):not(.disabled).active,
 	.show > .btn-quaternary.dropdown-toggle {
 		background-color: #edf9ff;
 	}
 
-	.btn-primary.dropdown-toggle + .dropdown-menu > .dropdown-item.active, 
+	.btn-primary.dropdown-toggle + .dropdown-menu > .dropdown-item.active,
 	.btn-primary.dropdown-toggle + .dropdown-menu > .dropdown-item:active {
 		background-color: #005eaa;
-	}		
+	}
 
-	.btn-secondary.dropdown-toggle + .dropdown-menu > .dropdown-item.active, 
+	.btn-secondary.dropdown-toggle + .dropdown-menu > .dropdown-item.active,
 	.btn-secondary.dropdown-toggle + .dropdown-menu > .dropdown-item:active {
 		background-color: #88c3ea;
 	}
 
-	.btn-tertiary.dropdown-toggle + .dropdown-menu > .dropdown-item.active, 
+	.btn-tertiary.dropdown-toggle + .dropdown-menu > .dropdown-item.active,
 	.btn-tertiary.dropdown-toggle + .dropdown-menu > .dropdown-item:active {
 		background-color: #c0e9ff;
 	}
 
-	.btn-quaternary.dropdown-toggle + .dropdown-menu > .dropdown-item.active, 
+	.btn-quaternary.dropdown-toggle + .dropdown-menu > .dropdown-item.active,
 	.btn-quaternary.dropdown-toggle + .dropdown-menu > .dropdown-item:active {
 		background-color: #edf9ff;
-	}	
+	}
 </style>
 
 {%- include breadcrumbs.html -%}
@@ -105,19 +105,19 @@ externaljs:
 
 			slickInit( '.cdc-card-slider', {
 				'sliderType': 'standard',
-				'bodyClass': '',        
+				'bodyClass': '',
 				'ariaLabel': '',
 				'centerMode': false,
 				'ariaLabelTarget': 'sliderLabel',
-				'responsive': [ 
-					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+				'responsive': [
+					{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },          
+					{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 					{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
 				]
 			} );
-    
+
         } )( jQuery );
     } );
 </script>

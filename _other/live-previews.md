@@ -11,7 +11,7 @@ externalcss:
 externaljs:
 showinnav: true
 ---
-    
+
 <style>
     .row:not(:first-of-type) {
         margin-top: 30px;
@@ -24,7 +24,7 @@ showinnav: true
 
 <div class="container">
     <h1 class="display-3">Live Previews</h1>
-    <p class="lead">{{page.description}}  
+    <p class="lead">{{page.description}}
         As an example, you can load <a href="#iframe-target" onclick="loadHtml( '.lead' ); return false;"> this paragraph</a> into the viewer, or even load <a href="#iframe-target" onclick="loadHtml( 'template' ); return	false;">predefined templates</a>.</p>
     <div class="row">
         <div class="col previews">
@@ -36,7 +36,7 @@ showinnav: true
                 <a href="1200px" class="col">XL</a>
                 <a href="1440px" class="rounded-top-right col">XXL</a>
             </div>
-            <iframe id="iframe-target" frameborder="0" class="border-top-0"></iframe>                
+            <iframe id="iframe-target" frameborder="0" class="border-top-0"></iframe>
         </div>
     </div>
     <div class="row">
@@ -130,13 +130,13 @@ showinnav: true
     </div>
 </div>
 
-    
+
 <script id="prism-source">
     window.addEventListener( 'DOMContentLoaded', function() {
         ( function( $ ) {
 
 
-    
+
         } )( jQuery );
     } );
 </script>

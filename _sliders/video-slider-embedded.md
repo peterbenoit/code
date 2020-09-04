@@ -27,7 +27,9 @@ image: video_slider.jpg
 		<div class="col-lg-9">
 			<div class="cdc-card-slider">
 				<div class="card">
-					<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/jv_XC-vkSuQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/jv_XC-vkSuQ?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 1
@@ -38,7 +40,9 @@ image: video_slider.jpg
 					</div>
 				</div>
 				<div class="card">
-					<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/LIU4xb61PHc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/LIU4xb61PHc?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 2
@@ -49,7 +53,9 @@ image: video_slider.jpg
 					</div>
 				</div>
 				<div class="card">
-					<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/rontZbe_fG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/rontZbe_fG4?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 3
@@ -60,7 +66,9 @@ image: video_slider.jpg
 					</div>
 				</div>
 				<div class="card">
-					<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/_EonRi0yQOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/_EonRi0yQOE?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
 							Card Title 4
@@ -85,6 +93,9 @@ window.addEventListener( 'DOMContentLoaded', function() {
 			'ariaLabel': 'Video Slider',
 			'centerMode': false,
 			'ariaLabelTarget': '',
+			'callback': function( slider, defaults, slick ) {
+				$( slider ).addClass( 'cdc-video-slider' );
+			},
 			'responsive': [
 				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },

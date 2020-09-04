@@ -46,7 +46,7 @@ image: carousel.jpg
 						<div class="row">
 							<div class="col-md-4">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(34).jpg">
 									<div class="card-body">
 										<h4 class="card-title">Card title</h4>
@@ -57,7 +57,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-4 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(18).jpg">
 									<div class="card-body">
 										<h4 class="card-title">Card title</h4>
@@ -68,7 +68,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-4 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg">
 									<div class="card-body">
 										<h4 class="card-title">Card title</h4>
@@ -83,7 +83,7 @@ image: carousel.jpg
 						<div class="row">
 							<div class="col-md-4">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg">
 									<div class="card-body">
 										<h4 class="card-title">Card title</h4>
@@ -94,7 +94,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-4 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg">
 									<div class="card-body">
 										<h4 class="card-title">Card title</h4>
@@ -105,7 +105,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-4 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg">
 									<div class="card-body">
 										<h4 class="card-title">Card title</h4>
@@ -120,7 +120,7 @@ image: carousel.jpg
 						<div class="row">
 							<div class="col-md-4">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg">
 									<div class="card-body">
 										<h4 class="card-title">Card title</h4>
@@ -131,7 +131,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-4 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg">
 									<div class="card-body">
 										<h4 class="card-title">Card title</h4>
@@ -142,7 +142,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-4 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg">
 									<div class="card-body">
 										<h4 class="card-title">Card title</h4>
@@ -176,22 +176,22 @@ image: carousel.jpg
 					<div class="carousel-item active">
 						<div class="row">
 							<div class="col-md-3">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(34).jpg">
 								</div>
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(18).jpg">
 								</div>
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg">
 								</div>
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(36).jpg">
 								</div>
 							</div>
@@ -200,22 +200,22 @@ image: carousel.jpg
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-md-3">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(34).jpg">
 								</div>
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(18).jpg">
 								</div>
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg">
 								</div>
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(36).jpg">
 								</div>
 							</div>
@@ -224,22 +224,22 @@ image: carousel.jpg
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-md-3">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(34).jpg">
 								</div>
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(18).jpg">
 								</div>
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg">
 								</div>
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
-								<div class="card"><img alt="Card image cap" class="img-fluid"
+								<div class="card"><img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(36).jpg">
 								</div>
 							</div>
@@ -269,7 +269,7 @@ image: carousel.jpg
 						<div class="row">
 							<div class="col-md-3">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(34).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -280,7 +280,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(18).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -291,7 +291,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -302,7 +302,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(36).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -317,7 +317,7 @@ image: carousel.jpg
 						<div class="row">
 							<div class="col-md-3">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(34).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -328,7 +328,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(18).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -339,7 +339,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -350,7 +350,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(36).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -365,7 +365,7 @@ image: carousel.jpg
 						<div class="row">
 							<div class="col-md-3">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(34).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -376,7 +376,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(18).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -387,7 +387,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(35).jpg">
 									<div class="card-body">
 										<div class="card-title">
@@ -398,7 +398,7 @@ image: carousel.jpg
 							</div>
 							<div class="col-md-3 clearfix d-none d-md-block">
 								<div class="card">
-									<img alt="Card image cap" class="img-fluid"
+									<img alt="Card image cap" class="card-img-top img-fluid"
 										src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/horizontal/city/col-4/img%20(36).jpg">
 									<div class="card-body">
 										<div class="card-title">

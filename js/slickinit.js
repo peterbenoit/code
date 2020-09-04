@@ -259,8 +259,12 @@ function handleInit( $t, slick, defaults ) {
 function handleCarousel( $t, defaults ) {
 	var	clone = $t.clone(),
 		id = $t.attr( 'id' ) + '-clone';
+
 	clone.attr( 'id', id );
 	clone.find( '.card-body' ).remove();
+
+	clone.find( 'a > .card-img-top' ).unwrap();
+
 	$t.after( clone );
 
 	var thumbnails = defaults.thumbnailsToShow || 4;
@@ -519,7 +523,7 @@ function showModal( data ) {
 // play button
 var playbtn = '<img role="button" class="playbtn" alt="play video button" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/slider-icons/play.png" />';
 // prev button
-var prev = '<img role="button" class="slider-prev" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/slider-icons/left.png" alt="previous slide button">';
+var prev = '<img role="button" class="slider-prev" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/slider-icons/left.svg?sanitize=true" alt="previous slide button">';
 // next button
-var next = '<img role="button" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/slider-icons/right.png" alt="next slide button" class="slider-next">';
+var next = '<img role="button" src="https://raw.githubusercontent.com/peterbenoit/cdn/master/images/CDC/slider-icons/right.svg?sanitize=true" alt="next slide button" class="slider-next">';
 /* eslint-enable complexity */

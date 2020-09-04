@@ -24,7 +24,7 @@ image: video_carousel.jpg
 			<div class="cdc-card-slider" id="slider_1">
 				<div class="card">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/tKvDw6cfR3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/tKvDw6cfR3c?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -35,7 +35,7 @@ image: video_carousel.jpg
 				</div>
 				<div class="card dark">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/xCFkTmI_9kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/xCFkTmI_9kE?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -46,7 +46,7 @@ image: video_carousel.jpg
 				</div>
 				<div class="card">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/xTrwT0jSUg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/xTrwT0jSUg0?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -57,7 +57,7 @@ image: video_carousel.jpg
 				</div>
 				<div class="card dark">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/323v_FtWqvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/323v_FtWqvo?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -68,7 +68,7 @@ image: video_carousel.jpg
 				</div>
 				<div class="card">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/q0r-dKImVLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/q0r-dKImVLk?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -79,7 +79,7 @@ image: video_carousel.jpg
 				</div>
 				<div class="card dark">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/0xZ52mG1yIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/0xZ52mG1yIo?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -90,7 +90,7 @@ image: video_carousel.jpg
 				</div>
 				<div class="card">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/nv6FMEvNiWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/nv6FMEvNiWo?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -101,7 +101,7 @@ image: video_carousel.jpg
 				</div>
 				<div class="card">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/DXm2y4KD6fk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/DXm2y4KD6fk?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -112,7 +112,7 @@ image: video_carousel.jpg
 				</div>
 				<div class="card">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/ctPt74CNBA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ctPt74CNBA4?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="card-body">
 						<div class="card-title h4 text-left">
@@ -133,21 +133,24 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		slickInit( '#slider_1', {
 			'sliderType': 'video-carousel',
 			'thumbnailsToShow': 3,
-			'bodyClass': '',        
+			'bodyClass': '',
 			'ariaLabel': '',
 			'ariaLabelTarget': 'sliderLabel_1',
 			'centerMode': false,
 			'dots': false,
 			'sliderClass': 'cdc-carousel-slider',
-			'responsive': [             
-				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },         
+			'callback': function( slider, defaults, slick ) {
+				$( slider ).addClass( 'cdc-video-slider' );
+			},
+			'responsive': [
+				{ 'breakpoint': 1200, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 992, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 768, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
 				{ 'breakpoint': 576, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1 } },
-				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }            
-			]   
+				{ 'breakpoint': 0, 'settings': { 'slidesToShow': 1, 'slidesToScroll': 1, 'centerPadding': '20px' } }
+			]
 		} );
-		
+
 	} )( jQuery );
 } );
 </script>
@@ -172,7 +175,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 				<div class="row">
 					<div class="col"><pre><code class="language-markup line-numbers"><script type="prism-html-markup"><div class="card">
 	<div class="embed-responsive embed-responsive-16by9">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/ctPt74CNBA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ctPt74CNBA4?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	<div class="card-body">
 		<div class="card-title h4 text-left">
@@ -180,7 +183,7 @@ window.addEventListener( 'DOMContentLoaded', function() {
 		</div>
 		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sapiente quibusdam labore adipisci.</p>
 	</div>
-</div></script></code></pre>						
+</div></script></code></pre>
 					</div>
 				</div>
 			</div>
