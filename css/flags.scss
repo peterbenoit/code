@@ -1,0 +1,52 @@
+---
+# flags used in Cards
+---
+
+.card-flag {
+    background: #ab131b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    padding: 4px 2px 0 8px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    position: absolute;
+    margin-top: 18px;
+    letter-spacing: 1px;
+	text-transform: uppercase;
+	&.card-flag-right {
+		right: 0;
+		padding-left: 2px;
+		padding-right: 8px;		
+	}
+	&.card-flag-left {
+		padding-right: 2px;
+		padding-left: 8px;		
+	}
+}
+
+/* hi */
+
+.card-flag-left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 8px;
+    border-color: #ab131b transparent #ab131b #ab131b;
+}
+
+.card-flag-right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+	left: -1rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 8px;
+    border-color: #ab131b #ab131b #ab131b transparent;
+}

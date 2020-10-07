@@ -244,5 +244,4 @@ image: styles.jpg
 		</div>
 	</div>
 </div>
-
 </div>
